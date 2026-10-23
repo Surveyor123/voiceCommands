@@ -1,0 +1,2 @@
+# voiceCommands
+Runs NVDA commands and common Windows actions by voice, using the offline Vosk speech recognition engine; nothing leaves your computer. You can say any command from the Input Gestures dialog, built-in Windows commands such as "show desktop", "show taskbar" or "paste", and your own commands that open a program, file, folder or web address, or press a key combination. A speech model for your NVDA language is downloaded on first use. Assign keys in the Input Gestures dialog, under the Voice Commands category.
