@@ -240,7 +240,7 @@ def score(spoken, phrase):
 def run_command(description, info, repeat=1):
     """Runs a command; with repeat > 1 the script runs several times in a row (like multiple key presses)."""
     if userCommands.is_user_command(info):
-        log.info("Running user command by voice: %r x%d" % (description, repeat))
+        log.debug("Running user command by voice: %r x%d" % (description, repeat))
         try:
             for _repeat in range(max(1, min(repeat, MAX_REPEAT)) if info.repeatable else 1):
                 userCommands.run(info)
@@ -254,7 +254,7 @@ def run_command(description, info, repeat=1):
             ui.message(_("Could not run: {command}").format(command=description))
         return
     if windowsCommands.is_windows_command(info):
-        log.info("Running Windows command by voice: %r x%d" % (info.scriptName, repeat))
+        log.debug("Running Windows command by voice: %r x%d" % (info.scriptName, repeat))
         try:
             for _repeat in range(max(1, min(repeat, MAX_REPEAT)) if info.repeatable else 1):
                 windowsCommands.press(info)
@@ -263,7 +263,7 @@ def run_command(description, info, repeat=1):
             ui.message(_("Could not run the command"))
         return
     if is_key_emulation(info):
-        log.info("Pressing key by voice: %r x%d" % (info.scriptName, repeat))
+        log.debug("Pressing key by voice: %r x%d" % (info.scriptName, repeat))
         try:
             for _repeat in range(max(1, min(repeat, MAX_REPEAT))):
                 press_key(info)
@@ -281,7 +281,7 @@ def run_command(description, info, repeat=1):
         # Translators: Spoken when the script behind a voice command cannot be found. {command} is the command description.
         ui.message(_("Script not found: {command}").format(command=description))
         return
-    log.info("Running voice command: %r x%d" % (description, repeat))
+    log.debug("Running voice command: %r x%d" % (description, repeat))
     try:
         clear_last = getattr(scriptHandler, "clearLastScript", None)
         if clear_last:
@@ -346,7 +346,7 @@ def run_phrase(text):
         return
     candidates = rank_candidates(spoken, commands)
     for value, description, _info in candidates[:5]:
-        log.info("Voice command candidate: %.2f  %s" % (value, description))
+        log.debug("Voice command candidate: %.2f  %s" % (value, description))
     best = candidates[0][0]
     second = candidates[1][0] if len(candidates) > 1 else 0.0
     # A clear winner runs directly.
@@ -376,7 +376,7 @@ def decide(grammar_text, alternatives, index):
     grammar_text = grammar_text.strip()
     grammar_clean = bool(grammar_text) and "[unk]" not in grammar_text
     free = alternatives[0] if alternatives else ""
-    log.info("Voice command recognition: grammar=%r free=%r" % (grammar_text, alternatives))
+    log.debug("Voice command recognition: grammar=%r free=%r" % (grammar_text, alternatives))
     if grammar_clean:
         normalized = normalize(grammar_text)
         # The grammar always force-fits speech to some command; trust it only when the free
@@ -395,7 +395,7 @@ def decide(grammar_text, alternatives, index):
         stems.append(text)
     found = index.search(stems) if index is not None else None
     if found:
-        log.info("Voice command phonetic match: %r (%.2f)" % (found[1], found[2]))
+        log.debug("Voice command phonetic match: %r (%.2f)" % (found[1], found[2]))
         run_phrase(found[0] + (" %s %s" % (_spoken_number(repeat), _REPEAT_TIMES[0]) if repeat > 1 else ""))
         return
     if grammar_clean:
@@ -492,7 +492,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
                     storage.model_dir(), recognizer.folder_summary(storage.model_dir())))
             else:
                 self.model = recognizer.Model(path)
-                log.info("Vosk model loaded: " + path)
+                log.debug("Vosk model loaded: " + path)
         except Exception as e:
             log.exception("Could not load the model")
             # Translators: Spoken when the speech recognition model could not be loaded. {error} describes the problem.
@@ -584,7 +584,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             path = download.install_model(
                 model, storage.model_dir(),
                 lambda percent: say(progress_message.format(percent=percent)))
-            log.info("Vosk model downloaded: " + path)
+            log.debug("Vosk model downloaded: " + path)
             # Translators: Spoken when the model has been downloaded and is being loaded.
             say(_("Model installed, loading it"))
             self.loading = True
@@ -629,7 +629,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
                     phrases += [key + " " + suffix for suffix in _REPEAT_SUFFIXES]
             words = sorted({w for p in phrases for w in p.split()})
             unknown = self.model.find_unknown_words(words)
-            log.info("Grammar: %d phrases, %d words, %d not in the vocabulary: %r" % (
+            log.debug("Grammar: %d phrases, %d words, %d not in the vocabulary: %r" % (
                 len(phrases), len(words), len(unknown), unknown[:30]))
             return json.dumps(phrases + ["[unk]"], ensure_ascii=False)
         except Exception:

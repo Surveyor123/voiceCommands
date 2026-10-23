@@ -108,7 +108,7 @@ class AudioDucker:
             storage.write_json_list(RECOVERY_FILE, [
                 {"process": name, "original": original, "ducked": ducked}
                 for _volume, original, ducked, name in self._saved])
-            log.info("Voice command: lowered the volume of %d audio session(s)" % len(self._saved))
+            log.debug("Voice command: lowered the volume of %d audio session(s)" % len(self._saved))
 
     def _restore(self):
         if not self._saved:
@@ -121,7 +121,7 @@ class AudioDucker:
                 continue  # the session has ended
         self._saved = []
         storage.delete_file(RECOVERY_FILE)
-        log.info("Voice command: restored the volume of audio sessions")
+        log.debug("Voice command: restored the volume of audio sessions")
 
     def _recover(self):
         """After a crash or an abrupt exit, undo ducking left over from the previous run."""
@@ -138,4 +138,4 @@ class AudioDucker:
                 except Exception:
                     continue
         storage.delete_file(RECOVERY_FILE)
-        log.info("Voice command: restored audio volumes left ducked by a previous run")
+        log.debug("Voice command: restored audio volumes left ducked by a previous run")

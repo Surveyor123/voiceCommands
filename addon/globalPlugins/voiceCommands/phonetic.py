@@ -140,7 +140,7 @@ class CommandIndex:
                 if best is None or margin > best[3]:
                     best = (key, description, score, margin)
         for score, description, alternative in sorted(candidates, reverse=True)[:3]:
-            log.info("Voice command phonetic candidate: %.2f  %s  <- %r" % (score, description, alternative))
+            log.debug("Voice command phonetic candidate: %.2f  %s  <- %r" % (score, description, alternative))
         if best and best[3] >= 0:
             return best[0], best[1], best[2]
         return None
