@@ -1,0 +1,5 @@
+Third-party binaries, unmodified from the official "vosk" 0.3.45 Windows (win_amd64) package on PyPI:
+libvosk.dll (Vosk API, Apache-2.0; Kaldi and OpenBLAS linked in), libstdc++-6.dll and
+libgcc_s_seh-1.dll (GCC runtime, GPL-3.0-or-later with the GCC Runtime Library Exception 3.1),
+libwinpthread-1.dll (winpthreads, MIT-style).
+Licenses and sources: THIRD_PARTY_NOTICES.md and the licenses folder in the add-on's root.
