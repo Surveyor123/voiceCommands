@@ -158,14 +158,14 @@ The values at the top of `globalPlugins/voiceCommands/__init__.py`, such as the 
 
 ## Troubleshooting
 
-| Problem                                   | What to check                                                                                                                                                             |
-|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "Vosk model not found"                    | Install a model as described above. The message names the exact folder.                                                                                                   |
-| Nothing is recognized                     | Make sure the right microphone is the Windows default and not muted.                                                                                                      |
-| The wrong command runs                    | Define a short phrase of your own for that command in the phrase editor.                                                                                                  |
-| "This command is not available right now" | The command belongs to another application. Say it while that application has focus.                                                                                      |
-| Music or video still gets in the way      | Some applications do not expose an audio session that can be lowered. Pause them before listening.                                                                        |
-| You want to see what was heard            | Open the NVDA log (NVDA+F1). "Voice command recognition" lines show what each recognizer heard, and "Voice command candidate" lines show how close the best matches were. |
+| Problem                                   | What to check                                                                                                                                                                                                                                                                                                        |
+|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| "Vosk model not found"                    | Install a model as described above. The message names the exact folder.                                                                                                                                                                                                                                              |
+| Nothing is recognized                     | Make sure the right microphone is the Windows default and not muted.                                                                                                                                                                                                                                                 |
+| The wrong command runs                    | Define a short phrase of your own for that command in the phrase editor.                                                                                                                                                                                                                                             |
+| "This command is not available right now" | The command belongs to another application. Say it while that application has focus.                                                                                                                                                                                                                                 |
+| Music or video still gets in the way      | Some applications do not expose an audio session that can be lowered. Pause them before listening.                                                                                                                                                                                                                   |
+| You want to see what was heard            | These lines are written only at the Debug logging level, so first set it in NVDA menu, Preferences, Settings, General, Logging level. Then open the NVDA log (NVDA+F1). "Voice command recognition" lines show what each recognizer heard, and "Voice command candidate" lines show how close the best matches were. |
 
 ## Privacy
 
@@ -177,4 +177,4 @@ The add-on is written in English and comes with a Turkish translation. To transl
 
 ## License
 
-Voice Commands is licensed under the GNU General Public License, version 2.
+Voice Commands is licensed under the GNU General Public License, version 2 or later (GPL-2.0-or-later), as NVDA's own license requires of plugins. The bundled third-party components and their licenses are listed in [THIRD_PARTY_NOTICES.md](addon/THIRD_PARTY_NOTICES.md).

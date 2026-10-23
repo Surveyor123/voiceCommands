@@ -1,23 +1,28 @@
 # Third-party notices
 
 Voice Commands is licensed under the GNU General Public License, version 2 or later (see
-`LICENSE.txt`), as required for NVDA add-ons by the NVDA license.
+`LICENSE.txt`), as NVDA's own license requires of plugins
+(<https://download.nvaccess.org/documentation/copying.txt>).
 
 This add-on bundles the following third-party binaries in `globalPlugins/voiceCommands/lib/`.
 They are based on the official `vosk` 0.3.45 package for 64-bit Windows
 (`vosk-0.3.45-py3-none-win_amd64.whl`, SHA-256
 `6994ddc68556c7e5730c3b6f6bad13320e3519b13ce3ed2aa25a86724e7c10ac`, published on
 <https://pypi.org/project/vosk/>). `libvosk.dll`, `libgcc_s_seh-1.dll` and
-`libwinpthread-1.dll` are unmodified; `libstdc++-6.dll` has been stripped with
-`strip --strip-unneeded` to remove debugging symbols (see the GCC Runtime section below).
-No code was changed in the stripped file; only non-essential symbol and debug information
-was removed, and it remains functionally identical to the original. All binaries are loaded
-by the add-on at run time and are separate works from the add-on's own code.
+`libwinpthread-1.dll` are unmodified; `libstdc++-6.dll` has had its debugging sections
+removed with `strip --strip-debug` (see the GCC Runtime section below). The code, data, and
+the import and export tables of that file are unchanged. All binaries are loaded by the add-on
+at run time (`libstdc++-6.dll`, `libgcc_s_seh-1.dll` and `libwinpthread-1.dll` as dependencies of
+`libvosk.dll`) and are separate works from the add-on's own code.
 
-> Note on license compatibility: the add-on itself is licensed under GPL-2.0-or-later.
-> The bundled GCC runtime DLLs are licensed under GPL-3.0-or-later with the GCC Runtime
-> Library Exception 3.1, which permits their distribution together with programs under
-> other licenses (see the GCC Runtime section below).
+> Note on license compatibility: the add-on's own code is licensed under GPL-2.0-or-later.
+> NVDA's license allows a plugin to use components under other licenses, such as the
+> Apache-2.0 Vosk library, as long as they do not prevent the plugin from being licensed under
+> GPL v2 or later and are not used directly by NVDA itself outside the plugin. The Vosk binaries
+> are loaded and called only by this add-on, through `ctypes`, never by NVDA. The bundled GCC
+> runtime DLLs are licensed under GPL-3.0-or-later with the GCC Runtime Library Exception 3.1,
+> which permits their distribution together with programs under other licenses (see the GCC
+> Runtime section below).
 
 | File | Component | License | SHA-256 |
 | --- | --- | --- | --- |
@@ -54,9 +59,11 @@ Source code: <https://github.com/OpenMathLib/OpenBLAS>
 ## GCC Runtime (libstdc++-6.dll, libgcc_s_seh-1.dll)
 
 These DLLs are based on the official Vosk 0.3.45 Windows package on PyPI.
-`libstdc++-6.dll` has been stripped with `strip --strip-unneeded` to reduce its size by
-removing debugging symbols. No code was changed; only non-essential symbol and debug
-information was removed. The binary remains functionally identical to the original.
+`libstdc++-6.dll` has had its debugging sections (`.debug_*`) removed with
+`strip --strip-debug` to reduce its size from about 26.6 MB to 3.9 MB. The code, data, and the
+import and export tables are unchanged. SHA-256 of the original file from the PyPI package:
+`a1d96a848a567d7657e152cfe92e2fd62da412968cc11ec8bdb04bf20ebc5747`. SHA-256 of the file in this add-on:
+`7d52c34cd1c55585f95e9580ed10d747fb61406d8b4aee483a409e1ed74c74a3`.
 `libgcc_s_seh-1.dll` is unmodified.
 
 License: GPL-3.0-or-later with the GCC Runtime Library Exception 3.1.
@@ -74,7 +81,7 @@ Source code: <https://github.com/mingw-w64/mingw-w64> (`mingw-w64-libraries/winp
 
 ## Components that are not bundled
 
-* **pycaw, comtypes and psutil** are used for lowering the volume of other applications. They are
+* **pycaw and comtypes** are used for lowering the volume of other applications. They are
   provided by NVDA itself; this add-on does not redistribute them.
 * **Vosk speech recognition models** are downloaded on request, with your consent, from
   <https://alphacephei.com/vosk/models>. They are not part of this add-on. Each model has its own

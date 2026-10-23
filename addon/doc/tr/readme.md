@@ -103,7 +103,7 @@ Kendi komutlarını ekleyebilirsin. Girdi Hareketleri iletişim kutusunun Sesli 
 - **Program, dosya, klasör veya web adresi aç:** yaz ya da düğmelerle göz at. Çift tıklamış gibi açılır; yani bir web adresi tarayıcında açılır. `%USERPROFILE%` gibi ortam değişkenleri çalışır; `müzik`, `belgeler`, `indirilenler`, `masaüstü`, `resimler`, `videolar` gibi düz klasör adları (İngilizce adlar da) ve Windows `shell:` adresleri de çalışır. `notepad` gibi sistem yolundaki programlar için klasör yazmak gerekmez.
 - **Tuş kombinasyonuna bas:** tuşları NVDA'nın tuş adlarıyla yaz; örneğin `control+shift+n`. `ctrl`, `win`, `esc` ve `left` gibi yaygın yazımlar da anlaşılır. Tuş komutları tekrarlanabilir ("iki kez").
 
-Komutların ifade düzenleyicide **Komutlarım** kategorisi altında listelenir; oradan onlara ek ifadeler verebilirsin. Bir komutunun adı bir NVDA komutuyla aynıysa seninki kullanılır. Burada hiçbir betik ya da kabuk komutu çalışmaz: komut ya hedefini Windows'a verir ya da tuşlara basar. Komutların NVDA yapılandırma `userCommands.json` dosyasında saklanır (bkz. Ayarlar ve veriler).
+Komutların ifade düzenleyicide **Komutlarım** kategorisi altında listelenir; oradan onlara ek ifadeler verebilirsin. Bir komutunun adı bir NVDA komutuyla aynıysa seninki kullanılır. Burada hiçbir betik ya da kabuk komutu çalışmaz: komut ya hedefini Windows'a verir ya da tuşlara basar. Komutların `userCommands.json` dosyasında saklanır (bkz. Ayarlar ve veriler).
 
 ## Emin olamadığında
 
@@ -158,14 +158,14 @@ Bu özellik NVDA ile gelen bir kütüphane kullanır. O yoksa dinleme yine çal�
 
 ## Sorun giderme
 
-| Sorun                            | Neye bakmalı                                                                                                                                                                               |
-|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "Vosk modeli bulunamadı"         | Yukarıda anlatıldığı gibi bir model kur. Mesaj tam klasörü söyler.                                                                                                                         |
-| Hiçbir şey tanınmıyor            | Windows'ta doğru mikrofonun varsayılan olduğundan ve sessize alınmadığından emin ol.                                                                                                       |
-| Yanlış komut çalışıyor           | O komut için ifade düzenleyicide kendi kısa ifadeni tanımla.                                                                                                                               |
-| "Bu komut şu an kullanılamıyor"  | Komut başka bir uygulamaya ait. Onu o uygulama odaktayken söyle.                                                                                                                           |
-| Müzik ya da video hâlâ karışıyor | Bazı uygulamalar kısılabilen bir ses oturumu sunmaz. Dinlemeden önce onları duraklat.                                                                                                      |
-| Ne duyulduğunu görmek istiyorsun | NVDA günlüğünü aç (NVDA+F1). "Voice command recognition" satırları her tanıyıcının ne duyduğunu, "Voice command candidate" satırları en iyi eşleşmelerin ne kadar yakın olduğunu gösterir. |
+| Sorun                            | Neye bakmalı                                                                                                                                                                                                                                                                                                                                             |
+|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| "Vosk modeli bulunamadı"         | Yukarıda anlatıldığı gibi bir model kur. Mesaj tam klasörü söyler.                                                                                                                                                                                                                                                                                       |
+| Hiçbir şey tanınmıyor            | Windows'ta doğru mikrofonun varsayılan olduğundan ve sessize alınmadığından emin ol.                                                                                                                                                                                                                                                                     |
+| Yanlış komut çalışıyor           | O komut için ifade düzenleyicide kendi kısa ifadeni tanımla.                                                                                                                                                                                                                                                                                             |
+| "Bu komut şu an kullanılamıyor"  | Komut başka bir uygulamaya ait. Onu o uygulama odaktayken söyle.                                                                                                                                                                                                                                                                                         |
+| Müzik ya da video hâlâ karışıyor | Bazı uygulamalar kısılabilen bir ses oturumu sunmaz. Dinlemeden önce onları duraklat.                                                                                                                                                                                                                                                                    |
+| Ne duyulduğunu görmek istiyorsun | Bu satırlar yalnızca Debug (hata ayıklama) günlük düzeyinde yazılır; önce NVDA menüsü, Tercihler, Ayarlar, Genel bölümündeki günlük düzeyini Debug yap. Sonra NVDA günlüğünü aç (NVDA+F1). "Voice command recognition" satırları her tanıyıcının ne duyduğunu, "Voice command candidate" satırları en iyi eşleşmelerin ne kadar yakın olduğunu gösterir. |
 
 ## Gizlilik
 
@@ -177,4 +177,4 @@ Eklenti İngilizce yazılmıştır ve Türkçe çeviriyle gelir. Çevirmek için
 
 ## Lisans
 
-Sesli Komut, GNU Genel Kamu Lisansı sürüm 2 altında lisanslanmıştır.
+Sesli Komut, NVDA'nın kendi lisansının eklentilerden istediği gibi, GNU Genel Kamu Lisansı sürüm 2 ya da sonrası (GPL-2.0-or-later) altında lisanslanmıştır. Pakete dahil üçüncü taraf bileşenler ve lisansları [THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md) dosyasında listelenir.

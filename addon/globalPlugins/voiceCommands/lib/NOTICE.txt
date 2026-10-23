@@ -2,10 +2,14 @@ Third-party binaries, based on the official "vosk" 0.3.45 Windows (win_amd64) pa
 
 - libvosk.dll (Vosk API, Apache-2.0; Kaldi and OpenBLAS linked in) — unmodified.
 - libwinpthread-1.dll (winpthreads, MIT-style) — unmodified.
-- libstdc++-6.dll and libgcc_s_seh-1.dll (GCC runtime, GPL-3.0-or-later with the GCC Runtime
-  Library Exception 3.1) — stripped with `strip --strip-unneeded` to remove debugging
-  symbols. The code is otherwise unchanged; only non-essential symbol/debug information
-  was removed. Functionality is identical to the original binaries.
+- libgcc_s_seh-1.dll (GCC runtime, GPL-3.0-or-later with the GCC Runtime Library
+  Exception 3.1) — unmodified.
+- libstdc++-6.dll (GCC runtime, GPL-3.0-or-later with the GCC Runtime Library Exception 3.1)
+  — the debugging sections were removed with `strip --strip-debug`. The code, data, and the
+  import and export tables are unchanged. SHA-256 of the original:
+  a1d96a848a567d7657e152cfe92e2fd62da412968cc11ec8bdb04bf20ebc5747
+  SHA-256 of this file:
+  7d52c34cd1c55585f95e9580ed10d747fb61406d8b4aee483a409e1ed74c74a3
 
 Licenses and sources: THIRD_PARTY_NOTICES.md and the licenses folder in the add-on's root.
 Original package: https://pypi.org/project/vosk/0.3.45/
