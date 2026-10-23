@@ -260,6 +260,7 @@ def run_command(description, info, repeat=1):
 				windowsCommands.press(info)
 		except Exception:
 			log.exception("Could not run the Windows command: %s" % description)
+			# Translators: Spoken when a Windows command could not be run.
 			ui.message(_("Could not run the command"))
 		return
 	if is_key_emulation(info):
@@ -480,6 +481,65 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		threading.Thread(target=self._loadModel, daemon=True).start()
 		# Give NVDA's interface time to become ready, then ask about the model if it is missing.
 		core.callLater(6000, self._startupCheck)
+		# Add a submenu under NVDA's Tools menu, following the same pattern
+		# as the freeAudio add-on (gui.mainFrame.sysTrayIcon.toolsMenu).
+		self._voiceCommandsMenu = None
+		self._toolsMenuItem = None
+		wx.CallAfter(self._buildToolsMenu)
+
+	def _buildToolsMenu(self):
+		"""Add a Voice Commands submenu under NVDA's Tools menu."""
+		try:
+			tools_menu = gui.mainFrame.sysTrayIcon.toolsMenu
+			self._voiceCommandsMenu = wx.Menu()
+
+			items = [
+				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
+				(_("Start or stop listening"), self._onToolsListen),
+				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
+				(_("Command phrase editor..."), self._onToolsEditPhrases),
+				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
+				(_("My commands..."), self._onToolsEditUserCommands),
+				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
+				(_("Toggle volume lowering"), self._onToolsToggleDucking),
+				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
+				(_("Download speech model..."), self._onToolsDownloadModel),
+				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
+				(_("Open model folder"), self._onToolsOpenModelFolder),
+				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
+				(_("Type a command..."), self._onToolsCommandBox),
+			]
+			for label, handler in items:
+				item = self._voiceCommandsMenu.Append(wx.ID_ANY, label)
+				gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, handler, item)
+
+			self._toolsMenuItem = tools_menu.AppendSubMenu(
+				self._voiceCommandsMenu,
+				_("Voice Commands"),
+			)
+		except Exception:
+			log.exception("Could not add the Voice Commands menu to the Tools menu")
+
+	def _onToolsListen(self, evt):
+		self.script_listen(None)
+
+	def _onToolsEditPhrases(self, evt):
+		self.script_editPhrases(None)
+
+	def _onToolsEditUserCommands(self, evt):
+		self.script_editUserCommands(None)
+
+	def _onToolsToggleDucking(self, evt):
+		self.script_toggleDucking(None)
+
+	def _onToolsDownloadModel(self, evt):
+		self.script_downloadModel(None)
+
+	def _onToolsOpenModelFolder(self, evt):
+		self.script_openModelFolder(None)
+
+	def _onToolsCommandBox(self, evt):
+		self.script_commandBox(None)
 
 	def _loadModel(self):
 		try:
@@ -511,6 +571,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except Exception:
 			log.exception("Error while shutting down")
 		self.ducker.close()  # puts volumes back if they are still lowered
+		# Remove the Voice Commands submenu from the Tools menu.
+		try:
+			if self._toolsMenuItem is not None:
+				tools_menu = gui.mainFrame.sysTrayIcon.toolsMenu
+				tools_menu.Delete(self._toolsMenuItem.GetId())
+				self._toolsMenuItem = None
+		except Exception:
+			log.debug("Could not remove the Voice Commands menu", exc_info=True)
+		try:
+			if self._voiceCommandsMenu is not None:
+				self._voiceCommandsMenu.Destroy()
+				self._voiceCommandsMenu = None
+		except Exception:
+			pass
 		super().terminate()
 
 	# ------------------------------------------------------ model download

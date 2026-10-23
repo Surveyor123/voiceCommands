@@ -176,9 +176,22 @@ def all_commands():
 	return COMMANDS
 
 
+def _gesture(keys):
+	"""Builds the gesture; single letters use their virtual key code, so the keyboard layout does not matter."""
+	import keyboardHandler
+	names = keys.split("+")
+	last = names[-1]
+	if len(last) == 1 and last.isascii() and last.isalpha():
+		modifiers = []
+		for name in names[:-1]:
+			mod = keyboardHandler.KeyboardInputGesture.fromName(name)
+			modifiers.append((mod.vkCode, mod.isExtended))
+		# Windows shortcuts are defined by virtual key, and the VK of a letter is its uppercase ASCII code.
+		return keyboardHandler.KeyboardInputGesture(modifiers, ord(last.upper()), 0, False)
+	return keyboardHandler.KeyboardInputGesture.fromName(keys)
+
+
 def press(info):
 	"""Presses the key combination of a Windows command the way NVDA does for its emulated keys."""
 	import inputCore
-	import keyboardHandler
-	gesture = keyboardHandler.KeyboardInputGesture.fromName(info.keys)
-	inputCore.manager.emulateGesture(gesture)
+	inputCore.manager.emulateGesture(_gesture(info.keys))
