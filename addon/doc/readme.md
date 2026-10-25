@@ -75,6 +75,17 @@ When a command is not recognized, teach the add-on what the recognizer heard:
 
 The checked texts are saved as phrases of that command, exactly as if you had typed them in the phrase editor, and you can edit or delete them there later. Because they are words the model already knows, the same pronunciation is found directly the next time. The list always shows what the recognizer heard the last time you spoke a command, whether or not that command was recognized, so open the dialog right after the one that failed. It is also a quick way to see what the recognizer made of your speech, with no need to look at the NVDA log. Commands you type in the command box are not included.
 
+## Sharing and backing up your phrases
+
+The phrase editor can save your phrases to a file and load them again, so you can back them up, move them to another computer or share them with other people.
+
+- **Export phrases...** (Ctrl+E) saves the phrases that are in the editor, together with the commands whose original description you switched off, to a `.json` file. Commands without phrases are left out.
+- **Import phrases...** (Ctrl+I) reads such a file and adds its phrases to the editor. Nothing you already have is removed or changed: phrases you already have are skipped, and for a command you already have settings for, your own **Also use the original description** choice stays. NVDA tells you how many changes were imported. Nothing is stored until you choose **Save** (Ctrl+S), so you can look through the result first, and choose Cancel to throw it away.
+
+In the phrase editor these shortcuts work wherever the focus is.
+
+The file has the same format as `aliases.json` in the Voice Commands settings folder (see Settings and data), so a copy of that file can be imported too. Phrases are tied to commands by an id that does not depend on the interface language, so a file made with one NVDA language works with another. A phrase for a command that does not exist on your computer, such as a command of an application you have not installed, is kept but does nothing until that command exists. The editor lists only the commands available where you opened it, so open it inside an application to see the imported phrases of that application's commands. Your own commands (see Your own commands) get a different id on every computer, so phrases for them are not carried over; add the same phrases to the commands on the other computer instead.
+
 ## Keeping commands out of voice control
 
 Some commands you never want to run by voice, for example because they are risky ("close window", "lock computer") or because they sound too much like others and keep getting picked by mistake. To exclude one:

@@ -75,6 +75,17 @@ Bir komut tanınmadığında eklentiye tanıyıcının ne duyduğunu öğret:
 
 İşaretli metinler o komutun ifadeleri olarak, ifade düzenleyicide elle yazmış gibi kaydedilir; sonra orada düzenleyebilir ya da silebilirsin. Bunlar modelin zaten bildiği sözcükler olduğundan aynı söyleyiş bir dahaki sefere doğrudan bulunur. Liste, sesli komutu en son söylediğinde tanıyıcının ne duyduğunu gösterir; komut tanınsın tanınmasın. Bu yüzden pencereyi tanınmayan komuttan hemen sonra aç. Pencere, tanıyıcının konuşmandan ne anladığını NVDA günlüğüne bakmadan görmenin de hızlı bir yoludur. Komut kutusuna yazdığın komutlar listeye girmez.
 
+## İfadelerini paylaşmak ve yedeklemek
+
+İfade düzenleyici ifadelerini bir dosyaya kaydedip yeniden yükleyebilir; böylece onları yedekleyebilir, başka bir bilgisayara taşıyabilir ya da başkalarıyla paylaşabilirsin.
+
+- **İfadeleri dışa aktar...** (Ctrl+E) düzenleyicideki ifadeleri ve özgün açıklamasını kapattığın komutları bir `.json` dosyasına kaydeder. İfadesi olmayan komutlar dosyaya yazılmaz.
+- **İfadeleri içe aktar...** (Ctrl+I) böyle bir dosyayı okur ve içindeki ifadeleri düzenleyiciye ekler. Sende zaten olan hiçbir şey silinmez ya da değiştirilmez: zaten sahip olduğun ifadeler atlanır ve ayarı zaten bulunan bir komutta senin **Özgün açıklamayı da kullan** seçimin korunur. NVDA kaç değişikliğin içe aktarıldığını söyler. **Kaydet**'i (Ctrl+S) seçene kadar hiçbir şey saklanmaz; bu yüzden sonucu önce gözden geçirebilir, istemezsen İptal'i seçebilirsin.
+
+İfade düzenleyicide bu kısayollar odak nerede olursa olsun çalışır.
+
+Dosya, Sesli Komut ayar klasöründeki `aliases.json` ile aynı biçimdedir (bkz. Ayarlar ve veriler); bu yüzden o dosyanın bir kopyası da içe aktarılabilir. İfadeler komutlara arayüz diline bağlı olmayan bir kimlikle bağlıdır; bu yüzden bir NVDA diliyle hazırlanan dosya başka bir dilde de çalışır. Bilgisayarında bulunmayan bir komutun ifadesi, örneğin kurulu olmayan bir uygulamanın komutu, saklanır ama o komut var olana kadar bir işe yaramaz. Düzenleyici yalnızca açtığın yerde kullanılabilen komutları listeler; bu yüzden içe aktarılan ifadelerini görmek için düzenleyiciyi ilgili uygulamanın içinde aç. Kendi komutların (bkz. Kendi komutların) her bilgisayarda farklı bir kimlik alır, bu yüzden onların ifadeleri taşınmaz; aynı ifadeleri diğer bilgisayardaki komutlara kendin ekle.
+
 ## Komutları sesli denetimin dışında tutmak
 
 Bazı komutların sesle çalışmasını hiç istemeyebilirsin; örneğin riskli oldukları için ("pencereyi kapat", "bilgisayarı kilitle") ya da diğerlerine çok benzedikleri ve sık sık yanlışlıkla seçildikleri için. Birini dışarıda tutmak için:

@@ -54,15 +54,87 @@ def command_id(info):
 	return "%s.%s.%s" % (cls.__module__, cls.__name__, info.scriptName)
 
 
+MAX_PHRASES_PER_COMMAND = 200
+MAX_PHRASE_LENGTH = 300
+MAX_IMPORT_BYTES = 5 * 1024 * 1024
+
+
+def clean_aliases(raw):
+	"""Cleaned alias data from any JSON value: {id: {"aliases": [str], "keep_original": bool}}.
+
+	Everything that does not have the expected shape is dropped, so it is safe to use on a file
+	the user got from somewhere else."""
+	result = {}
+	if not isinstance(raw, dict):
+		return result
+	for cid, entry in raw.items():
+		if not isinstance(cid, str) or not cid.strip() or not isinstance(entry, dict):
+			continue
+		phrases = []
+		listed = entry.get("aliases", [])
+		for phrase in listed if isinstance(listed, list) else []:
+			if not isinstance(phrase, str):
+				continue
+			phrase = phrase.strip()
+			if phrase and len(phrase) <= MAX_PHRASE_LENGTH and phrase not in phrases:
+				phrases.append(phrase)
+		result[cid] = {
+			"aliases": phrases[:MAX_PHRASES_PER_COMMAND],
+			"keep_original": bool(entry.get("keep_original", True)),
+		}
+	return result
+
+
 def load_aliases():
 	"""Cleaned alias data: {id: {"aliases": [str], "keep_original": bool}}."""
-	result = {}
-	for cid, entry in _read_json("aliases.json").items():
-		if not isinstance(entry, dict):
-			continue
-		phrases = [p.strip() for p in entry.get("aliases", []) if isinstance(p, str) and p.strip()]
-		result[cid] = {"aliases": phrases, "keep_original": bool(entry.get("keep_original", True))}
-	return result
+	return clean_aliases(_read_json("aliases.json"))
+
+
+def _worth_keeping(entry):
+	"""An entry matters if it has phrases or switches the original description off."""
+	return bool(entry["aliases"]) or not entry["keep_original"]
+
+
+def read_aliases_file(path):
+	"""Phrases from a file made by write_aliases_file (or copied from aliases.json).
+
+	Raises ValueError when the file is not a phrase file or holds nothing usable."""
+	if os.path.getsize(path) > MAX_IMPORT_BYTES:
+		raise ValueError("The file is too large")
+	with open(path, encoding="utf-8-sig") as f:
+		raw = json.load(f)
+	cleaned = {cid: entry for cid, entry in clean_aliases(raw).items() if _worth_keeping(entry)}
+	if not cleaned:
+		raise ValueError("The file holds no phrases")
+	return cleaned
+
+
+def write_aliases_file(path, data):
+	"""Writes the phrases in data to a file other people can import. Returns the number of commands written."""
+	cleaned = {cid: entry for cid, entry in clean_aliases(data).items() if _worth_keeping(entry)}
+	with open(path, "w", encoding="utf-8") as f:
+		json.dump(cleaned, f, ensure_ascii=False, indent=1)
+	return len(cleaned)
+
+
+def merge_aliases(current, imported):
+	"""Adds imported phrases to current, in place; nothing the user already has is changed or removed.
+
+	A command that is new here also takes the imported "keep_original" choice; for a command the user
+	already has, their own choice stays. Returns the number of changes: phrases added plus commands
+	that were switched to "own phrases only"."""
+	changes = 0
+	for cid, entry in imported.items():
+		target = current.get(cid)
+		if target is None:
+			target = current[cid] = {"aliases": [], "keep_original": entry["keep_original"]}
+			if not entry["keep_original"]:
+				changes += 1
+		for phrase in entry["aliases"]:
+			if phrase not in target["aliases"]:
+				target["aliases"].append(phrase)
+				changes += 1
+	return changes
 
 
 def save_aliases(data):

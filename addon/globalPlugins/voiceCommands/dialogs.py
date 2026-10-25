@@ -6,6 +6,7 @@ import addonHandler
 import gui
 import ui
 import wx
+from logHandler import log
 
 from . import storage, userCommands
 from .text import lower, normalize
@@ -133,6 +134,14 @@ class PhraseEditorDialog(_BaseDialog):
 		# Translators: Label of the button that adds the typed phrase to the selected command.
 		self.addButton = wx.Button(self, label=_("Add phrase"))
 		main.Add(self.addButton, 0, wx.ALL, 6)
+		share = wx.BoxSizer(wx.HORIZONTAL)
+		# Translators: Label of the button that adds the phrases of a file to the phrase editor.
+		self.importButton = wx.Button(self, label=_("Import phrases..."))
+		# Translators: Label of the button that saves the phrases of the phrase editor to a file.
+		self.exportButton = wx.Button(self, label=_("Export phrases..."))
+		share.Add(self.importButton, 0, wx.ALL, 4)
+		share.Add(self.exportButton, 0, wx.ALL, 4)
+		main.Add(share, 0)
 		# Translators: Label of the button that saves the changes in the phrase editor.
 		main.Add(self._buttons(_("Save"), self._onSave), 0, wx.ALL | wx.ALIGN_RIGHT, 6)
 
@@ -143,6 +152,18 @@ class PhraseEditorDialog(_BaseDialog):
 		self.newPhrase.Bind(wx.EVT_TEXT_ENTER, self._onAdd)
 		self.deleteButton.Bind(wx.EVT_BUTTON, self._onDelete)
 		self.editButton.Bind(wx.EVT_BUTTON, self._onEdit)
+		self.importButton.Bind(wx.EVT_BUTTON, self._onImport)
+		self.exportButton.Bind(wx.EVT_BUTTON, self._onExport)
+		# Ctrl+S saves, Ctrl+I imports and Ctrl+E exports, wherever the focus is in this dialog.
+		# The ids are kept on the dialog so wx cannot hand them out again while it is open.
+		self._shortcutIds = []
+		shortcuts = []
+		for key, handler in ((ord("S"), self._onSave), (ord("I"), self._onImport), (ord("E"), self._onExport)):
+			shortcutId = wx.NewIdRef()
+			self._shortcutIds.append(shortcutId)
+			self.Bind(wx.EVT_MENU, handler, id=shortcutId.GetId())
+			shortcuts.append((wx.ACCEL_CTRL, key, shortcutId.GetId()))
+		self.SetAcceleratorTable(wx.AcceleratorTable(shortcuts))
 		self.SetSizerAndFit(main)
 		self._refreshCommands()
 		self.search.SetFocus()
@@ -239,6 +260,55 @@ class PhraseEditorDialog(_BaseDialog):
 			self.newPhrase.SetValue(text)
 			self.newPhrase.SetFocus()
 			self.newPhrase.SetInsertionPointEnd()
+
+	def _onImport(self, evt):
+		# Translators: Title of the dialog for choosing the file whose phrases are imported.
+		with wx.FileDialog(self, _("Import phrases"), wildcard=_("Phrase files") + " (*.json)|*.json",
+						   style=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST) as chooser:
+			if chooser.ShowModal() != wx.ID_OK:
+				return
+			path = chooser.GetPath()
+		try:
+			imported = storage.read_aliases_file(path)
+		except Exception:
+			log.debugWarning("Could not import phrases from %r" % path, exc_info=True)
+			# Translators: Spoken when the file chosen for importing phrases is not a phrase file.
+			ui.message(_("This is not a valid phrase file"))
+			return
+		changes = storage.merge_aliases(self.data, imported)
+		self._refreshCommands()
+		if not changes:
+			# Translators: Spoken when importing phrases changed nothing because the editor already has them all.
+			ui.message(_("Nothing new to import"))
+			return
+		# Translators: Spoken after phrases were imported into the phrase editor. {count} is the number of changes.
+		ui.message(ngettext(
+			"{count} change imported. Choose Save to keep it.",
+			"{count} changes imported. Choose Save to keep them.",
+			changes,
+		).format(count=changes))
+
+	def _onExport(self, evt):
+		if not any(v["aliases"] or not v["keep_original"] for v in self.data.values()):
+			# Translators: Spoken when the user wants to export phrases but there are none.
+			ui.message(_("There are no phrases to export"))
+			return
+		# Translators: Title of the dialog for choosing where the exported phrases are saved.
+		with wx.FileDialog(self, _("Export phrases"), defaultFile="voiceCommands-phrases.json",
+						   wildcard=_("Phrase files") + " (*.json)|*.json",
+						   style=wx.FD_SAVE | wx.FD_OVERWRITE_PROMPT) as chooser:
+			if chooser.ShowModal() != wx.ID_OK:
+				return
+			path = chooser.GetPath()
+		try:
+			storage.write_aliases_file(path, self.data)
+		except Exception:
+			log.exception("Could not export phrases to %r" % path)
+			# Translators: Spoken when the phrases could not be saved.
+			ui.message(_("Could not save"))
+			return
+		# Translators: Spoken after the phrases have been exported to a file.
+		ui.message(_("Phrases exported"))
 
 	def _onSave(self, evt):
 		cleaned = {k: v for k, v in self.data.items() if v["aliases"] or not v["keep_original"]}
