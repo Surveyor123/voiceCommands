@@ -62,6 +62,19 @@ Use the phrase editor to say commands your way. Assign a key to **Opens the dial
 
 Good phrases are short, two to four words, and sound different from each other. Your phrases take precedence over the original descriptions, and they work with the repeat feature and the list of candidates like any other command. The editor shows the commands that are available where you opened it, so open it inside an application to edit that application's commands.
 
+## Names the recognizer does not know
+
+The speech model has a fixed vocabulary and cannot learn new words. A command that contains a rare or foreign name, such as an artist or a song title, is therefore often heard as other words that sound similar. For example, "Zülfü Livaneli" may be written as "gül suyu divane izi". The add-on does try to match such text by sound, which works when the model writes something close to the name ("inti ilimani" for "Inti Illimani"), but not when it writes completely different words.
+
+When a command is not recognized, teach the add-on what the recognizer heard:
+
+1.  Say the command that failed.
+2.  Open the Tools menu, then Voice Commands, then **Teach the last spoken phrase**. You can also assign a key to **Opens a dialog that adds what the recognizer heard last as a spoken phrase of a command you choose** in the Input Gestures dialog.
+3.  The list at the top shows the texts the recognizer produced, all checked. Clear the ones that look wrong.
+4.  In **Search commands**, find the command, select it in the list below, and choose **Save phrases**.
+
+The checked texts are saved as phrases of that command, exactly as if you had typed them in the phrase editor, and you can edit or delete them there later. Because they are words the model already knows, the same pronunciation is found directly the next time. The list always shows what the recognizer heard the last time you spoke a command, whether or not that command was recognized, so open the dialog right after the one that failed. It is also a quick way to see what the recognizer made of your speech, with no need to look at the NVDA log. Commands you type in the command box are not included.
+
 ## Keeping commands out of voice control
 
 Some commands you never want to run by voice, for example because they are risky ("close window", "lock computer") or because they sound too much like others and keep getting picked by mistake. To exclude one:
@@ -86,7 +99,7 @@ The commands in the Input Gestures category **Emulated system keyboard keys** pr
 
 ## Built-in Windows commands
 
-NVDA's Input Gestures dialog only lists NVDA's own commands, so the add-on brings a set of system-wide Windows commands of its own. You say them like any other command, for example "show desktop", "show taskbar", "show system tray", "copy" or "paste". Each one simply presses the shortcut Windows already uses for it, so it works in any application.
+NVDA's Input Gestures dialog only lists NVDA's own commands, so the add-on brings a set of system-wide Windows commands of its own. You say them like any other command, for example "show desktop", "show taskbar", "show system tray", "copy" or "paste". Each one simply presses the shortcut Windows already uses for it, so it works in any application. Shortcuts that end in a letter (such as Windows+I) are pressed by the key's virtual key code rather than by the character, so they work with any keyboard layout, including Turkish.
 
 - **Desktop and shell:** show desktop, show taskbar, show system tray, open Start menu, open File Explorer, open Run dialog, open Windows settings, open Windows search, open quick settings, open notification center, open clipboard history, open emoji panel, start Windows voice typing, open display projection menu, take a screenshot, open Task Manager, lock computer.
 - **Windows and virtual desktops:** minimize all windows, restore minimized windows, show task view, switch to the previous window, close window, maximize window, minimize window, snap window to the left or right, next, previous, new and close virtual desktop.
@@ -124,6 +137,7 @@ All of these are in the Input Gestures dialog, in the Voice Commands category.
 | Opens the dialog for editing the phrases (aliases) used for commands                                                   | Opens the phrase editor.                                 |
 | Toggles lowering the volume of other applications while listening for a voice command                                  | Turns volume lowering on or off.                         |
 | Downloads the speech recognition model for the NVDA language                                                           | Starts the model download, after asking.                 |
+| Opens a dialog that adds what the recognizer heard last as a spoken phrase of a command you choose                     | Teaches the add-on a name it does not recognize.         |
 | Opens the dialog for adding your own commands: open a program, file, folder or web address, or press a key combination | Opens the dialog for your own commands.                  |
 | Opens the model folder in File Explorer                                                                                | For installing a model by hand.                          |
 
@@ -149,7 +163,7 @@ Stored in `%AppData%\nvda\voiceCommands`, or in the configuration folder of a po
 
 | Item                | Contents                                                                         |
 |---------------------|----------------------------------------------------------------------------------|
-| `aliases.json`      | Your phrases from the phrase editor.                                             |
+| `aliases.json`      | Your phrases from the phrase editor and the teach dialog.                        |
 | `userCommands.json` | Your own commands.                                                               |
 | `settings.json`     | Whether volume lowering is on, and whether to ask about the download at startup. |
 | `model\`            | The speech model.                                                                |
@@ -158,14 +172,15 @@ The values at the top of `globalPlugins/voiceCommands/__init__.py`, such as the 
 
 ## Troubleshooting
 
-| Problem                                   | What to check                                                                                                                                                                                                                                                                                                        |
-|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "Vosk model not found"                    | Install a model as described above. The message names the exact folder.                                                                                                                                                                                                                                              |
-| Nothing is recognized                     | Make sure the right microphone is the Windows default and not muted.                                                                                                                                                                                                                                                 |
-| The wrong command runs                    | Define a short phrase of your own for that command in the phrase editor.                                                                                                                                                                                                                                             |
-| "This command is not available right now" | The command belongs to another application. Say it while that application has focus.                                                                                                                                                                                                                                 |
-| Music or video still gets in the way      | Some applications do not expose an audio session that can be lowered. Pause them before listening.                                                                                                                                                                                                                   |
-| You want to see what was heard            | These lines are written only at the Debug logging level, so first set it in NVDA menu, Preferences, Settings, General, Logging level. Then open the NVDA log (NVDA+F1). "Voice command recognition" lines show what each recognizer heard, and "Voice command candidate" lines show how close the best matches were. |
+| Problem                                   | What to check                                                                                                                                                             |
+|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| "Vosk model not found"                    | Install a model as described above. The message names the exact folder.                                                                                                   |
+| Nothing is recognized                     | Make sure the right microphone is the Windows default and not muted.                                                                                                      |
+| A name is never recognized                | The model may write it as other words. Open **Teach the last spoken phrase** right after saying it to see what was heard, and save it as a phrase (see Names the recognizer does not know). |
+| The wrong command runs                    | Define a short phrase of your own for that command in the phrase editor.                                                                                                  |
+| "This command is not available right now" | The command belongs to another application. Say it while that application has focus.                                                                                      |
+| Music or video still gets in the way      | Some applications do not expose an audio session that can be lowered. Pause them before listening.                                                                        |
+| You want to see what was heard            | Open **Teach the last spoken phrase** right after speaking: its list shows the texts the recognizer produced. For more detail, set NVDA's log level to Debug (NVDA menu, Preferences, Settings, General, Log level), speak, and open the log (NVDA+F1): "Voice command recognition" lines show what each recognizer heard, and "Voice command candidate" lines show how close the best matches were. These lines are only written at the Debug level. |
 
 ## Privacy
 
@@ -177,4 +192,4 @@ The add-on is written in English and comes with a Turkish translation. To transl
 
 ## License
 
-Voice Commands is licensed under the GNU General Public License, version 2 or later (GPL-2.0-or-later), as NVDA's own license requires of plugins. The bundled third-party components and their licenses are listed in [THIRD_PARTY_NOTICES.md](addon/THIRD_PARTY_NOTICES.md).
+Voice Commands is licensed under the GNU General Public License, version 2.

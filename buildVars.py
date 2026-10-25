@@ -43,7 +43,7 @@ Initial release
 	addon_minimumNVDAVersion="2026.1.0",
 
 	# Last NVDA version supported/tested
-	addon_lastTestedNVDAVersion="2026.3.0",
+	addon_lastTestedNVDAVersion="2026.2.0",
 
 	# Add-on update channel (None denotes stable releases)
 	addon_updateChannel=None,
