@@ -341,8 +341,16 @@ class TeachDialog(_BaseDialog):
 		main = wx.BoxSizer(wx.VERTICAL)
 		# Translators: Label of the list of texts the recognizer heard; the checked ones are saved as phrases.
 		main.Add(wx.StaticText(self, label=_("Heard (check the ones to save as phrases):")), 0, wx.ALL, 6)
-		self.heardList = wx.CheckListBox(self, choices=heard, size=(560, 110))
-		self.heardList.SetCheckedItems(list(range(len(heard))))
+		# A native list view with check boxes: Windows itself reports the checked state, so every NVDA
+		# version announces it. wx.CheckListBox draws its boxes itself and relies on NVDA to add them.
+		self.heardList = wx.ListCtrl(self, style=wx.LC_REPORT | wx.LC_NO_HEADER | wx.LC_SINGLE_SEL, size=(560, 110))
+		self.heardList.EnableCheckBoxes(True)
+		self.heardList.InsertColumn(0, "", width=540)
+		for index, text in enumerate(heard):
+			self.heardList.InsertItem(index, text)
+			self.heardList.CheckItem(index, True)
+		self.heardList.Select(0)
+		self.heardList.Focus(0)
 		main.Add(self.heardList, 0, wx.ALL | wx.EXPAND, 6)
 		# Translators: Label of the edit field used to filter the list of commands.
 		main.Add(wx.StaticText(self, label=_("Search commands:")), 0, wx.ALL, 6)
@@ -372,7 +380,8 @@ class TeachDialog(_BaseDialog):
 		index = self.commandList.GetSelection()
 		if index < 0 or index >= len(self.visible):
 			return
-		phrases = [self.heardList.GetString(i) for i in self.heardList.GetCheckedItems()]
+		phrases = [self.heardList.GetItemText(i) for i in range(self.heardList.GetItemCount())
+				   if self.heardList.IsItemChecked(i)]
 		if not phrases:
 			# Translators: Spoken when the user saves without checking any heard text.
 			ui.message(_("Check at least one phrase"))
