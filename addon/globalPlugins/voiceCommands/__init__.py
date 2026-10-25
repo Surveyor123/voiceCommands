@@ -366,6 +366,20 @@ def run_phrase(text):
 		ui.message(_("No matching command. Closest: {command}").format(command=candidates[0][1]))
 
 
+_last_heard = []				# what the free recognizer heard last time, for "teach last phrase"
+
+
+def _remember_heard(alternatives):
+	"""Keeps the distinct texts the free recognizer produced, best first."""
+	global _last_heard
+	heard = []
+	for text in alternatives:
+		text = normalize(text)
+		if text and text not in heard:
+			heard.append(text)
+	_last_heard = heard
+
+
 def decide(grammar_text, alternatives, index):
 	"""Picks the command to run from the output of the two recognizers.
 
@@ -377,6 +391,7 @@ def decide(grammar_text, alternatives, index):
 	grammar_text = grammar_text.strip()
 	grammar_clean = bool(grammar_text) and "[unk]" not in grammar_text
 	free = alternatives[0] if alternatives else ""
+	_remember_heard(alternatives)
 	log.debug("Voice command recognition: grammar=%r free=%r" % (grammar_text, alternatives))
 	if grammar_clean:
 		normalized = normalize(grammar_text)
@@ -499,6 +514,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
 				(_("Command phrase editor..."), self._onToolsEditPhrases),
 				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
+				(_("Teach the last spoken phrase..."), self._onToolsTeach),
+				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
 				(_("My commands..."), self._onToolsEditUserCommands),
 				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
 				(_("Toggle volume lowering"), self._onToolsToggleDucking),
@@ -525,6 +542,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def _onToolsEditPhrases(self, evt):
 		self.script_editPhrases(None)
+
+	def _onToolsTeach(self, evt):
+		self.script_teachLastPhrase(None)
 
 	def _onToolsEditUserCommands(self, evt):
 		self.script_editUserCommands(None)
@@ -777,6 +797,21 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		# Translators: Spoken after the phrases have been saved in the phrase editor.
 		dialogs.PhraseEditorDialog(gui.mainFrame, commands, lambda: ui.message(_("Phrases saved"))).display()
+
+	@script(
+		# Translators: Description of a command in the Input Gestures dialog.
+		description=_("Opens a dialog that adds what the recognizer heard last as a spoken phrase of a command you choose"))
+	def script_teachLastPhrase(self, gesture):
+		if not _last_heard:
+			# Translators: Spoken when the user wants to teach a phrase but nothing has been recognized yet.
+			ui.message(_("Nothing heard yet. Say a command first"))
+			return
+		commands = list_commands()
+		if not commands:
+			ui.message(_("Could not get the list of commands"))
+			return
+		# Translators: Spoken after the phrases have been saved in the teach dialog.
+		dialogs.TeachDialog(gui.mainFrame, commands, list(_last_heard), lambda: ui.message(_("Phrases saved"))).display()
 
 	@script(
 		# Translators: Description of a command in the Input Gestures dialog.

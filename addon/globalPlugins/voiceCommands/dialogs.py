@@ -252,6 +252,76 @@ class PhraseEditorDialog(_BaseDialog):
 		self.on_done()
 
 
+class TeachDialog(_BaseDialog):
+	"""Adds what the recognizer heard as spoken phrases of a command the user picks.
+
+	The model cannot learn new words, but it always writes names it does not know as words it does
+	know ("Zülfü Livaneli" becomes "gül suyu divane izi"). Saving those words as a phrase puts them
+	into the speech grammar, so the same pronunciation finds the command next time.
+
+	commands: [(command_id, category, description)]; heard: [str] texts the recognizer produced."""
+	SINGLE_INSTANCE = True
+
+	def __init__(self, parent, commands, heard, on_done):
+		# Translators: Title of the dialog that teaches the add-on a spoken phrase.
+		super().__init__(parent, _("Teach the last spoken phrase"))
+		self.commands = commands
+		self.on_done = on_done
+		self.visible = []
+		main = wx.BoxSizer(wx.VERTICAL)
+		# Translators: Label of the list of texts the recognizer heard; the checked ones are saved as phrases.
+		main.Add(wx.StaticText(self, label=_("Heard (check the ones to save as phrases):")), 0, wx.ALL, 6)
+		self.heardList = wx.CheckListBox(self, choices=heard, size=(560, 110))
+		self.heardList.SetCheckedItems(list(range(len(heard))))
+		main.Add(self.heardList, 0, wx.ALL | wx.EXPAND, 6)
+		# Translators: Label of the edit field used to filter the list of commands.
+		main.Add(wx.StaticText(self, label=_("Search commands:")), 0, wx.ALL, 6)
+		self.search = wx.TextCtrl(self)
+		main.Add(self.search, 0, wx.ALL | wx.EXPAND, 6)
+		# Translators: Label of the list of commands the heard phrases can be added to.
+		main.Add(wx.StaticText(self, label=_("Command to run when you say this:")), 0, wx.ALL, 6)
+		self.commandList = wx.ListBox(self, size=(560, 170))
+		main.Add(self.commandList, 1, wx.ALL | wx.EXPAND, 6)
+		# Translators: Label of the button that saves the checked phrases for the selected command.
+		main.Add(self._buttons(_("Save phrases"), self._onSave), 0, wx.ALL | wx.ALIGN_RIGHT, 6)
+		self.search.Bind(wx.EVT_TEXT, lambda e: self._refresh())
+		self.commandList.Bind(wx.EVT_LISTBOX_DCLICK, self._onSave)
+		self.SetSizerAndFit(main)
+		self._refresh()
+		self.heardList.SetFocus()
+
+	def _refresh(self):
+		needle = _lower(self.search.GetValue().strip())
+		self.visible = [c for c in self.commands if not needle or needle in _lower(c[2] + " " + c[1])]
+		# Translators: Entry in the list of commands. {description} is the command description, {category} its category.
+		self.commandList.Set([_("{description} - {category}").format(description=c[2], category=c[1]) for c in self.visible])
+		if self.visible:
+			self.commandList.SetSelection(0)
+
+	def _onSave(self, evt):
+		index = self.commandList.GetSelection()
+		if index < 0 or index >= len(self.visible):
+			return
+		phrases = [self.heardList.GetString(i) for i in self.heardList.GetCheckedItems()]
+		if not phrases:
+			# Translators: Spoken when the user saves without checking any heard text.
+			ui.message(_("Check at least one phrase"))
+			return
+		data = storage.load_aliases()
+		entry = data.setdefault(self.visible[index][0], {"aliases": [], "keep_original": True})
+		for phrase in phrases:
+			if phrase not in entry["aliases"]:
+				entry["aliases"].append(phrase)
+		try:
+			storage.save_aliases(data)
+		except Exception:
+			# Translators: Spoken when the phrases could not be saved.
+			ui.message(_("Could not save"))
+			raise
+		self.Close()
+		self.on_done()
+
+
 class UserCommandEditDialog(wx.Dialog):
 	"""Adds or edits one user command: what to say, what it does, and its target."""
 
