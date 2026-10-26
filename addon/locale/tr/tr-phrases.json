@@ -1,0 +1,5316 @@
+{
+ "Akış listesini açar. - Akışları Oku": {
+  "aliases": [
+   "akışları göster"
+  ],
+  "keep_original": true
+ },
+ "Akışı günceller ve ilk haber başlığını okur. - Akışları Oku": {
+  "aliases": [
+   "akışı güncelle"
+  ],
+  "keep_original": false
+ },
+ "Mevcut haber başlığı ve linkini panoya kopyalar. - Akışları Oku": {
+  "aliases": [
+   "haber linkini kopyala"
+  ],
+  "keep_original": false
+ },
+ "Mevcut haberin başlığını okur. İki kez basılırsa başlık ve adres  panoya kopyalanır. - Akışları Oku": {
+  "aliases": [
+   "haber başlığı",
+   "haberi oku"
+  ],
+  "keep_original": false
+ },
+ "Mevcut haberin web adresini okur. İki kez basılırsa haberin girildiği web sayfası açılır. - Akışları Oku": {
+  "aliases": [
+   "haber linki"
+  ],
+  "keep_original": false
+ },
+ "Sonraki haber başlığını okur. - Akışları Oku": {
+  "aliases": [
+   "sıradaki haber"
+  ],
+  "keep_original": true
+ },
+ "Önceki haber başlığını okur. - Akışları Oku": {
+  "aliases": [
+   "bir önceki haber"
+  ],
+  "keep_original": true
+ },
+ "Okuyucu anahtarı. - Altyazı Okuyucu": {
+  "aliases": [
+   "altyazı okuyucu"
+  ],
+  "keep_original": true
+ },
+ "手動閱讀字幕 - Altyazı Okuyucu": {
+  "aliases": [
+   "altyazıyı oku"
+  ],
+  "keep_original": false
+ },
+ "Abre el entorno de Aprendizaje de Python con NVDA. - Aprendizaje de Python con NVDA": {
+  "aliases": [
+   "python ortamı"
+  ],
+  "keep_original": false
+ },
+ "Aktif uygulama modülüyle birlikte aktif uygulamanın dosya adını seslendirir - Araçlar": {
+  "aliases": [
+   "uygulama dosyası"
+  ],
+  "keep_original": false
+ },
+ "Braille çıktısını ve her bir braille karakteri için metin eşdeğerini görüntülemenizi sağlayan kayan bir pencere olan NVDA Braille görüntüleyiciyi açar/kapatır - Araçlar": {
+  "aliases": [
+   "braille görüntüleyici"
+  ],
+  "keep_original": false
+ },
+ "Copy the Version Collector report to the clipboard. Press twice to view it instead. - Araçlar": {
+  "aliases": [
+   "sürüm raporu"
+  ],
+  "keep_original": false
+ },
+ "Düzenleme imlecinin veya odağın üzerinde bulunduğu linkin yönlendirdiği web adresini okumak yerine bir pencerede gösterir. Braille kullananlar tarafından tercih edilebilir. - Araçlar": {
+  "aliases": [
+   "bağlantıyı pencerede göster"
+  ],
+  "keep_original": false
+ },
+ "Düzenleme imlecinin veya odağın üzerinde bulunduğu linkin yönlendirdiği web adresini okur. İki kez basıldığında daha kolay incelenebilmesi için web adresini bir pencerede gösterir. - Araçlar": {
+  "aliases": [
+   "bağlantı adresi"
+  ],
+  "keep_original": false
+ },
+ "NVDA için hazırlanmış eklenti paketlerinin kurulup yönetilebilmesi için NVDA Eklenti Mağazası'nı çalıştırır - Araçlar": {
+  "aliases": [
+   "eklenti mağazası"
+  ],
+  "keep_original": false
+ },
+ "NVDA kullanıcı konfigürasyon  dizinini açar. - Araçlar": {
+  "aliases": [
+   "ayar klasörü"
+  ],
+  "keep_original": false
+ },
+ "NVDA'nın konuştuğu metinlerin aktığı pencereyi, NVDA konuşma görüntüleyici, açıp kapatır - Araçlar": {
+  "aliases": [
+   "konuşma görüntüleyici"
+  ],
+  "keep_original": false
+ },
+ "Odaklandığınız uygulamanın adını, sürümünü ve mimarisini seslendirir. Bilgileri panoya kopyalamak için iki kez basın. Yalnızca sürüm numarasını kopyalamak için üç kez basın. Windows sürümünü almak için Masaüstünde kullanın. - Araçlar": {
+  "aliases": [
+   "uygulama sürümü"
+  ],
+  "keep_original": false
+ },
+ "Python konsolu etkinleştirir. öncelikle geliştiriciler için faydalı - Araçlar": {
+  "aliases": [
+   "python konsolu"
+  ],
+  "keep_original": false
+ },
+ "Tuşa tekrar basarak mevcut günlüğün sonunu panoya kopyalanacak günlük parçasının başlangıcı olarak ayarlayın. - Araçlar": {
+  "aliases": [
+   "günlük başlangıcı"
+  ],
+  "keep_original": false
+ },
+ "Uygulama modüllerini ve global pluginleri  NVDA'yı yeniden başlatmadan yükler,. geliştiriciler için faydalı olabilir - Araçlar": {
+  "aliases": [
+   "eklentileri yeniden yükle"
+  ],
+  "keep_original": false
+ },
+ "WX GUI denetim aracını açar. GUI bileşenlerinin durumu hakkında daha fazla bilgi almak için kullanılır. - Araçlar": {
+  "aliases": [
+   "arayüz denetçisi"
+  ],
+  "keep_original": false
+ },
+ "Özellikle geliştiricilerin faydalanması için, mevcut nesne hakkında log tutar ve bu bilginin incelenmesi için log göstericiyi açar. - Araçlar": {
+  "aliases": [
+   "nesneyi günlüğe yaz"
+  ],
+  "keep_original": false
+ },
+ "Alıntı bloklarının bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "alıntı bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Açıklamaların bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "açıklama bildirimi"
+  ],
+  "keep_original": true
+ },
+ "Başlıkların bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "başlık bildirimi"
+  ],
+  "keep_original": true
+ },
+ "Editör düzenlemelerinin bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "düzenleme bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Figürlerin ve resim yazılarının seslendirilmesini açar/kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "figür bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Grafik bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "grafik bildirimi"
+  ],
+  "keep_original": true
+ },
+ "Gruplandırma bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "grup bildirimi"
+  ],
+  "keep_original": true
+ },
+ "Hiza bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "hiza bildirimi"
+  ],
+  "keep_original": true
+ },
+ "Hücre sınırı bildirim ayarları arasında geçiş yapar - Belge biçimlendirme": {
+  "aliases": [
+   "hücre sınırı"
+  ],
+  "keep_original": false
+ },
+ "Link türünün seslendirilmesini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "link türü bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Linklerin bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "link bildirimi"
+  ],
+  "keep_original": true
+ },
+ "Listelerin bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "liste bildirimi"
+  ],
+  "keep_original": true
+ },
+ "Makalelerin bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "makale bildirimi"
+  ],
+  "keep_original": true
+ },
+ "Paragraf girintisinin bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "paragraf girintisi"
+  ],
+  "keep_original": false
+ },
+ "Renklerin bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "renk bildirimi"
+  ],
+  "keep_original": true
+ },
+ "Satır aralığı bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "satır aralığı"
+  ],
+  "keep_original": false
+ },
+ "Satır girintilerinin bildirim seçenekleri arasında geçiş yapar - Belge biçimlendirme": {
+  "aliases": [
+   "satır girintisi"
+  ],
+  "keep_original": false
+ },
+ "Satır girintilerinin bildiriminde boş satırların yok sayılması ayarını açar/kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "boş satırları atla"
+  ],
+  "keep_original": false
+ },
+ "Satır numaralarının bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "satır numarası"
+  ],
+  "keep_original": false
+ },
+ "Sayfa değişiminin bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "sayfa bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Stil değişikliklerinin bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "stil bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Sınır imleri bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "sınır imi bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Tablo hücre koordinatlarının bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "hücre koordinatları"
+  ],
+  "keep_original": false
+ },
+ "Tablo satır ve sütun başlık bildirimi modları arasında geçiş yapar - Belge biçimlendirme": {
+  "aliases": [
+   "tablo başlıkları"
+  ],
+  "keep_original": false
+ },
+ "Tabloların bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "tablo bildirimi"
+  ],
+  "keep_original": true
+ },
+ "Tıklanabilir olup olmadığı bilgisini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "tıklanabilir bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Vurgu bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "vurgu bildirimi"
+  ],
+  "keep_original": true
+ },
+ "Vurgulanan metnin bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "vurgulu metin"
+  ],
+  "keep_original": false
+ },
+ "Yazı boyutunun bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "yazı boyutu"
+  ],
+  "keep_original": false
+ },
+ "Yazı tipi özniteliklerini bildirme ayarının konuşma, braille, konuşma ve braille ve kapalı seçenekleri arasında geçiş yapar. - Belge biçimlendirme": {
+  "aliases": [
+   "öznitelik bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Yazı tipinin bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "yazı tipi"
+  ],
+  "keep_original": false
+ },
+ "Yazım bveya dilbilgisi hatalarının bildirilmesiyle ilgili ayarlar arasında geçiş yapar - Belge biçimlendirme": {
+  "aliases": [
+   "yazım hatası bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Yazım veya dilbilgisi hatalarının braille olarak bildirilmesini açar/kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "braille yazım hatası"
+  ],
+  "keep_original": false
+ },
+ "Çerçeve bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "çerçeve bildirimi"
+  ],
+  "keep_original": true
+ },
+ "Üst ve alt simge bildirimini açıp kapatır - Belge biçimlendirme": {
+  "aliases": [
+   "üst alt simge"
+  ],
+  "keep_original": false
+ },
+ "Braille ekranın sistem odağını mı yoksa inceleme imlecini mi takip edeceğiyle ilgili ayarı değiştirir - Braille": {
+  "aliases": [
+   "braille takibi"
+  ],
+  "keep_original": false
+ },
+ "Braille ekranını bir sonraki satıra taşır - Braille": {
+  "aliases": [
+   "braille sonraki satır"
+  ],
+  "keep_original": false
+ },
+ "Braille ekranını bir önceki satıra taşır - Braille": {
+  "aliases": [
+   "braille önceki satır"
+  ],
+  "keep_original": false
+ },
+ "Braille ekranını geriye alır - Braille": {
+  "aliases": [
+   "braille geri kaydır"
+  ],
+  "keep_original": true
+ },
+ "Braille ekranını ileri alır - Braille": {
+  "aliases": [
+   "braille ileri kaydır"
+  ],
+  "keep_original": true
+ },
+ "Braille girişini çevirir - Braille": {
+  "aliases": [
+   "braille girişi çevir"
+  ],
+  "keep_original": true
+ },
+ "Braille ile satır veya paragraflar arasında dolaşırken konuşmayı açıp kapatır - Braille": {
+  "aliases": [
+   "braille satır konuşması"
+  ],
+  "keep_original": false
+ },
+ "Braille imleci açıp kapatır - Braille": {
+  "aliases": [
+   "braille imleci"
+  ],
+  "keep_original": true
+ },
+ "Braille imleç şekilleri arasında dolaşır - Braille": {
+  "aliases": [
+   "braille imleç şekli"
+  ],
+  "keep_original": false
+ },
+ "Braille kipini değiştirir - Braille": {
+  "aliases": [
+   "braille kipi"
+  ],
+  "keep_original": true
+ },
+ "Braille mesaj gösterimi kipleri arasında dolaşır - Braille": {
+  "aliases": [
+   "braille mesaj kipi"
+  ],
+  "keep_original": false
+ },
+ "Braille otomatik kaydırma hızını artırır - Braille": {
+  "aliases": [
+   "braille hızı artır"
+  ],
+  "keep_original": false
+ },
+ "Braille otomatik kaydırma hızını azaltır - Braille": {
+  "aliases": [
+   "braille hızı azalt"
+  ],
+  "keep_original": false
+ },
+ "Braille seçim gösterimi şekilleri arasında dolaşır - Braille": {
+  "aliases": [
+   "braille seçim şekli"
+  ],
+  "keep_original": false
+ },
+ "Braille unikod normalleştirme kipleri arasında geçiş yapar - Braille": {
+  "aliases": [
+   "braille unikod kipi"
+  ],
+  "keep_original": false
+ },
+ "Bu braille hücresi altındaki metnin biçimlendirme bilgisini gösterir - Braille": {
+  "aliases": [
+   "braille hücre biçimi"
+  ],
+  "keep_original": false
+ },
+ "En son girilen Braille hücreyi ya da karakteri siler - Braille": {
+  "aliases": [
+   "braille hücresini sil"
+  ],
+  "keep_original": false
+ },
+ "Geçerli odağa Braille ekranı taşır - Braille": {
+  "aliases": [
+   "braille odağa git"
+  ],
+  "keep_original": false
+ },
+ "Herhangi Braille girişini çevirir ve enter tuşuna basar - Braille": {
+  "aliases": [
+   "braille girişi gönder"
+  ],
+  "keep_original": false
+ },
+ "Kabartma klavye üzerinden braille alfabesi girişi yapar - Braille": {
+  "aliases": [
+   "braille klavye girişi"
+  ],
+  "keep_original": false
+ },
+ "Otomatik braille kaydırmayı açar/kapatır - Braille": {
+  "aliases": [
+   "braille otomatik kaydırma"
+  ],
+  "keep_original": true
+ },
+ "PC klavyesinden braille girişini açıp kapatır. - Braille": {
+  "aliases": [
+   "klavye braille girişi"
+  ],
+  "keep_original": false
+ },
+ "İlk braille hücresinden son braille hücresine kadar olan metni seçer - Braille": {
+  "aliases": [
+   "braille satırını seç"
+  ],
+  "keep_original": false
+ },
+ "İmleci Bu braille hücresine  taşır ya da hücrenin üzerindeki nesneyi etkinleştirir - Braille": {
+  "aliases": [
+   "braille hücreyi etkinleştir"
+  ],
+  "keep_original": false
+ },
+ "İmleç braille ekran tuşlarıyla yönlendirilidiğinde imleç altındaki karakterin seslendirilmesi ayarını açar/kapatır - Braille": {
+  "aliases": [
+   "braille karakter seslendirme"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini taşırken sistem düzenleme imlecini hareket ettirme ayarları arasında geçiş yapar - Braille": {
+  "aliases": [
+   "imleç taşıma ayarı"
+  ],
+  "keep_original": false
+ },
+ "İçerik bilgisinin Braille olarak gösterilme biçimini değiştir - Braille": {
+  "aliases": [
+   "braille içerik bilgisi"
+  ],
+  "keep_original": false
+ },
+ "BrowserNav OtoTık yer imlerine göre OtoTık2; yer imlerinin listesi için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "oto tık iki"
+  ],
+  "keep_original": false
+ },
+ "BrowserNav OtoTık yer imlerine göre OtoTık3; yer imlerinin listesi için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "oto tık üç"
+  ],
+  "keep_original": false
+ },
+ "BrowserNav OtoTık yer imlerine göre OtoTık; yer imlerinin listesi için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "oto tık"
+  ],
+  "keep_original": false
+ },
+ "BrowserNav açılır menüsünü göster. - BrowserNav": {
+  "aliases": [
+   "gezgin menüsü"
+  ],
+  "keep_original": true
+ },
+ "BrowserNav rotorunu ayarla - BrowserNav": {
+  "aliases": [
+   "gezgin rotoru"
+  ],
+  "keep_original": true
+ },
+ "BrowserNav ÇabukAtlama yer imlerine göre sonraki ÇabukAtlama; yer imlerinin listesi için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "sonraki çabuk atlama"
+  ],
+  "keep_original": false
+ },
+ "BrowserNav ÇabukAtlama yer imlerine göre önceki ÇabukAtlama; yer imlerinin listesi için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "önceki çabuk atlama"
+  ],
+  "keep_original": false
+ },
+ "Deneysel: mevcut belgede imlecin önceki konumuna geri dön - BrowserNav": {
+  "aliases": [
+   "önceki konuma dön"
+  ],
+  "keep_original": false
+ },
+ "Paragraf navigasyonu için Dağınıklık geçişini değiştir - BrowserNav": {
+  "aliases": [
+   "paragraf dağınıklığı"
+  ],
+  "keep_original": false
+ },
+ "QuickSpeak  according to BrowserNav QuickSpeak bookmark; please check browserNav configuration panel for the list of bookmarks. - BrowserNav": {
+  "aliases": [
+   "yer imi konuşması"
+  ],
+  "keep_original": false
+ },
+ "Satır navigasyonu için Dağınıklık geçişini değiştir - BrowserNav": {
+  "aliases": [
+   "satır dağınıklığı"
+  ],
+  "keep_original": false
+ },
+ "Sonraki hiyerarşik yer imine atla 1 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi bir ileri"
+  ],
+  "keep_original": false
+ },
+ "Sonraki hiyerarşik yer imine atla 10 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi on ileri"
+  ],
+  "keep_original": false
+ },
+ "Sonraki hiyerarşik yer imine atla 2 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi iki ileri"
+  ],
+  "keep_original": false
+ },
+ "Sonraki hiyerarşik yer imine atla 3 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi üç ileri"
+  ],
+  "keep_original": false
+ },
+ "Sonraki hiyerarşik yer imine atla 4 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi dört ileri"
+  ],
+  "keep_original": false
+ },
+ "Sonraki hiyerarşik yer imine atla 5 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi beş ileri"
+  ],
+  "keep_original": false
+ },
+ "Sonraki hiyerarşik yer imine atla 6 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi altı ileri"
+  ],
+  "keep_original": false
+ },
+ "Sonraki hiyerarşik yer imine atla 7 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi yedi ileri"
+  ],
+  "keep_original": false
+ },
+ "Sonraki hiyerarşik yer imine atla 8 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi sekiz ileri"
+  ],
+  "keep_original": false
+ },
+ "Sonraki hiyerarşik yer imine atla 9 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi dokuz ileri"
+  ],
+  "keep_original": false
+ },
+ "Sonraki hiyerarşik yer imine atla ; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi ileri"
+  ],
+  "keep_original": false
+ },
+ "Speak current URL. - BrowserNav": {
+  "aliases": [
+   "adres oku"
+  ],
+  "keep_original": false
+ },
+ "Tarayıcıda bir sonraki ebeveyne gider - BrowserNav": {
+  "aliases": [
+   "sonraki ebeveyn"
+  ],
+  "keep_original": false
+ },
+ "Tarayıcıda bir sonraki kardeşe gider - BrowserNav": {
+  "aliases": [
+   "sonraki kardeş"
+  ],
+  "keep_original": false
+ },
+ "Tarayıcıda bir sonraki çocuğa gider - BrowserNav": {
+  "aliases": [
+   "sonraki çocuk"
+  ],
+  "keep_original": false
+ },
+ "Tarayıcıda bir önceki kardeşe gider - BrowserNav": {
+  "aliases": [
+   "önceki kardeş"
+  ],
+  "keep_original": false
+ },
+ "Tarayıcıda bir önceki çocuğa gider - BrowserNav": {
+  "aliases": [
+   "önceki çocuk"
+  ],
+  "keep_original": false
+ },
+ "Tüm olası öğeleri geri kaydır - BrowserNav": {
+  "aliases": [
+   "hepsini geri kaydır"
+  ],
+  "keep_original": false
+ },
+ "Tüm olası öğeleri ileri kaydır - BrowserNav": {
+  "aliases": [
+   "hepsini ileri kaydır"
+  ],
+  "keep_original": false
+ },
+ "Yarı erişilebilir yazı alanından son metni panoya kopyala. - BrowserNav": {
+  "aliases": [
+   "son metni kopyala"
+  ],
+  "keep_original": false
+ },
+ "Yarı erişilebilir yazı alanını düzenle. - BrowserNav": {
+  "aliases": [
+   "yazı alanını düzenle"
+  ],
+  "keep_original": false
+ },
+ "Önceki hiyerarşik yer imine atla 1 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi bir geri"
+  ],
+  "keep_original": false
+ },
+ "Önceki hiyerarşik yer imine atla 10 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi on geri"
+  ],
+  "keep_original": false
+ },
+ "Önceki hiyerarşik yer imine atla 2 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi iki geri"
+  ],
+  "keep_original": false
+ },
+ "Önceki hiyerarşik yer imine atla 3 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi üç geri"
+  ],
+  "keep_original": false
+ },
+ "Önceki hiyerarşik yer imine atla 4 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi dört geri"
+  ],
+  "keep_original": false
+ },
+ "Önceki hiyerarşik yer imine atla 5 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi beş geri"
+  ],
+  "keep_original": false
+ },
+ "Önceki hiyerarşik yer imine atla 6 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi altı geri"
+  ],
+  "keep_original": false
+ },
+ "Önceki hiyerarşik yer imine atla 7 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi yedi geri"
+  ],
+  "keep_original": false
+ },
+ "Önceki hiyerarşik yer imine atla 8 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi sekiz geri"
+  ],
+  "keep_original": false
+ },
+ "Önceki hiyerarşik yer imine atla 9 düzeyinde; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi dokuz geri"
+  ],
+  "keep_original": false
+ },
+ "Önceki hiyerarşik yer imine atla ; hiyerarşik yer imi yapılandırması için lütfen browserNav konfigürasyon panelini kontrol edin. - BrowserNav": {
+  "aliases": [
+   "hiyerarşi geri"
+  ],
+  "keep_original": false
+ },
+ "Büyüteci açar/kapatır - Büyüteç": {
+  "aliases": [
+   "büyüteç aç",
+   "büyüteci kapat"
+  ],
+  "keep_original": true
+ },
+ "Büyüteç fare takibini aç/kapat - Büyüteç": {
+  "aliases": [
+   "büyüteç fare takibi"
+  ],
+  "keep_original": true
+ },
+ "Büyüteç inceleme imleci takibini aç/kapat - Büyüteç": {
+  "aliases": [
+   "büyüteç inceleme takibi"
+  ],
+  "keep_original": false
+ },
+ "Büyüteç nesne sunumu takibini aç/kapat - Büyüteç": {
+  "aliases": [
+   "büyüteç nesne takibi"
+  ],
+  "keep_original": false
+ },
+ "Büyüteç sistem odağı takibini aç/kapat - Büyüteç": {
+  "aliases": [
+   "büyüteç odak takibi"
+  ],
+  "keep_original": false
+ },
+ "Büyütme düzeyini artır - Büyüteç": {
+  "aliases": [
+   "büyütmeyi artır"
+  ],
+  "keep_original": true
+ },
+ "Büyütme düzeyini azalt - Büyüteç": {
+  "aliases": [
+   "büyütmeyi azalt"
+  ],
+  "keep_original": true
+ },
+ "Büyütülmüş görünümü alt kenara kaydır - Büyüteç": {
+  "aliases": [
+   "büyüteç alt kenar"
+  ],
+  "keep_original": false
+ },
+ "Büyütülmüş görünümü aşağı kaydır - Büyüteç": {
+  "aliases": [
+   "büyüteç aşağı kaydır"
+  ],
+  "keep_original": true
+ },
+ "Büyütülmüş görünümü sağ kenara kaydır - Büyüteç": {
+  "aliases": [
+   "büyüteç sağ kenar"
+  ],
+  "keep_original": false
+ },
+ "Büyütülmüş görünümü sağa kaydır - Büyüteç": {
+  "aliases": [
+   "büyüteç sağa kaydır"
+  ],
+  "keep_original": true
+ },
+ "Büyütülmüş görünümü sol kenara kaydır - Büyüteç": {
+  "aliases": [
+   "büyüteç sol kenar"
+  ],
+  "keep_original": false
+ },
+ "Büyütülmüş görünümü sola kaydır - Büyüteç": {
+  "aliases": [
+   "büyüteç sola kaydır"
+  ],
+  "keep_original": true
+ },
+ "Büyütülmüş görünümü yukarı kaydır - Büyüteç": {
+  "aliases": [
+   "büyüteç yukarı kaydır"
+  ],
+  "keep_original": true
+ },
+ "Büyütülmüş görünümü üst kenara kaydır - Büyüteç": {
+  "aliases": [
+   "büyüteç üst kenar"
+  ],
+  "keep_original": false
+ },
+ "Fare imlecini büyütülmüş görünümün ortasına taşır - Büyüteç": {
+  "aliases": [
+   "fareyi ortala"
+  ],
+  "keep_original": false
+ },
+ "Renk filtreleri arasında geçiş yap - Büyüteç": {
+  "aliases": [
+   "büyüteç renk filtresi"
+  ],
+  "keep_original": false
+ },
+ "Takip kipleri arasında geçiş yap - Büyüteç": {
+  "aliases": [
+   "büyüteç takip kipi"
+  ],
+  "keep_original": false
+ },
+ "Tüm büyüteç takip ayarlarını aç/kapat - Büyüteç": {
+  "aliases": [
+   "büyüteç tüm takip"
+  ],
+  "keep_original": false
+ },
+ "Tüm ekranın genel bakışını geçici olarak göster - Büyüteç": {
+  "aliases": [
+   "genel bakış göster"
+  ],
+  "keep_original": false
+ },
+ "Mevcut cümleyi oku. - Cümle Dolaşımı": {
+  "aliases": [
+   "cümleyi oku"
+  ],
+  "keep_original": true
+ },
+ "Mevcut ifadeyi oku. - Cümle Dolaşımı": {
+  "aliases": [
+   "ifadeyi oku"
+  ],
+  "keep_original": true
+ },
+ "Sonraki cümleye git. - Cümle Dolaşımı": {
+  "aliases": [
+   "sonraki cümle"
+  ],
+  "keep_original": true
+ },
+ "Sonraki ifadeye git. - Cümle Dolaşımı": {
+  "aliases": [
+   "sonraki ifade"
+  ],
+  "keep_original": true
+ },
+ "Önceki cümleye git. - Cümle Dolaşımı": {
+  "aliases": [
+   "önceki cümle"
+  ],
+  "keep_original": true
+ },
+ "Önceki ifadeye git. - Cümle Dolaşımı": {
+  "aliases": [
+   "önceki ifade"
+  ],
+  "keep_original": true
+ },
+ "Odaktaki öğenin detaylarını göster - Detaylı Öğe Bilgisi": {
+  "aliases": [
+   "öğe ayrıntıları"
+  ],
+  "keep_original": true
+ },
+ "Dokunmatik etkileşim desteğini açıp kapatır - Dokunmatik ekran": {
+  "aliases": [
+   "dokunmatik desteği"
+  ],
+  "keep_original": false
+ },
+ "Geçerli dokunma konumunda sağ fare düğmesini tıklatır. Bu genellikle bir bağlam menüsünü etkinleştirmek için kullanılır. - Dokunmatik ekran": {
+  "aliases": [
+   "dokunmatik sağ tık"
+  ],
+  "keep_original": false
+ },
+ "Mevcut dokunma kipleri arasında geçiş yapar - Dokunmatik ekran": {
+  "aliases": [
+   "dokunma kipi"
+  ],
+  "keep_original": false
+ },
+ "Parmağınızın altındaki nesne ve içeriği doğrudan seslendirir - Dokunmatik ekran": {
+  "aliases": [
+   "parmak altını oku"
+  ],
+  "keep_original": false
+ },
+ "Parmağınızın konumu değiştiğinde yeni nesne ve içeriği seslendirir - Dokunmatik ekran": {
+  "aliases": [
+   "parmak takibi"
+  ],
+  "keep_original": false
+ },
+ "Dosya Arşivim. - Dosya Arşivim": {
+  "aliases": [
+   "arşivimi aç"
+  ],
+  "keep_original": true
+ },
+ "Dosya Transfer penceresini aç - Dosya Transfer": {
+  "aliases": [
+   "dosya transferi"
+  ],
+  "keep_original": true
+ },
+ "Speak current heading level. - Earcons and Speech Rules": {
+  "aliases": [
+   "başlık düzeyi"
+  ],
+  "keep_original": false
+ },
+ "Toggle Earcons and Speech Rules. - Earcons and Speech Rules": {
+  "aliases": [
+   "ses ipuçları"
+  ],
+  "keep_original": false
+ },
+ "Toggle state verbosity reporting. - Earcons and Speech Rules": {
+  "aliases": [
+   "durum konuşması"
+  ],
+  "keep_original": false
+ },
+ "Geçerli hücrenin içeriğini kopyalar. - EasyTableCopy": {
+  "aliases": [
+   "hücreyi kopyala"
+  ],
+  "keep_original": true
+ },
+ "Geçerli satırı ya da liste öğesini işaretler veya işareti kaldırır. - EasyTableCopy": {
+  "aliases": [
+   "satırı işaretle"
+  ],
+  "keep_original": false
+ },
+ "Geçerli sütunu işaretler veya işareti kaldırır. - EasyTableCopy": {
+  "aliases": [
+   "sütunu işaretle"
+  ],
+  "keep_original": false
+ },
+ "Kopyalama menüsünü açar (Web) veya listeyi kopyalar (Masaüstü). - EasyTableCopy": {
+  "aliases": [
+   "kopyalama menüsü"
+  ],
+  "keep_original": false
+ },
+ "Mevcut listeyi (biçimlendirmeyle birlikte) kopyalar. - EasyTableCopy": {
+  "aliases": [
+   "listeyi biçimli kopyala"
+  ],
+  "keep_original": false
+ },
+ "Mevcut listeyi kopyalar (düz metin). - EasyTableCopy": {
+  "aliases": [
+   "listeyi kopyala"
+  ],
+  "keep_original": false
+ },
+ "Mevcut tablo satırını kopyalar. - EasyTableCopy": {
+  "aliases": [
+   "satırı kopyala"
+  ],
+  "keep_original": true
+ },
+ "Mevcut tablo sütununu kopyalar. - EasyTableCopy": {
+  "aliases": [
+   "sütunu kopyala"
+  ],
+  "keep_original": true
+ },
+ "Mevcut tablodan ikinci sütunu kopyalar (yalnızca masaüstü). - EasyTableCopy": {
+  "aliases": [
+   "ikinci sütunu kopyala"
+  ],
+  "keep_original": false
+ },
+ "Mevcut tablodan ilk sütunu kopyalar (yalnızca masaüstü). - EasyTableCopy": {
+  "aliases": [
+   "birinci sütunu kopyala"
+  ],
+  "keep_original": false
+ },
+ "Mevcut tablodan ilk ve ikinci sütunu kopyalar (yalnızca masaüstü). - EasyTableCopy": {
+  "aliases": [
+   "ilk iki sütun"
+  ],
+  "keep_original": false
+ },
+ "Mevcut tablodan ilk ve üçüncü sütunu kopyalar (yalnızca masaüstü). - EasyTableCopy": {
+  "aliases": [
+   "birinci üçüncü sütun"
+  ],
+  "keep_original": false
+ },
+ "Mevcut tablodan ilk üç sütunu kopyalar (yalnızca masaüstü). - EasyTableCopy": {
+  "aliases": [
+   "ilk üç sütun"
+  ],
+  "keep_original": false
+ },
+ "Mevcut tablodan üçüncü sütunu kopyalar (yalnızca masaüstü). - EasyTableCopy": {
+  "aliases": [
+   "üçüncü sütunu kopyala"
+  ],
+  "keep_original": false
+ },
+ "Tablo bilgilerini seslendirir. - EasyTableCopy": {
+  "aliases": [
+   "tablo bilgisi"
+  ],
+  "keep_original": true
+ },
+ "Tüm işaretli seçimleri temizler. - EasyTableCopy": {
+  "aliases": [
+   "işaretleri temizle"
+  ],
+  "keep_original": true
+ },
+ "Tüm tabloyu kopyalar (standart kopyalama). - EasyTableCopy": {
+  "aliases": [
+   "tabloyu kopyala"
+  ],
+  "keep_original": false
+ },
+ "Tüm tabloyu kopyalar (yeniden oluşturulmuş). - EasyTableCopy": {
+  "aliases": [
+   "tabloyu yeniden oluştur"
+  ],
+  "keep_original": false
+ },
+ "Tüm tabloyu kopyalar (yeniden oluşturulmuş, sütunlar arasında dikey çizgilerle). - EasyTableCopy": {
+  "aliases": [
+   "tabloyu çizgili kopyala"
+  ],
+  "keep_original": false
+ },
+ "İşaretli liste öğelerini kopyalar. - EasyTableCopy": {
+  "aliases": [
+   "işaretli listeyi kopyala"
+  ],
+  "keep_original": true
+ },
+ "İşaretli satırları tablo yapısı olmadan düz metin olarak kopyalar (yalnızca web). - EasyTableCopy": {
+  "aliases": [
+   "işaretli düz metin"
+  ],
+  "keep_original": false
+ },
+ "İşaretli tablo satırlarını veya sütunlarını kopyalar. - EasyTableCopy": {
+  "aliases": [
+   "işaretli tabloyu kopyala"
+  ],
+  "keep_original": false
+ },
+ "Ekran Yakalama sihirbazını başlatır. Bir klavye komutları katmanı etkinleştirilecektir. Ekran görüntüsü almak için enter, iptal etmek için ise Escape tuşunu kullanın. Daha fazla bilgi için belgelere bakın. - Ekran Yakalama Sihirbazı": {
+  "aliases": [
+   "ekran yakalama"
+  ],
+  "keep_original": false
+ },
+ "Klavye komut katmanını atlayarak doğrudan geçerli pencerenin ekran görüntüsünü yakalar - Ekran Yakalama Sihirbazı": {
+  "aliases": [
+   "pencere görüntüsü al"
+  ],
+  "keep_original": false
+ },
+ "Klavye komut katmanını atlayarak doğrudan odaklanılan nesnenin ekran görüntüsünü alır - Ekran Yakalama Sihirbazı": {
+  "aliases": [
+   "nesne görüntüsü al"
+  ],
+  "keep_original": false
+ },
+ "Klavye komut katmanını atlayarak doğrudan tam bir ekran görüntüsü yakalar - Ekran Yakalama Sihirbazı": {
+  "aliases": [
+   "tam ekran görüntüsü"
+  ],
+  "keep_original": false
+ },
+ "Son ekran yakalama dosyasını varsayılan uygulamada açar. - Ekran Yakalama Sihirbazı": {
+  "aliases": [
+   "son görüntüyü aç"
+  ],
+  "keep_original": false
+ },
+ "Yakalanan ekran görüntülerinin depolandığı klasörü açar. - Ekran Yakalama Sihirbazı": {
+  "aliases": [
+   "görüntü klasörünü aç"
+  ],
+  "keep_original": false
+ },
+ "Fare hareket ettiğinde ne kadar metin seslendirileceğini değiştirir - Fare": {
+  "aliases": [
+   "fare konuşma miktarı"
+  ],
+  "keep_original": false
+ },
+ "Fare hareketlerinde koordinatların ses çalınarak bildirilmesi ayarını açar/kapatır - Fare": {
+  "aliases": [
+   "fare koordinat sesi"
+  ],
+  "keep_original": false
+ },
+ "Fare hareketlerinin bildirimiyle ilgili ayarı açıp kapatır - Fare": {
+  "aliases": [
+   "fare bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Fare imlecini nesne sunucusunun konumuna taşır - Fare": {
+  "aliases": [
+   "fareyi nesneye götür"
+  ],
+  "keep_original": false
+ },
+ "Mevcut fare konumuna bir kez sağ tıklar - Fare": {
+  "aliases": [
+   "sağ tıkla"
+  ],
+  "keep_original": false
+ },
+ "Mevcut fare konumuna bir kez sol tıklar - Fare": {
+  "aliases": [
+   "sol tıkla",
+   "fareyle tıkla"
+  ],
+  "keep_original": false
+ },
+ "Mevcut fare konumunda aşağı kaydırır - Fare": {
+  "aliases": [
+   "fare aşağı kaydır"
+  ],
+  "keep_original": false
+ },
+ "Mevcut fare konumunda sağa kaydırır - Fare": {
+  "aliases": [
+   "fare sağa kaydır"
+  ],
+  "keep_original": false
+ },
+ "Mevcut fare konumunda sola kaydırır - Fare": {
+  "aliases": [
+   "fare sola kaydır"
+  ],
+  "keep_original": false
+ },
+ "Mevcut fare konumunda yukarı kaydırır - Fare": {
+  "aliases": [
+   "fare yukarı kaydır"
+  ],
+  "keep_original": false
+ },
+ "Nesne sunucusunu fare imlecinin altındaki nesneye taşır ve okur - Fare": {
+  "aliases": [
+   "nesneyi fareye taşı"
+  ],
+  "keep_original": false
+ },
+ "Sağ fareyi kilitleyip açar - Fare": {
+  "aliases": [
+   "sağ fareyi kilitle"
+  ],
+  "keep_original": true
+ },
+ "Sol fareyi kilitleyip açar - Fare": {
+  "aliases": [
+   "sol fareyi kilitle"
+  ],
+  "keep_original": true
+ },
+ "GETEM arama penceresini açar. - GETEM E-Kütüphane": {
+  "aliases": [
+   "e kütüphane"
+  ],
+  "keep_original": true
+ },
+ "Bir sonraki tuş kombinasyonu NVDA kısayol tuşu olarak algılanmaz, doğrudan windows işletim sistemine gönderilir. - Girdi": {
+  "aliases": [
+   "sonraki tuşu geçir"
+  ],
+  "keep_original": false
+ },
+ "Dokunmatik yüzey kilidini açar/kapatır - Girdi": {
+  "aliases": [
+   "dokunmatik yüzeyi kilitle"
+  ],
+  "keep_original": true
+ },
+ "Fare kilidini açıp kapatır - Girdi": {
+  "aliases": [
+   "fare kilidi"
+  ],
+  "keep_original": true
+ },
+ "Girdi kilidini açıp kapatır - Girdi": {
+  "aliases": [
+   "girdi kilidi"
+  ],
+  "keep_original": true
+ },
+ "Girdi yardım kipini açıp kapatır. Açıkken, klavyede bastığınız herhangi bir tuş ya da tuş kombinasyonunun NVDA için işlevi söylenir. - Girdi": {
+  "aliases": [
+   "girdi yardımı"
+  ],
+  "keep_original": false
+ },
+ "Masa üstü ve dizüstü klavye düzenleri arasında geçiş yapar - Girdi": {
+  "aliases": [
+   "klavye düzeni"
+  ],
+  "keep_original": false
+ },
+ "Sayısal Tuş Takımını NVDA ve Windows dolaşım modları arasında değiştirir. - Girdi": {
+  "aliases": [
+   "sayısal tuş takımı"
+  ],
+  "keep_original": false
+ },
+ "Opens the Google TTS For NVDA settings. - Google TTS For NVDA": {
+  "aliases": [
+   "google ses ayarları"
+  ],
+  "keep_original": false
+ },
+ "Opens the Google TTS Voice Manager. - Google TTS For NVDA": {
+  "aliases": [
+   "google ses yöneticisi"
+  ],
+  "keep_original": false
+ },
+ "Toggles reading of hardcoded video subtitles on and off - HardSub Reader": {
+  "aliases": [
+   "gömülü altyazı"
+  ],
+  "keep_original": false
+ },
+ "Toggles whether a new subtitle interrupts the previous one - HardSub Reader": {
+  "aliases": [
+   "altyazı kesme"
+  ],
+  "keep_original": false
+ },
+ "Announces all available layer commands. - Instant Translate": {
+  "aliases": [
+   "çeviri komutları"
+  ],
+  "keep_original": false
+ },
+ "Announces how far the translation in progress has got. - Instant Translate": {
+  "aliases": [
+   "çeviri durumu"
+  ],
+  "keep_original": false
+ },
+ "Announces the current source and target languages. - Instant Translate": {
+  "aliases": [
+   "çeviri dilleri"
+  ],
+  "keep_original": false
+ },
+ "Clears the cache of recent translations. - Instant Translate": {
+  "aliases": [
+   "son çevirileri temizle"
+  ],
+  "keep_original": false
+ },
+ "Copies the last translation to the clipboard. - Instant Translate": {
+  "aliases": [
+   "çeviriyi kopyala"
+  ],
+  "keep_original": false
+ },
+ "Identifies the language of the selected text. - Instant Translate": {
+  "aliases": [
+   "dil algıla"
+  ],
+  "keep_original": false
+ },
+ "Instant Translate layer commands. Then press h to list available commands. - Instant Translate": {
+  "aliases": [
+   "çeviri katmanı"
+  ],
+  "keep_original": false
+ },
+ "Opens the Instant Translate settings dialog. - Instant Translate": {
+  "aliases": [
+   "çeviri ayarları"
+  ],
+  "keep_original": false
+ },
+ "Stops the translations in progress. - Instant Translate": {
+  "aliases": [
+   "çeviriyi durdur"
+  ],
+  "keep_original": false
+ },
+ "Swaps the source and target languages. - Instant Translate": {
+  "aliases": [
+   "dilleri değiştir"
+  ],
+  "keep_original": false
+ },
+ "Switches to the language pair 1 configured in the settings. - Instant Translate": {
+  "aliases": [
+   "dil çifti bir"
+  ],
+  "keep_original": false
+ },
+ "Switches to the language pair 10 configured in the settings. - Instant Translate": {
+  "aliases": [
+   "dil çifti on"
+  ],
+  "keep_original": false
+ },
+ "Switches to the language pair 2 configured in the settings. - Instant Translate": {
+  "aliases": [
+   "dil çifti iki"
+  ],
+  "keep_original": false
+ },
+ "Switches to the language pair 3 configured in the settings. - Instant Translate": {
+  "aliases": [
+   "dil çifti üç"
+  ],
+  "keep_original": false
+ },
+ "Switches to the language pair 4 configured in the settings. - Instant Translate": {
+  "aliases": [
+   "dil çifti dört"
+  ],
+  "keep_original": false
+ },
+ "Switches to the language pair 5 configured in the settings. - Instant Translate": {
+  "aliases": [
+   "dil çifti beş"
+  ],
+  "keep_original": false
+ },
+ "Switches to the language pair 6 configured in the settings. - Instant Translate": {
+  "aliases": [
+   "dil çifti altı"
+  ],
+  "keep_original": false
+ },
+ "Switches to the language pair 7 configured in the settings. - Instant Translate": {
+  "aliases": [
+   "dil çifti yedi"
+  ],
+  "keep_original": false
+ },
+ "Switches to the language pair 8 configured in the settings. - Instant Translate": {
+  "aliases": [
+   "dil çifti sekiz"
+  ],
+  "keep_original": false
+ },
+ "Switches to the language pair 9 configured in the settings. - Instant Translate": {
+  "aliases": [
+   "dil çifti dokuz"
+  ],
+  "keep_original": false
+ },
+ "Switches to the next translation service. - Instant Translate": {
+  "aliases": [
+   "sonraki çeviri servisi"
+  ],
+  "keep_original": false
+ },
+ "Toggles automatic translation of speech output. - Instant Translate": {
+  "aliases": [
+   "otomatik çeviri"
+  ],
+  "keep_original": false
+ },
+ "Translates the clipboard text from one language to another. - Instant Translate": {
+  "aliases": [
+   "panoyu çevir"
+  ],
+  "keep_original": false
+ },
+ "Translates the last spoken text. - Instant Translate": {
+  "aliases": [
+   "son konuşmayı çevir"
+  ],
+  "keep_original": false
+ },
+ "Translates the selected text from one language to another. - Instant Translate": {
+  "aliases": [
+   "seçimi çevir"
+  ],
+  "keep_original": false
+ },
+ "Bu bilgisayardaki sabit (yerleşik), çıkarılabilir ve eşlenmiş ağ sürücülerinin kullanılan ve toplam alanlarını gösterir. İki kez basıldığında, bilgileri panoya kopyalar. - Kaynak İzleme": {
+  "aliases": [
+   "disk alanı"
+  ],
+  "keep_original": false
+ },
+ "GPU bellek kullanımını seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
+  "aliases": [
+   "grafik belleği"
+  ],
+  "keep_original": false
+ },
+ "GPU kullanımını ve sıcaklığını seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
+  "aliases": [
+   "ekran kartı sıcaklığı"
+  ],
+  "keep_original": false
+ },
+ "Hem fiziksel hem de sanal ram için kullanılmakta olan ve toplam alanı seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
+  "aliases": [
+   "bellek durumu"
+  ],
+  "keep_original": false
+ },
+ "Kaynak İzleme komut katmanına girer. - Kaynak İzleme": {
+  "aliases": [
+   "kaynak izleme katmanı"
+  ],
+  "keep_original": false
+ },
+ "Kullanılan RAM miktarını ve ortalama işlemci yükünü gösterir. İki kez basıldığında bilgileri panoya kopyalar. - Kaynak İzleme": {
+  "aliases": [
+   "ram ve işlemci"
+  ],
+  "keep_original": false
+ },
+ "Kullanılmakta olan Windows sürümünü seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
+  "aliases": [
+   "windows sürümü"
+  ],
+  "keep_original": false
+ },
+ "Ortalama işlemci yükünü ve her çekirdeğin yükünü seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
+  "aliases": [
+   "işlemci çekirdekleri"
+  ],
+  "keep_original": false
+ },
+ "Sistemin kablosuz ağ adını (SSID), bağlantı gücünü ve güvenlik protokolünü seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
+  "aliases": [
+   "wifi bilgisi"
+  ],
+  "keep_original": false
+ },
+ "Sistemin çalışma süresini seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
+  "aliases": [
+   "çalışma süresi"
+  ],
+  "keep_original": false
+ },
+ "Akışları Oku ayarlar iletişim kutusunu göster. - Konfigürasyon": {
+  "aliases": [
+   "akış ayarları"
+  ],
+  "keep_original": false
+ },
+ "Bildirimleri Özelleştir ayarlarını gösterir. - Konfigürasyon": {
+  "aliases": [
+   "bildirim ayarları"
+  ],
+  "keep_original": true
+ },
+ "Bildirimleri Özelleştir için bildirimleri kısalt seçeneğini açar/kapatır. - Konfigürasyon": {
+  "aliases": [
+   "bildirimleri kısalt"
+  ],
+  "keep_original": false
+ },
+ "Bildirimleri Özelleştir için braille seçeneğini değiştirir. - Konfigürasyon": {
+  "aliases": [
+   "bildirim braille"
+  ],
+  "keep_original": false
+ },
+ "Bildirimleri Özelleştir için konuşma seçeneğini değiştirir. - Konfigürasyon": {
+  "aliases": [
+   "bildirim konuşma"
+  ],
+  "keep_original": false
+ },
+ "Bir kez basıldığında kaydedilmiş en son konfigürasyon ayarlarına dönülür. Üç kez basılırsa fabrika ayarlarına sıfırlanır. - Konfigürasyon": {
+  "aliases": [
+   "ayarları geri yükle"
+  ],
+  "keep_original": false
+ },
+ "Geçerli NVDA konfigürasyon profilinin adını bildirir - Konfigürasyon": {
+  "aliases": [
+   "profil adı"
+  ],
+  "keep_original": false
+ },
+ "Konfigürasyon profili tetikleyicisini devre dışı bırakıp etkinleştirir. Devre dışı bırakılınca, bu NVDA yeniden başlatılıncaya kadar etkili olur - Konfigürasyon": {
+  "aliases": [
+   "profil tetikleyicisi"
+  ],
+  "keep_original": false
+ },
+ "Mevcut konfigürasyonu kaydeder - Konfigürasyon": {
+  "aliases": [
+   "ayarları kaydet"
+  ],
+  "keep_original": true
+ },
+ "NVDA Sentezleyici iletişim kutusunu gösterirr - Konfigürasyon": {
+  "aliases": [
+   "sentezleyici seç"
+  ],
+  "keep_original": false
+ },
+ "NVDA Ses ayarları iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "ses ayarları"
+  ],
+  "keep_original": false
+ },
+ "NVDA belge format ayarları iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "belge biçimi ayarları"
+  ],
+  "keep_original": false
+ },
+ "NVDA braille ayarları iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "braille ayarları"
+  ],
+  "keep_original": false
+ },
+ "NVDA braille ekran seçimi iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "braille ekran seç"
+  ],
+  "keep_original": false
+ },
+ "NVDA fare ayarları iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "fare ayarları"
+  ],
+  "keep_original": false
+ },
+ "NVDA genel ayarlar iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "genel ayarlar"
+  ],
+  "keep_original": false
+ },
+ "NVDA geçici sözlük iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "geçici sözlük"
+  ],
+  "keep_original": false
+ },
+ "NVDA girdi hareketleri iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "girdi hareketleri"
+  ],
+  "keep_original": false
+ },
+ "NVDA girdi kompozisyon ayarları iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "girdi kompozisyonu"
+  ],
+  "keep_original": false
+ },
+ "NVDA gizlilik ve güvenlik ayarları penceresini gösterir - Konfigürasyon": {
+  "aliases": [
+   "gizlilik ayarları"
+  ],
+  "keep_original": false
+ },
+ "NVDA imla sözlüğü iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "imla sözlüğü"
+  ],
+  "keep_original": false
+ },
+ "NVDA inceleme imleci ayarları iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "inceleme imleci ayarları"
+  ],
+  "keep_original": false
+ },
+ "NVDA klavye ayarları iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "klavye ayarları"
+  ],
+  "keep_original": false
+ },
+ "NVDA konuşma ayarları iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "konuşma ayarları"
+  ],
+  "keep_original": false
+ },
+ "NVDA nesne sunum ayarları iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "nesne sunumu ayarları"
+  ],
+  "keep_original": false
+ },
+ "NVDA ses sözlüğü iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "ses sözlüğü"
+  ],
+  "keep_original": false
+ },
+ "NVDA tarama kipi ayarları iletişim kutusunu  gösterir - Konfigürasyon": {
+  "aliases": [
+   "tarama kipi ayarları"
+  ],
+  "keep_original": false
+ },
+ "NVDA varsayılan sözlük iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "varsayılan sözlük"
+  ],
+  "keep_original": false
+ },
+ "NVDA'nın Windows OCR ayarlarını gösterir - Konfigürasyon": {
+  "aliases": [
+   "ocr ayarları"
+  ],
+  "keep_original": false
+ },
+ "NVDA'nın büyüteç ayarlarını gösterir - Konfigürasyon": {
+  "aliases": [
+   "büyüteç ayarları"
+  ],
+  "keep_original": true
+ },
+ "NVDA'nın eklenti mağazası ayarlarını gösterir - Konfigürasyon": {
+  "aliases": [
+   "mağaza ayarları"
+  ],
+  "keep_original": false
+ },
+ "NVDA'nın gelişmiş ayarlarını gösterir - Konfigürasyon": {
+  "aliases": [
+   "gelişmiş ayarlar"
+  ],
+  "keep_original": true
+ },
+ "NVDA'nın görsellik ayarlarını gösterir - Konfigürasyon": {
+  "aliases": [
+   "görsellik ayarları"
+  ],
+  "keep_original": true
+ },
+ "PC Klavyesinden Braille Girişi Ayarlarını gösterir. - Konfigürasyon": {
+  "aliases": [
+   "braille giriş ayarları"
+  ],
+  "keep_original": false
+ },
+ "Uygulamaya özel sözlük iletişim kutusunu gösterir - Konfigürasyon": {
+  "aliases": [
+   "uygulama sözlüğü"
+  ],
+  "keep_original": false
+ },
+ "Uzaktan erişim ayarlarını gösterir - Konfigürasyon": {
+  "aliases": [
+   "uzaktan erişim ayarları"
+  ],
+  "keep_original": true
+ },
+ "ABD grade 2 konfigürasyon profilini Etkinleştirir veya devre dışı bırakır - Konfigürasyon profilleri": {
+  "aliases": [
+   "abd braille profili"
+  ],
+  "keep_original": false
+ },
+ "NVDA Konfigürasyon Profilleri iletişim kutusunu gösterir - Konfigürasyon profilleri": {
+  "aliases": [
+   "profil yöneticisi"
+  ],
+  "keep_original": false
+ },
+ "Outlook konfigürasyon profilini Etkinleştirir veya devre dışı bırakır - Konfigürasyon profilleri": {
+  "aliases": [
+   "outlook profili"
+  ],
+  "keep_original": false
+ },
+ "Spelling errors' announcement konfigürasyon profilini Etkinleştirir veya devre dışı bırakır - Konfigürasyon profilleri": {
+  "aliases": [
+   "yazım hatası profili"
+  ],
+  "keep_original": false
+ },
+ "Yunanca grade 1 konfigürasyon profilini Etkinleştirir veya devre dışı bırakır - Konfigürasyon profilleri": {
+  "aliases": [
+   "yunanca braille profili"
+  ],
+  "keep_original": false
+ },
+ "excel konfigürasyon profilini Etkinleştirir veya devre dışı bırakır - Konfigürasyon profilleri": {
+  "aliases": [
+   "excel profili"
+  ],
+  "keep_original": false
+ },
+ "Aşama çubuğunun bildirimiyle ilgili, bip, konuşma, bip ve konuşma ve kapalı kipleri arasında geçiş yapar - Konuşma": {
+  "aliases": [
+   "ilerleme çubuğu"
+  ],
+  "keep_original": false
+ },
+ "Copy the currently selected speech history item to the clipboard, which by default will be the most recently spoken text by NVDA. - Konuşma": {
+  "aliases": [
+   "geçmiş öğeyi kopyala"
+  ],
+  "keep_original": false
+ },
+ "Dos konsolunda gösterilen yeni metinler vb dinamik içeriğin bildirimiyle ilgili ayarı açıp kapatır - Konuşma": {
+  "aliases": [
+   "konsol bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Emoji gibi CLDR (ortak yerel veri deposu) karakterlerinin bildirimini açıp kapatır - Konuşma": {
+  "aliases": [
+   "emoji bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Gecikmeli karakter açıklamalarını açıp kapatır - Konuşma": {
+  "aliases": [
+   "gecikmeli açıklama"
+  ],
+  "keep_original": false
+ },
+ "Komut tuşlarının seslendirilmesini açıp kapatır - Konuşma": {
+  "aliases": [
+   "komut tuşları"
+  ],
+  "keep_original": false
+ },
+ "Konuşma modları arasında geçiş yapar. - Konuşma": {
+  "aliases": [
+   "konuşma modu"
+  ],
+  "keep_original": false
+ },
+ "Konuşma unikod normalleştirme kipleri arasında geçiş yapar - Konuşma": {
+  "aliases": [
+   "konuşma unikod kipi"
+  ],
+  "keep_original": false
+ },
+ "Mevcut otomatik dil ddeğiştirme ayarları arasında geçiş yapar: Kapalı, dil değiştirme ve dil ve lehçe değiştirme. - Konuşma": {
+  "aliases": [
+   "dil değiştirme"
+  ],
+  "keep_original": false
+ },
+ "Noktalama ve işaretlerin seslendirilme düzeyleri arasında dolaşır - Konuşma": {
+  "aliases": [
+   "noktalama düzeyi"
+  ],
+  "keep_original": false
+ },
+ "Review the next item in NVDA's speech history. - Konuşma": {
+  "aliases": [
+   "sonraki geçmiş öğe"
+  ],
+  "keep_original": false
+ },
+ "Review the previous item in NVDA's speech history. - Konuşma": {
+  "aliases": [
+   "önceki geçmiş öğe"
+  ],
+  "keep_original": false
+ },
+ "Sentezleme ayar zincirindeki aktif halka için geçerli değeri artırır - Konuşma": {
+  "aliases": [
+   "ayarı artır"
+  ],
+  "keep_original": false
+ },
+ "Sentezleme ayar zincirindeki aktif halka için geçerli değeri azaltır - Konuşma": {
+  "aliases": [
+   "ayarı azalt"
+  ],
+  "keep_original": false
+ },
+ "Sentezleyici ayar zincirinde bir sonraki halkaya gider - Konuşma": {
+  "aliases": [
+   "sonraki ayar"
+  ],
+  "keep_original": false
+ },
+ "Sentezleyici ayar zincirinde bir önceki halkaya gider - Konuşma": {
+  "aliases": [
+   "önceki ayar"
+  ],
+  "keep_original": false
+ },
+ "Sentezleyici ayar zincirinde mevcut halkanın değerini en düşüğe ayarla - Konuşma": {
+  "aliases": [
+   "en düşük değer"
+  ],
+  "keep_original": false
+ },
+ "Sentezleyici ayar zincirinde mevcut halkanın değerini en yükseğe ayarla - Konuşma": {
+  "aliases": [
+   "en yüksek değer"
+  ],
+  "keep_original": false
+ },
+ "Sentezleyici zincirinde mevcut ayarı daha büyük adımda arttırır - Konuşma": {
+  "aliases": [
+   "büyük adım artır"
+  ],
+  "keep_original": false
+ },
+ "Sentezleyici zincirinde mevcut ayarı daha büyük adımda azaltır - Konuşma": {
+  "aliases": [
+   "büyük adım azalt"
+  ],
+  "keep_original": false
+ },
+ "Show NVDA's speech history in a browseable list - Konuşma": {
+  "aliases": [
+   "konuşma geçmişi"
+  ],
+  "keep_original": false
+ },
+ "Son seslendirilen bilgiyi panoya kopyalar. - Konuşma": {
+  "aliases": [
+   "son konuşmayı kopyala"
+  ],
+  "keep_original": false
+ },
+ "Son seslendirilen bilgiyi tekrar eder. İki kez basıldığında göz atılabilir mesajda gösterir. - Konuşma": {
+  "aliases": [
+   "son konuşmayı tekrarla"
+  ],
+  "keep_original": false
+ },
+ "Start recording NVDA's speech output, for copying multiple announcements to the clipboard. - Konuşma": {
+  "aliases": [
+   "konuşma kaydını başlat"
+  ],
+  "keep_original": false
+ },
+ "Stop recording NVDA's speech output, and copy the recorded announcements to the clipboard. - Konuşma": {
+  "aliases": [
+   "konuşma kaydını bitir"
+  ],
+  "keep_original": false
+ },
+ "Yazılan karakterlerin nerede seslendirileceğini belirleyen seçenekler arasında geçiş yapar. - Konuşma": {
+  "aliases": [
+   "karakter yankısı"
+  ],
+  "keep_original": false
+ },
+ "Yazılan sözcüklerin nerede seslendirileceğini belirleyen seçenekler arasında geçiş yapar. - Konuşma": {
+  "aliases": [
+   "kelime yankısı"
+  ],
+  "keep_original": false
+ },
+ "Canlı makro kaydını başlatır veya durdurur. (Tuşlar sisteme işler) - Makro Yöneticisi": {
+  "aliases": [
+   "canlı makro kaydı"
+  ],
+  "keep_original": false
+ },
+ "Güvenli makro kaydını başlatır. (Tuşlar sistemden gizlenir) - Makro Yöneticisi": {
+  "aliases": [
+   "güvenli makro kaydı"
+  ],
+  "keep_original": false
+ },
+ "Makro Yöneticisi arayüzünü açar. - Makro Yöneticisi": {
+  "aliases": [
+   "makro yöneticisi"
+  ],
+  "keep_original": true
+ },
+ "Son kaydedilen (geçici) makroyu oynatır. Oynatma sırasındaysa iptal eder. - Makro Yöneticisi": {
+  "aliases": [
+   "makroyu oynat"
+  ],
+  "keep_original": false
+ },
+ "Özel Makro: beş dakika geri - Makro Yöneticisi": {
+  "aliases": [
+   "beş dakika geri"
+  ],
+  "keep_original": false
+ },
+ "Özel Makro: beş dakika ileri - Makro Yöneticisi": {
+  "aliases": [
+   "beş dakika ileri"
+  ],
+  "keep_original": false
+ },
+ "Özel Makro: cumhuriyet son haberler - Makro Yöneticisi": {
+  "aliases": [
+   "cumhuriyet haberleri"
+  ],
+  "keep_original": false
+ },
+ "Özel Makro: evrensel son haberler - Makro Yöneticisi": {
+  "aliases": [
+   "evrensel haberleri"
+  ],
+  "keep_original": false
+ },
+ "Matematiksel içerikle etkileşime başlar - Matematik dolaşımı": {
+  "aliases": [
+   "matematik dolaşımı"
+  ],
+  "keep_original": true
+ },
+ "Bir kez basıldığında, daha önce başlangıç işareti konan yerle, inceleme imlecinin mevcut pozisyonu arasındaki metni seçer. İki kez basılırsa metin panoya kopyalanır - Metin incelemesi": {
+  "aliases": [
+   "başlangıçtan seç"
+  ],
+  "keep_original": false
+ },
+ "Geçerli inceleme imleci konumu için biçimlendirme bilgilerini bildirir. - Metin incelemesi": {
+  "aliases": [
+   "inceleme biçimi"
+  ],
+  "keep_original": false
+ },
+ "Geçerli inceleme imleci konumu için biçimlendirme bilgilerini bildirir. İki kez basılırsa, bilgileri tarama kipinde gösterir - Metin incelemesi": {
+  "aliases": [
+   "inceleme biçimi ayrıntılı"
+  ],
+  "keep_original": false
+ },
+ "Sonraki inceleme kipine geçer (örneğin, nesne, belge ya da ekran inceleme kipi) ve inceleme imlecini nesne sunucusunun bulunduğu noktada konumlandırır - Metin incelemesi": {
+  "aliases": [
+   "sonraki inceleme kipi"
+  ],
+  "keep_original": false
+ },
+ "Tarama kipinde, geçerli inceleme imleci konumu için biçimlendirme bilgilerini sunar. - Metin incelemesi": {
+  "aliases": [
+   "inceleme biçimini göster"
+  ],
+  "keep_original": false
+ },
+ "Önceki inceleme kipine geçer (örneğin, nesne, belge ya da ekran inceleme kipi) ve inceleme imlecini nesne sunucusunun bulunduğu noktada konumlandırır - Metin incelemesi": {
+  "aliases": [
+   "önceki inceleme kipi"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecinden itibaren imleci de taşıyarak metnin sonuna kadar okur - Metin incelemesi": {
+  "aliases": [
+   "incelemeyi oku"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini en alt satıra taşır ve okur - Metin incelemesi": {
+  "aliases": [
+   "en alt satır"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini en üst satıra taşır ve okur - Metin incelemesi": {
+  "aliases": [
+   "en üst satır"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini nesne sunucusunun sonraki sayfasına taşır ve okur - Metin incelemesi": {
+  "aliases": [
+   "inceleme sonraki sayfa"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini nesne sunucusunun önceki sayfasına taşır ve okur - Metin incelemesi": {
+  "aliases": [
+   "inceleme önceki sayfa"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini seçimin ilk karakterine taşır ve karakteri okur - Metin incelemesi": {
+  "aliases": [
+   "seçimin ilk karakteri"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini seçimin son karakterine taşır ve karakteri okur - Metin incelemesi": {
+  "aliases": [
+   "seçimin son karakteri"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini sonraki karaktere taşır ve okur - Metin incelemesi": {
+  "aliases": [
+   "sonraki karakter"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini sonraki satıra taşır ve okur - Metin incelemesi": {
+  "aliases": [
+   "inceleme sonraki satır"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini sonraki sözcüğe taşır ve okur - Metin incelemesi": {
+  "aliases": [
+   "sonraki kelime"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini önceki karaktere taşır ve okur - Metin incelemesi": {
+  "aliases": [
+   "önceki karakter"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini önceki satıra taşır ve okur - Metin incelemesi": {
+  "aliases": [
+   "inceleme önceki satır"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini önceki sözcüğe taşır ve okur - Metin incelemesi": {
+  "aliases": [
+   "önceki kelime"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini, konumlandığı satırın başına taşır ve okur - Metin incelemesi": {
+  "aliases": [
+   "satır başı"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini, konumlandığı satırın sonuna taşır ve okur - Metin incelemesi": {
+  "aliases": [
+   "satır sonu"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecini, panoya kopyalanacak ya da seçilecek metnin başlangıcı olarak işaretlenmiş konuma taşır - Metin incelemesi": {
+  "aliases": [
+   "işarete git"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecinin bulunduğu yerdeki sembolü seslendirir. İki kez basılırsa, sembol ve seslendirme metni tarama kipinde gösterilir - Metin incelemesi": {
+  "aliases": [
+   "sembolü söyle"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecinin düzenleme imlecini takip etmesiyle ilgili ayarı açıp kapatır. - Metin incelemesi": {
+  "aliases": [
+   "inceleme imleci takibi"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecinin konumlandığı satırı okur. Bu tuşa iki kez basılırsa, mevcut satır harf harf okunur. Üç kez basıldığında ise, satır karakter tanımları kullanılarak kodlanır (Adana, Bolu, Ceyhan gibi). - Metin incelemesi": {
+  "aliases": [
+   "inceleme satırı"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecinin konumlandığı sözcüğü okur. Bu tuşa iki kez basılırsa, sözcük harf harf okunur. Üç kez basıldığında ise, karakter tanımları kullanılarak kodlanır (Adana, Bolu, Ceyhan gibi) - Metin incelemesi": {
+  "aliases": [
+   "inceleme kelimesi"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecinin mevcut konumunu panoya kopyalanacak ya da seçilecek metnin başlangıcı olarak işaretler - Metin incelemesi": {
+  "aliases": [
+   "inceleme işareti"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecinin üzerinde bulunduğu karakteri okur. İki kez basılırsa karakterin tanımı (adana, bolu, ceyhan gibi) okunur. Üç kez basıldığında ise, karakterin decimal ve hexadecimal değerleri söylenir - Metin incelemesi": {
+  "aliases": [
+   "inceleme karakteri"
+  ],
+  "keep_original": false
+ },
+ "Ayarlarda yapılandırılan mikrofon ve/veya sistem-sesi aygıtını kullanarak o anda duyulan sesi tanır - Müzik ve Söz Bulucu": {
+  "aliases": [
+   "şarkıyı tanı"
+  ],
+  "keep_original": false
+ },
+ "Diskteki bir ses dosyasını tanı - Müzik ve Söz Bulucu": {
+  "aliases": [
+   "dosyadaki şarkıyı tanı"
+  ],
+  "keep_original": false
+ },
+ "Müzik ve Söz Bulucu ayarlarını aç (ffmpeg yolu, mikrofon ve sistem-sesi aygıtı) - Müzik ve Söz Bulucu": {
+  "aliases": [
+   "şarkı tanıma ayarları"
+  ],
+  "keep_original": false
+ },
+ "Son tanınan parçanın sözlerini göster - Müzik ve Söz Bulucu": {
+  "aliases": [
+   "şarkı sözleri"
+  ],
+  "keep_original": false
+ },
+ "Open the Native Speech Generation dialog - Native Speech Generation": {
+  "aliases": [
+   "ses üretimi"
+  ],
+  "keep_original": false
+ },
+ "Speak clipboard text with Quick Speak, or stop Quick Speak - Native Speech Generation": {
+  "aliases": [
+   "panoyu hızlı oku"
+  ],
+  "keep_original": false
+ },
+ "Speak selected text with Quick Speak, or stop Quick Speak - Native Speech Generation": {
+  "aliases": [
+   "seçimi hızlı oku"
+  ],
+  "keep_original": false
+ },
+ "Basit inceleme kipini açıp kapatır - Nesne dolaşımı": {
+  "aliases": [
+   "basit inceleme"
+  ],
+  "keep_original": false
+ },
+ "Bir kez basıldığında odağı nesne sunucusunun konumuna; iki kez basıldığında düzenleme imlecini inceleme imlecinin konumuna taşır - Nesne dolaşımı": {
+  "aliases": [
+   "odağı taşı"
+  ],
+  "keep_original": false
+ },
+ "Fare imlecini nesne sunucusunun konumuna taşır. - Nesne dolaşımı": {
+  "aliases": [
+   "fareyi nesneye taşı"
+  ],
+  "keep_original": false
+ },
+ "Geçerli uygulama durum çubuğunu okur ve nesne sunucusunu o konuma taşır. - Nesne dolaşımı": {
+  "aliases": [
+   "durum çubuğuna git"
+  ],
+  "keep_original": false
+ },
+ "Nesne dolaşım hierarşisinin düzleştirilmiş görünümünde sonraki nesneye gider - Nesne dolaşımı": {
+  "aliases": [
+   "sonraki nesne"
+  ],
+  "keep_original": false
+ },
+ "Nesne dolaşım hierarşisinin düzleştirilmiş görünümünde önceki nesneye gider - Nesne dolaşımı": {
+  "aliases": [
+   "önceki nesne"
+  ],
+  "keep_original": false
+ },
+ "Nesne sunucusunu geçerli odağa ve mümkünse inceleme imlecini de düzenleme imlecinin konumuna taşır. - Nesne dolaşımı": {
+  "aliases": [
+   "nesneyi odağa getir"
+  ],
+  "keep_original": false
+ },
+ "Nesne sunucusunu, mevcut nesneyle hiyerarşik açıdan aynı düzeyde bulunan bir sonraki nesneye taşır - Nesne dolaşımı": {
+  "aliases": [
+   "kardeş nesne ileri"
+  ],
+  "keep_original": false
+ },
+ "Nesne sunucusunu, mevcut nesneyle hiyerarşik açıdan aynı düzeyde bulunan bir önceki nesneye taşır - Nesne dolaşımı": {
+  "aliases": [
+   "kardeş nesne geri"
+  ],
+  "keep_original": false
+ },
+ "Nesne sunucusunu, üzerinde bulunulanı kapsayan nesneye taşır - Nesne dolaşımı": {
+  "aliases": [
+   "üst nesneye çık"
+  ],
+  "keep_original": false
+ },
+ "Nesne sunucusunu, üzerinde bulunulanın kapsadığı ilk nesneye taşır - Nesne dolaşımı": {
+  "aliases": [
+   "alt nesneye gir"
+  ],
+  "keep_original": false
+ },
+ "Nesne sunucusunun odağı takip etmesiyle ilgili ayarı açıp kapatır - Nesne dolaşımı": {
+  "aliases": [
+   "odak takibi"
+  ],
+  "keep_original": false
+ },
+ "Nesne sunucusunun üzerinde bulunduğu nesneyi seslendirir. İki kez basılırsa bilgi kodlanır. Üç kez basılırsa nesnenin adı ve değeri panoya kopyalanır - Nesne dolaşımı": {
+  "aliases": [
+   "nesneyi söyle"
+  ],
+  "keep_original": false
+ },
+ "Nesne sunucusunun üzerinde bulunduğu nokta için varsayılan işlemi gerçekleştirir ( yani üzerinde enter ya da aralık tuşuna basılmış gibi bir işlev görür). - Nesne dolaşımı": {
+  "aliases": [
+   "varsayılan işlem"
+  ],
+  "keep_original": false
+ },
+ "İnceleme imlecinin pozisyonundaki metnin ya da nesnenin konum ve boyut bilgisini seslendirir. İki kez basılırsa daha ayrıntılı bilgi verilir. - Nesne dolaşımı": {
+  "aliases": [
+   "nesne konumu"
+  ],
+  "keep_original": false
+ },
+ "Announce current engine and languages - Polyglot": {
+  "aliases": [
+   "poliglot durumu"
+  ],
+  "keep_original": false
+ },
+ "Clear cache - Polyglot": {
+  "aliases": [
+   "önbelleği temizle"
+  ],
+  "keep_original": false
+ },
+ "Copy last translation to clipboard - Polyglot": {
+  "aliases": [
+   "çeviriyi panoya al"
+  ],
+  "keep_original": false
+ },
+ "Enter the translation command layer; press H for command layer help - Polyglot": {
+  "aliases": [
+   "çeviri katmanına gir"
+  ],
+  "keep_original": false
+ },
+ "Exit the translation command layer. - Polyglot": {
+  "aliases": [
+   "çeviri katmanından çık"
+  ],
+  "keep_original": false
+ },
+ "Next source language - Polyglot": {
+  "aliases": [
+   "sonraki kaynak dil"
+  ],
+  "keep_original": false
+ },
+ "Next target language - Polyglot": {
+  "aliases": [
+   "sonraki hedef dil"
+  ],
+  "keep_original": false
+ },
+ "Next translation engine - Polyglot": {
+  "aliases": [
+   "sonraki motor"
+  ],
+  "keep_original": false
+ },
+ "Open interactive translation dialog - Polyglot": {
+  "aliases": [
+   "etkileşimli çeviri"
+  ],
+  "keep_original": false
+ },
+ "Open settings - Polyglot": {
+  "aliases": [
+   "poliglot ayarları"
+  ],
+  "keep_original": false
+ },
+ "Previous source language - Polyglot": {
+  "aliases": [
+   "önceki kaynak dil"
+  ],
+  "keep_original": false
+ },
+ "Previous target language - Polyglot": {
+  "aliases": [
+   "önceki hedef dil"
+  ],
+  "keep_original": false
+ },
+ "Previous translation engine - Polyglot": {
+  "aliases": [
+   "önceki motor"
+  ],
+  "keep_original": false
+ },
+ "Show command layer help - Polyglot": {
+  "aliases": [
+   "çeviri yardımı"
+  ],
+  "keep_original": false
+ },
+ "Swap source and target languages - Polyglot": {
+  "aliases": [
+   "kaynak hedef değiştir"
+  ],
+  "keep_original": false
+ },
+ "Toggle auto-translation - Polyglot": {
+  "aliases": [
+   "poliglot otomatik"
+  ],
+  "keep_original": false
+ },
+ "Translate clipboard - Polyglot": {
+  "aliases": [
+   "poliglot pano"
+  ],
+  "keep_original": false
+ },
+ "Translate clipboard (reversed direction) - Polyglot": {
+  "aliases": [
+   "poliglot pano tersi"
+  ],
+  "keep_original": false
+ },
+ "Translate last spoken text - Polyglot": {
+  "aliases": [
+   "poliglot son konuşma"
+  ],
+  "keep_original": false
+ },
+ "Translate last spoken text (reversed direction) - Polyglot": {
+  "aliases": [
+   "poliglot konuşma tersi"
+  ],
+  "keep_original": false
+ },
+ "Translate selection - Polyglot": {
+  "aliases": [
+   "poliglot seçim"
+  ],
+  "keep_original": false
+ },
+ "Translate selection (reversed direction) - Polyglot": {
+  "aliases": [
+   "poliglot seçim tersi"
+  ],
+  "keep_original": false
+ },
+ "Bilgisayarı kontrol eden YZ Operatörü ile canlı sesli bir görüşmeyi başlatır veya sonlandırır. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "operatörle konuş"
+  ],
+  "keep_original": false
+ },
+ "Eklentinin mevcut durumunu seslendirir. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "asistan durumu"
+  ],
+  "keep_original": true
+ },
+ "Ekrandaki veya dolaşım nesnesindeki CAPTCHA'yı çözmeyi dener. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "captcha çöz"
+  ],
+  "keep_original": false
+ },
+ "Ekranın tümünü betimler ve ekrandaki metni okur. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "ekranı betimle"
+  ],
+  "keep_original": false
+ },
+ "Ekranın yerel video kaydını başlatır veya durdurur. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "ekranı kaydet"
+  ],
+  "keep_original": false
+ },
+ "Etkileşimli kullanıcı arayüz öğeleri gezginini açar/kapatır. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "arayüz gezgini"
+  ],
+  "keep_original": false
+ },
+ "Gelişmiş yönlendirmede seçilen yapay zeka modellerini bildirir. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "yapay zeka modelleri"
+  ],
+  "keep_original": false
+ },
+ "Gemini sağlayıcısı etkin olduğunda Gemini API anahtar yöneticisini açar. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "gemini anahtarları"
+  ],
+  "keep_original": false
+ },
+ "Geçerli gezgin nesnesini YZ kullanarak etiketler. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "gezgini etiketle"
+  ],
+  "keep_original": false
+ },
+ "Geçerli nesneyi (Dolaşım Nesnesi) betimler. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "nesneyi betimle"
+  ],
+  "keep_original": false
+ },
+ "Geçmiş sohbetleri ve belgeleri incelemek için Geçmiş iletişim kutusunu açar. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "sohbet geçmişi"
+  ],
+  "keep_original": false
+ },
+ "Görsel Asistan ayarları iletişim kutusunu açar. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "asistan ayarları"
+  ],
+  "keep_original": false
+ },
+ "Güncellemeleri el ile denetler. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "güncellemeleri denetle"
+  ],
+  "keep_original": true
+ },
+ "Günlük kotasını aşan Gemini API anahtarlarının sayısını ve sıfırlanma zamanını bildirir. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "gemini kotası"
+  ],
+  "keep_original": false
+ },
+ "Katmandaki kullanılabilir komutların listesini gösterir. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "asistan komutları"
+  ],
+  "keep_original": false
+ },
+ "Mevcut etiketleri yönetir veya adsız öğeleri etiketlemek için uygulamanın tamamını tarar. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "etiketleri yönet"
+  ],
+  "keep_original": false
+ },
+ "Ortam Gözlemcisi arka plan Asistanını başlatır veya durdurur. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "ortam gözlemcisi"
+  ],
+  "keep_original": false
+ },
+ "Panoda bulunan metni çevirir. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "asistanla panoyu çevir"
+  ],
+  "keep_original": true
+ },
+ "Sayfa sayfa ayrıntılı analiz için Belge Okuyucuyu açar (PDF/Görseller). - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "belge okuyucu"
+  ],
+  "keep_original": false
+ },
+ "Sesi kaydeder, yapay zeka kullanarak metne dönüştürür ve sonucu yazar. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "sesle yazdır"
+  ],
+  "keep_original": false
+ },
+ "Sesi kaydeder, yapay zekayı kullanarak metne dönüştürür, çevirir ve sonucu yazar. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "sesle çevirerek yaz"
+  ],
+  "keep_original": false
+ },
+ "Seçilen bir görüntü veya PDF dosyası üzerinde akıllı eylemler (OCR veya Betimleme) gerçekleştirir. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "akıllı eylemler"
+  ],
+  "keep_original": false
+ },
+ "Seçilen bir medya dosyasını metne dönüştürür veya dublajını yapar. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "medyayı metne çevir"
+  ],
+  "keep_original": false
+ },
+ "Seçilen metni Açıklamak, Özetlemek veya Düzeltmek için bir menü açar. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "metin işlemleri"
+  ],
+  "keep_original": false
+ },
+ "Seçili metni veya dolaşım nesnesini çevirir. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "asistanla seçileni çevir"
+  ],
+  "keep_original": false
+ },
+ "Tüm özelliklere hızlı erişim için Komut Katmanını etkinleştirir. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "asistan katmanı"
+  ],
+  "keep_original": false
+ },
+ "YZ asistanıyla Canlı sesli görüşmeyi başlatır veya sonlandırır. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "canlı sohbet"
+  ],
+  "keep_original": false
+ },
+ "Yapay zeka Operatöründen bir eylem gerçekleştirmesini veya ekranı betimlemesini ister. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "operatöre sor"
+  ],
+  "keep_original": false
+ },
+ "Yapay zekaya doğrudan metin veya dosya göndermek için bir sohbet iletişim kutusu açar. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "sohbet kutusu"
+  ],
+  "keep_original": false
+ },
+ "Yerel bir video dosyasını veya çevrimiçi bir video URL'sini analiz eder. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "videoyu analiz et"
+  ],
+  "keep_original": false
+ },
+ "İnceleme veya takip soruları için sohbet iletişim kutusundaki son YZ yanıtını gösterir. - Profesyonel Görsel Asistan": {
+  "aliases": [
+   "son yanıtı göster"
+  ],
+  "keep_original": false
+ },
+ "Open Regex Replace dialog - REGEXPlusPlus": {
+  "aliases": [
+   "regex ile değiştir"
+  ],
+  "keep_original": false
+ },
+ "Apri la finestra principale di Ricerca Testuale - Ricerca Testuale Accesso Digitale": {
+  "aliases": [
+   "metin arama"
+  ],
+  "keep_original": false
+ },
+ "Apri la pagina delle Donazioni PayPal - Ricerca Testuale Accesso Digitale": {
+  "aliases": [
+   "bağış sayfası"
+  ],
+  "keep_original": false
+ },
+ "Descrivi la grafica sotto il navigatore (web) oppure il file immagine selezionato in Esplora file - Ricerca Testuale Accesso Digitale": {
+  "aliases": [
+   "resmi betimle"
+  ],
+  "keep_original": false
+ },
+ "Mostra la finestra dei comandi rapidi - Ricerca Testuale Accesso Digitale": {
+  "aliases": [
+   "hızlı komutlar"
+  ],
+  "keep_original": false
+ },
+ "NVDA'nın diğer seslerin seviyesini düşürmesiyle ilgili ses zayıflama modları arasında dolaşır - Ses": {
+  "aliases": [
+   "ses kısma kipi"
+  ],
+  "keep_original": false
+ },
+ "Ses ayırma kipleri arasında geçiş yapar - Ses": {
+  "aliases": [
+   "ses ayırma"
+  ],
+  "keep_original": false
+ },
+ "Geçerli pencere uygulamasının sesini kapat veya aç - Ses Yöneticisi": {
+  "aliases": [
+   "pencere sesini kapat"
+  ],
+  "keep_original": false
+ },
+ "Mikrofon anahtarı - Ses Yöneticisi": {
+  "aliases": [
+   "mikrofonu sustur"
+  ],
+  "keep_original": true
+ },
+ "Mikrofon ses seviyesini kilitle - Ses Yöneticisi": {
+  "aliases": [
+   "mikrofon seviyesini kilitle"
+  ],
+  "keep_original": true
+ },
+ "Oynatma veya kayıt cihazlarının sesini kapat veya aç - Ses Yöneticisi": {
+  "aliases": [
+   "aygıt sesini kapat"
+  ],
+  "keep_original": false
+ },
+ "Ses anahtarı - Ses Yöneticisi": {
+  "aliases": [
+   "ses düğmesi"
+  ],
+  "keep_original": true
+ },
+ "Ses uygulaması için sonraki kayıt cihazı - Ses Yöneticisi": {
+  "aliases": [
+   "uygulama kaydı ileri"
+  ],
+  "keep_original": false
+ },
+ "Ses uygulaması için sonraki oynatma cihazı - Ses Yöneticisi": {
+  "aliases": [
+   "uygulama çıkışı ileri"
+  ],
+  "keep_original": false
+ },
+ "Ses uygulaması için önceki kayıt cihazı - Ses Yöneticisi": {
+  "aliases": [
+   "uygulama kaydı geri"
+  ],
+  "keep_original": false
+ },
+ "Ses uygulaması için önceki oynatma cihazı - Ses Yöneticisi": {
+  "aliases": [
+   "uygulama çıkışı geri"
+  ],
+  "keep_original": false
+ },
+ "Sesi artır - Ses Yöneticisi": {
+  "aliases": [
+   "uygulama sesini artır"
+  ],
+  "keep_original": true
+ },
+ "Sesi azalt - Ses Yöneticisi": {
+  "aliases": [
+   "uygulama sesini azalt"
+  ],
+  "keep_original": true
+ },
+ "Sonraki Kayıt cihazı - Ses Yöneticisi": {
+  "aliases": [
+   "sonraki kayıt aygıtı"
+  ],
+  "keep_original": true
+ },
+ "Sonraki NVDA oynatma cihazı - Ses Yöneticisi": {
+  "aliases": [
+   "sonraki nvda çıkışı"
+  ],
+  "keep_original": true
+ },
+ "Sonraki oynatma cihazı - Ses Yöneticisi": {
+  "aliases": [
+   "sonraki oynatma aygıtı"
+  ],
+  "keep_original": true
+ },
+ "Sonraki ses uygulaması - Ses Yöneticisi": {
+  "aliases": [
+   "sonraki uygulama sesi"
+  ],
+  "keep_original": true
+ },
+ "Tüm ses uygulamalarının oynatma ve kayıt cihazlarını sıfırlamak için tıkla; Tüm ses uygulamalarının sesini sıfırlamak ve sesini açmak için çift tıkla - Ses Yöneticisi": {
+  "aliases": [
+   "ses ayarlarını sıfırla"
+  ],
+  "keep_original": false
+ },
+ "Varsayılan oynatma veya kayıt cihazı olarak ayarla - Ses Yöneticisi": {
+  "aliases": [
+   "varsayılan aygıt yap"
+  ],
+  "keep_original": false
+ },
+ "Önceki Kayıt cihazı - Ses Yöneticisi": {
+  "aliases": [
+   "önceki kayıt aygıtı"
+  ],
+  "keep_original": true
+ },
+ "Önceki NVDA oynatma cihazı - Ses Yöneticisi": {
+  "aliases": [
+   "önceki nvda çıkışı"
+  ],
+  "keep_original": true
+ },
+ "Önceki oynatma cihazı - Ses Yöneticisi": {
+  "aliases": [
+   "önceki oynatma aygıtı"
+  ],
+  "keep_original": true
+ },
+ "Önceki ses uygulaması - Ses Yöneticisi": {
+  "aliases": [
+   "önceki uygulama sesi"
+  ],
+  "keep_original": true
+ },
+ "Kendi komutlarını eklemek için iletişim kutusunu açar: program, dosya, klasör ya da web adresi açma veya tuş kombinasyonuna basma - Sesli Komut": {
+  "aliases": [
+   "komut ekle"
+  ],
+  "keep_original": false
+ },
+ "Komut cümlesi yazabileceğin bir kutu açar - Sesli Komut": {
+  "aliases": [
+   "komutu yaz"
+  ],
+  "keep_original": false
+ },
+ "Komutlar için kullanılan ifadeleri (takma adları) düzenleme penceresini açar - Sesli Komut": {
+  "aliases": [
+   "ifadeleri düzenle"
+  ],
+  "keep_original": false
+ },
+ "Model klasörünü Dosya Gezgini'nde açar - Sesli Komut": {
+  "aliases": [
+   "model klasörü"
+  ],
+  "keep_original": false
+ },
+ "Ses tanıma modelini NVDA diline göre indirir - Sesli Komut": {
+  "aliases": [
+   "modeli indir"
+  ],
+  "keep_original": false
+ },
+ "Sesli komut dinlemesini başlatır; tekrar basınca dinlemeyi durdurup komutu çalıştırır - Sesli Komut": {
+  "aliases": [
+   "dinlemeyi başlat"
+  ],
+  "keep_original": false
+ },
+ "Sesli komut dinlenirken diğer uygulamaların sesini kısmayı açar ya da kapatır - Sesli Komut": {
+  "aliases": [
+   "ses kısma anahtarı"
+  ],
+  "keep_original": false
+ },
+ "Tanıyıcının son duyduğunu, seçtiğin bir komutun söylenen ifadesi olarak ekleyen bir pencere açar - Sesli Komut": {
+  "aliases": [
+   "son ifadeyi ekle"
+  ],
+  "keep_original": false
+ },
+ "Birkez basıldığında saati, iki kez basıldığında da tarihi söyler - Sistem durumu": {
+  "aliases": [
+   "saat kaç",
+   "saati söyle"
+  ],
+  "keep_original": false
+ },
+ "Güç kaynağı takılı değilse batarya durumunu ve kalan zamanı söyler - Sistem durumu": {
+  "aliases": [
+   "pil durumu"
+  ],
+  "keep_original": false
+ },
+ "Windows panosundaki metni okur. İki kez basıldığında bilgi harf harf okunur. Üç kez basıldığında bilgi kodlanarak okunur. - Sistem durumu": {
+  "aliases": [
+   "panoyu oku"
+  ],
+  "keep_original": false
+ },
+ "Düzenleme denetimlerinde ve belgelerde mevcut seçimi seslendirir. İki kez basıldığında bilgi harf harf okunur. Üç kez basıldığında bilgi kodlanarak okunur. Dört kez basıldığında bilgi pencerede görüntülenir. - Sistem düzenleme imleci": {
+  "aliases": [
+   "seçileni oku"
+  ],
+  "keep_original": false
+ },
+ "Paragraf dolaşım kipleri arasında geçiş yapar - Sistem düzenleme imleci": {
+  "aliases": [
+   "paragraf kipi"
+  ],
+  "keep_original": false
+ },
+ "Sistem imleci konumundaki herhangi bir bilgi notuyla ilgili detayların özetini bildirir. - Sistem düzenleme imleci": {
+  "aliases": [
+   "not özeti"
+  ],
+  "keep_original": false
+ },
+ "Sistem imleci konumundaki metin veya nesnenin konumuyla ilgili bilgileri raporlar. İki kez basmak daha fazla ayrıntı sağlayabilir. - Sistem düzenleme imleci": {
+  "aliases": [
+   "imleç konumu"
+  ],
+  "keep_original": false
+ },
+ "Sistem imlecinin bulunduğu yerden itibaren imleci de taşıyarak metnin sonuna kadar okur - Sistem düzenleme imleci": {
+  "aliases": [
+   "imleçten sona oku"
+  ],
+  "keep_original": false
+ },
+ "Tarama kipinde, imleç altındaki metin için biçimlendirme bilgilerini sunar. - Sistem düzenleme imleci": {
+  "aliases": [
+   "imleç biçimini göster"
+  ],
+  "keep_original": false
+ },
+ "Uygulama imlecinin bulunduğu satırı okur. İki kez basılırsa, satır kodlanarak okunur. Üç kez basılırsa, satırı oluşturan harfler karakter tanımlarıyla seslendirilir. - Sistem düzenleme imleci": {
+  "aliases": [
+   "satırı oku"
+  ],
+  "keep_original": false
+ },
+ "İmlecin bulunduğu konumdaki metnin dilini söyler. İki kere basıldığında bilgi pencerede görüntülenir - Sistem düzenleme imleci": {
+  "aliases": [
+   "metnin dili"
+  ],
+  "keep_original": false
+ },
+ "İmleç altındaki metne ilişkin biçimlendirme bilgilerini bildirir. - Sistem düzenleme imleci": {
+  "aliases": [
+   "imleç biçimi"
+  ],
+  "keep_original": false
+ },
+ "İmleç altındaki metnin biçimlendirme bilgilerini bildirir. İki kez basılırsa, bilgileri tarama kipinde gösterir - Sistem düzenleme imleci": {
+  "aliases": [
+   "imleç biçimi ayrıntılı"
+  ],
+  "keep_original": false
+ },
+ "İmleçteki metnin konumu veya düzeltme işareti yoksa o anda odaklanılan nesnenin konumu hakkında bilgi bildirir. - Sistem düzenleme imleci": {
+  "aliases": [
+   "konum bilgisi"
+  ],
+  "keep_original": false
+ },
+ "Aktif pencerenin durum çubuğunu okur. İki kez basıldığında bilgi kodlanarak seslendirilir. Üç kez basılırsa bilgi panoya kopyalanır - Sistem odağı": {
+  "aliases": [
+   "durum çubuğunu oku"
+  ],
+  "keep_original": false
+ },
+ "Etkin penceredeki tüm kontrolleri okur - Sistem odağı": {
+  "aliases": [
+   "pencere kontrolleri"
+  ],
+  "keep_original": false
+ },
+ "Geçerli uygulama durum çubuğunu kodlar. - Sistem odağı": {
+  "aliases": [
+   "durum çubuğunu harfle"
+  ],
+  "keep_original": false
+ },
+ "Geçerli uygulama durum çubuğunu okur. - Sistem odağı": {
+  "aliases": [
+   "uygulama durumu"
+  ],
+  "keep_original": false
+ },
+ "Geçerli uygulamanın durum çubuğunun içeriğini panoya kopyalar. - Sistem odağı": {
+  "aliases": [
+   "durum çubuğunu kopyala"
+  ],
+  "keep_original": false
+ },
+ "Mevcut uygulama ya da aktif pencerenin başlığını okur. İki kez basılırsa, başlığı adana, bolu, ceyhan şeklinde kodlar. Üç kez basılırsa, başlığı panoya kopyalar - Sistem odağı": {
+  "aliases": [
+   "pencere başlığı"
+  ],
+  "keep_original": false
+ },
+ "O anda odaklanılan nesnenin konumuyla ilgili bilgileri raporlar. - Sistem odağı": {
+  "aliases": [
+   "odak konumu"
+  ],
+  "keep_original": false
+ },
+ "O anda odaklanılan nesnenin kısayol tuşunu söyler - Sistem odağı": {
+  "aliases": [
+   "kısayol tuşu"
+  ],
+  "keep_original": false
+ },
+ "Odaklanılan nesneyi okur. İki kez basıldığında bilgi harf harf okunur. Üç kez basıldığında bilgi kodlanarak okunur. - Sistem odağı": {
+  "aliases": [
+   "odaktakini oku"
+  ],
+  "keep_original": false
+ },
+ "Odağı geçerli gömülü nesnenin dışına ve onu içeren belgeye taşır - Sistem odağı": {
+  "aliases": [
+   "gömülü nesneden çık"
+  ],
+  "keep_original": false
+ },
+ "Sistem tepsisi düğmelerini gösterir. İki kez basıldığında ise, görev çubuğu simgeleri görüntülenir. - Sistem tepsisi": {
+  "aliases": [
+   "tepsi düğmeleri"
+  ],
+  "keep_original": false
+ },
+ "Birkaç sözlüğe erişmek için ana pencere - Sözlükler": {
+  "aliases": [
+   "sözlükleri aç"
+  ],
+  "keep_original": false
+ },
+ "Varsayılan sözlüğü kullanarak sözlük arama penceresini açar - Sözlükler": {
+  "aliases": [
+   "sözlük ara"
+  ],
+  "keep_original": false
+ },
+ "Liste sütun başlıklarıyla etkileşim için bir iletişim kutusu gösterir - Sütun İncelemesi (Düzenlemeyin!)": {
+  "aliases": [
+   "sütun başlıkları"
+  ],
+  "keep_original": false
+ },
+ "Arama Kaynağı Seçimi - TDK ve Sözlükler": {
+  "aliases": [
+   "arama kaynağı seç"
+  ],
+  "keep_original": true
+ },
+ "Argo Sözlüğü Araması (Madde Adı) - TDK ve Sözlükler": {
+  "aliases": [
+   "argoda ara"
+  ],
+  "keep_original": false
+ },
+ "Argo Sözlüğü Araması (Tanım İçi) - TDK ve Sözlükler": {
+  "aliases": [
+   "argo tanımında ara"
+  ],
+  "keep_original": false
+ },
+ "Bing Araması - TDK ve Sözlükler": {
+  "aliases": [
+   "bingde ara"
+  ],
+  "keep_original": true
+ },
+ "Birleşik Arama (TDK + Dil Derneği) - TDK ve Sözlükler": {
+  "aliases": [
+   "ikili arama"
+  ],
+  "keep_original": false
+ },
+ "DuckDuckGo Araması - TDK ve Sözlükler": {
+  "aliases": [
+   "dak dak go"
+  ],
+  "keep_original": true
+ },
+ "Eş/Zıt Anlamlı Sözlük Araması (KeNet, Çevrimdışı) - TDK ve Sözlükler": {
+  "aliases": [
+   "eş anlamlı ara"
+  ],
+  "keep_original": false
+ },
+ "Google Araması - TDK ve Sözlükler": {
+  "aliases": [
+   "gugıl ara",
+   "google ara"
+  ],
+  "keep_original": true
+ },
+ "Kafiye Sözlüğü Araması (KeNet, Çevrimdışı) - TDK ve Sözlükler": {
+  "aliases": [
+   "kafiye ara"
+  ],
+  "keep_original": false
+ },
+ "Kaynak seçim katmanını açar. - TDK ve Sözlükler": {
+  "aliases": [
+   "kaynak katmanı"
+  ],
+  "keep_original": true
+ },
+ "Kubbealtı Lugatı Araması - TDK ve Sözlükler": {
+  "aliases": [
+   "kubbealtı ara"
+  ],
+  "keep_original": true
+ },
+ "Müzik Terimleri Sözlüğü Araması (Madde Adı) - TDK ve Sözlükler": {
+  "aliases": [
+   "müzik terimi ara"
+  ],
+  "keep_original": false
+ },
+ "Müzik Terimleri Sözlüğü Araması (Tanım İçi) - TDK ve Sözlükler": {
+  "aliases": [
+   "müzik tanımında ara"
+  ],
+  "keep_original": false
+ },
+ "Nişanyan Sözlük (Etimoloji) Araması - TDK ve Sözlükler": {
+  "aliases": [
+   "etimoloji ara"
+  ],
+  "keep_original": true
+ },
+ "Sadece Dil Derneği Araması - TDK ve Sözlükler": {
+  "aliases": [
+   "dil derneği ara"
+  ],
+  "keep_original": true
+ },
+ "Sadece TDK Güncel Türkçe Sözlük Araması - TDK ve Sözlükler": {
+  "aliases": [
+   "sadece tdk ara"
+  ],
+  "keep_original": false
+ },
+ "Seçili ifade ile başlayan kelimeleri listeler. - TDK ve Sözlükler": {
+  "aliases": [
+   "başlayan kelimeler"
+  ],
+  "keep_original": false
+ },
+ "Seçili ifade ile biten kelimeleri listeler. - TDK ve Sözlükler": {
+  "aliases": [
+   "biten kelimeler"
+  ],
+  "keep_original": false
+ },
+ "Seçili metni son kullanılan sözlükte arar. - TDK ve Sözlükler": {
+  "aliases": [
+   "son sözlükte ara"
+  ],
+  "keep_original": false
+ },
+ "Seçili metni veya imleçteki kelimeyi analiz eder (Sözlük, İstatistik, IP, ISBN). - TDK ve Sözlükler": {
+  "aliases": [
+   "metni analiz et"
+  ],
+  "keep_original": false
+ },
+ "Son aramaları listeler (Geçmiş). - TDK ve Sözlükler": {
+  "aliases": [
+   "arama geçmişi"
+  ],
+  "keep_original": true
+ },
+ "Son aranan İngilizce kelimenin telaffuzunu çalar. - TDK ve Sözlükler": {
+  "aliases": [
+   "telaffuzu çal"
+  ],
+  "keep_original": false
+ },
+ "Son sonuç penceresini alıntı olarak panoya kopyalar (CF_HTML + düz metin). - TDK ve Sözlükler": {
+  "aliases": [
+   "sonucu alıntıla"
+  ],
+  "keep_original": false
+ },
+ "TDK Atasözleri ve Deyimler Araması - TDK ve Sözlükler": {
+  "aliases": [
+   "atasözü ara"
+  ],
+  "keep_original": false
+ },
+ "TDK Kişi Adları Araması (Ada Göre) - TDK ve Sözlükler": {
+  "aliases": [
+   "kişi adı ara"
+  ],
+  "keep_original": false
+ },
+ "TDK Kişi Adları Araması (Anlama Göre) - TDK ve Sözlükler": {
+  "aliases": [
+   "anlama göre isim"
+  ],
+  "keep_original": false
+ },
+ "TDK Özel Sözlükler Araması (Yapılandırılabilir) - TDK ve Sözlükler": {
+  "aliases": [
+   "özel sözlük ara"
+  ],
+  "keep_original": false
+ },
+ "TDK'den Günün Kelimesi ve Atasözünü gösterir. - TDK ve Sözlükler": {
+  "aliases": [
+   "günün kelimesi"
+  ],
+  "keep_original": false
+ },
+ "Tureng Sözlük Araması (İng-Tur, Tur-Eng) - TDK ve Sözlükler": {
+  "aliases": [
+   "tureng ara"
+  ],
+  "keep_original": false
+ },
+ "Verilen harflerle türetilebilecek kelimeleri bulur (Anagram). - TDK ve Sözlükler": {
+  "aliases": [
+   "anagram bul"
+  ],
+  "keep_original": false
+ },
+ "Vikisözlük Araması - TDK ve Sözlükler": {
+  "aliases": [
+   "vikisözlük ara"
+  ],
+  "keep_original": true
+ },
+ "Yahoo Araması - TDK ve Sözlükler": {
+  "aliases": [
+   "yahoo ara"
+  ],
+  "keep_original": true
+ },
+ "Yandex Araması - TDK ve Sözlükler": {
+  "aliases": [
+   "yandex ara"
+  ],
+  "keep_original": true
+ },
+ "Yerel (Çevrimdışı) Sözlük Araması - TDK ve Sözlükler": {
+  "aliases": [
+   "yerel sözlük ara"
+  ],
+  "keep_original": true
+ },
+ "Yerel sözlük açıklamalarında arama yapar (Tersine Sözlük). - TDK ve Sözlükler": {
+  "aliases": [
+   "tersine sözlük"
+  ],
+  "keep_original": false
+ },
+ "Çoklu Arama (Yapılandırılabilir — varsayılan: TDK + Dil Derneği + Vikisözlük + Nişanyan + Kubbealtı) - TDK ve Sözlükler": {
+  "aliases": [
+   "beşli arama"
+  ],
+  "keep_original": false
+ },
+ "Çoklu Arama 2 (Yapılandırılabilir — varsayılan: TDK + Dil Derneği + Kubbealtı) - TDK ve Sözlükler": {
+  "aliases": [
+   "üçlü arama"
+  ],
+  "keep_original": false
+ },
+ "Braille girişi ile yapılan bir klavye kısayolunu taklit için sanal olarak NVDA tuşunu değiştirir - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "nvda tuşu"
+  ],
+  "keep_original": false
+ },
+ "Braille girişi ile yapılan bir klavye kısayolunu taklit için sanal olarak alt tuşunu değiştirir - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "alt tuşu"
+  ],
+  "keep_original": false
+ },
+ "Braille girişi ile yapılan bir klavye kısayolunu taklit için sanal olarak kontrol tuşunu değiştirir - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "kontrol tuşu"
+  ],
+  "keep_original": false
+ },
+ "Braille girişi ile yapılan bir klavye kısayolunu taklit için sanal olarak shift tuşunu değiştirir - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "shift tuşu",
+   "şift tuşu"
+  ],
+  "keep_original": false
+ },
+ "Braille girişi ile yapılan bir klavye kısayolunu taklit için sanal olarak sol windows tuşunu değiştirir - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "windows tuşu"
+  ],
+  "keep_original": false
+ },
+ "Braille girişli bir klavye kısayolunu taklit etmek için NVDA ve shift tuşlarını sanal olarak değiştirir - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "nvda şift"
+  ],
+  "keep_original": false
+ },
+ "Braille girişli bir klavye kısayolunu taklit etmek için alt ve üst karakter tuşlarını sanal olarak değiştirir - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "alt şift"
+  ],
+  "keep_original": false
+ },
+ "Braille girişli bir klavye kısayolunu taklit etmek için kontrol ve kaydırma tuşlarını sanal olarak değiştirir - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "kontrol şift"
+  ],
+  "keep_original": false
+ },
+ "Braille girişli bir klavye kısayolunu taklit etmek için kontrol, alt ve shift tuşlarını sanal olarak değiştirir - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "kontrol alt şift"
+  ],
+  "keep_original": false
+ },
+ "Braille girişli bir klavye kısayolunu taklit etmek için sol başlat ve shift tuşlarını sanal olarak değiştirir - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "windows şift"
+  ],
+  "keep_original": false
+ },
+ "aşağı ok - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "aşağı tuşu"
+  ],
+  "keep_original": true
+ },
+ "end - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "end tuşu"
+  ],
+  "keep_original": true
+ },
+ "home - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "hom tuşu"
+  ],
+  "keep_original": true
+ },
+ "kontrol+end - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "belge sonu"
+  ],
+  "keep_original": true
+ },
+ "kontrol+home - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "belge başı"
+  ],
+  "keep_original": true
+ },
+ "kontrol+sağ ok - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "kelime ileri"
+  ],
+  "keep_original": true
+ },
+ "kontrol+sol ok - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "kelime geri"
+  ],
+  "keep_original": true
+ },
+ "sağ ok - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "sağ tuşu"
+  ],
+  "keep_original": true
+ },
+ "sol ok - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "sol tuşu"
+  ],
+  "keep_original": true
+ },
+ "yukarı ok - Taklit sistem klavye tuşları": {
+  "aliases": [
+   "yukarı tuşu"
+  ],
+  "keep_original": true
+ },
+ "1. seviyedeki sonraki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "sonraki birinci başlık"
+  ],
+  "keep_original": false
+ },
+ "1. seviyedeki önceki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "önceki birinci başlık"
+  ],
+  "keep_original": false
+ },
+ "2. seviyedeki sonraki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "sonraki ikinci başlık"
+  ],
+  "keep_original": false
+ },
+ "2. seviyedeki önceki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "önceki ikinci başlık"
+  ],
+  "keep_original": false
+ },
+ "3. seviyedeki sonraki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "sonraki üçüncü başlık"
+  ],
+  "keep_original": false
+ },
+ "3. seviyedeki önceki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "önceki üçüncü başlık"
+  ],
+  "keep_original": false
+ },
+ "4. seviyedeki sonraki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "sonraki dördüncü başlık"
+  ],
+  "keep_original": false
+ },
+ "4. seviyedeki önceki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "önceki dördüncü başlık"
+  ],
+  "keep_original": false
+ },
+ "5. seviyedeki sonraki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "sonraki beşinci başlık"
+  ],
+  "keep_original": false
+ },
+ "5. seviyedeki önceki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "önceki beşinci başlık"
+  ],
+  "keep_original": false
+ },
+ "6. seviyedeki sonraki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "sonraki altıncı başlık"
+  ],
+  "keep_original": false
+ },
+ "6. seviyedeki önceki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "önceki altıncı başlık"
+  ],
+  "keep_original": false
+ },
+ "7. seviyedeki sonraki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "sonraki yedinci başlık"
+  ],
+  "keep_original": false
+ },
+ "7. seviyedeki önceki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "önceki yedinci başlık"
+  ],
+  "keep_original": false
+ },
+ "8. seviyedeki sonraki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "sonraki sekizinci başlık"
+  ],
+  "keep_original": false
+ },
+ "8. seviyedeki önceki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "önceki sekizinci başlık"
+  ],
+  "keep_original": false
+ },
+ "9. seviyedeki sonraki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "sonraki dokuzuncu başlık"
+  ],
+  "keep_original": false
+ },
+ "9. seviyedeki önceki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "önceki dokuzuncu başlık"
+  ],
+  "keep_original": false
+ },
+ "Belge içeriğini günceller - Tarama kipi": {
+  "aliases": [
+   "belgeyi güncelle"
+  ],
+  "keep_original": true
+ },
+ "Belgede üzerinde bulunulan nesneyi etkinleştirir - Tarama kipi": {
+  "aliases": [
+   "öğeyi etkinleştir"
+  ],
+  "keep_original": false
+ },
+ "Bu belgedeki çeşitli öğeleri listeler - Tarama kipi": {
+  "aliases": [
+   "öğe listesi"
+  ],
+  "keep_original": false
+ },
+ "Dokunmatik Tarama kipi dolaşımında sonraki öge türünü seçer - Tarama kipi": {
+  "aliases": [
+   "dokunmatik sonraki tür"
+  ],
+  "keep_original": false
+ },
+ "Dokunmatik Tarama kipi dolaşımında önceki öge türünü seçer - Tarama kipi": {
+  "aliases": [
+   "dokunmatik önceki tür"
+  ],
+  "keep_original": false
+ },
+ "Dokunmatik tarama kipi dolaşımında seçilen türün sonraki ögesine gider - Tarama kipi": {
+  "aliases": [
+   "dokunmatik sonraki öğe"
+  ],
+  "keep_original": false
+ },
+ "Dokunmatik tarama kipi dolaşımında seçilen türün önceki ögesine gider - Tarama kipi": {
+  "aliases": [
+   "dokunmatik önceki öğe"
+  ],
+  "keep_original": false
+ },
+ "Liste veya tablo gibi öge bloklarının dışına çıkar - Tarama kipi": {
+  "aliases": [
+   "bloktan çık"
+  ],
+  "keep_original": false
+ },
+ "Mevcut sayfanın ekranda göründüğü gibi sergilenmesiyle ilgili ayarı açıp kapatır - Tarama kipi": {
+  "aliases": [
+   "ekran düzeni"
+  ],
+  "keep_original": false
+ },
+ "Tablo ya da liste vb öge bloklarının başına gider - Tarama kipi": {
+  "aliases": [
+   "blok başı"
+  ],
+  "keep_original": false
+ },
+ "Tarama kipiyle odak kipi  arasında geçiş yapar. Odak kipindeyken, tuşlar doğrudan mevcut uygulamaya gönderilir, bu sizin doğrudan uygulamayla ilgili kontrolle etkileşiminizi sağlar. Tarama kipindeyken, açık belge içerisinde  dolaşabilir, hızlı dolaşım kısayol tuşlarını kullanabilirsiniz. - Tarama kipi": {
+  "aliases": [
+   "kipi değiştir"
+  ],
+  "keep_original": false
+ },
+ "Tek tuşla Seri dolaşımı açıp kapatır. Açıkken ilgili tuşla tarama kipinde çeşitli öğeler arasında dolaşılabilirken, kapalıyken basılan tuş doğrudan uygulamaya gönderilir - Tarama kipi": {
+  "aliases": [
+   "tek tuş dolaşımı"
+  ],
+  "keep_original": false
+ },
+ "Varsa, bulunulan konumdaki ögeyle ilgili uzun tarifi gösterir. - Tarama kipi": {
+  "aliases": [
+   "uzun açıklama"
+  ],
+  "keep_original": false
+ },
+ "Yerel seçim kipini açar veya kapatır - Tarama kipi": {
+  "aliases": [
+   "yerel seçim"
+  ],
+  "keep_original": false
+ },
+ "bir grup link sonrasındaki metin üzerine gider - Tarama kipi": {
+  "aliases": [
+   "linkleri atla"
+  ],
+  "keep_original": false
+ },
+ "bir grup link öncesindeki metin üzerine gider - Tarama kipi": {
+  "aliases": [
+   "linklerin öncesi"
+  ],
+  "keep_original": false
+ },
+ "metni mevcut imleç konumundan sonra ara - Tarama kipi": {
+  "aliases": [
+   "buradan sonra ara"
+  ],
+  "keep_original": false
+ },
+ "sonraki alıntıya gider - Tarama kipi": {
+  "aliases": [
+   "sonraki alıntı"
+  ],
+  "keep_original": true
+ },
+ "sonraki aynı biçimdeki metne gider - Tarama kipi": {
+  "aliases": [
+   "sonraki aynı biçim"
+  ],
+  "keep_original": false
+ },
+ "sonraki ayraca gider - Tarama kipi": {
+  "aliases": [
+   "sonraki ayraç"
+  ],
+  "keep_original": true
+ },
+ "sonraki aşama çubuğuna gider - Tarama kipi": {
+  "aliases": [
+   "sonraki ilerleme çubuğu"
+  ],
+  "keep_original": true
+ },
+ "sonraki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "başlık ileri"
+  ],
+  "keep_original": true
+ },
+ "sonraki bilgi notuna gider - Tarama kipi": {
+  "aliases": [
+   "sonraki bilgi notu"
+  ],
+  "keep_original": true
+ },
+ "sonraki dik hizalanmış paragrafa gider - Tarama kipi": {
+  "aliases": [
+   "sonraki dik paragraf"
+  ],
+  "keep_original": false
+ },
+ "sonraki düğmeye gider - Tarama kipi": {
+  "aliases": [
+   "sonraki düğme"
+  ],
+  "keep_original": true
+ },
+ "sonraki farklı biçimde metne gider - Tarama kipi": {
+  "aliases": [
+   "sonraki farklı biçim"
+  ],
+  "keep_original": false
+ },
+ "sonraki figüre gider - Tarama kipi": {
+  "aliases": [
+   "sonraki figür"
+  ],
+  "keep_original": true
+ },
+ "sonraki form alanına gider - Tarama kipi": {
+  "aliases": [
+   "sonraki form alanı"
+  ],
+  "keep_original": true
+ },
+ "sonraki geçiş düğmesine gider - Tarama kipi": {
+  "aliases": [
+   "sonraki geçiş düğmesi"
+  ],
+  "keep_original": true
+ },
+ "sonraki grafiğe gider - Tarama kipi": {
+  "aliases": [
+   "sonraki grafik"
+  ],
+  "keep_original": true
+ },
+ "sonraki gruplandırmaya gider - Tarama kipi": {
+  "aliases": [
+   "sonraki grup"
+  ],
+  "keep_original": true
+ },
+ "sonraki gömülü nesneye gider - Tarama kipi": {
+  "aliases": [
+   "sonraki gömülü nesne"
+  ],
+  "keep_original": true
+ },
+ "sonraki hataya gider - Tarama kipi": {
+  "aliases": [
+   "sonraki hata"
+  ],
+  "keep_original": true
+ },
+ "sonraki linke gider - Tarama kipi": {
+  "aliases": [
+   "sonraki link"
+  ],
+  "keep_original": true
+ },
+ "sonraki liste ögesine gider - Tarama kipi": {
+  "aliases": [
+   "sonraki liste öğesi"
+  ],
+  "keep_original": true
+ },
+ "sonraki listeye gider - Tarama kipi": {
+  "aliases": [
+   "sonraki liste"
+  ],
+  "keep_original": true
+ },
+ "sonraki makaleye gider - Tarama kipi": {
+  "aliases": [
+   "sonraki makale"
+  ],
+  "keep_original": true
+ },
+ "sonraki matematik formülüne gider - Tarama kipi": {
+  "aliases": [
+   "sonraki formül"
+  ],
+  "keep_original": true
+ },
+ "sonraki menü ögesine gider - Tarama kipi": {
+  "aliases": [
+   "sonraki menü öğesi"
+  ],
+  "keep_original": true
+ },
+ "sonraki metin paragrafına gider - Tarama kipi": {
+  "aliases": [
+   "sonraki paragraf"
+  ],
+  "keep_original": true
+ },
+ "sonraki onay kutusuna gider - Tarama kipi": {
+  "aliases": [
+   "sonraki onay kutusu"
+  ],
+  "keep_original": true
+ },
+ "sonraki referansa gider - Tarama kipi": {
+  "aliases": [
+   "sonraki referans"
+  ],
+  "keep_original": true
+ },
+ "sonraki sekmeye gider - Tarama kipi": {
+  "aliases": [
+   "sonraki sekme öğesi"
+  ],
+  "keep_original": true
+ },
+ "sonraki seçim düğmesine gider - Tarama kipi": {
+  "aliases": [
+   "sonraki radyo düğmesi"
+  ],
+  "keep_original": true
+ },
+ "sonraki seçim kutusuna gider - Tarama kipi": {
+  "aliases": [
+   "sonraki seçim kutusu"
+  ],
+  "keep_original": true
+ },
+ "sonraki sürgüye gider - Tarama kipi": {
+  "aliases": [
+   "sonraki sürgü"
+  ],
+  "keep_original": true
+ },
+ "sonraki sınır imine gider - Tarama kipi": {
+  "aliases": [
+   "sonraki sınır imi"
+  ],
+  "keep_original": true
+ },
+ "sonraki tabloya gider - Tarama kipi": {
+  "aliases": [
+   "sonraki tablo"
+  ],
+  "keep_original": true
+ },
+ "sonraki tıklanabilir ögeye gider - Tarama kipi": {
+  "aliases": [
+   "sonraki tıklanabilir"
+  ],
+  "keep_original": true
+ },
+ "sonraki yazı alanına gider - Tarama kipi": {
+  "aliases": [
+   "sonraki yazı alanı"
+  ],
+  "keep_original": true
+ },
+ "sonraki ziyaret edilmemiş linke gider - Tarama kipi": {
+  "aliases": [
+   "sonraki yeni link"
+  ],
+  "keep_original": false
+ },
+ "sonraki ziyaret edilmiş linke gider - Tarama kipi": {
+  "aliases": [
+   "sonraki gezilen link"
+  ],
+  "keep_original": false
+ },
+ "sonraki çerçeveye gider - Tarama kipi": {
+  "aliases": [
+   "sonraki çerçeve"
+  ],
+  "keep_original": true
+ },
+ "sonrakini bul - Tarama kipi": {
+  "aliases": [
+   "sonraki sonuç"
+  ],
+  "keep_original": true
+ },
+ "önceki Ayraca gider - Tarama kipi": {
+  "aliases": [
+   "önceki ayraç"
+  ],
+  "keep_original": true
+ },
+ "önceki alıntıya gider - Tarama kipi": {
+  "aliases": [
+   "önceki alıntı"
+  ],
+  "keep_original": true
+ },
+ "önceki aynı biçimde metne gider - Tarama kipi": {
+  "aliases": [
+   "önceki aynı biçim"
+  ],
+  "keep_original": false
+ },
+ "önceki aşama çubuğuna gider - Tarama kipi": {
+  "aliases": [
+   "önceki ilerleme çubuğu"
+  ],
+  "keep_original": true
+ },
+ "önceki başlığa gider - Tarama kipi": {
+  "aliases": [
+   "başlık geri"
+  ],
+  "keep_original": true
+ },
+ "önceki bilgi notuna gider - Tarama kipi": {
+  "aliases": [
+   "önceki bilgi notu"
+  ],
+  "keep_original": true
+ },
+ "önceki dik hizalanmış paragrafa gider - Tarama kipi": {
+  "aliases": [
+   "önceki dik paragraf"
+  ],
+  "keep_original": false
+ },
+ "önceki düğmeye gider - Tarama kipi": {
+  "aliases": [
+   "önceki düğme"
+  ],
+  "keep_original": true
+ },
+ "önceki farklı biçimde metne gider - Tarama kipi": {
+  "aliases": [
+   "önceki farklı biçim"
+  ],
+  "keep_original": false
+ },
+ "önceki figüre gider - Tarama kipi": {
+  "aliases": [
+   "önceki figür"
+  ],
+  "keep_original": true
+ },
+ "önceki form alanına gider - Tarama kipi": {
+  "aliases": [
+   "önceki form alanı"
+  ],
+  "keep_original": true
+ },
+ "önceki geçiş düğmesine gider - Tarama kipi": {
+  "aliases": [
+   "önceki geçiş düğmesi"
+  ],
+  "keep_original": true
+ },
+ "önceki grafiğe gider - Tarama kipi": {
+  "aliases": [
+   "önceki grafik"
+  ],
+  "keep_original": true
+ },
+ "önceki gruplandırmaya gider - Tarama kipi": {
+  "aliases": [
+   "önceki grup"
+  ],
+  "keep_original": true
+ },
+ "önceki gömülü nesneye gider - Tarama kipi": {
+  "aliases": [
+   "önceki gömülü nesne"
+  ],
+  "keep_original": true
+ },
+ "önceki hataya gider - Tarama kipi": {
+  "aliases": [
+   "önceki hata"
+  ],
+  "keep_original": true
+ },
+ "önceki linke gider - Tarama kipi": {
+  "aliases": [
+   "önceki link"
+  ],
+  "keep_original": true
+ },
+ "önceki liste ögesine gider - Tarama kipi": {
+  "aliases": [
+   "önceki liste öğesi"
+  ],
+  "keep_original": true
+ },
+ "önceki listeye gider - Tarama kipi": {
+  "aliases": [
+   "önceki liste"
+  ],
+  "keep_original": true
+ },
+ "önceki makaleye gider - Tarama kipi": {
+  "aliases": [
+   "önceki makale"
+  ],
+  "keep_original": true
+ },
+ "önceki matematik formülüne gider - Tarama kipi": {
+  "aliases": [
+   "önceki formül"
+  ],
+  "keep_original": true
+ },
+ "önceki menü ögesine gider - Tarama kipi": {
+  "aliases": [
+   "önceki menü öğesi"
+  ],
+  "keep_original": true
+ },
+ "önceki metin paragrafına gider - Tarama kipi": {
+  "aliases": [
+   "önceki paragraf"
+  ],
+  "keep_original": true
+ },
+ "önceki onay kutusuna gider - Tarama kipi": {
+  "aliases": [
+   "önceki onay kutusu"
+  ],
+  "keep_original": true
+ },
+ "önceki referansa gider - Tarama kipi": {
+  "aliases": [
+   "önceki referans"
+  ],
+  "keep_original": true
+ },
+ "önceki sekmeye gider - Tarama kipi": {
+  "aliases": [
+   "önceki sekme öğesi"
+  ],
+  "keep_original": true
+ },
+ "önceki seçim düğmesine gider - Tarama kipi": {
+  "aliases": [
+   "önceki radyo düğmesi"
+  ],
+  "keep_original": true
+ },
+ "önceki seçim kutusuna gider - Tarama kipi": {
+  "aliases": [
+   "önceki seçim kutusu"
+  ],
+  "keep_original": true
+ },
+ "önceki sürgüye gider - Tarama kipi": {
+  "aliases": [
+   "önceki sürgü"
+  ],
+  "keep_original": true
+ },
+ "önceki sınır imine gider - Tarama kipi": {
+  "aliases": [
+   "önceki sınır imi"
+  ],
+  "keep_original": true
+ },
+ "önceki tabloya gider - Tarama kipi": {
+  "aliases": [
+   "önceki tablo"
+  ],
+  "keep_original": true
+ },
+ "önceki tıklanabilir ögeye gider - Tarama kipi": {
+  "aliases": [
+   "önceki tıklanabilir"
+  ],
+  "keep_original": true
+ },
+ "önceki yazı alanına gider - Tarama kipi": {
+  "aliases": [
+   "önceki yazı alanı"
+  ],
+  "keep_original": true
+ },
+ "önceki ziyaret edilmemiş linke gider - Tarama kipi": {
+  "aliases": [
+   "önceki yeni link"
+  ],
+  "keep_original": false
+ },
+ "önceki ziyaret edilmiş linke gider - Tarama kipi": {
+  "aliases": [
+   "önceki gezilen link"
+  ],
+  "keep_original": false
+ },
+ "önceki çerçeveye gider - Tarama kipi": {
+  "aliases": [
+   "önceki çerçeve"
+  ],
+  "keep_original": true
+ },
+ "öncekini bul - Tarama kipi": {
+  "aliases": [
+   "önceki sonuç"
+  ],
+  "keep_original": true
+ },
+ "Open Universal Tuner dialog - Universal Tuner": {
+  "aliases": [
+   "tuner penceresi"
+  ],
+  "keep_original": true
+ },
+ "Klavyenin bu bilgisayarı veya uzaktaki bilgisayarı kontrol etme durumunu değiştirir - Uzaktan erişim": {
+  "aliases": [
+   "klavye kontrolü"
+  ],
+  "keep_original": false
+ },
+ "Kontrol edilen bilgisayara kontrol+alt+delete komutunu gönderir. - Uzaktan erişim": {
+  "aliases": [
+   "kontrol alt delete"
+  ],
+  "keep_original": false
+ },
+ "Mevcut uzaktan erişim oturumu bağlantısını keser - Uzaktan erişim": {
+  "aliases": [
+   "bağlantıyı kes"
+  ],
+  "keep_original": false
+ },
+ "Mevcut uzaktan erişim oturumunun linkini panoya kopyalar - Uzaktan erişim": {
+  "aliases": [
+   "oturum linkini kopyala"
+  ],
+  "keep_original": false
+ },
+ "Panonun içeriğini uzaktan erişilen bilgisayara gönderir - Uzaktan erişim": {
+  "aliases": [
+   "panoyu gönder"
+  ],
+  "keep_original": false
+ },
+ "Uzaktaki bilgisayara bağlanır - Uzaktan erişim": {
+  "aliases": [
+   "uzaktan bağlan"
+  ],
+  "keep_original": true
+ },
+ "Uzaktan erişilen bilgisayarın konuşmasının sesini açar/kapatır - Uzaktan erişim": {
+  "aliases": [
+   "uzak konuşma sesi"
+  ],
+  "keep_original": false
+ },
+ "Uzaktan erişim bağlantısını açar/kapatır - Uzaktan erişim": {
+  "aliases": [
+   "uzaktan erişimi aç",
+   "uzaktan erişimi kapat"
+  ],
+  "keep_original": true
+ },
+ "Describes the current element. Press twice for a detailed description in a window. - VisionMate": {
+  "aliases": [
+   "öğeyi tarif et"
+  ],
+  "keep_original": false
+ },
+ "Describes the current window. Press twice for a detailed description in a window. - VisionMate": {
+  "aliases": [
+   "pencereyi tarif et"
+  ],
+  "keep_original": false
+ },
+ "Describes the image or image file on the clipboard. Press twice for a detailed description in a window. - VisionMate": {
+  "aliases": [
+   "panoyu tarif et"
+  ],
+  "keep_original": false
+ },
+ "Describes the whole screen. Press twice for a detailed description in a window. - VisionMate": {
+  "aliases": [
+   "ekranı tarif et"
+  ],
+  "keep_original": false
+ },
+ "Gives your own name to the current button, or to the current item in the overlay. - VisionMate": {
+  "aliases": [
+   "düğmeye ad ver"
+  ],
+  "keep_original": false
+ },
+ "Opens the overlay: the current window as a list of its texts and icons. Enter clicks an item in the real window, Escape closes. - VisionMate": {
+  "aliases": [
+   "pencere kaplaması"
+  ],
+  "keep_original": false
+ },
+ "Turns automatic descriptions of images without a label on or off. - VisionMate": {
+  "aliases": [
+   "otomatik resim tarifi"
+  ],
+  "keep_original": false
+ },
+ "Turns naming of buttons that have no name, from their icon, on or off. - VisionMate": {
+  "aliases": [
+   "düğme adlandırma"
+  ],
+  "keep_original": false
+ },
+ "Toggles automatic language switching - Vocalizer expressive 2": {
+  "aliases": [
+   "otomatik dil değişimi"
+  ],
+  "keep_original": false
+ },
+ "Starts or stops voice dictation recording. - Voice Input": {
+  "aliases": [
+   "dikte kaydı"
+  ],
+  "keep_original": false
+ },
+ "Bir kez basılırsa, 24 saat ve sonraki 2 gün için hava durumu tahminini ve sıcaklık bilgisini verir. İki kez basılırsa, sıcaklık ve hava koşullarını saatlik tahmin olarak verir. - Weather_Plus": {
+  "aliases": [
+   "hava tahmini"
+  ],
+  "keep_original": false
+ },
+ "Geçici şehir belirlemenizi sağlar. - Weather_Plus": {
+  "aliases": [
+   "geçici şehir"
+  ],
+  "keep_original": true
+ },
+ "Hava Raporunun son güncelleme zamanını seslendirir. - Weather_Plus": {
+  "aliases": [
+   "hava güncelleme zamanı"
+  ],
+  "keep_original": false
+ },
+ "Sıcaklık birimini geçici olarak ayarlamanızı sağlar. - Weather_Plus": {
+  "aliases": [
+   "sıcaklık birimi"
+  ],
+  "keep_original": false
+ },
+ "Sıcaklık ve hava durumunu verir. - Weather_Plus": {
+  "aliases": [
+   "hava durumu"
+  ],
+  "keep_original": false
+ },
+ "Weather plus ayarları iletişim kutusunu açar. - Weather_Plus": {
+  "aliases": [
+   "hava ayarları"
+  ],
+  "keep_original": false
+ },
+ "Inspector - WhatsApp Enhancer": {
+  "aliases": [
+   "vatsap denetçisi"
+  ],
+  "keep_original": false
+ },
+ "Başlat menüsünü aç - Windows komutları": {
+  "aliases": [
+   "başlat menüsü"
+  ],
+  "keep_original": true
+ },
+ "Bildirim merkezini aç - Windows komutları": {
+  "aliases": [
+   "bildirim merkezi"
+  ],
+  "keep_original": true
+ },
+ "Bilgisayarı kilitle - Windows komutları": {
+  "aliases": [
+   "ekranı kilitle"
+  ],
+  "keep_original": true
+ },
+ "Bul - Windows komutları": {
+  "aliases": [
+   "içinde bul"
+  ],
+  "keep_original": true
+ },
+ "Dosya Gezginini aç - Windows komutları": {
+  "aliases": [
+   "gezgini aç"
+  ],
+  "keep_original": true
+ },
+ "Dosya aç - Windows komutları": {
+  "aliases": [
+   "dosyayı aç"
+  ],
+  "keep_original": true
+ },
+ "Ekran görüntüsü al - Windows komutları": {
+  "aliases": [
+   "ekranı yakala"
+  ],
+  "keep_original": true
+ },
+ "Emoji panelini aç - Windows komutları": {
+  "aliases": [
+   "emoji paneli"
+  ],
+  "keep_original": true
+ },
+ "Geri al - Windows komutları": {
+  "aliases": [
+   "işlemi geri al"
+  ],
+  "keep_original": true
+ },
+ "Geri git - Windows komutları": {
+  "aliases": [
+   "sayfa geri"
+  ],
+  "keep_original": true
+ },
+ "Görev Yöneticisini aç - Windows komutları": {
+  "aliases": [
+   "task manager"
+  ],
+  "keep_original": true
+ },
+ "Görev görünümünü göster - Windows komutları": {
+  "aliases": [
+   "açık pencereler"
+  ],
+  "keep_original": true
+ },
+ "Görev çubuğunu göster - Windows komutları": {
+  "aliases": [
+   "görev çubuğuna odaklan"
+  ],
+  "keep_original": true
+ },
+ "Hızlı ayarları aç - Windows komutları": {
+  "aliases": [
+   "hızlı ayarlar"
+  ],
+  "keep_original": true
+ },
+ "Kapatılan sekmeyi yeniden aç - Windows komutları": {
+  "aliases": [
+   "sekmeyi geri getir"
+  ],
+  "keep_original": true
+ },
+ "Kaydet - Windows komutları": {
+  "aliases": [
+   "dosyayı kaydet"
+  ],
+  "keep_original": true
+ },
+ "Kes - Windows komutları": {
+  "aliases": [
+   "seçileni kes"
+  ],
+  "keep_original": true
+ },
+ "Kopyala - Windows komutları": {
+  "aliases": [
+   "panoya kopyala"
+  ],
+  "keep_original": true
+ },
+ "Küçültülen pencereleri geri yükle - Windows komutları": {
+  "aliases": [
+   "pencereleri geri getir"
+  ],
+  "keep_original": true
+ },
+ "Masaüstünü göster - Windows komutları": {
+  "aliases": [
+   "masaüstünü aç"
+  ],
+  "keep_original": true
+ },
+ "Medyayı oynat veya duraklat - Windows komutları": {
+  "aliases": [
+   "oynat duraklat"
+  ],
+  "keep_original": true
+ },
+ "Pano geçmişini aç - Windows komutları": {
+  "aliases": [
+   "pano geçmişi"
+  ],
+  "keep_original": true
+ },
+ "Pencereyi büyüt - Windows komutları": {
+  "aliases": [
+   "pencereyi genişlet"
+  ],
+  "keep_original": true
+ },
+ "Pencereyi kapat - Windows komutları": {
+  "aliases": [
+   "bu pencereyi kapat"
+  ],
+  "keep_original": true
+ },
+ "Pencereyi küçült - Windows komutları": {
+  "aliases": [
+   "pencereyi indir"
+  ],
+  "keep_original": true
+ },
+ "Pencereyi sağa yasla - Windows komutları": {
+  "aliases": [
+   "sağa yasla"
+  ],
+  "keep_original": true
+ },
+ "Pencereyi sola yasla - Windows komutları": {
+  "aliases": [
+   "sola yasla"
+  ],
+  "keep_original": true
+ },
+ "Sanal masaüstünü kapat - Windows komutları": {
+  "aliases": [
+   "sanal masayı kapat"
+  ],
+  "keep_original": true
+ },
+ "Sekmeyi kapat - Windows komutları": {
+  "aliases": [
+   "bu sekmeyi kapat"
+  ],
+  "keep_original": true
+ },
+ "Sesi artır - Windows komutları": {
+  "aliases": [
+   "sesi yükselt"
+  ],
+  "keep_original": true
+ },
+ "Sesi azalt - Windows komutları": {
+  "aliases": [
+   "sesi kıs"
+  ],
+  "keep_original": true
+ },
+ "Sesi kapat veya aç - Windows komutları": {
+  "aliases": [
+   "sesi sustur",
+   "sessize al"
+  ],
+  "keep_original": true
+ },
+ "Sistem tepsisini göster - Windows komutları": {
+  "aliases": [
+   "tepsiyi aç"
+  ],
+  "keep_original": true
+ },
+ "Sonraki parça - Windows komutları": {
+  "aliases": [
+   "sonraki şarkı"
+  ],
+  "keep_original": true
+ },
+ "Sonraki sanal masaüstü - Windows komutları": {
+  "aliases": [
+   "sonraki sanal masa"
+  ],
+  "keep_original": true
+ },
+ "Sonraki sekme - Windows komutları": {
+  "aliases": [
+   "sekme ileri"
+  ],
+  "keep_original": true
+ },
+ "Tüm pencereleri küçült - Windows komutları": {
+  "aliases": [
+   "hepsini küçült"
+  ],
+  "keep_original": true
+ },
+ "Tümünü seç - Windows komutları": {
+  "aliases": [
+   "tümünü işaretle"
+  ],
+  "keep_original": true
+ },
+ "Windows aramasını aç - Windows komutları": {
+  "aliases": [
+   "windows ara"
+  ],
+  "keep_original": true
+ },
+ "Windows ayarlarını aç - Windows komutları": {
+  "aliases": [
+   "windows ayarları"
+  ],
+  "keep_original": true
+ },
+ "Windows sesle yazmayı başlat - Windows komutları": {
+  "aliases": [
+   "sesle yaz"
+  ],
+  "keep_original": true
+ },
+ "Yansıtma menüsünü aç - Windows komutları": {
+  "aliases": [
+   "ekran yansıt"
+  ],
+  "keep_original": true
+ },
+ "Yapıştır - Windows komutları": {
+  "aliases": [
+   "panodan yapıştır"
+  ],
+  "keep_original": true
+ },
+ "Yazdır - Windows komutları": {
+  "aliases": [
+   "yazıcıya gönder"
+  ],
+  "keep_original": true
+ },
+ "Yeni oluştur - Windows komutları": {
+  "aliases": [
+   "yeni öğe"
+  ],
+  "keep_original": true
+ },
+ "Yeni sanal masaüstü - Windows komutları": {
+  "aliases": [
+   "yeni sanal masa"
+  ],
+  "keep_original": true
+ },
+ "Yeni sekme - Windows komutları": {
+  "aliases": [
+   "sekme aç"
+  ],
+  "keep_original": true
+ },
+ "Yeniden adlandır - Windows komutları": {
+  "aliases": [
+   "adını değiştir"
+  ],
+  "keep_original": true
+ },
+ "Yenile - Windows komutları": {
+  "aliases": [
+   "sayfayı yenile"
+  ],
+  "keep_original": true
+ },
+ "Yinele - Windows komutları": {
+  "aliases": [
+   "yeniden yap"
+  ],
+  "keep_original": true
+ },
+ "Çalıştır penceresini aç - Windows komutları": {
+  "aliases": [
+   "çalıştır kutusu"
+  ],
+  "keep_original": true
+ },
+ "Önceki parça - Windows komutları": {
+  "aliases": [
+   "önceki şarkı"
+  ],
+  "keep_original": true
+ },
+ "Önceki pencereye geç - Windows komutları": {
+  "aliases": [
+   "pencere değiştir"
+  ],
+  "keep_original": true
+ },
+ "Önceki sanal masaüstü - Windows komutları": {
+  "aliases": [
+   "önceki sanal masa"
+  ],
+  "keep_original": true
+ },
+ "Önceki sekme - Windows komutları": {
+  "aliases": [
+   "sekme geri"
+  ],
+  "keep_original": true
+ },
+ "Özellikler - Windows komutları": {
+  "aliases": [
+   "özellikleri göster"
+  ],
+  "keep_original": true
+ },
+ "İleri git - Windows komutları": {
+  "aliases": [
+   "sayfa ileri"
+  ],
+  "keep_original": true
+ },
+ "Ana freeAudio çıkış cihazını seçin - freeAudio": {
+  "aliases": [
+   "radyo çıkışı"
+  ],
+  "keep_original": false
+ },
+ "Anlık kaydı başlat veya durdur. Mevcut şarkının kaydı için iki kez, her şarkının kaydı için üç kez basın. - freeAudio": {
+  "aliases": [
+   "radyo kaydı"
+  ],
+  "keep_original": false
+ },
+ "Bas güçlendirmeyi aç/kapa - freeAudio": {
+  "aliases": [
+   "bas güçlendir"
+  ],
+  "keep_original": true
+ },
+ "Beğenilen şarkıların metin dosyasına kaydını aç / kapa - freeAudio": {
+  "aliases": [
+   "beğenilen şarkılar"
+  ],
+  "keep_original": false
+ },
+ "Bildirimleri sessize al (istasyon değişiklikleri, oynatma, kayıt, ses düzeyi) - freeAudio": {
+  "aliases": [
+   "bildirimleri sustur"
+  ],
+  "keep_original": false
+ },
+ "Düşük perdeye transpozisyon (podcast'ler, sesli kitaplar ve müzik kutusu parçaları) - freeAudio": {
+  "aliases": [
+   "perde alçalt"
+  ],
+  "keep_original": false
+ },
+ "FreeAudio istasyon tarayıcısını aç - freeAudio": {
+  "aliases": [
+   "istasyonlara gözat"
+  ],
+  "keep_original": true
+ },
+ "FreeAudio kayıt klasörünü aç - freeAudio": {
+  "aliases": [
+   "kayıt klasörü"
+  ],
+  "keep_original": true
+ },
+ "FreeAudio oynatmayı durdur - freeAudio": {
+  "aliases": [
+   "radyoyu durdur"
+  ],
+  "keep_original": true
+ },
+ "FreeAudio sesini 5 artır - freeAudio": {
+  "aliases": [
+   "radyo sesi artır"
+  ],
+  "keep_original": true
+ },
+ "FreeAudio sesini 5 azalt - freeAudio": {
+  "aliases": [
+   "radyo sesini azalt"
+  ],
+  "keep_original": true
+ },
+ "Freeradio yerel müzik kutusunu aç - freeAudio": {
+  "aliases": [
+   "müzik kutusunu aç"
+  ],
+  "keep_original": false
+ },
+ "Geçerli parça bilgilerini panoya kopyala veya bu bilgi yoksa müzik tanımayı başlat - freeAudio": {
+  "aliases": [
+   "parça bilgisini kopyala"
+  ],
+  "keep_original": false
+ },
+ "Hashas geri sarma: 1 saniye (zaman kaydırmalı tampon, podcast, sesli kitap veya müzik kutusu) - freeAudio": {
+  "aliases": [
+   "bir saniye geri"
+  ],
+  "keep_original": false
+ },
+ "Hashas ileri sarma: 1 saniye (zaman kaydırmalı tampon, podcast, sesli kitap veya müzik kutusu) - freeAudio": {
+  "aliases": [
+   "bir saniye ileri"
+  ],
+  "keep_original": false
+ },
+ "Mevcut konuma bir yer imi ekle (sesli kitaplar, podcast’ler, müzik kutusu) - freeAudio": {
+  "aliases": [
+   "yer imi ekle"
+  ],
+  "keep_original": false
+ },
+ "Odaktaki dosyayı freeAudio ile çal - freeAudio": {
+  "aliases": [
+   "seçileni çal"
+  ],
+  "keep_original": false
+ },
+ "Odaktaki öğeyi freeAudio müzik kutusuna ekle - freeAudio": {
+  "aliases": [
+   "müzik kutusuna ekle"
+  ],
+  "keep_original": false
+ },
+ "Parça değişim bildirim sesini değiştir - freeAudio": {
+  "aliases": [
+   "parça sesini değiştir"
+  ],
+  "keep_original": false
+ },
+ "Parça değişiminin otomatik bildirimini aç / kapa - freeAudio": {
+  "aliases": [
+   "parça bildirimi"
+  ],
+  "keep_original": false
+ },
+ "Podcast aboneliklerini aç - freeAudio": {
+  "aliases": [
+   "podcast abonelikleri"
+  ],
+  "keep_original": true
+ },
+ "Podcast, sesli kitap ve müzik kutusu  oynatma hızını artır - freeAudio": {
+  "aliases": [
+   "daha hızlı çal"
+  ],
+  "keep_original": false
+ },
+ "Podcast, sesli kitap ve müzik kutusu  oynatma hızını düşür - freeAudio": {
+  "aliases": [
+   "daha yavaş çal"
+  ],
+  "keep_original": false
+ },
+ "Sesi ek bir çıkış cihazına yansıt - freeAudio": {
+  "aliases": [
+   "sesi yansıt"
+  ],
+  "keep_original": false
+ },
+ "Sesli Kitaplığı aç - freeAudio": {
+  "aliases": [
+   "kitaplığı aç"
+  ],
+  "keep_original": true
+ },
+ "Sonraki istasyonu çal - freeAudio": {
+  "aliases": [
+   "sıradaki istasyon"
+  ],
+  "keep_original": true
+ },
+ "Sürekli fon müziği modunu aç/kapat - freeAudio": {
+  "aliases": [
+   "fon müziği"
+  ],
+  "keep_original": false
+ },
+ "Tiz güçlendirmeyi aç/kapa - freeAudio": {
+  "aliases": [
+   "tiz güçlendir"
+  ],
+  "keep_original": true
+ },
+ "Vokal güçlendirmeyi aç/kapa - freeAudio": {
+  "aliases": [
+   "vokal güçlendir"
+  ],
+  "keep_original": true
+ },
+ "Yüksek perdeye transpozisyon (podcastler, sesli kitaplar ve müzik kutusu parçaları) - freeAudio": {
+  "aliases": [
+   "perde yükselt"
+  ],
+  "keep_original": false
+ },
+ "Zaman kaydırma (geri sarma) tamponunu etkinleştir veya devre dışı bırak - freeAudio": {
+  "aliases": [
+   "zaman kaydırmayı aç"
+  ],
+  "keep_original": false
+ },
+ "Zaman kaydırma: 15 saniye geri sar (henüz aktif değilse zaman kaydırma moduna girer) - freeAudio": {
+  "aliases": [
+   "on beş geri"
+  ],
+  "keep_original": false
+ },
+ "Zaman kaydırma: 15 saniye ileri sar veya canlı yayına ulaşıldıysa geri dön - freeAudio": {
+  "aliases": [
+   "on beş ileri"
+  ],
+  "keep_original": false
+ },
+ "Çalan istasyonu seslendir. Ayrıntılar için iki kez, çalan parça bilgisini panoya kopyalamak, bilgi yoksa müzik tanıma servisini başlatmak için üç kez; müzik tanımaya zorlamak için dört kez basın. - freeAudio": {
+  "aliases": [
+   "çalan istasyon"
+  ],
+  "keep_original": false
+ },
+ "Önceki istasyonu çal - freeAudio": {
+  "aliases": [
+   "bir önceki istasyon"
+  ],
+  "keep_original": true
+ },
+ "İstasyon değiştirirken çapraz geçiş ayarını değiştir - freeAudio": {
+  "aliases": [
+   "çapraz geçiş"
+  ],
+  "keep_original": false
+ },
+ "İstasyon oynatılıyorsa favorilere ekle; podcast oynatılıyorsa bölümü, kitap oynatılıyorsa kitabın tamamını  indir - freeAudio": {
+  "aliases": [
+   "favorilere ekle"
+  ],
+  "keep_original": false
+ },
+ "Şu anda oynatılan parça için müzik tanımayı zorla - freeAudio": {
+  "aliases": [
+   "müzik tanımayı zorla"
+  ],
+  "keep_original": false
+ },
+ "Şu anda çalan istasyonun ayrıntılarını göster - freeAudio": {
+  "aliases": [
+   "istasyon ayrıntıları"
+  ],
+  "keep_original": false
+ },
+ "Geçerli dolaşım nesnesini izleme listesine ekle - nesne izleyici": {
+  "aliases": [
+   "izlemeye ekle"
+  ],
+  "keep_original": false
+ },
+ "Geçerli pencerenin izleme durumunu değiştirir - nesne izleyici": {
+  "aliases": [
+   "pencereyi izle"
+  ],
+  "keep_original": false
+ },
+ "Son izlenen nesneyi silmek için bir kez basın; izlenen tüm nesneleri silmek için iki kez basın - nesne izleyici": {
+  "aliases": [
+   "izlenenleri sil"
+  ],
+  "keep_original": false
+ },
+ "İzlemeyi duraklatma/devam ettirme arasında geçiş yapar - nesne izleyici": {
+  "aliases": [
+   "izlemeyi duraklat"
+  ],
+  "keep_original": false
+ },
+ "İzleyici katman komutlarını girin - nesne izleyici": {
+  "aliases": [
+   "izleyici katmanı"
+  ],
+  "keep_original": true
+ },
+ "Activate the officeAccessBridge2 shortcut layer; press twice for 9-minute persistent mode, three times for 22 minutes, or four or more times for no timeout - officeAccessBridge": {
+  "aliases": [
+   "ofis katmanını aç"
+  ],
+  "keep_original": false
+ },
+ "Close the officeAccessBridge2 shortcut layer - officeAccessBridge": {
+  "aliases": [
+   "ofis katmanını kapat"
+  ],
+  "keep_original": false
+ },
+ "Manage worksheets in the current Excel workbook: go to, delete, rename, and move - officeAccessBridge": {
+  "aliases": [
+   "çalışma sayfaları"
+  ],
+  "keep_original": false
+ },
+ "Open officeAccessBridge2 help and shortcuts directly - officeAccessBridge": {
+  "aliases": [
+   "ofis yardımı"
+  ],
+  "keep_original": false
+ },
+ "Open officeAccessBridge2 help and shortcuts from the command layer - officeAccessBridge": {
+  "aliases": [
+   "ofis katman yardımı"
+  ],
+  "keep_original": false
+ },
+ "Read the current Excel cell formula. Press the shortcut twice quickly to show the formula in a browsable window - officeAccessBridge": {
+  "aliases": [
+   "hücre formülü"
+  ],
+  "keep_original": false
+ },
+ "Read the current footer in Word, Excel or Access without leaving the current position - officeAccessBridge": {
+  "aliases": [
+   "altbilgiyi oku"
+  ],
+  "keep_original": false
+ },
+ "Read the current header in Word, Excel or Access without leaving the current position - officeAccessBridge": {
+  "aliases": [
+   "üstbilgiyi oku"
+  ],
+  "keep_original": false
+ },
+ "Read the gridlines visibility state in Word, Excel or Access - officeAccessBridge": {
+  "aliases": [
+   "çizgi durumu"
+  ],
+  "keep_original": false
+ },
+ "Read visible Word pages, the visible Excel range, or the current Access datasheet position and selection - officeAccessBridge": {
+  "aliases": [
+   "görünen alanı oku"
+  ],
+  "keep_original": false
+ },
+ "Show non-empty cells in the visible Excel range or current Word table - officeAccessBridge": {
+  "aliases": [
+   "dolu hücreleri göster"
+  ],
+  "keep_original": false
+ },
+ "Show objects in the current document, sheet, slide, or Access form/report, with navigation when supported - officeAccessBridge": {
+  "aliases": [
+   "belge nesneleri"
+  ],
+  "keep_original": false
+ },
+ "Show or hide gridlines in Word, Excel or Access - officeAccessBridge": {
+  "aliases": [
+   "çizgileri değiştir"
+  ],
+  "keep_original": false
+ },
+ "Open the soundWave text-to-audio render dialog. - soundWave": {
+  "aliases": [
+   "metni sese çevir"
+  ],
+  "keep_original": false
+ },
+ "Cycle MP3 quality settings - uTubeDownload": {
+  "aliases": [
+   "müzik kalitesi"
+  ],
+  "keep_original": false
+ },
+ "Download MP3 (single tap), MP4 (double tap), or WAV (triple tap) - uTubeDownload": {
+  "aliases": [
+   "müziği indir"
+  ],
+  "keep_original": false
+ },
+ "Open download folder - uTubeDownload": {
+  "aliases": [
+   "indirme klasörü"
+  ],
+  "keep_original": false
+ },
+ "Toggle playlist mode - uTubeDownload": {
+  "aliases": [
+   "oynatma listesi kipi"
+  ],
+  "keep_original": false
+ },
+ "uTubeSnapshot - uTubeDownload": {
+  "aliases": [
+   "yutüb görüntüsü"
+  ],
+  "keep_original": false
+ },
+ "uTubeTrim setting - uTubeDownload": {
+  "aliases": [
+   "yutüb kırpma"
+  ],
+  "keep_original": false
+ },
+ "Son çevrilen metni panoya kopyala. - Çeviri": {
+  "aliases": [
+   "son çeviriyi kopyala"
+  ],
+  "keep_original": false
+ },
+ "Tüm uygulamalar için önbelleğe alınmış tüm çevirileri kaldır. - Çeviri": {
+  "aliases": [
+   "tüm çevirileri sil"
+  ],
+  "keep_original": false
+ },
+ "İstenilen dile çeviriyi etkinleştirir. - Çeviri": {
+  "aliases": [
+   "çeviriyi etkinleştir"
+  ],
+  "keep_original": true
+ },
+ "Şu anda odaklanılan uygulama için çeviri önbelleğini kaldır - Çeviri": {
+  "aliases": [
+   "uygulama çevirilerini sil"
+  ],
+  "keep_original": false
+ },
+ "Aktif uygulama için uyku kipini açıp kapatır. - Çeşitli": {
+  "aliases": [
+   "uyku kipi"
+  ],
+  "keep_original": false
+ },
+ "Bir pencerenin OCR sonucunun periyodik olarak yenilenmesini açıp kapatır - Çeşitli": {
+  "aliases": [
+   "ocr yenileme"
+  ],
+  "keep_original": false
+ },
+ "Ekran perdesinin durumunu seslendirir. - Çeşitli": {
+  "aliases": [
+   "perde durumu",
+   "ekran perdesi durumu"
+  ],
+  "keep_original": true
+ },
+ "Ekranı karartarak ya da ekranda olanları göstererek ekran Perdesi statüsünü değiştirir. Ekran perdesi devre dışıyken, bir kez basılırsa ekran perdesi NVDA'yı yeniden başlatana kadar etkinleştirilir. Ekran perdesi etkinse, bu tuş kombinasyonu perdeyi devre dışı bırakır. İki kez basılırsa, devre dışı bırakılana kadar ekran karartılacaktır - Çeşitli": {
+  "aliases": [
+   "ekran perdesi etkin",
+   "perdeyi etkinleştir"
+  ],
+  "keep_original": false
+ },
+ "Geçerli hücreden sağa doğru satırdaki son hücreye kadar satırı yatay olarak okur. - Çeşitli": {
+  "aliases": [
+   "hücreden sağa oku"
+  ],
+  "keep_original": false
+ },
+ "Mevcut Windows OCR dilleri arasında dolaşır - Çeşitli": {
+  "aliases": [
+   "ocr dili"
+  ],
+  "keep_original": false
+ },
+ "NVDA menüsünü gösterir - Çeşitli": {
+  "aliases": [
+   "nvda menüsü"
+  ],
+  "keep_original": true
+ },
+ "NVDA'yı kapatır! - Çeşitli": {
+  "aliases": [
+   "nvdayı kapat"
+  ],
+  "keep_original": true
+ },
+ "NVDA'yı yeniden başlatır! - Çeşitli": {
+  "aliases": [
+   "nvdayı yeniden başlat"
+  ],
+  "keep_original": true
+ },
+ "Opens a dialog box to register and open favorite files. - Çeşitli": {
+  "aliases": [
+   "favori dosyalar"
+  ],
+  "keep_original": false
+ },
+ "Read the title and data of the currently selected chart in a browsable list - Çeşitli": {
+  "aliases": [
+   "grafik verisi"
+  ],
+  "keep_original": false
+ },
+ "Show the current Access database relationships, read their details, and delete the selected relationship after confirmation - Çeşitli": {
+  "aliases": [
+   "veritabanı ilişkileri"
+  ],
+  "keep_original": false
+ },
+ "Sistem düzenleme imlecini hareket ettirmeden geçerli satırı soldan sağa yatay olarak okur. - Çeşitli": {
+  "aliases": [
+   "satırı yatay oku"
+  ],
+  "keep_original": false
+ },
+ "Sistem düzenleme imlecini hareket ettirmeden geçerli sütunu yukarıdan aşağıya dikey olarak okur. - Çeşitli": {
+  "aliases": [
+   "sütunu dikey oku"
+  ],
+  "keep_original": false
+ },
+ "Switch the current Access object to Design View - Çeşitli": {
+  "aliases": [
+   "tasarım görünümü"
+  ],
+  "keep_original": false
+ },
+ "Switch the current Access object to Form View or Report View according to its type - Çeşitli": {
+  "aliases": [
+   "form görünümü"
+  ],
+  "keep_original": false
+ },
+ "Sütunu, geçerli hücreden aşağıya, sütundaki son hücreye kadar dikey olarak okur. - Çeşitli": {
+  "aliases": [
+   "hücreden aşağı oku"
+  ],
+  "keep_original": false
+ },
+ "Sık kullanılan klasörleri kaydetmek veya açmak için bir iletişim kutusu açar. - Çeşitli": {
+  "aliases": [
+   "sık klasörler"
+  ],
+  "keep_original": false
+ },
+ "Tarama kipinde düzen tablolarının dahil edilip edilmemesiyle ilgili ayarı açıp kapatır - Çeşitli": {
+  "aliases": [
+   "düzen tabloları"
+  ],
+  "keep_original": false
+ },
+ "Windows 10 OCR  ile nesne sunucusunun konumunda Optik Karakter Tanıma OCR işlemi yapar - Çeşitli": {
+  "aliases": [
+   "ocr ile oku"
+  ],
+  "keep_original": false
+ },
+ "bir sonraki tablo satırına gider - Çeşitli": {
+  "aliases": [
+   "sonraki tablo satırı"
+  ],
+  "keep_original": false
+ },
+ "bir sonraki tablo sütununa gider - Çeşitli": {
+  "aliases": [
+   "sonraki tablo sütunu"
+  ],
+  "keep_original": false
+ },
+ "bir önceki tablo satırına gider - Çeşitli": {
+  "aliases": [
+   "önceki tablo satırı"
+  ],
+  "keep_original": false
+ },
+ "bir önceki tablo sütununa gider - Çeşitli": {
+  "aliases": [
+   "önceki tablo sütunu"
+  ],
+  "keep_original": false
+ },
+ "ilk tablo satırına gider - Çeşitli": {
+  "aliases": [
+   "ilk tablo satırı"
+  ],
+  "keep_original": true
+ },
+ "ilk tablo sütununa gider - Çeşitli": {
+  "aliases": [
+   "ilk tablo sütunu"
+  ],
+  "keep_original": true
+ },
+ "son tablo satırına gider - Çeşitli": {
+  "aliases": [
+   "son tablo satırı"
+  ],
+  "keep_original": true
+ },
+ "son tablo sütununa gider - Çeşitli": {
+  "aliases": [
+   "son tablo sütunu"
+  ],
+  "keep_original": true
+ },
+ "İnternet hız testini başlatır. - İnternet Hız Testi": {
+  "aliases": [
+   "hız testi"
+  ],
+  "keep_original": true
+ },
+ "上一条剪贴板记录 - 剪贴板增强": {
+  "aliases": [
+   "önceki pano kaydı"
+  ],
+  "keep_original": false
+ },
+ "下一条剪贴板记录 - 剪贴板增强": {
+  "aliases": [
+   "sonraki pano kaydı"
+  ],
+  "keep_original": false
+ },
+ "从剪贴板当前行向下朗读 - 剪贴板增强": {
+  "aliases": [
+   "panoyu satırdan oku"
+  ],
+  "keep_original": false
+ },
+ "使用较慢的语速和重读单词重复刚听到的内容 - 剪贴板增强": {
+  "aliases": [
+   "yavaş tekrarla"
+  ],
+  "keep_original": false
+ },
+ "刚听到内容的上一个字 - 剪贴板增强": {
+  "aliases": [
+   "duyulan önceki harf"
+  ],
+  "keep_original": false
+ },
+ "刚听到内容的上一个词句 - 剪贴板增强": {
+  "aliases": [
+   "duyulan önceki ifade"
+  ],
+  "keep_original": false
+ },
+ "刚听到内容的下一个字 - 剪贴板增强": {
+  "aliases": [
+   "duyulan sonraki harf"
+  ],
+  "keep_original": false
+ },
+ "刚听到内容的下一个词句 - 剪贴板增强": {
+  "aliases": [
+   "duyulan sonraki ifade"
+  ],
+  "keep_original": false
+ },
+ "刚听到内容的当前字（连按两次解释） - 剪贴板增强": {
+  "aliases": [
+   "duyulan harfi söyle"
+  ],
+  "keep_original": false
+ },
+ "刚听到内容的当前词句（解释英文单词） - 剪贴板增强": {
+  "aliases": [
+   "duyulan ifadeyi söyle"
+  ],
+  "keep_original": false
+ },
+ "剪贴板上一个字 - 剪贴板增强": {
+  "aliases": [
+   "pano önceki harf"
+  ],
+  "keep_original": false
+ },
+ "剪贴板上一个词句 - 剪贴板增强": {
+  "aliases": [
+   "pano önceki ifade"
+  ],
+  "keep_original": false
+ },
+ "剪贴板上一行 - 剪贴板增强": {
+  "aliases": [
+   "pano önceki satır"
+  ],
+  "keep_original": false
+ },
+ "剪贴板下一个字 - 剪贴板增强": {
+  "aliases": [
+   "pano sonraki harf"
+  ],
+  "keep_original": false
+ },
+ "剪贴板下一个词句 - 剪贴板增强": {
+  "aliases": [
+   "pano sonraki ifade"
+  ],
+  "keep_original": false
+ },
+ "剪贴板下一行 - 剪贴板增强": {
+  "aliases": [
+   "pano sonraki satır"
+  ],
+  "keep_original": false
+ },
+ "剪贴板向上十行 - 剪贴板增强": {
+  "aliases": [
+   "pano on yukarı"
+  ],
+  "keep_original": false
+ },
+ "剪贴板向下十行 - 剪贴板增强": {
+  "aliases": [
+   "pano on aşağı"
+  ],
+  "keep_original": false
+ },
+ "剪贴板当前字（连按两次解释） - 剪贴板增强": {
+  "aliases": [
+   "pano geçerli harf"
+  ],
+  "keep_original": false
+ },
+ "剪贴板当前词句（解释英文单词） - 剪贴板增强": {
+  "aliases": [
+   "pano geçerli ifade"
+  ],
+  "keep_original": false
+ },
+ "剪贴板最后一行 - 剪贴板增强": {
+  "aliases": [
+   "pano son satır"
+  ],
+  "keep_original": false
+ },
+ "剪贴板第一行 - 剪贴板增强": {
+  "aliases": [
+   "pano ilk satır"
+  ],
+  "keep_original": false
+ },
+ "剪贴板综述 - 剪贴板增强": {
+  "aliases": [
+   "pano özeti"
+  ],
+  "keep_original": false
+ },
+ "将剪贴板图片另存为文件 - 剪贴板增强": {
+  "aliases": [
+   "pano resmini kaydet"
+  ],
+  "keep_original": false
+ },
+ "截图全屏幕到剪贴板 - 剪贴板增强": {
+  "aliases": [
+   "ekranı panoya al"
+  ],
+  "keep_original": false
+ },
+ "截图当前浏览对象到剪贴板 - 剪贴板增强": {
+  "aliases": [
+   "nesneyi panoya al"
+  ],
+  "keep_original": false
+ },
+ "截图当前窗口到剪贴板 - 剪贴板增强": {
+  "aliases": [
+   "pencereyi panoya al"
+  ],
+  "keep_original": false
+ },
+ "打开剪贴板内（或刚听到的）网址 - 剪贴板增强": {
+  "aliases": [
+   "panodaki adresi aç"
+  ],
+  "keep_original": false
+ },
+ "打开剪贴板编辑器 - 剪贴板增强": {
+  "aliases": [
+   "pano düzenleyici"
+  ],
+  "keep_original": false
+ },
+ "拷贝刚听到的内容 - 剪贴板增强": {
+  "aliases": [
+   "duyulanı kopyala"
+  ],
+  "keep_original": false
+ },
+ "拷贝剪贴板记录到系统剪贴板 - 剪贴板增强": {
+  "aliases": [
+   "kaydı panoya al"
+  ],
+  "keep_original": false
+ },
+ "查询选中单词或词组 - 剪贴板增强": {
+  "aliases": [
+   "kelimeyi sorgula"
+  ],
+  "keep_original": false
+ },
+ "清空所有剪贴板记录 - 剪贴板增强": {
+  "aliases": [
+   "pano kayıtlarını sil"
+  ],
+  "keep_original": false
+ },
+ "粘贴刚听到的内容 - 剪贴板增强": {
+  "aliases": [
+   "duyulanı yapıştır"
+  ],
+  "keep_original": false
+ },
+ "编辑文档标记开始点 - 剪贴板增强": {
+  "aliases": [
+   "başlangıç işareti"
+  ],
+  "keep_original": false
+ },
+ "编辑文档标记结束点 - 剪贴板增强": {
+  "aliases": [
+   "bitiş işareti"
+  ],
+  "keep_original": false
+ },
+ "追加刚听到的内容到剪贴板 - 剪贴板增强": {
+  "aliases": [
+   "duyulanı panoya ekle"
+  ],
+  "keep_original": false
+ },
+ "追加已选文字到剪贴板 - 剪贴板增强": {
+  "aliases": [
+   "seçileni panoya ekle"
+  ],
+  "keep_original": false
+ },
+ "重复刚听到的内容 - 剪贴板增强": {
+  "aliases": [
+   "duyulanı tekrarla"
+  ],
+  "keep_original": false
+ }
+}

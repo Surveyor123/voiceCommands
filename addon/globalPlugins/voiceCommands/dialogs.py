@@ -8,7 +8,7 @@ import ui
 import wx
 from logHandler import log
 
-from . import storage, userCommands
+from . import announce, storage, userCommands
 from .text import lower, normalize
 
 
@@ -101,6 +101,7 @@ class PhraseEditorDialog(_BaseDialog):
 		self.commands = commands
 		self.on_done = on_done
 		self.data = copy.deepcopy(storage.load_aliases())
+		storage.resolve_pending(self.data, self.commands)
 		self.visible = []
 
 		main = wx.BoxSizer(wx.VERTICAL)
@@ -226,7 +227,7 @@ class PhraseEditorDialog(_BaseDialog):
 			return
 		if not text:
 			# Translators: Spoken when the user tries to add an empty phrase.
-			ui.message(_("The phrase is empty"))
+			announce.say(_("The phrase is empty"))
 			return
 		phrases = self._entry(command_id)["aliases"]
 		if text not in phrases:
@@ -235,7 +236,7 @@ class PhraseEditorDialog(_BaseDialog):
 		self.phraseList.Set(list(phrases))
 		self._updateLabel()
 		# Translators: Spoken after a phrase has been added to a command.
-		ui.message(_("Added"))
+		announce.say(_("Added"))
 
 	def _removeSelected(self):
 		command_id, index = self._currentId(), self.phraseList.GetSelection()
@@ -252,7 +253,7 @@ class PhraseEditorDialog(_BaseDialog):
 	def _onDelete(self, evt):
 		if self._removeSelected() is not None:
 			# Translators: Spoken after a phrase has been deleted from a command.
-			ui.message(_("Deleted"))
+			announce.say(_("Deleted"))
 
 	def _onEdit(self, evt):
 		text = self._removeSelected()
@@ -273,25 +274,26 @@ class PhraseEditorDialog(_BaseDialog):
 		except Exception:
 			log.debugWarning("Could not import phrases from %r" % path, exc_info=True)
 			# Translators: Spoken when the file chosen for importing phrases is not a phrase file.
-			ui.message(_("This is not a valid phrase file"))
+			announce.say(_("This is not a valid phrase file"), announce.AFTER_FOCUS_CHANGE)
 			return
 		changes = storage.merge_aliases(self.data, imported)
+		storage.resolve_pending(self.data, self.commands)
 		self._refreshCommands()
 		if not changes:
 			# Translators: Spoken when importing phrases changed nothing because the editor already has them all.
-			ui.message(_("Nothing new to import"))
+			announce.say(_("Nothing new to import"), announce.AFTER_FOCUS_CHANGE)
 			return
 		# Translators: Spoken after phrases were imported into the phrase editor. {count} is the number of changes.
-		ui.message(ngettext(
+		announce.say(ngettext(
 			"{count} change imported. Choose Save to keep it.",
 			"{count} changes imported. Choose Save to keep them.",
 			changes,
-		).format(count=changes))
+		).format(count=changes), announce.AFTER_FOCUS_CHANGE)
 
 	def _onExport(self, evt):
 		if not any(v["aliases"] or not v["keep_original"] for v in self.data.values()):
 			# Translators: Spoken when the user wants to export phrases but there are none.
-			ui.message(_("There are no phrases to export"))
+			announce.say(_("There are no phrases to export"))
 			return
 		# Translators: Title of the dialog for choosing where the exported phrases are saved.
 		with wx.FileDialog(self, _("Export phrases"), defaultFile="voiceCommands-phrases.json",
@@ -305,10 +307,10 @@ class PhraseEditorDialog(_BaseDialog):
 		except Exception:
 			log.exception("Could not export phrases to %r" % path)
 			# Translators: Spoken when the phrases could not be saved.
-			ui.message(_("Could not save"))
+			announce.say(_("Could not save"), announce.AFTER_FOCUS_CHANGE)
 			return
 		# Translators: Spoken after the phrases have been exported to a file.
-		ui.message(_("Phrases exported"))
+		announce.say(_("Phrases exported"), announce.AFTER_FOCUS_CHANGE)
 
 	def _onSave(self, evt):
 		cleaned = {k: v for k, v in self.data.items() if v["aliases"] or not v["keep_original"]}
@@ -316,7 +318,7 @@ class PhraseEditorDialog(_BaseDialog):
 			storage.save_aliases(cleaned)
 		except Exception:
 			# Translators: Spoken when the phrases could not be saved.
-			ui.message(_("Could not save"))
+			announce.say(_("Could not save"))
 			raise
 		self.Close()
 		self.on_done()
@@ -384,7 +386,7 @@ class TeachDialog(_BaseDialog):
 				   if self.heardList.IsItemChecked(i)]
 		if not phrases:
 			# Translators: Spoken when the user saves without checking any heard text.
-			ui.message(_("Check at least one phrase"))
+			announce.say(_("Check at least one phrase"))
 			return
 		data = storage.load_aliases()
 		entry = data.setdefault(self.visible[index][0], {"aliases": [], "keep_original": True})
@@ -395,7 +397,7 @@ class TeachDialog(_BaseDialog):
 			storage.save_aliases(data)
 		except Exception:
 			# Translators: Spoken when the phrases could not be saved.
-			ui.message(_("Could not save"))
+			announce.say(_("Could not save"))
 			raise
 		self.Close()
 		self.on_done()
@@ -597,14 +599,14 @@ class UserCommandsDialog(_BaseDialog):
 			del self.entries[index]
 			self._refresh(index)
 			# Translators: Spoken after one of the user's own commands has been deleted.
-			ui.message(_("Deleted"))
+			announce.say(_("Deleted"))
 
 	def _onSave(self, evt):
 		try:
 			userCommands.save(self.entries)
 		except Exception:
 			# Translators: Spoken when the phrases could not be saved.
-			ui.message(_("Could not save"))
+			announce.say(_("Could not save"))
 			raise
 		self.Close()
 		self.on_done()

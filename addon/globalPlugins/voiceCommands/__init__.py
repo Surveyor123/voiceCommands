@@ -21,7 +21,7 @@ import wx
 from logHandler import log
 from scriptHandler import script
 
-from . import dialogs, download, ducking, phonetic, recognizer, storage, userCommands, windowsCommands
+from . import announce, dialogs, download, ducking, phonetic, recognizer, storage, userCommands, windowsCommands
 from .text import normalize
 
 addonHandler.initTranslation()
@@ -176,7 +176,9 @@ def collect_commands():
 	"""{normalized phrase: (phrase, info)}: original descriptions plus the user's own phrases."""
 	commands, extras = {}, []
 	data = storage.load_aliases()
-	for _category, description, info in _all_entries():
+	entries = _all_entries()
+	storage.resolve_pending(data, [(storage.command_id(info), category, description) for category, description, info in entries])
+	for _category, description, info in entries:
 		settings = data.get(storage.command_id(info), {})
 		if settings.get("keep_original", True):
 			if userCommands.is_user_command(info):
@@ -247,11 +249,11 @@ def run_command(description, info, repeat=1):
 		except FileNotFoundError:
 			log.warning("User command target not found: %r" % (info.target,))
 			# Translators: Spoken when the program, file or folder of a command of the user's own does not exist. {target} is what the command should open.
-			ui.message(_("Not found: {target}").format(target=info.target))
+			announce.say(_("Not found: {target}").format(target=info.target))
 		except Exception:
 			log.exception("Could not run the user command: %s" % description)
 			# Translators: Spoken when a command of the user's own could not be run. {command} is the name of the command.
-			ui.message(_("Could not run: {command}").format(command=description))
+			announce.say(_("Could not run: {command}").format(command=description))
 		return
 	if windowsCommands.is_windows_command(info):
 		log.debug("Running Windows command by voice: %r x%d" % (info.scriptName, repeat))
@@ -261,7 +263,7 @@ def run_command(description, info, repeat=1):
 		except Exception:
 			log.exception("Could not run the Windows command: %s" % description)
 			# Translators: Spoken when a Windows command could not be run.
-			ui.message(_("Could not run the command"))
+			announce.say(_("Could not run the command"))
 		return
 	if is_key_emulation(info):
 		log.debug("Pressing key by voice: %r x%d" % (info.scriptName, repeat))
@@ -270,17 +272,17 @@ def run_command(description, info, repeat=1):
 				press_key(info)
 		except Exception:
 			log.exception("Could not press the key: %s" % description)
-			ui.message(_("Could not run the command"))
+			announce.say(_("Could not run the command"))
 		return
 	target = find_target(info.cls)
 	if target is None:
 		# Translators: Spoken when a voice command cannot run in the current context. {command} is the command description.
-		ui.message(_("This command is not available right now: {command}").format(command=description))
+		announce.say(_("This command is not available right now: {command}").format(command=description))
 		return
 	func = getattr(target, "script_" + info.scriptName, None)
 	if func is None:
 		# Translators: Spoken when the script behind a voice command cannot be found. {command} is the command description.
-		ui.message(_("Script not found: {command}").format(command=description))
+		announce.say(_("Script not found: {command}").format(command=description))
 		return
 	log.debug("Running voice command: %r x%d" % (description, repeat))
 	try:
@@ -292,7 +294,7 @@ def run_command(description, info, repeat=1):
 	except Exception:
 		log.exception("Could not run the script: %s" % description)
 		# Translators: Spoken when running a voice command failed.
-		ui.message(_("Could not run the command"))
+		announce.say(_("Could not run the command"))
 
 
 def rank_candidates(spoken, commands):
@@ -324,7 +326,7 @@ def show_candidates(candidates, repeat):
 		core.callLater(300, run_command, description, info, repeat)
 
 	# Translators: Spoken when the candidate list opens. {count} is the number of possible commands.
-	ui.message(ngettext(
+	announce.say(ngettext(
 		"{count} possible command, choose one",
 		"{count} possible commands, choose one",
 		len(candidates),
@@ -339,7 +341,7 @@ def run_phrase(text):
 	spoken, repeat = split_repeat(spoken)
 	if not spoken or not commands:
 		# Translators: Spoken when no command could be found for what was said.
-		ui.message(_("No command found"))
+		announce.say(_("No command found"))
 		return
 	if spoken in commands:
 		description, info = commands[spoken]
@@ -363,7 +365,7 @@ def run_phrase(text):
 		run_command(candidates[0][1], candidates[0][2], repeat)
 	else:
 		# Translators: Spoken when nothing matches closely enough. {command} is the closest command description.
-		ui.message(_("No matching command. Closest: {command}").format(command=candidates[0][1]))
+		announce.say(_("No matching command. Closest: {command}").format(command=candidates[0][1]))
 
 
 _last_heard = []				# what the free recognizer heard last time, for "teach last phrase"
@@ -420,7 +422,7 @@ def decide(grammar_text, alternatives, index):
 	text = grammar_text.replace("[unk]", " ").strip() or free
 	if not text:
 		# Translators: Spoken when the speech recognizer did not understand what was said.
-		ui.message(_("Not understood"))
+		announce.say(_("Not understood"))
 		return
 	run_phrase(text)
 
@@ -538,28 +540,36 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			log.exception("Could not add the Voice Commands menu to the Tools menu")
 
 	def _onToolsListen(self, evt):
-		self.script_listen(None)
+		with announce.afterMenu():
+			self.script_listen(None)
 
 	def _onToolsEditPhrases(self, evt):
-		self.script_editPhrases(None)
+		with announce.afterMenu():
+			self.script_editPhrases(None)
 
 	def _onToolsTeach(self, evt):
-		self.script_teachLastPhrase(None)
+		with announce.afterMenu():
+			self.script_teachLastPhrase(None)
 
 	def _onToolsEditUserCommands(self, evt):
-		self.script_editUserCommands(None)
+		with announce.afterMenu():
+			self.script_editUserCommands(None)
 
 	def _onToolsToggleDucking(self, evt):
-		self.script_toggleDucking(None)
+		with announce.afterMenu():
+			self.script_toggleDucking(None)
 
 	def _onToolsDownloadModel(self, evt):
-		self.script_downloadModel(None)
+		with announce.afterMenu():
+			self.script_downloadModel(None)
 
 	def _onToolsOpenModelFolder(self, evt):
-		self.script_openModelFolder(None)
+		with announce.afterMenu():
+			self.script_openModelFolder(None)
 
 	def _onToolsCommandBox(self, evt):
-		self.script_commandBox(None)
+		with announce.afterMenu():
+			self.script_commandBox(None)
 
 	def _loadModel(self):
 		try:
@@ -653,11 +663,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			except Exception:
 				log.exception("Could not save the settings")
 			# Translators: Spoken when the user declines the model download at startup.
-			ui.message(_("OK. I will ask again when you start voice listening."))
+			announce.say(_("OK. I will ask again when you start voice listening."))
 
 	def _download(self):
 		def say(text):
-			wx.CallAfter(ui.message, text)
+			wx.CallAfter(announce.say, text)
 
 		try:
 			# Translators: Spoken while the add-on looks for a suitable speech model online.
@@ -740,7 +750,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def _handleError(self, message):
 		self.ducker.restore()
 		# Translators: Spoken when speech recognition failed. {error} describes the problem.
-		ui.message(_("Speech recognition error: {error}").format(error=message))
+		announce.say(_("Speech recognition error: {error}").format(error=message))
 
 	def _handleResult(self, grammar_text, alternatives):
 		decide(grammar_text, alternatives, self.index)
@@ -757,19 +767,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		if self.loading:
 			# Translators: Spoken when the user starts listening while the model is still loading.
-			ui.message(_("The model is loading, please wait"))
+			announce.say(_("The model is loading, please wait"))
 			return
 		if not self.model:
 			if recognizer.find_model_dir(storage.model_dir()):
 				# The model may have been put in the folder later: load it again.
 				# Translators: Spoken when the model is being loaded.
-				ui.message(self.error or _("The model is loading, please wait"))
+				announce.say(self.error or _("The model is loading, please wait"))
 				self.loading = True
 				self.error = None
 				threading.Thread(target=self._loadModel, daemon=True).start()
 			elif self.downloading:
 				# Translators: Spoken when the user starts listening while the model is being downloaded.
-				ui.message(_("The model is being downloaded, please wait"))
+				announce.say(_("The model is being downloaded, please wait"))
 			else:
 				self._askDownload(True)
 			return
@@ -793,10 +803,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		commands = list_commands()
 		if not commands:
 			# Translators: Spoken when the list of commands could not be obtained.
-			ui.message(_("Could not get the list of commands"))
+			announce.say(_("Could not get the list of commands"))
 			return
 		# Translators: Spoken after the phrases have been saved in the phrase editor.
-		dialogs.PhraseEditorDialog(gui.mainFrame, commands, lambda: ui.message(_("Phrases saved"))).display()
+		dialogs.PhraseEditorDialog(gui.mainFrame, commands, lambda: announce.say(_("Phrases saved"), announce.AFTER_FOCUS_CHANGE)).display()
 
 	@script(
 		# Translators: Description of a command in the Input Gestures dialog.
@@ -804,21 +814,21 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_teachLastPhrase(self, gesture):
 		if not _last_heard:
 			# Translators: Spoken when the user wants to teach a phrase but nothing has been recognized yet.
-			ui.message(_("Nothing heard yet. Say a command first"))
+			announce.say(_("Nothing heard yet. Say a command first"))
 			return
 		commands = list_commands()
 		if not commands:
-			ui.message(_("Could not get the list of commands"))
+			announce.say(_("Could not get the list of commands"))
 			return
 		# Translators: Spoken after the phrases have been saved in the teach dialog.
-		dialogs.TeachDialog(gui.mainFrame, commands, list(_last_heard), lambda: ui.message(_("Phrases saved"))).display()
+		dialogs.TeachDialog(gui.mainFrame, commands, list(_last_heard), lambda: announce.say(_("Phrases saved"), announce.AFTER_FOCUS_CHANGE)).display()
 
 	@script(
 		# Translators: Description of a command in the Input Gestures dialog.
 		description=_("Opens the dialog for adding your own commands: open a program, file, folder or web address, or press a key combination"))
 	def script_editUserCommands(self, gesture):
 		# Translators: Spoken after the user's own commands have been saved.
-		dialogs.UserCommandsDialog(gui.mainFrame, lambda: ui.message(_("Commands saved"))).display()
+		dialogs.UserCommandsDialog(gui.mainFrame, lambda: announce.say(_("Commands saved"), announce.AFTER_FOCUS_CHANGE)).display()
 
 	@script(
 		# Translators: Description of a command in the Input Gestures dialog.
@@ -833,10 +843,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			log.exception("Could not save the settings")
 		if self.duck_audio:
 			# Translators: Spoken when lowering other applications' volume while listening is turned on.
-			ui.message(_("Volume lowering on"))
+			announce.say(_("Volume lowering on"))
 		else:
 			# Translators: Spoken when lowering other applications' volume while listening is turned off.
-			ui.message(_("Volume lowering off"))
+			announce.say(_("Volume lowering off"))
 
 	@script(
 		# Translators: Description of a command in the Input Gestures dialog.
@@ -844,7 +854,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_downloadModel(self, gesture):
 		if self.downloading:
 			# Translators: Spoken when the user asks for a model download while one is already running.
-			ui.message(_("The model is already being downloaded"))
+			announce.say(_("The model is already being downloaded"))
 		else:
 			self._askDownload(True)
 
@@ -855,7 +865,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		path = storage.model_dir()
 		os.makedirs(path, exist_ok=True)
 		# Translators: Spoken when the model folder is opened. {path} is the folder.
-		ui.message(_("Opening the model folder: {path}").format(path=path))
+		announce.say(_("Opening the model folder: {path}").format(path=path))
 		os.startfile(path)
 
 	@script(

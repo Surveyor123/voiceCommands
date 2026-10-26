@@ -137,6 +137,40 @@ def merge_aliases(current, imported):
 	return changes
 
 
+def _label_key(text):
+	text = text.replace("İ", "i").replace("I", "ı").lower().replace("ı", "i")
+	return " ".join(text.split())
+
+
+def resolve_pending(data, commands):
+	"""Moves entries keyed by "description - category" to the id of the command that has that text.
+
+	Such entries come from a phrase file that was made without command ids. A command that is not
+	available now (it belongs to an application that is not in use) keeps its entry as it is until
+	the command shows up. data is changed in place; commands is [(id, category, description)].
+	Returns the number of entries that were moved."""
+	pending = [key for key in data if " - " in key]
+	if not pending:
+		return 0
+	labels = {}
+	for cid, category, description in commands:
+		key = _label_key(description + " - " + category)
+		labels[key] = None if key in labels else cid
+	moved = 0
+	for key in pending:
+		cid = labels.get(_label_key(key))
+		if cid is None:
+			continue
+		entry = data.pop(key)
+		target = data.get(cid)
+		if target is None:
+			data[cid] = entry
+		else:
+			target["aliases"].extend(a for a in entry["aliases"] if a not in target["aliases"])
+		moved += 1
+	return moved
+
+
 def save_aliases(data):
 	_write_json("aliases.json", data)
 
