@@ -19,12 +19,19 @@ addon_info = AddonInfo(
 	addon_description=_("""Runs NVDA commands and common Windows actions by voice, using the offline Vosk speech recognition engine; your voice never leaves your computer. You can say any command from the Input Gestures dialog, built-in Windows commands such as "show desktop", "show taskbar" or "paste", and your own commands that open a program, file, folder or web address, or press a key combination. A speech model for your NVDA language is downloaded on first use. Assign keys in the Input Gestures dialog, under the Voice Commands category."""),
 
 	# version
-	addon_version="1.0.0",
+	addon_version="1.0.1",
 
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version
 	addon_changelog=_("""
-Initial release
+- Added a Voice Commands submenu under NVDA's Tools menu with the add-on's commands.
+- Fixed Windows commands that use a letter, such as Windows+I, not working on keyboard layouts like Turkish Q.
+- Added "Teach the last spoken phrase" (Tools menu or an assignable gesture) to save what the recognizer heard as a phrase of a command, for names the speech model cannot recognize.
+- Added import and export of phrases in the phrase editor, with shortcuts Ctrl+I, Ctrl+E and Ctrl+S. Importing only adds; nothing you already have is changed or removed.
+- Phrase files can now name a command by its text ("description - category") instead of its id. Entries for commands that are not available yet are kept until they appear.
+- The heard-phrases list in the teach dialog now reports its checked state in every NVDA version.
+- Messages are no longer cut off by NVDA's focus speech after a dialog, file chooser or menu closes.
+- Added a Turkish set of short phrases that can be imported from the phrase editor.
 """),
 
 	# Author(s)
@@ -43,7 +50,7 @@ Initial release
 	addon_minimumNVDAVersion="2026.1.0",
 
 	# Last NVDA version supported/tested
-	addon_lastTestedNVDAVersion="2026.2.0",
+	addon_lastTestedNVDAVersion="2026.3.0",
 
 	# Add-on update channel (None denotes stable releases)
 	addon_updateChannel=None,
