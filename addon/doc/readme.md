@@ -31,13 +31,30 @@ No keys are assigned by default, so choose your own:
 1.  Open the NVDA menu, then Preferences, then Input gestures.
 2.  Expand the **Voice Commands** category and assign a key to **Starts listening for a voice command**. Assign keys to the other commands there too if you want them.
 
+Without keys you can also use the Tools menu (see The Tools menu).
+
 Then, to give a voice command:
 
 1.  Press your key. A high beep tells you that listening has started.
 2.  Say the command.
 3.  Press the key again. A low beep tells you that listening has stopped, and the command runs.
 
-If nothing is recognized, NVDA says "Not understood".
+If nothing was understood, NVDA says "Not understood". If what it heard fits no command well enough, NVDA says "No matching command" and names the closest one, or opens a list of candidates (see When it is not sure).
+
+## The Tools menu
+
+Open the NVDA menu, then Tools, then **Voice Commands** to use the add-on without assigning keys:
+
+- **Start or stop listening** works like the key: choose it once to start and again to stop. A key is faster, because the menu has to be opened each time.
+- **Command phrase editor...** opens the phrase editor.
+- **Teach the last spoken phrase...** opens the dialog for names the recognizer does not know.
+- **My commands...** opens the dialog for your own commands.
+- **Toggle volume lowering** turns the lowering of other applications' volume on or off.
+- **Download speech model...** starts the model download, after asking.
+- **Open model folder** opens the model folder in File Explorer.
+- **Type a command...** opens the box where you can type a command phrase.
+
+These do the same as the commands in the Input Gestures dialog (see Commands reference).
 
 ## Choosing what to say
 
@@ -84,7 +101,9 @@ The phrase editor can save your phrases to a file and load them again, so you ca
 
 In the phrase editor these shortcuts work wherever the focus is.
 
-The file has the same format as `aliases.json` in the Voice Commands settings folder (see Settings and data), so a copy of that file can be imported too. Phrases are tied to commands by an id that does not depend on the interface language, so a file made with one NVDA language works with another. A phrase for a command that does not exist on your computer, such as a command of an application you have not installed, is kept but does nothing until that command exists. The editor lists only the commands available where you opened it, so open it inside an application to see the imported phrases of that application's commands. Your own commands (see Your own commands) get a different id on every computer, so phrases for them are not carried over; add the same phrases to the commands on the other computer instead.
+The file has the same format as `aliases.json` in the Voice Commands settings folder (see Settings and data), so a copy of that file can be imported too. Phrases are tied to commands by an id that does not depend on the interface language, so a file made by the editor works with any NVDA language. A file can also name a command by its text instead of its id, written as it appears in the editor's list: `description - category`, for example `Show desktop - Windows commands`. Such an entry only matches when NVDA uses the language of that text. A phrase for a command that does not exist on your computer, such as a command of an application you have not installed, is kept but does nothing until that command exists. The editor lists only the commands available where you opened it, so open it inside an application to see the imported phrases of that application's commands. Your own commands (see Your own commands) get a different id on every computer, so phrases for them are not carried over; add the same phrases to the commands on the other computer instead.
+
+**A ready-made Turkish set.** The add-on comes with `tr-phrases.json` in its `locale\tr\LC_MESSAGES` folder: short Turkish phrases (two or three words) for NVDA's own commands and many popular add-ons. Import it like any other file. It names commands by their text (see above), so it works with a Turkish NVDA. For a command you have no settings for, it also switches off the long original description, so that command answers only to the short phrase; turn **Also use the original description** back on in the editor if you want both.
 
 ## Keeping commands out of voice control
 
@@ -172,12 +191,13 @@ The feature uses a library that comes with NVDA. If it is missing, listening sti
 
 Stored in `%AppData%\nvda\voiceCommands`, or in the configuration folder of a portable NVDA:
 
-| Item                | Contents                                                                         |
-|---------------------|----------------------------------------------------------------------------------|
-| `aliases.json`      | Your phrases from the phrase editor and the teach dialog.                        |
-| `userCommands.json` | Your own commands.                                                               |
-| `settings.json`     | Whether volume lowering is on, and whether to ask about the download at startup. |
-| `model\`            | The speech model.                                                                |
+| Item                    | Contents                                                                                         |
+|-------------------------|--------------------------------------------------------------------------------------------------|
+| `aliases.json`          | Your phrases from the phrase editor and the teach dialog.                                        |
+| `userCommands.json`     | Your own commands.                                                                               |
+| `settings.json`         | Whether volume lowering is on, and whether to ask about the download at startup.                 |
+| `ducking-recovery.json` | Temporary: exists only while other applications' volume is lowered, to restore it after a crash. |
+| `model\`                | The speech model.                                                                                |
 
 The values at the top of `globalPlugins/voiceCommands/__init__.py`, such as the matching thresholds and the size of the candidate list, can be edited if you want to tune the behavior.
 
@@ -191,7 +211,7 @@ The values at the top of `globalPlugins/voiceCommands/__init__.py`, such as the 
 | The wrong command runs                    | Define a short phrase of your own for that command in the phrase editor.                                                                                                  |
 | "This command is not available right now" | The command belongs to another application. Say it while that application has focus.                                                                                      |
 | Music or video still gets in the way      | Some applications do not expose an audio session that can be lowered. Pause them before listening.                                                                        |
-| You want to see what was heard            | Open **Teach the last spoken phrase** right after speaking: its list shows the texts the recognizer produced. For more detail, set NVDA's log level to Debug (NVDA menu, Preferences, Settings, General, Log level), speak, and open the log (NVDA+F1): "Voice command recognition" lines show what each recognizer heard, and "Voice command candidate" lines show how close the best matches were. These lines are only written at the Debug level. |
+| You want to see what was heard            | Open **Teach the last spoken phrase** right after speaking: its list shows the texts the recognizer produced. For more detail, set NVDA's Logging level to Debug (NVDA menu, Preferences, Settings, Privacy and Security, Logging level), speak, and open the log (NVDA+F1): "Voice command recognition" lines show what each recognizer heard, and "Voice command candidate" lines show how close the best matches were. These lines are only written at the Debug level. |
 
 ## Privacy
 

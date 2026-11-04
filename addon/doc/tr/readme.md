@@ -31,13 +31,30 @@ Varsayılan olarak hiçbir tuş atanmamıştır, tuşları kendin seç:
 1.  NVDA menüsünü, ardından Tercihler ve Girdi hareketleri'ni aç.
 2.  **Sesli Komut** kategorisini genişlet ve **Sesli komut dinlemesini başlatır; tekrar basınca dinlemeyi durdurup komutu çalıştırır** komutuna bir tuş ata. İstersen oradaki diğer komutlara da tuş atayabilirsin.
 
+Tuş atamadan Araçlar menüsünü de kullanabilirsin (bkz. Araçlar menüsü).
+
 Sonra sesli komut vermek için:
 
 1.  Tuşa bas. Yüksek bir bip dinlemenin başladığını bildirir.
 2.  Komutu söyle.
 3.  Aynı tuşa tekrar bas. Alçak bir bip dinlemenin bittiğini bildirir ve komut çalışır.
 
-Hiçbir şey tanınmazsa NVDA "Anlaşılamadı" der.
+Hiçbir şey anlaşılmazsa NVDA "Anlaşılamadı" der. Duyduğu şey hiçbir komuta yeterince uymuyorsa "Eşleşen komut yok" der ve en yakın komutu söyler ya da bir aday listesi açar (bkz. Emin olamadığında).
+
+## Araçlar menüsü
+
+NVDA menüsünü, ardından Araçlar'ı ve **Sesli Komut**'u açarak eklentiyi tuş atamadan kullanabilirsin:
+
+- **Dinlemeyi başlat veya durdur** tuşla aynı çalışır: başlatmak için bir kez, durdurmak için tekrar seç. Menüyü her seferinde açmak gerektiğinden bir tuş atamak daha hızlıdır.
+- **Komut ifadeleri düzenleyicisi...** ifade düzenleyiciyi açar.
+- **Son söylenen ifadeyi öğret...** tanıyıcının bilmediği adlar için pencereyi açar.
+- **Komutlarım...** kendi komutların için iletişim kutusunu açar.
+- **Tanıma sırasında ses zayıflamasını aç/kapa** diğer uygulamaların sesini kısmayı açar ya da kapatır.
+- **Konuşma modelini indir...** sorduktan sonra model indirmeyi başlatır.
+- **Model klasörünü aç** model klasörünü Dosya Gezgini'nde açar.
+- **Komut yazarak çalıştır...** komut cümlesi yazabileceğin kutuyu açar.
+
+Bunlar Girdi Hareketleri'ndeki komutlarla aynı işi yapar (bkz. Komut başvurusu).
 
 ## Ne söyleyeceğini seçmek
 
@@ -84,7 +101,9 @@ Bir komut tanınmadığında eklentiye tanıyıcının ne duyduğunu öğret:
 
 İfade düzenleyicide bu kısayollar odak nerede olursa olsun çalışır.
 
-Dosya, Sesli Komut ayar klasöründeki `aliases.json` ile aynı biçimdedir (bkz. Ayarlar ve veriler); bu yüzden o dosyanın bir kopyası da içe aktarılabilir. İfadeler komutlara arayüz diline bağlı olmayan bir kimlikle bağlıdır; bu yüzden bir NVDA diliyle hazırlanan dosya başka bir dilde de çalışır. Bilgisayarında bulunmayan bir komutun ifadesi, örneğin kurulu olmayan bir uygulamanın komutu, saklanır ama o komut var olana kadar bir işe yaramaz. Düzenleyici yalnızca açtığın yerde kullanılabilen komutları listeler; bu yüzden içe aktarılan ifadelerini görmek için düzenleyiciyi ilgili uygulamanın içinde aç. Kendi komutların (bkz. Kendi komutların) her bilgisayarda farklı bir kimlik alır, bu yüzden onların ifadeleri taşınmaz; aynı ifadeleri diğer bilgisayardaki komutlara kendin ekle.
+Dosya, Sesli Komut ayar klasöründeki `aliases.json` ile aynı biçimdedir (bkz. Ayarlar ve veriler); bu yüzden o dosyanın bir kopyası da içe aktarılabilir. İfadeler komutlara arayüz diline bağlı olmayan bir kimlikle bağlıdır; bu yüzden düzenleyicinin hazırladığı bir dosya her NVDA dilinde çalışır. Bir dosya komutu kimlik yerine düzenleyici listesinde göründüğü gibi metniyle de adlandırabilir: `açıklama - kategori`, örneğin `Masaüstünü göster - Windows komutları`. Böyle bir girdi yalnızca NVDA o metnin dilindeyken eşleşir. Bilgisayarında bulunmayan bir komutun ifadesi, örneğin kurulu olmayan bir uygulamanın komutu, saklanır ama o komut var olana kadar bir işe yaramaz. Düzenleyici yalnızca açtığın yerde kullanılabilen komutları listeler; bu yüzden içe aktarılan ifadelerini görmek için düzenleyiciyi ilgili uygulamanın içinde aç. Kendi komutların (bkz. Kendi komutların) her bilgisayarda farklı bir kimlik alır, bu yüzden onların ifadeleri taşınmaz; aynı ifadeleri diğer bilgisayardaki komutlara kendin ekle.
+
+**Hazır Türkçe set.** Eklenti, `locale\tr\LC_MESSAGES` klasöründe `tr-phrases.json` dosyasıyla gelir: NVDA'nın kendi komutları ve birçok yaygın eklenti için kısa (iki ya da üç sözcüklük) Türkçe ifadeler. Başka bir dosya gibi içe aktar. Komutları metniyle adlandırdığı için (bkz. yukarısı) Türkçe NVDA'da çalışır. Ayarın olmadığı komutlarda uzun özgün açıklamayı da kapatır; böylece o komut yalnızca kısa ifadeye yanıt verir. İkisini de istersen düzenleyicide **Özgün açıklamayı da kullan**'ı yeniden aç.
 
 ## Komutları sesli denetimin dışında tutmak
 
@@ -172,12 +191,13 @@ Bu özellik NVDA ile gelen bir kütüphane kullanır. O yoksa dinleme yine çal�
 
 `%AppData%\nvda\voiceCommands` klasöründe ya da taşınabilir NVDA'nın ayar klasöründe saklanır:
 
-| Öğe                 | İçerik                                                                     |
-|---------------------|----------------------------------------------------------------------------|
-| `aliases.json`      | İfade düzenleyicideki ve öğretme penceresinden kaydedilen ifadelerin.      |
-| `userCommands.json` | Kendi komutların.                                                          |
-| `settings.json`     | Ses kısmanın açık olup olmadığı ve açılışta indirme sorulup sorulmayacağı. |
-| `model\`            | Ses tanıma modeli.                                                         |
+| Öğe                     | İçerik                                                                                                             |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------|
+| `aliases.json`          | İfade düzenleyicideki ve öğretme penceresinden kaydedilen ifadelerin.                                              |
+| `userCommands.json`     | Kendi komutların.                                                                                                  |
+| `settings.json`         | Ses kısmanın açık olup olmadığı ve açılışta indirme sorulup sorulmayacağı.                                         |
+| `ducking-recovery.json` | Geçici: yalnızca diğer uygulamaların sesi kısıkken bulunur; bir çökmeden sonra sesi geri getirmek için kullanılır. |
+| `model\`                | Ses tanıma modeli.                                                                                                 |
 
 `globalPlugins/voiceCommands/__init__.py` dosyasının başındaki değerler, örneğin eşleştirme eşikleri ve aday listesinin boyutu, davranışı ayarlamak istersen düzenlenebilir.
 
@@ -191,7 +211,7 @@ Bu özellik NVDA ile gelen bir kütüphane kullanır. O yoksa dinleme yine çal�
 | Yanlış komut çalışıyor           | O komut için ifade düzenleyicide kendi kısa ifadeni tanımla.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | "Bu komut şu an kullanılamıyor"  | Komut başka bir uygulamaya ait. Onu o uygulama odaktayken söyle.                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Müzik ya da video hâlâ karışıyor | Bazı uygulamalar kısılabilen bir ses oturumu sunmaz. Dinlemeden önce onları duraklat.                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Ne duyulduğunu görmek istiyorsun | Konuştuktan hemen sonra **Son söylenen ifadeyi öğret...** penceresini aç: listede tanıyıcının ürettiği metinler görünür. Daha fazla ayrıntı için NVDA menüsü, Tercihler, Ayarlar, Genel bölümündeki günlük düzeyini Debug (hata ayıklama) yap, konuş ve NVDA günlüğünü aç (NVDA+F1). "Voice command recognition" satırları her tanıyıcının ne duyduğunu, "Voice command candidate" satırları en iyi eşleşmelerin ne kadar yakın olduğunu gösterir. Bu satırlar yalnızca Debug düzeyinde yazılır. |
+| Ne duyulduğunu görmek istiyorsun | Konuştuktan hemen sonra **Son söylenen ifadeyi öğret...** penceresini aç: listede tanıyıcının ürettiği metinler görünür. Daha fazla ayrıntı için NVDA menüsü, Tercihler, Ayarlar, Gizlilik ve güvenlik bölümündeki günlük düzeyini Debug (hata ayıklama) yap, konuş ve NVDA günlüğünü aç (NVDA+F1). "Voice command recognition" satırları her tanıyıcının ne duyduğunu, "Voice command candidate" satırları en iyi eşleşmelerin ne kadar yakın olduğunu gösterir. Bu satırlar yalnızca Debug düzeyinde yazılır. |
 
 ## Gizlilik
 
@@ -203,4 +223,4 @@ Eklenti İngilizce yazılmıştır ve Türkçe çeviriyle gelir. Çevirmek için
 
 ## Lisans
 
-Sesli Komut, NVDA'nın kendi lisansının eklentilerden istediği gibi, GNU Genel Kamu Lisansı sürüm 2 ya da sonrası (GPL-2.0-or-later) altında lisanslanmıştır. Pakete dahil üçüncü taraf bileşenler ve lisansları [THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md) dosyasında listelenir.
+Sesli Komut, GNU Genel Kamu Lisansı sürüm 2 (GPL-2.0) altında lisanslanmıştır. Pakete dahil üçüncü taraf bileşenler ve lisansları [THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md) dosyasında listelenir.
