@@ -144,3 +144,26 @@ class CommandIndex:
 		if best and best[3] >= 0:
 			return best[0], best[1], best[2]
 		return None
+
+	def rank(self, alternatives, limit=3):
+		"""Closest commands for the recognizer alternatives, best first: [(score, key, description, penalty)].
+
+		Unlike search() nothing is filtered out: the caller decides how close is close enough. penalty is
+		what a short query must reach on top of the threshold (short queries are ambiguous), so the caller
+		compares score - penalty. A command with several phrases appears once per phrase."""
+		ranked = {}
+		for alternative in alternatives:
+			full, consonants = phonetic_keys(alternative)
+			if len(full) < MIN_LENGTH or not self._items:
+				continue
+			penalty = SHORT_PENALTY * max(0, SHORT_LIMIT - len(full))
+			g3, g2 = _ngrams(full, 3), _ngrams(consonants, 2)
+			quick = ((0.5 * _coverage(g3, item[3]) + 0.5 * _coverage(g2, item[4]), i)
+					 for i, item in enumerate(self._items))
+			for quick_score, i in heapq.nlargest(PREFILTER_CANDIDATES, quick):
+				key, description, item_full, _g3, _g2 = self._items[i]
+				score = 0.25 * quick_score + 0.35 * _partial_ratio(full, item_full) \
+					+ 0.40 * SequenceMatcher(None, full, item_full).ratio()
+				if key not in ranked or score > ranked[key][0]:
+					ranked[key] = (score, key, description, penalty)
+		return sorted(ranked.values(), reverse=True)[:limit]
