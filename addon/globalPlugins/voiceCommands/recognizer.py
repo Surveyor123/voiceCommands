@@ -118,10 +118,48 @@ class Model:
 			self.v.vosk_recognizer_set_max_alternatives(r, int(alternatives))
 		return r
 
+	def new_session(self, grammar=None):
+		"""A recognition session for one utterance (see Listener)."""
+		return VoskSession(self, grammar)
+
 	def close(self):
 		if self.m:
 			self.v.vosk_model_free(self.m)
 			self.m = None
+
+
+class VoskSession:
+	"""Two recognizers listening to the same audio: one restricted to the command grammar
+	(accurate for commands) and one free-form with n-best alternatives (needed for names
+	that are not in the model vocabulary).
+
+	Every engine offers the same three methods: accept(pcm16 bytes), finish() and close(),
+	so the Listener does not need to know which engine it drives."""
+
+	def __init__(self, model, grammar):
+		self.v = model.v
+		self.grammar_rec = model.new_recognizer(grammar) if grammar else None
+		self.free_rec = model.new_recognizer(None, ALTERNATIVES)
+		self.recognizers = [r for r in (self.grammar_rec, self.free_rec) if r]
+
+	def accept(self, data):
+		for r in self.recognizers:
+			self.v.vosk_recognizer_accept_waveform(r, data, len(data))
+
+	def finish(self):
+		"""(grammar text, [free-form alternatives])."""
+		grammar_text = _read_result(self.v, self.grammar_rec).get("text", "") if self.grammar_rec else ""
+		free = _read_result(self.v, self.free_rec)
+		if "alternatives" in free:
+			alternatives = [a.get("text", "").strip() for a in free["alternatives"]]
+		else:
+			alternatives = [free.get("text", "").strip()]
+		return grammar_text, alternatives
+
+	def close(self):
+		for r in self.recognizers:
+			self.v.vosk_recognizer_free(r)
+		self.recognizers = []
 
 
 # ---------------------------------------------------------------- waveIn
@@ -166,9 +204,8 @@ def _read_result(v, recognizer):
 class Listener(threading.Thread):
 	"""start() opens the microphone; after stop() it calls result_cb(grammar_text, alternatives).
 
-	Two recognizers listen to the same audio: one restricted to the command grammar
-	(accurate for commands) and one free-form with n-best alternatives (needed for names
-	that are not in the model vocabulary)."""
+	The recognition itself is done by a session of the model (model.new_session), so the same
+	microphone code serves Vosk and the other speech engines."""
 
 	def __init__(self, model, grammar, result_cb, error_cb):
 		super().__init__(daemon=True)
@@ -182,17 +219,12 @@ class Listener(threading.Thread):
 		self._stop_event.set()
 
 	def run(self):
-		v = self.model.v
-		grammar_rec = None  # grammar-restricted recognizer (may stay None)
-		free_rec = None
+		session = None
 		hwi = ctypes.c_void_p()
 		opened = False
 		headers = []
 		try:
-			if self.grammar:
-				grammar_rec = self.model.new_recognizer(self.grammar)
-			free_rec = self.model.new_recognizer(None, ALTERNATIVES)
-			recognizers = [r for r in (grammar_rec, free_rec) if r]
+			session = self.model.new_session(self.grammar)
 			wfx = WAVEFORMATEX(WAVE_FORMAT_PCM, 1, SAMPLE_RATE, SAMPLE_RATE * 2, 2, 16, 0)
 			if _winmm.waveInOpen(ctypes.byref(hwi), WAVE_MAPPER, ctypes.byref(wfx), 0, 0, CALLBACK_NULL):
 				# Translators: Error shown when the microphone cannot be opened.
@@ -213,9 +245,7 @@ class Listener(threading.Thread):
 			def process(header, buf):
 				count = header.dwBytesRecorded
 				if count:
-					data = ctypes.string_at(buf, count)
-					for r in recognizers:
-						v.vosk_recognizer_accept_waveform(r, data, len(data))
+					session.accept(ctypes.string_at(buf, count))
 
 			while not self._stop_event.is_set():
 				for header, buf in zip(headers, buffers):
@@ -230,12 +260,7 @@ class Listener(threading.Thread):
 			for header, buf in zip(headers, buffers):
 				if header.dwFlags & WHDR_DONE:
 					process(header, buf)
-			grammar_text = _read_result(v, grammar_rec).get("text", "") if grammar_rec else ""
-			free = _read_result(v, free_rec)
-			if "alternatives" in free:
-				alternatives = [a.get("text", "").strip() for a in free["alternatives"]]
-			else:
-				alternatives = [free.get("text", "").strip()]
+			grammar_text, alternatives = session.finish()
 			self.result_cb(grammar_text, [a for a in alternatives if a])
 		except Exception as e:
 			log.exception("Speech recognition error")
@@ -246,8 +271,7 @@ class Listener(threading.Thread):
 					for header in headers:
 						_winmm.waveInUnprepareHeader(hwi, ctypes.byref(header), ctypes.sizeof(header))
 					_winmm.waveInClose(hwi)
-				for r in (grammar_rec, free_rec):
-					if r:
-						v.vosk_recognizer_free(r)
+				if session:
+					session.close()
 			except Exception:
 				log.exception("Cleanup error")

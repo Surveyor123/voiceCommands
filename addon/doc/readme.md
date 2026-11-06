@@ -2,27 +2,27 @@
 
 Run NVDA commands by speaking instead of pressing keys.
 
-NVDA already has a description for every command in its Input Gestures dialog. Voice Commands listens through your microphone, turns your speech into text with the offline [Vosk](https://alphacephei.com/vosk/) engine, matches that text against those descriptions (and against phrases you define yourself), and runs the command that fits best. Your voice is processed on your computer and never leaves it.
+NVDA already has a description for every command in its Input Gestures dialog. Voice Commands listens through your microphone, turns your speech into text with an offline speech engine ([Vosk](https://alphacephei.com/vosk/) by default, or a [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) model that you choose, see The speech model), matches that text against those descriptions (and against phrases you define yourself), and runs the command that fits best. Your voice is processed on your computer and never leaves it.
 
 ## How it works
 
 1.  When you start listening, the add-on collects the commands that are available right now. That includes the commands of the application you are working in, so a command of another application is only offered while that application has focus.
-2.  You speak, then stop listening. Vosk converts your speech to text.
-3.  The text is compared with the command descriptions and with your own phrases. The recognizer is also told which phrases to expect, which makes it much more accurate than free dictation.
+2.  You speak, then stop listening. The speech engine converts your speech to text.
+3.  The text is compared with the command descriptions and with your own phrases. With Vosk the recognizer is also told which phrases to expect, which makes it much more accurate than free dictation. The sherpa models cannot be restricted that way: they write ordinary text, so the add-on compares it more strictly (see Choosing what to say).
 4.  If one command clearly fits, it runs. If several fit about equally well, a list opens and you choose.
 
 ## Requirements
 
 - NVDA 2026.1 or later, 64-bit, on Windows.
 - A microphone set as the default recording device in Windows.
-- An internet connection once, to download the speech model (a small model is about 40 to 100 MB).
+- An internet connection once, to download the speech model (a small Vosk model is about 40 to 100 MB; the sherpa models are 24 to 124 MB, plus a 21 MB runtime that all of them share).
 
 ## Installation and first run
 
 1.  Open the `.nvda-addon` file and confirm the installation. Restart NVDA when asked.
-2.  A few seconds after NVDA starts, the add-on notices that no speech model is installed and asks whether it may download one for your NVDA language. Choose **Yes**. The download runs in the background; NVDA announces the progress and tells you when voice commands are ready.
+2.  A few seconds after NVDA starts, the add-on notices that no speech model is installed and asks whether it may download one for your NVDA language. With a Turkish NVDA this is the turkish-stt model; for other languages it is a Vosk model. Choose **Yes**. The download runs in the background; NVDA announces the progress and tells you when voice commands are ready.
 
-If you choose **No**, the add-on does not ask again at startup. You are asked again when you start listening, or when you use the "Downloads the speech recognition model" command.
+If you choose **No**, the add-on does not ask again at startup. You are asked again when you start listening, or when you choose a model that is not installed in the speech model dialog (see The speech model).
 
 ## Quick start
 
@@ -50,8 +50,7 @@ Open the NVDA menu, then Tools, then **Voice Commands** to use the add-on withou
 - **Teach the last spoken phrase...** opens the dialog for names the recognizer does not know.
 - **My commands...** opens the dialog for your own commands.
 - **Toggle volume lowering** turns the lowering of other applications' volume on or off.
-- **Download speech model...** starts the model download, after asking.
-- **Open model folder** opens the model folder in File Explorer.
+- **Speech model...** opens the dialog where you choose, download and manage the speech model (see The speech model).
 - **Type a command...** opens the box where you can type a command phrase.
 
 These do the same as the commands in the Input Gestures dialog (see Commands reference).
@@ -68,6 +67,8 @@ NVDA's descriptions are often full sentences, for example "Reports the current l
 
 Two things help in practice. Say the phrase at a steady pace, in a quiet moment, and do not leave out the distinctive words. And define short phrases for the commands you use most: it takes a minute and makes everything faster.
 
+**With a sherpa model** (see The speech model) you can say a command more naturally, because the text is compared with the command in both directions: the words you said must be found in the command, and the words of the command must be found in what you said. Extra words such as "please" are tolerated, but a fragment is not: saying only "right" does not run "Snap window to the right". Text that resembles no command is not guessed at; NVDA says what it heard instead, for example "Heard: thank you. No matching command".
+
 ## Your own phrases
 
 Use the phrase editor to say commands your way. Assign a key to **Opens the dialog for editing the phrases (aliases) used for commands** and open it from the application whose commands you want to edit.
@@ -81,7 +82,7 @@ Good phrases are short, two to four words, and sound different from each other. 
 
 ## Names the recognizer does not know
 
-The speech model has a fixed vocabulary and cannot learn new words. A command that contains a rare or foreign name, such as an artist or a song title, is therefore often heard as other words that sound similar. For example, "Zülfü Livaneli" may be written as "gül suyu divane izi". The add-on does try to match such text by sound, which works when the model writes something close to the name ("inti ilimani" for "Inti Illimani"), but not when it writes completely different words.
+The speech model has a fixed vocabulary and cannot learn new words. A command that contains a rare or foreign name, such as an artist or a song title, is therefore often heard as other words that sound similar. For example, "Zülfü Livaneli" may be written as "gül suyu divane izi". The add-on does try to match such text by sound, which works when the model writes something close to the name ("inti ilimani" for "Inti Illimani"), but not when it writes completely different words. The sherpa models have no fixed word list, but they too may write an unfamiliar name differently than you expect.
 
 When a command is not recognized, teach the add-on what the recognizer heard:
 
@@ -150,7 +151,7 @@ Your commands are listed in the phrase editor under **My commands**, where you c
 
 ## When it is not sure
 
-When several commands fit about equally well, or none fits well enough to run by itself, a list of the best candidates opens. Use the arrow keys and press Enter to run the one you want, or press Escape to cancel. If you chose a repeat, it applies to the command you pick.
+When several commands fit about equally well, or none fits well enough to run by itself, a list of the best candidates opens. (With a sherpa model the list opens only when something resembles a command; otherwise NVDA just says what it heard.) Use the arrow keys and press Enter to run the one you want, or press Escape to cancel. If you chose a repeat, it applies to the command you pick.
 
 ## Typing instead of speaking
 
@@ -160,16 +161,15 @@ Assign a key to **Opens a box where you can type a command phrase**. What you ty
 
 All of these are in the Input Gestures dialog, in the Voice Commands category.
 
-| Command                                                                                                                | What it does                                             |
-|------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| Starts listening for a voice command; press again to stop listening and run the command                                | The main command. Press once to start and again to stop. |
-| Opens a box where you can type a command phrase                                                                        | Runs a typed phrase through the same matching.           |
-| Opens the dialog for editing the phrases (aliases) used for commands                                                   | Opens the phrase editor.                                 |
-| Toggles lowering the volume of other applications while listening for a voice command                                  | Turns volume lowering on or off.                         |
-| Downloads the speech recognition model for the NVDA language                                                           | Starts the model download, after asking.                 |
-| Opens a dialog that adds what the recognizer heard last as a spoken phrase of a command you choose                     | Teaches the add-on a name it does not recognize.         |
-| Opens the dialog for adding your own commands: open a program, file, folder or web address, or press a key combination | Opens the dialog for your own commands.                  |
-| Opens the model folder in File Explorer                                                                                | For installing a model by hand.                          |
+| Command                                                                                                                | What it does                                                                     |
+|------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| Starts listening for a voice command; press again to stop listening and run the command                                | The main command. Press once to start and again to stop.                         |
+| Opens a box where you can type a command phrase                                                                        | Runs a typed phrase through the same matching.                                   |
+| Opens the dialog for editing the phrases (aliases) used for commands                                                   | Opens the phrase editor.                                                         |
+| Toggles lowering the volume of other applications while listening for a voice command                                  | Turns volume lowering on or off.                                                 |
+| Opens the speech model dialog: choose, download and manage the model                                                   | Chooses the speech model, downloads it after asking, and opens the model folder. |
+| Opens a dialog that adds what the recognizer heard last as a spoken phrase of a command you choose                     | Teaches the add-on a name it does not recognize.                                 |
+| Opens the dialog for adding your own commands: open a program, file, folder or web address, or press a key combination | Opens the dialog for your own commands.                                          |
 
 ## Lowering other applications' volume
 
@@ -181,7 +181,25 @@ The feature uses a library that comes with NVDA. If it is missing, listening sti
 
 ## The speech model
 
-- The add-on looks for the model in the `voiceCommands\model` folder inside NVDA's configuration folder, for example `%AppData%\nvda\voiceCommands\model`. The command "Opens the model folder in File Explorer" takes you there.
+Open **Speech model...** in the Tools menu, or assign a key to **Opens the speech model dialog: choose, download and manage the model**. The dialog lists the models available for your NVDA language and shows for each one whether it is in use, installed or not installed.
+
+- **Use** switches to the selected model (double-clicking a model does the same). A model that is not installed is downloaded first: the add-on tells you its size, where it comes from and its license, and downloads it only after you agree. The model cannot be changed while you are listening or while a download is running.
+- **Open model folder** opens the folder where the models are kept, for installing a model by hand.
+
+| Model                                     | Languages                                        | Download              | License                                                         |
+|-------------------------------------------|--------------------------------------------------|-----------------------|-----------------------------------------------------------------|
+| Vosk (small model)                        | Every language that has one on the official list | Usually 40 to 100 MB  | See the model list                                              |
+| turkish-stt (mihu AI)                     | Turkish                                          | 68 MB                 | mihu Community License (free for personal use)                  |
+| Kroko English, Français, Deutsch, Español | English, French, German, Spanish                 | 57, 57, 58 and 124 MB | Kroko community model; terms at huggingface.co/Banafo/Kroko-ASR |
+| Zipformer ru (Alpha Cephei)               | Russian                                          | 24 MB                 | See huggingface.co/alphacep/vosk-model-small-streaming-ru       |
+
+**Vosk or a sherpa model.** Vosk is restricted to the command list, which suits short commands. The sherpa models write free text, which usually copes better with ordinary speech and unfamiliar words but is matched to commands more strictly (see Choosing what to say). Try both and keep the one that works better with your voice and microphone. The default is turkish-stt for a Turkish NVDA that has no Vosk model installed yet; an installed Vosk model is never replaced behind your back, and every other language stays on Vosk until you choose a sherpa model. Your choice is remembered. If NVDA is switched to a language that the chosen sherpa model does not cover, the add-on falls back to Vosk.
+
+**Installing a sherpa model.** The first sherpa model also needs the sherpa-onnx runtime (three DLL files, 21 MB). It is downloaded from github.com, always the same version, and checked against a fixed checksum; the model files come from huggingface.co or github.com and are checked too. The runtime is kept in `voiceCommands\sherpa-runtime` and each model in its own `sherpa-...` folder inside `voiceCommands\model`. The runtime needs 64-bit NVDA. If your Windows user name contains letters such as ş, ğ or ı, the add-on uses the short (8.3) name of the folder, which some drives have switched off (see Troubleshooting).
+
+**Vosk models.**
+
+- The add-on looks for the model in the `voiceCommands\model` folder inside NVDA's configuration folder, for example `%AppData%\nvda\voiceCommands\model`. **Open model folder** in the dialog takes you there.
 - The automatic download uses the official model list at <https://alphacephei.com/vosk/models>. It picks a small model for your NVDA language, verifies its checksum and extracts it into that folder.
 - To install a model yourself, download one from that page and extract it into the model folder. Both Vosk model layouts are recognized, and the files may be in a subfolder.
 - Large models are more accurate but need much more memory and take longer to load.
@@ -191,31 +209,35 @@ The feature uses a library that comes with NVDA. If it is missing, listening sti
 
 Stored in `%AppData%\nvda\voiceCommands`, or in the configuration folder of a portable NVDA:
 
-| Item                    | Contents                                                                                         |
-|-------------------------|--------------------------------------------------------------------------------------------------|
-| `aliases.json`          | Your phrases from the phrase editor and the teach dialog.                                        |
-| `userCommands.json`     | Your own commands.                                                                               |
-| `settings.json`         | Whether volume lowering is on, and whether to ask about the download at startup.                 |
-| `ducking-recovery.json` | Temporary: exists only while other applications' volume is lowered, to restore it after a crash. |
-| `model\`                | The speech model.                                                                                |
+| Item                    | Contents                                                                                                                |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| `aliases.json`          | Your phrases from the phrase editor and the teach dialog.                                                               |
+| `userCommands.json`     | Your own commands.                                                                                                      |
+| `settings.json`         | Whether volume lowering is on, whether to ask about the download at startup, and the speech engine and model you chose. |
+| `ducking-recovery.json` | Temporary: exists only while other applications' volume is lowered, to restore it after a crash.                        |
+| `model\`                | The speech models: Vosk models and the `sherpa-...` folders.                                                            |
+| `sherpa-runtime\`       | The sherpa-onnx runtime, downloaded together with the first sherpa model.                                               |
 
 The values at the top of `globalPlugins/voiceCommands/__init__.py`, such as the matching thresholds and the size of the candidate list, can be edited if you want to tune the behavior.
 
 ## Troubleshooting
 
-| Problem                                   | What to check                                                                                                                                                             |
-|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "Vosk model not found"                    | Install a model as described above. The message names the exact folder.                                                                                                   |
-| Nothing is recognized                     | Make sure the right microphone is the Windows default and not muted.                                                                                                      |
-| A name is never recognized                | The model may write it as other words. Open **Teach the last spoken phrase** right after saying it to see what was heard, and save it as a phrase (see Names the recognizer does not know). |
-| The wrong command runs                    | Define a short phrase of your own for that command in the phrase editor.                                                                                                  |
-| "This command is not available right now" | The command belongs to another application. Say it while that application has focus.                                                                                      |
-| Music or video still gets in the way      | Some applications do not expose an audio session that can be lowered. Pause them before listening.                                                                        |
-| You want to see what was heard            | Open **Teach the last spoken phrase** right after speaking: its list shows the texts the recognizer produced. For more detail, set NVDA's Logging level to Debug (NVDA menu, Preferences, Settings, Privacy and Security, Logging level), speak, and open the log (NVDA+F1): "Voice command recognition" lines show what each recognizer heard, and "Voice command candidate" lines show how close the best matches were. These lines are only written at the Debug level. |
+| Problem                                        | What to check                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| "Vosk model not found"                         | Install a model as described above. The message names the exact folder.                                                                                                                                                                                                                                                                                                                                                                                                    |
+| "The selected speech engine is not installed"  | Open **Speech model...** and choose **Use**: the add-on offers to download it again. If that keeps failing, delete the model's folder under `model\` and the `sherpa-runtime` folder, then download again.                                                                                                                                                                                                                                                                 |
+| "Could not load the model" with a sherpa model | Make sure NVDA is 64-bit. If your Windows user name has letters such as ş, ğ or ı, the model may not load when short folder names are switched off on the drive; check the log (see below) and use Vosk if it keeps failing.                                                                                                                                                                                                                                               |
+| "Heard: ... No matching command"               | A sherpa model wrote text that matches no command by its words. If the text is what you said, the command is called something else: add your own short phrase (see Your own phrases). If not, say it again, or try another model.                                                                                                                                                                                                                                          |
+| Nothing is recognized                          | Make sure the right microphone is the Windows default and not muted.                                                                                                                                                                                                                                                                                                                                                                                                       |
+| A name is never recognized                     | The model may write it as other words. Open **Teach the last spoken phrase** right after saying it to see what was heard, and save it as a phrase (see Names the recognizer does not know).                                                                                                                                                                                                                                                                                |
+| The wrong command runs                         | Define a short phrase of your own for that command in the phrase editor.                                                                                                                                                                                                                                                                                                                                                                                                   |
+| "This command is not available right now"      | The command belongs to another application. Say it while that application has focus.                                                                                                                                                                                                                                                                                                                                                                                       |
+| Music or video still gets in the way           | Some applications do not expose an audio session that can be lowered. Pause them before listening.                                                                                                                                                                                                                                                                                                                                                                         |
+| You want to see what was heard                 | Open **Teach the last spoken phrase** right after speaking: its list shows the texts the recognizer produced. For more detail, set NVDA's Logging level to Debug (NVDA menu, Preferences, Settings, Privacy and Security, Logging level), speak, and open the log (NVDA+F1): "Voice command recognition" lines show what each recognizer heard, and "Voice command candidate" lines show how close the best matches were. These lines are only written at the Debug level. |
 
 ## Privacy
 
-Audio from the microphone is processed on your computer by Vosk and is never sent anywhere. The network is used only when you allow the model download, and only to reach alphacephei.com.
+Audio from the microphone is processed on your computer by the speech engine (Vosk or sherpa-onnx) and is never sent anywhere. The network is used only when you allow a download, and only to reach alphacephei.com (Vosk models), huggingface.co (the turkish-stt model) and github.com (the sherpa-onnx runtime and the other sherpa models).
 
 ## Translating
 
@@ -224,3 +246,5 @@ The add-on is written in English and comes with a Turkish translation. To transl
 ## License
 
 Voice Commands is licensed under the GNU General Public License, version 2.
+
+The sherpa-onnx runtime that the add-on downloads is licensed under the Apache License 2.0, and the ONNX Runtime library inside it under the MIT license. Each speech model has its own license (see The speech model).

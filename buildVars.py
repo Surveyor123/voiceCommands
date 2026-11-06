@@ -16,10 +16,10 @@ addon_info = AddonInfo(
 
 	# Add-on description
 	# Translators: Long description to be shown for this add-on
-	addon_description=_("""Runs NVDA commands and common Windows actions by voice, using the offline Vosk speech recognition engine; your voice never leaves your computer. You can say any command from the Input Gestures dialog, built-in Windows commands such as "show desktop", "show taskbar" or "paste", and your own commands that open a program, file, folder or web address, or press a key combination. A speech model for your NVDA language is downloaded on first use. Assign keys in the Input Gestures dialog, under the Voice Commands category."""),
+	addon_description=_("""Runs NVDA commands and common Windows actions by voice, using an offline speech recognition engine (Vosk or sherpa-onnx); your voice never leaves your computer. You can say any command from the Input Gestures dialog, built-in Windows commands such as "show desktop", "show taskbar" or "paste", and your own commands that open a program, file, folder or web address, or press a key combination. A speech model for your NVDA language is downloaded on first use. Assign keys in the Input Gestures dialog, under the Voice Commands category."""),
 
 	# version
-	addon_version="1.0.1",
+	addon_version="1.1.0",
 
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version
@@ -32,6 +32,9 @@ addon_info = AddonInfo(
 - The heard-phrases list in the teach dialog now reports its checked state in every NVDA version.
 - Messages are no longer cut off by NVDA's focus speech after a dialog, file chooser or menu closes.
 - Added a Turkish set of short phrases that can be imported from the phrase editor.
+- Added a second speech engine, sherpa-onnx, with a Turkish model (turkish-stt) and models for English, French, German, Spanish and Russian. It is the default for a Turkish NVDA that has no Vosk model installed.
+- Added the Speech model dialog to the Tools menu, to choose, download and manage the speech model. It replaces the separate download and model folder items.
+- Text from the sherpa models is matched to commands more strictly, so a single word or an invented sentence no longer runs a wrong command; NVDA says what it heard instead.
 """),
 
 	# Author(s)

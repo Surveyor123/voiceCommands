@@ -1,0 +1,1217 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: voiceCommands 1.0.1\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-11-06 09:47+0300\n"
+"PO-Revision-Date: 2026-11-05 20:14+0100\n"
+"Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
+"Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.10\n"
+"X-Poedit-Basepath: .\n"
+
+#. Translators: Label of the button that closes a Voice Commands dialog without applying anything.
+#: addon\globalPlugins\voiceCommands\dialogs.py:57
+msgid "Cancel"
+msgstr "Annuler"
+
+#. Translators: Label of the list of possible commands the user can choose from.
+#: addon\globalPlugins\voiceCommands\dialogs.py:74
+msgid "Choose the command to run:"
+msgstr "Choisir la commande à exécuter:"
+
+#. Translators: Label of the button that runs the command chosen in the list.
+#: addon\globalPlugins\voiceCommands\dialogs.py:79
+msgid "Run"
+msgstr "Exécuter"
+
+#. Translators: Title of the dialog where the user edits the phrases that trigger commands.
+#: addon\globalPlugins\voiceCommands\dialogs.py:100
+msgid "Command phrase editor"
+msgstr "Éditeur de phrases de commande"
+
+#. Translators: Label of the edit field used to filter the list of commands.
+#: addon\globalPlugins\voiceCommands\dialogs.py:109
+#: addon\globalPlugins\voiceCommands\dialogs.py:358
+msgid "Search commands:"
+msgstr "Rechercher des commandes:"
+
+#. Translators: Label of the list of commands in the phrase editor.
+#: addon\globalPlugins\voiceCommands\dialogs.py:113
+msgid "Commands:"
+msgstr "Commandes:"
+
+#. Translators: Label of a check box. When it is cleared, the command can only be triggered by the user's own phrases.
+#: addon\globalPlugins\voiceCommands\dialogs.py:117
+msgid "Also use the original description"
+msgstr "Utiliser également la description d'origine"
+
+#. Translators: Label of the list of phrases the user has defined for the selected command.
+#: addon\globalPlugins\voiceCommands\dialogs.py:120
+msgid "Phrases you say for this command:"
+msgstr "Phrases que vous dites pour cette commande:"
+
+#. Translators: Label of a button that moves the selected phrase into the edit field so it can be changed.
+#: addon\globalPlugins\voiceCommands\dialogs.py:125
+msgid "Edit selected phrase"
+msgstr "Modifier la phrase sélectionnée"
+
+#. Translators: Label of a button that deletes the selected phrase.
+#: addon\globalPlugins\voiceCommands\dialogs.py:127
+msgid "Delete selected phrase"
+msgstr "Supprimer la phrase sélectionnée"
+
+#. Translators: Label of the edit field where a new phrase for a command is typed.
+#: addon\globalPlugins\voiceCommands\dialogs.py:132
+msgid "New phrase:"
+msgstr "Nouvelle phrase:"
+
+#. Translators: Label of the button that adds the typed phrase to the selected command.
+#: addon\globalPlugins\voiceCommands\dialogs.py:136
+msgid "Add phrase"
+msgstr "Ajouter une phrase"
+
+#. Translators: Label of the button that adds the phrases of a file to the phrase editor.
+#: addon\globalPlugins\voiceCommands\dialogs.py:140
+msgid "Import phrases..."
+msgstr "Importer des phrases..."
+
+#. Translators: Label of the button that saves the phrases of the phrase editor to a file.
+#: addon\globalPlugins\voiceCommands\dialogs.py:142
+msgid "Export phrases..."
+msgstr "Exporter des phrases..."
+
+#. Translators: Label of the button that saves the changes in the phrase editor.
+#. Translators: Label of the button that saves the user's own commands.
+#. Translators: A spoken command. It saves the current document (Control+S).
+#: addon\globalPlugins\voiceCommands\dialogs.py:147
+#: addon\globalPlugins\voiceCommands\dialogs.py:553
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:137
+msgid "Save"
+msgstr "Enregistrer"
+
+#. Translators: Entry in the list of commands. {description} is the command description, {category} its category.
+#: addon\globalPlugins\voiceCommands\dialogs.py:186
+#: addon\globalPlugins\voiceCommands\dialogs.py:377
+msgid "{description} - {category}"
+msgstr "{description} - {category}"
+
+#: addon\globalPlugins\voiceCommands\dialogs.py:189
+msgid "{description} - {category} ({count} phrase)"
+msgid_plural "{description} - {category} ({count} phrases)"
+msgstr[0] "{description} - {category} ({count} phrase)"
+msgstr[1] "{description} - {category} ({count} phrases)"
+
+#. Translators: Spoken when the user tries to add an empty phrase.
+#: addon\globalPlugins\voiceCommands\dialogs.py:230
+msgid "The phrase is empty"
+msgstr "La phrase est vide"
+
+#. Translators: Spoken after a phrase has been added to a command.
+#: addon\globalPlugins\voiceCommands\dialogs.py:239
+msgid "Added"
+msgstr "Ajouté"
+
+#. Translators: Spoken after a phrase has been deleted from a command.
+#. Translators: Spoken after one of the user's own commands has been deleted.
+#: addon\globalPlugins\voiceCommands\dialogs.py:256
+#: addon\globalPlugins\voiceCommands\dialogs.py:602
+msgid "Deleted"
+msgstr "Supprimé"
+
+#. Translators: Title of the dialog for choosing the file whose phrases are imported.
+#: addon\globalPlugins\voiceCommands\dialogs.py:267
+msgid "Import phrases"
+msgstr "Importer des phrases"
+
+#: addon\globalPlugins\voiceCommands\dialogs.py:267
+#: addon\globalPlugins\voiceCommands\dialogs.py:300
+msgid "Phrase files"
+msgstr "Fichiers de phrases"
+
+#. Translators: Spoken when the file chosen for importing phrases is not a phrase file.
+#: addon\globalPlugins\voiceCommands\dialogs.py:277
+msgid "This is not a valid phrase file"
+msgstr "Ceci n'est pas un fichier de phrase valide"
+
+#. Translators: Spoken when importing phrases changed nothing because the editor already has them all.
+#: addon\globalPlugins\voiceCommands\dialogs.py:284
+msgid "Nothing new to import"
+msgstr "Rien de nouveau à importer"
+
+#: addon\globalPlugins\voiceCommands\dialogs.py:288
+msgid "{count} change imported. Choose Save to keep it."
+msgid_plural "{count} changes imported. Choose Save to keep them."
+msgstr[0] ""
+"{count} modification importée. Choisissez Enregistrer pour la conserver."
+msgstr[1] ""
+"{count} modifications importées. Choisissez Enregistrer pour les conserver."
+
+#. Translators: Spoken when the user wants to export phrases but there are none.
+#: addon\globalPlugins\voiceCommands\dialogs.py:296
+msgid "There are no phrases to export"
+msgstr "Il n'y a pas de phrases à exporter"
+
+#. Translators: Title of the dialog for choosing where the exported phrases are saved.
+#: addon\globalPlugins\voiceCommands\dialogs.py:299
+msgid "Export phrases"
+msgstr "Exporter des phrases"
+
+#. Translators: Spoken when the phrases could not be saved.
+#: addon\globalPlugins\voiceCommands\dialogs.py:310
+#: addon\globalPlugins\voiceCommands\dialogs.py:321
+#: addon\globalPlugins\voiceCommands\dialogs.py:400
+#: addon\globalPlugins\voiceCommands\dialogs.py:609
+msgid "Could not save"
+msgstr "Impossible d'enregistrer"
+
+#. Translators: Spoken after the phrases have been exported to a file.
+#: addon\globalPlugins\voiceCommands\dialogs.py:313
+msgid "Phrases exported"
+msgstr "Phrases exportées"
+
+#. Translators: Title of the dialog that teaches the add-on a spoken phrase.
+#: addon\globalPlugins\voiceCommands\dialogs.py:339
+msgid "Teach the last spoken phrase"
+msgstr "Enseigner la dernière phrase prononcée"
+
+#. Translators: Label of the list of texts the recognizer heard; the checked ones are saved as phrases.
+#: addon\globalPlugins\voiceCommands\dialogs.py:345
+msgid "Heard (check the ones to save as phrases):"
+msgstr "Entendus (cochez ceux à enregistrer comme phrases):"
+
+#. Translators: Label of the list of commands the heard phrases can be added to.
+#: addon\globalPlugins\voiceCommands\dialogs.py:362
+msgid "Command to run when you say this:"
+msgstr "Commande à exécuter lorsque vous dites ceci:"
+
+#. Translators: Label of the button that saves the checked phrases for the selected command.
+#: addon\globalPlugins\voiceCommands\dialogs.py:366
+msgid "Save phrases"
+msgstr "Enregistrer les phrases"
+
+#. Translators: Spoken when the user saves without checking any heard text.
+#: addon\globalPlugins\voiceCommands\dialogs.py:389
+msgid "Check at least one phrase"
+msgstr "Cochez au moins une phrase"
+
+#. Translators: Title of the dialog for adding a command of your own.
+#: addon\globalPlugins\voiceCommands\dialogs.py:411
+msgid "Edit command"
+msgstr "Modifier la commande"
+
+#: addon\globalPlugins\voiceCommands\dialogs.py:411
+msgid "Add command"
+msgstr "Ajouter une commande"
+
+#. Translators: Label of the edit field where the user types the phrase they will say for their own command.
+#: addon\globalPlugins\voiceCommands\dialogs.py:418
+msgid "What you say:"
+msgstr "Ce que vous dites:"
+
+#. Translators: Label of the list where the user chooses what their own command does.
+#: addon\globalPlugins\voiceCommands\dialogs.py:422
+msgid "What it does:"
+msgstr "Ce que cela fait:"
+
+#. Translators: A choice for what a command of your own does.
+#: addon\globalPlugins\voiceCommands\dialogs.py:425
+msgid "Open a program, file, folder or web address"
+msgstr "Ouvrir un programme, un fichier, un dossier ou une adresse web"
+
+#. Translators: A choice for what a command of your own does.
+#: addon\globalPlugins\voiceCommands\dialogs.py:427
+msgid "Press a key combination"
+msgstr "Appuyez sur une combinaison de touches"
+
+#. Translators: Label of the edit field for the program, file, folder or web address a command opens.
+#: addon\globalPlugins\voiceCommands\dialogs.py:433
+msgid "Program, file, folder or web address:"
+msgstr "Programme, fichier, dossier ou adresse web:"
+
+#. Translators: Label of a button that lets the user pick a file or program with a file dialog.
+#: addon\globalPlugins\voiceCommands\dialogs.py:438
+msgid "Choose file..."
+msgstr "Choisir un fichier..."
+
+#. Translators: Label of a button that lets the user pick a folder with a folder dialog.
+#: addon\globalPlugins\voiceCommands\dialogs.py:440
+msgid "Choose folder..."
+msgstr "Choisir un dossier..."
+
+#. Translators: Label of the edit field for the key combination a command presses. Keep "control+shift+n" as it is: key names are not translated.
+#: addon\globalPlugins\voiceCommands\dialogs.py:448
+msgid "Keys (for example control+shift+n):"
+msgstr "Touches (par exemple control+shift+n):"
+
+#. Translators: Title of the dialog for choosing a file or program.
+#: addon\globalPlugins\voiceCommands\dialogs.py:482
+msgid "Choose a file or program"
+msgstr "Choisir un fichier ou un programme"
+
+#. Translators: Title of the dialog for choosing a folder.
+#: addon\globalPlugins\voiceCommands\dialogs.py:488
+msgid "Choose a folder"
+msgstr "Choisir un dossier"
+
+#. Translators: Shown when the user did not type what they will say for their own command.
+#: addon\globalPlugins\voiceCommands\dialogs.py:500
+msgid "Type what you say for this command."
+msgstr "Saisissez ce que vous dites pour cette commande."
+
+#. Translators: Shown when another command of the user already has the same name.
+#: addon\globalPlugins\voiceCommands\dialogs.py:503
+msgid "You already have a command with this name."
+msgstr "Vous avez déjà une commande portant ce nom."
+
+#. Translators: Shown when the user did not type the keys a command should press.
+#: addon\globalPlugins\voiceCommands\dialogs.py:508
+msgid "Type the keys to press."
+msgstr "Saisissez les touches à presser."
+
+#. Translators: Shown when NVDA does not understand the typed keys. {error} describes the problem.
+#: addon\globalPlugins\voiceCommands\dialogs.py:512
+msgid "These keys are not valid: {error}"
+msgstr "Ces touches ne sont pas valides: {error}"
+
+#. Translators: Shown when the user did not type what a command should open.
+#: addon\globalPlugins\voiceCommands\dialogs.py:518
+msgid "Type what the command should open."
+msgstr "Saisissez ce que la commande doit ouvrir."
+
+#. Translators: Title of the dialog where the user manages their own commands.
+#. Translators: Category shown next to the user's own commands in the command phrase editor.
+#: addon\globalPlugins\voiceCommands\dialogs.py:533
+#: addon\globalPlugins\voiceCommands\userCommands.py:51
+msgid "My commands"
+msgstr "Mes commandes"
+
+#. Translators: Label of the list of the user's own commands.
+#: addon\globalPlugins\voiceCommands\dialogs.py:539
+msgid "Your commands:"
+msgstr "Vos commandes:"
+
+#. Translators: Label of a button that adds a command of the user's own.
+#: addon\globalPlugins\voiceCommands\dialogs.py:544
+msgid "Add"
+msgstr "Ajouter"
+
+#. Translators: Label of a button that changes the selected command.
+#: addon\globalPlugins\voiceCommands\dialogs.py:546
+msgid "Edit"
+msgstr "Modifier"
+
+#. Translators: Label of a button that deletes the selected command.
+#: addon\globalPlugins\voiceCommands\dialogs.py:548
+msgid "Delete"
+msgstr "Supprimer"
+
+#. Translators: Entry in the list of the user's commands that press keys. {name} is what the user says, {keys} the key combination.
+#: addon\globalPlugins\voiceCommands\dialogs.py:565
+msgid "{name} - presses {keys}"
+msgstr "{name} - appuie sur {keys}"
+
+#. Translators: Entry in the list of the user's commands that open something. {name} is what the user says, {target} what is opened.
+#: addon\globalPlugins\voiceCommands\dialogs.py:567
+msgid "{name} - opens {target}"
+msgstr "{name} - ouvre {target}"
+
+#. Translators: Error shown when the downloaded list of speech models has an unexpected format.
+#: addon\globalPlugins\voiceCommands\download.py:50
+msgid "Unexpected model list format"
+msgstr "Format de liste de modèles inattendu"
+
+#. Translators: Error shown when a downloaded archive contains a file path that points outside the target folder. {name} is that path.
+#: addon\globalPlugins\voiceCommands\download.py:111
+msgid "Unsafe path in archive: {name}"
+msgstr "Chemin non sécurisé dans l'archive: {name}"
+
+#. Translators: Error shown when there is not enough free disk space to install a speech model.
+#: addon\globalPlugins\voiceCommands\download.py:122
+#: addon\globalPlugins\voiceCommands\download.py:278
+msgid "Not enough free disk space"
+msgstr "Espace disque libre insuffisant"
+
+#. Translators: Error shown when a downloaded speech model file fails its integrity check.
+#. Translators: Error shown when a downloaded speech engine file fails its integrity check.
+#: addon\globalPlugins\voiceCommands\download.py:131
+#: addon\globalPlugins\voiceCommands\download.py:251
+#: addon\globalPlugins\voiceCommands\download.py:303
+#: addon\globalPlugins\voiceCommands\download.py:330
+msgid "The downloaded file is corrupt (checksum mismatch)"
+msgstr ""
+"Le fichier téléchargé est corrompu (la somme de contrôle ne correspond pas)"
+
+#. Translators: Error shown when the downloaded speech engine package lacks files.
+#: addon\globalPlugins\voiceCommands\download.py:265
+#: addon\globalPlugins\voiceCommands\download.py:340
+msgid "The speech engine package is incomplete"
+msgstr ""
+
+#. Translators: Error shown when the Vosk speech recognition model cannot be loaded. {path} is the model folder.
+#: addon\globalPlugins\voiceCommands\recognizer.py:103
+msgid "Could not load the Vosk model: {path}"
+msgstr "Impossible de charger le modèle Vosk: {path}"
+
+#. Translators: Error shown when the speech recognizer cannot be created.
+#: addon\globalPlugins\voiceCommands\recognizer.py:116
+#: addon\globalPlugins\voiceCommands\sherpa.py:231
+msgid "Could not create the speech recognizer"
+msgstr "Impossible de créer le système de reconnaissance vocale"
+
+#. Translators: Error shown when the microphone cannot be opened.
+#: addon\globalPlugins\voiceCommands\recognizer.py:231
+msgid "Could not open the microphone"
+msgstr "Impossible d'ouvrir le microphone"
+
+#. Translators: Error shown when the sherpa-onnx runtime files are missing.
+#: addon\globalPlugins\voiceCommands\sherpa.py:133
+msgid "The speech engine files are missing"
+msgstr ""
+
+#. Translators: Error shown when the speech recognition model cannot be loaded. {path} is the model folder.
+#: addon\globalPlugins\voiceCommands\sherpa.py:207
+#, fuzzy
+msgid "Could not load the model: {path}"
+msgstr "Impossible de charger le modèle Vosk: {path}"
+
+#. Translators: Category shown next to the built-in Windows commands in the command phrase editor.
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:41
+msgid "Windows commands"
+msgstr "Commandes Windows"
+
+#. ---- desktop and shell
+#. Translators: A spoken command. It shows the Windows desktop (Windows+D). Keep it short: it is what the user says.
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:50
+msgid "Show desktop"
+msgstr "Afficher le bureau"
+
+#. Translators: A spoken command. It moves focus to the taskbar (Windows+T).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:52
+msgid "Show taskbar"
+msgstr "Afficher la barre des tâches"
+
+#. Translators: A spoken command. It moves focus to the system tray, the notification area of the taskbar (Windows+B).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:54
+msgid "Show system tray"
+msgstr "Afficher la zone de notification"
+
+#. Translators: A spoken command. It opens the Windows Start menu.
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:56
+msgid "Open Start menu"
+msgstr "Ouvrir le menu Démarrer"
+
+#. Translators: A spoken command. It opens File Explorer (Windows+E).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:58
+msgid "Open File Explorer"
+msgstr "Ouvrir l'Explorateur de fichiers"
+
+#. Translators: A spoken command. It opens the Run dialog (Windows+R).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:60
+msgid "Open Run dialog"
+msgstr "Ouvrir la boîte de dialogue Exécuter"
+
+#. Translators: A spoken command. It opens the Windows Settings app (Windows+I).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:62
+msgid "Open Windows settings"
+msgstr "Ouvrir les paramètres Windows"
+
+#. Translators: A spoken command. It opens Windows search (Windows+S).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:64
+msgid "Open Windows search"
+msgstr "Ouvrir la recherche Windows"
+
+#. Translators: A spoken command. It opens the Windows quick settings panel (Windows+A).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:66
+msgid "Open quick settings"
+msgstr "Ouvrir les paramètres rapides"
+
+#. Translators: A spoken command. It opens the Windows notification center (Windows+N).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:68
+msgid "Open notification center"
+msgstr "Ouvrir le centre de notifications"
+
+#. Translators: A spoken command. It opens the Windows clipboard history (Windows+V).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:70
+msgid "Open clipboard history"
+msgstr "Ouvrir l'historique du presse-papiers"
+
+#. Translators: A spoken command. It opens the Windows emoji panel (Windows+period).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:72
+msgid "Open emoji panel"
+msgstr "Ouvrir le panneau des émojis"
+
+#. Translators: A spoken command. It starts Windows voice typing (Windows+H).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:74
+msgid "Start Windows voice typing"
+msgstr "Démarrer la dictée vocale de Windows"
+
+#. Translators: A spoken command. It opens the menu for projecting the screen to another display (Windows+P).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:76
+msgid "Open display projection menu"
+msgstr "Ouvrir le menu de projection de l'affichage"
+
+#. Translators: A spoken command. It starts the screen snipping tool (Windows+Shift+S).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:78
+msgid "Take a screenshot"
+msgstr "Faire une capture d'écran"
+
+#. Translators: A spoken command. It opens Task Manager (Control+Shift+Escape).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:80
+msgid "Open Task Manager"
+msgstr "Ouvrir le Gestionnaire des tâches"
+
+#. Translators: A spoken command. It locks the computer (Windows+L).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:82
+msgid "Lock computer"
+msgstr "Verrouiller l'ordinateur"
+
+#. ---- windows and virtual desktops
+#. Translators: A spoken command. It minimizes every open window (Windows+M).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:85
+msgid "Minimize all windows"
+msgstr "Réduire toutes les fenêtres"
+
+#. Translators: A spoken command. It brings back the windows that were minimized (Windows+Shift+M).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:87
+msgid "Restore minimized windows"
+msgstr "Restaurer les fenêtres réduites"
+
+#. Translators: A spoken command. It shows Task View, the overview of open windows and virtual desktops (Windows+Tab).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:89
+msgid "Show task view"
+msgstr "Afficher la vue des tâches"
+
+#. Translators: A spoken command. It switches to the window that was used before the current one (Alt+Tab).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:91
+msgid "Switch to the previous window"
+msgstr "Passer à la fenêtre précédente"
+
+#. Translators: A spoken command. It closes the current window (Alt+F4).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:93
+msgid "Close window"
+msgstr "Fermer la fenêtre"
+
+#. Translators: A spoken command. It maximizes the current window (Windows+Up).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:95
+msgid "Maximize window"
+msgstr "Agrandir la fenêtre"
+
+#. Translators: A spoken command. It minimizes the current window, or restores it if it is maximized (Windows+Down).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:97
+msgid "Minimize window"
+msgstr "Réduire la fenêtre"
+
+#. Translators: A spoken command. It snaps the current window to the left half of the screen (Windows+Left).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:99
+msgid "Snap window to the left"
+msgstr "Ancrer la fenêtre à gauche"
+
+#. Translators: A spoken command. It snaps the current window to the right half of the screen (Windows+Right).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:101
+msgid "Snap window to the right"
+msgstr "Ancrer la fenêtre à droite"
+
+#. Translators: A spoken command. It switches to the next virtual desktop (Control+Windows+Right).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:103
+msgid "Next virtual desktop"
+msgstr "Bureau virtuel suivant"
+
+#. Translators: A spoken command. It switches to the previous virtual desktop (Control+Windows+Left).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:105
+msgid "Previous virtual desktop"
+msgstr "Bureau virtuel précédent"
+
+#. Translators: A spoken command. It creates a new virtual desktop (Control+Windows+D).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:107
+msgid "New virtual desktop"
+msgstr "Nouveau bureau virtuel"
+
+#. Translators: A spoken command. It closes the current virtual desktop (Control+Windows+F4).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:109
+msgid "Close virtual desktop"
+msgstr "Fermer le bureau virtuel"
+
+#. ---- sound and media
+#. Translators: A spoken command. It raises the system volume.
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:112
+msgid "Volume up"
+msgstr "Augmenter le volume"
+
+#. Translators: A spoken command. It lowers the system volume.
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:114
+msgid "Volume down"
+msgstr "Baisser le volume"
+
+#. Translators: A spoken command. It mutes the system volume, or unmutes it if it is already muted.
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:116
+msgid "Mute or unmute volume"
+msgstr "Couper ou rétablir le son"
+
+#. Translators: A spoken command. It plays or pauses the current media.
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:118
+msgid "Play or pause media"
+msgstr "Lire ou mettre en pause le média"
+
+#. Translators: A spoken command. It skips to the next media track.
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:120
+msgid "Next track"
+msgstr "Piste suivante"
+
+#. Translators: A spoken command. It goes back to the previous media track.
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:122
+msgid "Previous track"
+msgstr "Piste précédente"
+
+#. ---- editing
+#. Translators: A spoken command. It copies the selection to the clipboard (Control+C).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:125
+msgid "Copy"
+msgstr "Copier"
+
+#. Translators: A spoken command. It cuts the selection to the clipboard (Control+X).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:127
+msgid "Cut"
+msgstr "Couper"
+
+#. Translators: A spoken command. It pastes the clipboard contents (Control+V).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:129
+msgid "Paste"
+msgstr "Coller"
+
+#. Translators: A spoken command. It selects everything (Control+A).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:131
+msgid "Select all"
+msgstr "Tout sélectionner"
+
+#. Translators: A spoken command. It undoes the last action (Control+Z).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:133
+msgid "Undo"
+msgstr "Annuler"
+
+#. Translators: A spoken command. It redoes the action that was undone (Control+Y).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:135
+msgid "Redo"
+msgstr "Rétablir"
+
+#. Translators: A spoken command. It opens the find box of the current application (Control+F).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:139
+msgid "Find"
+msgstr "Rechercher"
+
+#. Translators: A spoken command. It prints the current document (Control+P).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:141
+msgid "Print"
+msgstr "Imprimer"
+
+#. Translators: A spoken command. It creates a new document or window in the current application (Control+N).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:143
+msgid "Create new"
+msgstr "Créer un nouveau document"
+
+#. Translators: A spoken command. It opens the dialog for choosing a file to open (Control+O).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:145
+msgid "Open file"
+msgstr "Ouvrir un fichier"
+
+#. Translators: A spoken command. It renames the selected item in File Explorer (F2).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:147
+msgid "Rename"
+msgstr "Renommer"
+
+#. Translators: A spoken command. It shows the properties of the selected item (Alt+Enter).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:149
+msgid "Properties"
+msgstr "Propriétés"
+
+#. Translators: A spoken command. It refreshes the current window or page (F5).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:151
+msgid "Refresh"
+msgstr "Actualiser"
+
+#. ---- navigation and tabs
+#. Translators: A spoken command. It goes back to the previous page or folder (Alt+Left).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:154
+msgid "Go back"
+msgstr "Page précédente"
+
+#. Translators: A spoken command. It goes forward to the next page or folder (Alt+Right).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:156
+msgid "Go forward"
+msgstr "Page suivante"
+
+#. Translators: A spoken command. It opens a new tab (Control+T).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:158
+msgid "New tab"
+msgstr "Nouvel onglet"
+
+#. Translators: A spoken command. It closes the current tab (Control+W).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:160
+msgid "Close tab"
+msgstr "Fermer l'onglet"
+
+#. Translators: A spoken command. It reopens the tab that was closed last (Control+Shift+T).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:162
+msgid "Reopen closed tab"
+msgstr "Rouvrir l'onglet fermé"
+
+#. Translators: A spoken command. It switches to the next tab (Control+Tab).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:164
+msgid "Next tab"
+msgstr "Onglet suivant"
+
+#. Translators: A spoken command. It switches to the previous tab (Control+Shift+Tab).
+#: addon\globalPlugins\voiceCommands\windowsCommands.py:166
+msgid "Previous tab"
+msgstr "Onglet précédent"
+
+#. a sherpa-onnx streaming model (free-form, no grammar); see download.SHERPA_MODELS
+#. -------------------------------------------------------- repeat count
+#. "read current line twice" runs the script twice in a row; NVDA counts that as a double
+#. key press (scriptHandler.getLastScriptRepeatCount).
+#. Translators: The spoken words for the numbers 2, 3, 4 and 5, used to repeat a command ("read current line two times"). Give exactly four words separated by "|", in that order. Digits always work too.
+#: addon\globalPlugins\voiceCommands\__init__.py:52
+msgid "two|three|four|five"
+msgstr "deux|trois|quatre|cinq"
+
+#. Translators: Spoken words that mean "times" and follow the number when repeating a command ("read current line two times"). Give one or more alternatives separated by "|". The first one is added to the speech grammar.
+#: addon\globalPlugins\voiceCommands\__init__.py:54
+msgid "times|time"
+msgstr "fois"
+
+#. Translators: Spoken when the program, file or folder of a command of the user's own does not exist. {target} is what the command should open.
+#: addon\globalPlugins\voiceCommands\__init__.py:260
+msgid "Not found: {target}"
+msgstr "Introuvable: {target}"
+
+#. Translators: Spoken when a command of the user's own could not be run. {command} is the name of the command.
+#: addon\globalPlugins\voiceCommands\__init__.py:264
+msgid "Could not run: {command}"
+msgstr "Impossible d'exécuter: {command}"
+
+#. Translators: Spoken when a Windows command could not be run.
+#. Translators: Spoken when running a voice command failed.
+#: addon\globalPlugins\voiceCommands\__init__.py:274
+#: addon\globalPlugins\voiceCommands\__init__.py:283
+#: addon\globalPlugins\voiceCommands\__init__.py:305
+msgid "Could not run the command"
+msgstr "Impossible d'exécuter la commande"
+
+#. Translators: Spoken when a voice command cannot run in the current context. {command} is the command description.
+#: addon\globalPlugins\voiceCommands\__init__.py:288
+msgid "This command is not available right now: {command}"
+msgstr "Cette commande n'est pas disponible pour le moment: {command}"
+
+#. Translators: Spoken when the script behind a voice command cannot be found. {command} is the command description.
+#: addon\globalPlugins\voiceCommands\__init__.py:293
+msgid "Script not found: {command}"
+msgstr "Script introuvable: {command}"
+
+#. Translators: Appended to a command in the candidate list when it will be repeated. {count} is the number of repeats.
+#: addon\globalPlugins\voiceCommands\__init__.py:355
+msgid " ({count} times)"
+msgstr " ({count} fois)"
+
+#: addon\globalPlugins\voiceCommands\__init__.py:365
+msgid "{count} possible command, choose one"
+msgid_plural "{count} possible commands, choose one"
+msgstr[0] "{count} commande possible, choisissez-en une"
+msgstr[1] "{count} commandes possibles, choisissez-en une"
+
+#. Translators: Title of the dialog that lists the possible commands when it is unclear which one was meant.
+#: addon\globalPlugins\voiceCommands\__init__.py:370
+msgid "Choose a command"
+msgstr "Choisir une commande"
+
+#. Translators: Spoken when no command could be found for what was said.
+#: addon\globalPlugins\voiceCommands\__init__.py:379
+#: addon\globalPlugins\voiceCommands\__init__.py:485
+msgid "No command found"
+msgstr "Commande introuvable"
+
+#. Translators: Spoken when nothing matches closely enough. {command} is the closest command description.
+#: addon\globalPlugins\voiceCommands\__init__.py:403
+msgid "No matching command. Closest: {command}"
+msgstr "Aucune commande correspondante. Commande la plus proche: {command}"
+
+#. Translators: Spoken when the speech recognizer did not understand what was said.
+#: addon\globalPlugins\voiceCommands\__init__.py:460
+#: addon\globalPlugins\voiceCommands\__init__.py:481
+msgid "Not understood"
+msgstr "Pas compris"
+
+#. Translators: Spoken when the speech recognizer heard something that is not a command. {text} is what was heard.
+#: addon\globalPlugins\voiceCommands\__init__.py:510
+msgid "Heard: {text}. No matching command"
+msgstr ""
+
+#. Translators: Title of the dialog where the speech model is chosen and managed.
+#: addon\globalPlugins\voiceCommands\__init__.py:535
+#, fuzzy
+msgid "Voice Commands: speech model"
+msgstr "Commandes Vocales: aucun modèle approprié"
+
+#. Translators: Label of the list of speech models.
+#: addon\globalPlugins\voiceCommands\__init__.py:539
+msgid "Speech &model:"
+msgstr ""
+
+#. Translators: Button in the speech model dialog. It uses the selected model and downloads it first if it is not installed.
+#: addon\globalPlugins\voiceCommands\__init__.py:546
+msgid "&Use"
+msgstr ""
+
+#. Translators: Button in the speech model dialog. It opens the folder the models are kept in.
+#: addon\globalPlugins\voiceCommands\__init__.py:549
+#, fuzzy
+msgid "Open model &folder"
+msgstr "Ouvrir le dossier du modèle"
+
+#. Translators: Title of the dialog where a command phrase can be typed instead of spoken.
+#: addon\globalPlugins\voiceCommands\__init__.py:567
+msgid "Voice Command"
+msgstr "Commande Vocale"
+
+#. Translators: Label of the edit field where a command phrase is typed.
+#: addon\globalPlugins\voiceCommands\__init__.py:570
+msgid "Command phrase:"
+msgstr "Phrase de commande:"
+
+#. Translators: Name of the category of Voice Commands in the Input Gestures dialog.
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#: addon\globalPlugins\voiceCommands\__init__.py:597
+#: addon\globalPlugins\voiceCommands\__init__.py:680 buildVars.py:15
+msgid "Voice Commands"
+msgstr "Commandes Vocales"
+
+#. Translators: Menu item in the Voice Commands submenu of the Tools menu.
+#: addon\globalPlugins\voiceCommands\__init__.py:660
+msgid "Start or stop listening"
+msgstr "Démarrer ou arrêter l'écoute"
+
+#. Translators: Menu item in the Voice Commands submenu of the Tools menu.
+#: addon\globalPlugins\voiceCommands\__init__.py:662
+msgid "Command phrase editor..."
+msgstr "Éditeur de phrases de commande..."
+
+#. Translators: Menu item in the Voice Commands submenu of the Tools menu.
+#: addon\globalPlugins\voiceCommands\__init__.py:664
+msgid "Teach the last spoken phrase..."
+msgstr "Enseigner la dernière phrase prononcée..."
+
+#. Translators: Menu item in the Voice Commands submenu of the Tools menu.
+#: addon\globalPlugins\voiceCommands\__init__.py:666
+msgid "My commands..."
+msgstr "Mes commandes..."
+
+#. Translators: Menu item in the Voice Commands submenu of the Tools menu.
+#: addon\globalPlugins\voiceCommands\__init__.py:668
+msgid "Toggle volume lowering"
+msgstr "Activer ou désactiver l'atténuation du volume"
+
+#. Translators: Menu item in the Voice Commands submenu of the Tools menu. It opens one dialog to choose, download and manage the speech model.
+#: addon\globalPlugins\voiceCommands\__init__.py:670
+#, fuzzy
+msgid "Speech model..."
+msgstr "Télécharger le modèle vocal..."
+
+#. Translators: Menu item in the Voice Commands submenu of the Tools menu.
+#: addon\globalPlugins\voiceCommands\__init__.py:672
+msgid "Type a command..."
+msgstr "Saisissez une commande..."
+
+#. Translators: Spoken when no speech recognition model is installed. {path} is the folder that was searched.
+#: addon\globalPlugins\voiceCommands\__init__.py:722
+msgid "Vosk model not found. Searched folder: {path}"
+msgstr "Modèle Vosk introuvable. Dossier exploré: {path}"
+
+#. Translators: Spoken when the speech recognition model could not be loaded. {error} describes the problem.
+#: addon\globalPlugins\voiceCommands\__init__.py:731
+msgid "Could not load the model: {error}"
+msgstr "Impossible de charger le modèle: {error}"
+
+#. Translators: Spoken when a speech engine is selected but its files are not installed.
+#: addon\globalPlugins\voiceCommands\__init__.py:740
+msgid "The selected speech engine is not installed"
+msgstr ""
+
+#: addon\globalPlugins\voiceCommands\__init__.py:810
+msgid ""
+"The Vosk speech recognition model is not installed.\n"
+"\n"
+"Download the model for the NVDA language ({language}) from alphacephei.com "
+"and extract it to the following folder?\n"
+"{path}\n"
+"\n"
+"An internet connection is required; small models are usually 40-100 MB. The "
+"download runs in the background, so you can keep using NVDA."
+msgstr ""
+"Le modèle de reconnaissance vocale Vosk n'est pas installé.\n"
+"\n"
+"Téléchargez le modèle pour la langue de NVDA ({language}) depuis alphacephei."
+"com et extrayez-le dans le dossier suivant ?\n"
+"{path}\n"
+"\n"
+"Une connexion internet est requise ; les petits modèles pèsent généralement "
+"entre 40 et 100 Mo. Le téléchargement s’effectue en arrière-plan, vous "
+"pouvez donc continuer à utiliser NVDA."
+
+#. Translators: Title of the question about downloading the speech recognition model.
+#: addon\globalPlugins\voiceCommands\__init__.py:817
+msgid "Voice Commands: model download"
+msgstr "Commandes Vocales: téléchargement du modèle"
+
+#. Translators: Spoken when the user declines the model download at startup.
+#: addon\globalPlugins\voiceCommands\__init__.py:828
+msgid "OK. I will ask again when you start voice listening."
+msgstr ""
+"D'accord. Je reposerai la question lorsque vous démarrerez l'écoute vocale."
+
+#: addon\globalPlugins\voiceCommands\__init__.py:839
+#, fuzzy
+msgid ""
+"The speech engine {name} is not installed.\n"
+"\n"
+"Download it now? Size: {size}. Sites: {sites}. The files are checked against "
+"fixed checksums.\n"
+"License: {license}\n"
+"Files are stored under:\n"
+"{path}\n"
+"\n"
+"An internet connection is required. The download runs in the background, so "
+"you can keep using NVDA."
+msgstr ""
+"Le modèle de reconnaissance vocale Vosk n'est pas installé.\n"
+"\n"
+"Téléchargez le modèle pour la langue de NVDA ({language}) depuis alphacephei."
+"com et extrayez-le dans le dossier suivant ?\n"
+"{path}\n"
+"\n"
+"Une connexion internet est requise ; les petits modèles pèsent généralement "
+"entre 40 et 100 Mo. Le téléchargement s’effectue en arrière-plan, vous "
+"pouvez donc continuer à utiliser NVDA."
+
+#. Translators: Title of the question about downloading a speech engine.
+#: addon\globalPlugins\voiceCommands\__init__.py:847
+#, fuzzy
+msgid "Voice Commands: speech engine download"
+msgstr "Commandes Vocales: téléchargement du modèle"
+
+#. Translators: Spoken when the download of a speech engine starts. {name} is the model name.
+#. Translators: Spoken when a model download starts. {name} is the model name.
+#: addon\globalPlugins\voiceCommands\__init__.py:854
+#: addon\globalPlugins\voiceCommands\__init__.py:901
+msgid "Downloading {name}"
+msgstr "Téléchargement {name}"
+
+#. Translators: Spoken as download progress. {percent} is the percentage.
+#: addon\globalPlugins\voiceCommands\__init__.py:856
+#: addon\globalPlugins\voiceCommands\__init__.py:903
+msgid "{percent} percent"
+msgstr "{percent} pourcent"
+
+#. Translators: Spoken when the model has been downloaded and is being loaded.
+#: addon\globalPlugins\voiceCommands\__init__.py:883
+#: addon\globalPlugins\voiceCommands\__init__.py:909
+msgid "Model installed, loading it"
+msgstr "Modèle installé, chargement en cours"
+
+#. Translators: Spoken when voice commands are ready to use.
+#: addon\globalPlugins\voiceCommands\__init__.py:887
+#: addon\globalPlugins\voiceCommands\__init__.py:915
+#: addon\globalPlugins\voiceCommands\__init__.py:1160
+msgid "Voice commands are ready"
+msgstr "Les commandes vocales sont prêtes"
+
+#. Translators: Spoken when the model could not be loaded.
+#: addon\globalPlugins\voiceCommands\__init__.py:887
+#: addon\globalPlugins\voiceCommands\__init__.py:918
+#: addon\globalPlugins\voiceCommands\__init__.py:1164
+msgid "Could not load the model"
+msgstr "Impossible de charger le modèle"
+
+#. Translators: Spoken while the add-on looks for a suitable speech model online.
+#: addon\globalPlugins\voiceCommands\__init__.py:890
+msgid "Searching for a model"
+msgstr "Recherche d'un modèle"
+
+#. Translators: Spoken when a model download starts. {name} is the model name, {size} its size.
+#: addon\globalPlugins\voiceCommands\__init__.py:898
+msgid "Downloading {name}, {size}"
+msgstr "Téléchargement {name}, {size}"
+
+#. Translators: Spoken when the model download failed. {error} describes the problem.
+#: addon\globalPlugins\voiceCommands\__init__.py:922
+msgid "Could not download the model: {error}"
+msgstr "Impossible de télécharger le modèle: {error}"
+
+#: addon\globalPlugins\voiceCommands\__init__.py:929
+msgid ""
+"No ready-made Vosk model was found for the NVDA language ({language}).\n"
+"\n"
+"Open the model page in the browser? You can download a model there and "
+"extract it to this folder:\n"
+"{path}"
+msgstr ""
+"Aucun modèle Vosk prêt n'a été trouvé pour la langue de NVDA ({language}).\n"
+"\n"
+"Ouvrez la page du modèle dans votre navigateur ? Vous pouvez y télécharger "
+"un modèle et l'extraire dans ce dossier:\n"
+"{path}"
+
+#. Translators: Title of the question shown when no model exists for the NVDA language.
+#: addon\globalPlugins\voiceCommands\__init__.py:934
+msgid "Voice Commands: no suitable model"
+msgstr "Commandes Vocales: aucun modèle approprié"
+
+#. Translators: Spoken when speech recognition failed. {error} describes the problem.
+#: addon\globalPlugins\voiceCommands\__init__.py:969
+msgid "Speech recognition error: {error}"
+msgstr "Erreur de reconnaissance vocale: {error}"
+
+#. Translators: Description of a command in the Input Gestures dialog.
+#: addon\globalPlugins\voiceCommands\__init__.py:980
+msgid ""
+"Starts listening for a voice command; press again to stop listening and run "
+"the command"
+msgstr ""
+"Démarre l'écoute d'une commande vocale ; appuyez à nouveau pour arrêter "
+"l'écoute et exécuter la commande"
+
+#. Translators: Spoken when the user starts listening while the model is still loading.
+#. The model may have been put in the folder later: load it again.
+#. Translators: Spoken when the model is being loaded.
+#: addon\globalPlugins\voiceCommands\__init__.py:989
+#: addon\globalPlugins\voiceCommands\__init__.py:995
+msgid "The model is loading, please wait"
+msgstr "Le modèle est en cours de chargement, veuillez patienter"
+
+#. Translators: Spoken when the user starts listening while the model is being downloaded.
+#: addon\globalPlugins\voiceCommands\__init__.py:1001
+msgid "The model is being downloaded, please wait"
+msgstr "Le modèle est en cours de téléchargement, veuillez patienter"
+
+#. Translators: Description of a command in the Input Gestures dialog.
+#: addon\globalPlugins\voiceCommands\__init__.py:1020
+msgid "Opens the dialog for editing the phrases (aliases) used for commands"
+msgstr ""
+"Ouvre la boîte de dialogue permettant de modifier les phrases (alias) "
+"utilisées pour les commandes"
+
+#. Translators: Spoken when the list of commands could not be obtained.
+#: addon\globalPlugins\voiceCommands\__init__.py:1025
+#: addon\globalPlugins\voiceCommands\__init__.py:1040
+msgid "Could not get the list of commands"
+msgstr "Impossible d'obtenir la liste des commandes"
+
+#. Translators: Spoken after the phrases have been saved in the phrase editor.
+#. Translators: Spoken after the phrases have been saved in the teach dialog.
+#: addon\globalPlugins\voiceCommands\__init__.py:1028
+#: addon\globalPlugins\voiceCommands\__init__.py:1043
+msgid "Phrases saved"
+msgstr "Phrases enregistrées"
+
+#. Translators: Description of a command in the Input Gestures dialog.
+#: addon\globalPlugins\voiceCommands\__init__.py:1032
+msgid ""
+"Opens a dialog that adds what the recognizer heard last as a spoken phrase "
+"of a command you choose"
+msgstr ""
+"Ouvre une boîte de dialogue qui ajoute la dernière phrase entendue par le "
+"système de reconnaissance vocale d'une commande de votre choix"
+
+#. Translators: Spoken when the user wants to teach a phrase but nothing has been recognized yet.
+#: addon\globalPlugins\voiceCommands\__init__.py:1036
+msgid "Nothing heard yet. Say a command first"
+msgstr "Rien n'a encore été entendu. Dites d'abord une commande"
+
+#. Translators: Description of a command in the Input Gestures dialog.
+#: addon\globalPlugins\voiceCommands\__init__.py:1047
+msgid ""
+"Opens the dialog for adding your own commands: open a program, file, folder "
+"or web address, or press a key combination"
+msgstr ""
+"Ouvre la boîte de dialogue permettant d'ajouter vos propres commandes: "
+"ouvrir un programme, un fichier, un dossier ou une adresse Web, ou appuyer "
+"sur une combinaison de touches"
+
+#. Translators: Spoken after the user's own commands have been saved.
+#: addon\globalPlugins\voiceCommands\__init__.py:1050
+msgid "Commands saved"
+msgstr "Commandes enregistrées"
+
+#. Translators: Description of a command in the Input Gestures dialog.
+#: addon\globalPlugins\voiceCommands\__init__.py:1054
+msgid ""
+"Toggles lowering the volume of other applications while listening for a "
+"voice command"
+msgstr ""
+"Active ou désactive l'atténuation du volume des autres applications lors de "
+"l'écoute d'une commande vocale"
+
+#. Translators: Spoken when lowering other applications' volume while listening is turned on.
+#: addon\globalPlugins\voiceCommands\__init__.py:1065
+msgid "Volume lowering on"
+msgstr "Atténuation du volume activée"
+
+#. Translators: Spoken when lowering other applications' volume while listening is turned off.
+#: addon\globalPlugins\voiceCommands\__init__.py:1068
+msgid "Volume lowering off"
+msgstr "Atténuation du volume désactivée"
+
+#. Translators: Description of a command in the Input Gestures dialog.
+#: addon\globalPlugins\voiceCommands\__init__.py:1072
+msgid "Opens the speech model dialog: choose, download and manage the model"
+msgstr ""
+
+#: addon\globalPlugins\voiceCommands\__init__.py:1080
+msgid "Vosk: small model for the NVDA language, restricted to the command list"
+msgstr ""
+
+#. Translators: Speech model in the speech model dialog. {name} is the model name, {size} its download size.
+#: addon\globalPlugins\voiceCommands\__init__.py:1083
+msgid ""
+"{name} ({size}): free speech recognition, not restricted to the command list"
+msgstr ""
+
+#. Translators: Spoken when the user opens the speech model dialog while a model is being downloaded.
+#: addon\globalPlugins\voiceCommands\__init__.py:1091
+msgid "The model is already being downloaded"
+msgstr "Le modèle est déjà en cours de téléchargement"
+
+#. Translators: Spoken when the user wants to change the speech model while listening.
+#: addon\globalPlugins\voiceCommands\__init__.py:1095
+#, fuzzy
+msgid "Stop listening first"
+msgstr "Démarrer ou arrêter l'écoute"
+
+#. Translators: Status shown after a model in the speech model dialog: it is the model in use.
+#: addon\globalPlugins\voiceCommands\__init__.py:1103
+msgid "in use"
+msgstr ""
+
+#. Translators: Status shown after a model in the speech model dialog: it is downloaded.
+#: addon\globalPlugins\voiceCommands\__init__.py:1106
+msgid "installed"
+msgstr ""
+
+#. Translators: Status shown after a model in the speech model dialog: it must be downloaded first.
+#: addon\globalPlugins\voiceCommands\__init__.py:1109
+msgid "not installed"
+msgstr ""
+
+#. Translators: Spoken when the model folder is opened. {path} is the folder.
+#: addon\globalPlugins\voiceCommands\__init__.py:1131
+msgid "Opening the model folder: {path}"
+msgstr "Ouverture du dossier du modèle: {path}"
+
+#. Translators: Description of a command in the Input Gestures dialog.
+#: addon\globalPlugins\voiceCommands\__init__.py:1168
+msgid "Opens a box where you can type a command phrase"
+msgstr ""
+"Ouvre une boîte de dialogue dans laquelle vous pouvez saisir une phrase de "
+"commande"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on
+#: buildVars.py:19
+#, fuzzy
+msgid ""
+"Runs NVDA commands and common Windows actions by voice, using an offline "
+"speech recognition engine (Vosk or sherpa-onnx); your voice never leaves "
+"your computer. You can say any command from the Input Gestures dialog, built-"
+"in Windows commands such as \"show desktop\", \"show taskbar\" or \"paste\", "
+"and your own commands that open a program, file, folder or web address, or "
+"press a key combination. A speech model for your NVDA language is downloaded "
+"on first use. Assign keys in the Input Gestures dialog, under the Voice "
+"Commands category."
+msgstr ""
+"Exécute les commandes NVDA et les actions Windows courantes par la voix, "
+"grâce au moteur de reconnaissance vocale hors ligne Vosk; votre voix reste "
+"toujours sur votre ordinateur. Vous pouvez prononcer n'importe quelle "
+"commande depuis la boîte de dialogue Gestes de commandes, les commandes "
+"Windows intégrées telles que  \"afficher le bureau\", \"afficher la barre "
+"des tâches\" ou \"coller\", ainsi que vos propres commandes pour ouvrir un "
+"programme, un fichier, un dossier ou une adresse web, ou pour appuyer sur "
+"une combinaison de touches. Un modèle vocal pour votre langue de NVDA est "
+"téléchargé lors de la première utilisation. Assignez des touches dans la "
+"boîte de dialogue Gestes de commandes, sous la catégorie Commandes Vocales."
+
+#. Brief changelog for this version
+#. Translators: what's new content for the add-on version
+#: buildVars.py:26
+#, fuzzy
+msgid ""
+"\n"
+"- Added a Voice Commands submenu under NVDA's Tools menu with the add-on's "
+"commands.\n"
+"- Fixed Windows commands that use a letter, such as Windows+I, not working "
+"on keyboard layouts like Turkish Q.\n"
+"- Added \"Teach the last spoken phrase\" (Tools menu or an assignable "
+"gesture) to save what the recognizer heard as a phrase of a command, for "
+"names the speech model cannot recognize.\n"
+"- Added import and export of phrases in the phrase editor, with shortcuts "
+"Ctrl+I, Ctrl+E and Ctrl+S. Importing only adds; nothing you already have is "
+"changed or removed.\n"
+"- Phrase files can now name a command by its text (\"description - category"
+"\") instead of its id. Entries for commands that are not available yet are "
+"kept until they appear.\n"
+"- The heard-phrases list in the teach dialog now reports its checked state "
+"in every NVDA version.\n"
+"- Messages are no longer cut off by NVDA's focus speech after a dialog, file "
+"chooser or menu closes.\n"
+"- Added a Turkish set of short phrases that can be imported from the phrase "
+"editor.\n"
+"- Added a second speech engine, sherpa-onnx, with a Turkish model (turkish-"
+"stt) and models for English, French, German, Spanish and Russian. It is the "
+"default for a Turkish NVDA that has no Vosk model installed.\n"
+"- Added the Speech model dialog to the Tools menu, to choose, download and "
+"manage the speech model. It replaces the separate download and model folder "
+"items.\n"
+"- Text from the sherpa models is matched to commands more strictly, so a "
+"single word or an invented sentence no longer runs a wrong command; NVDA "
+"says what it heard instead.\n"
+msgstr ""
+"\n"
+"- Ajout d'un sous-menu Commandes Vocales dans le menu Outils de NVDA, "
+"contenant les commandes de l'extension.\n"
+"- Correction d'un problème qui empêchait les commandes Windows utilisant une "
+"lettre, comme Windows+I, de fonctionner sur des dispositions de clavier "
+"comme le Q turc.\n"
+"- Ajout de l'option \"Enseigner la dernière phrase prononcée\" (menu Outils "
+"ou geste configurable) permettant d'enregistrer ce que le système de "
+"reconnaissance a entendu comme une phrase de commande, pour les noms que le "
+"modèle vocal ne reconnaît pas.\n"
+"- Ajout de l'importation et de l'exportation de phrases dans l'éditeur de "
+"phrases, avec les raccourcis Ctrl+I, Ctrl+E et Ctrl+S. L'importation ajoute "
+"uniquement ; rien de ce qui est déjà enregistré n'est modifié ni supprimé.\n"
+"- Les fichiers de phrases peuvent désormais nommer une commande par son "
+"texte (« description - catégorie ») au lieu de son identifiant. Les entrées "
+"pour les commandes non encore disponibles sont conservées jusqu'à leur "
+"apparition.\n"
+"- La liste des phrases entendues dans la boîte de dialogue enseigner indique "
+"désormais son état coché dans toutes les versions de NVDA.\n"
+"- Les messages ne sont plus interrompus par la synthèse vocale de NVDA après "
+"la fermeture d'une boîte de dialogue, du sélecteur de fichiers ou d'un "
+"menu.\n"
+"- Ajout d'une série de courtes phrases turques pouvant être importées depuis "
+"l'éditeur de phrases.\n"
+
+#~ msgid "Downloads the speech recognition model for the NVDA language"
+#~ msgstr ""
+#~ "Télécharge le modèle de reconnaissance vocale pour la langue de NVDA"
+
+#~ msgid "Opens the model folder in File Explorer"
+#~ msgstr "Ouvre le dossier du modèle dans l'Explorateur de fichiers"
+
+#~ msgid ""
+#~ "\n"
+#~ "Initial release\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Version initiale\n"
