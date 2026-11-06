@@ -2,8 +2,10 @@
 """Speech recognition for voice commands: Vosk (through ctypes) plus the Windows waveIn
 microphone API. It uses no compiled Python modules, so it does not depend on NVDA's
 Python version."""
+import array
 import ctypes
 import json
+import math
 import os
 import threading
 import time
@@ -21,6 +23,15 @@ CALLBACK_NULL = 0
 WAVE_MAPPER = 0xFFFFFFFF
 WAVE_FORMAT_PCM = 1
 ALTERNATIVES = 5  # n-best size of the free (grammar-less) recognizer
+
+# Automatic stop after silence (see SilenceDetector).
+DEFAULT_SILENCE_SECONDS = 1.2  # trailing silence that counts as "the command is finished"
+MIN_SILENCE_SECONDS = 0.5
+MAX_SILENCE_SECONDS = 5.0
+MIN_SPEECH_SECONDS = 0.3  # less voiced audio than this is a click or the beep, not a command
+WARMUP_SECONDS = 0.2  # the start beep and the key press are ignored
+MIN_LEVEL = 250  # smallest RMS (of 32768) that can count as speech
+NOISE_FACTOR = 3.0  # speech must be this many times louder than the background noise
 
 
 # ---------------------------------------------------------------- Vosk
@@ -201,18 +212,65 @@ def _read_result(v, recognizer):
 	return json.loads(raw.decode("utf-8")) if raw else {}
 
 
+class SilenceDetector:
+	"""Tells when the user has finished speaking: some speech was heard, then it was quiet for
+	`silence_seconds`. The background noise is estimated from the quietest tenth of what was
+	heard so far, so a noisy room or a quiet microphone needs no setting, and it works even when
+	the user starts speaking at once. Feed it the same 16-bit mono chunks the recognizer gets."""
+
+	HISTORY = 300  # chunks kept (30 s of 100 ms)
+
+	def __init__(self, silence_seconds=DEFAULT_SILENCE_SECONDS):
+		self.silence_seconds = silence_seconds
+		self.levels = []
+		self.skip = WARMUP_SECONDS
+		self.chunk = 0.0
+
+	@staticmethod
+	def level(data):
+		pcm = array.array("h")
+		pcm.frombytes(data[:len(data) - len(data) % 2])
+		if not pcm:
+			return 0.0
+		return math.sqrt(sum(v * v for v in pcm) / len(pcm))
+
+	def feed(self, data):
+		"""True when the command can be considered finished."""
+		seconds = len(data) / 2.0 / SAMPLE_RATE
+		if self.skip > 0:
+			self.skip -= seconds
+			return False
+		self.chunk = seconds
+		self.levels.append(self.level(data))
+		del self.levels[:-self.HISTORY]
+		floor = sorted(self.levels)[len(self.levels) // 10]
+		threshold = max(MIN_LEVEL, floor * NOISE_FACTOR)
+		loud = [level > threshold for level in self.levels]
+		quiet_run = 0
+		for flag in reversed(loud):
+			if flag:
+				break
+			quiet_run += 1
+		return sum(loud) * seconds >= MIN_SPEECH_SECONDS and quiet_run * seconds >= self.silence_seconds
+
+
 class Listener(threading.Thread):
 	"""start() opens the microphone; after stop() it calls result_cb(grammar_text, alternatives).
+
+	With silence_seconds set, it stops by itself when the user has spoken and then stayed quiet for
+	that long (the same as calling stop()), and calls silence_cb() first.
 
 	The recognition itself is done by a session of the model (model.new_session), so the same
 	microphone code serves Vosk and the other speech engines."""
 
-	def __init__(self, model, grammar, result_cb, error_cb):
+	def __init__(self, model, grammar, result_cb, error_cb, silence_seconds=0, silence_cb=None):
 		super().__init__(daemon=True)
 		self.model = model
 		self.grammar = grammar
 		self.result_cb = result_cb
 		self.error_cb = error_cb
+		self.silence_seconds = silence_seconds
+		self.silence_cb = silence_cb
 		self._stop_event = threading.Event()
 
 	def stop(self):
@@ -242,10 +300,20 @@ class Listener(threading.Thread):
 				headers.append(header)
 			_winmm.waveInStart(hwi)
 
+			detector = SilenceDetector(self.silence_seconds) if self.silence_seconds else None
+
 			def process(header, buf):
 				count = header.dwBytesRecorded
 				if count:
-					session.accept(ctypes.string_at(buf, count))
+					data = ctypes.string_at(buf, count)
+					session.accept(data)
+					if detector and not self._stop_event.is_set() and detector.feed(data):
+						self._stop_event.set()
+						if self.silence_cb:
+							try:
+								self.silence_cb()
+							except Exception:
+								log.exception("Silence callback error")
 
 			while not self._stop_event.is_set():
 				for header, buf in zip(headers, buffers):

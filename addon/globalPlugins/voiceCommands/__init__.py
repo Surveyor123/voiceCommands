@@ -661,7 +661,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.question_open = False
 		self.closing = False
 		self.ducker = ducking.AudioDucker()
-		self.duck_audio = bool(storage.load_settings().get("duck_audio", True))
+		settings = storage.load_settings()
+		self.duck_audio = bool(settings.get("duck_audio", True))
+		self.auto_stop = bool(settings.get("auto_stop", True))
+		self.silence_seconds = self._silenceSetting(settings)
 		self.sherpa_entry = None
 		self.engine = self._startEngine()
 		try:
@@ -719,6 +722,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				(_("My commands..."), self._onToolsEditUserCommands),
 				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
 				(_("Toggle volume lowering"), self._onToolsToggleDucking),
+				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
+				(_("Toggle stop after silence"), self._onToolsToggleAutoStop),
 				# Translators: Menu item in the Voice Commands submenu of the Tools menu. It opens one dialog to choose, download and manage the speech model.
 				(_("Speech model..."), self._onToolsSpeechModel),
 				# Translators: Menu item in the Voice Commands submenu of the Tools menu.
@@ -730,7 +735,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 			self._toolsMenuItem = tools_menu.AppendSubMenu(
 				self._voiceCommandsMenu,
-				_("Voice Commands"),
+				# Translators: Name of the Voice Commands submenu of the Tools menu. The & marks the letter that opens it from the keyboard.
+				_("&Voice Commands"),
 			)
 		except Exception:
 			log.exception("Could not add the Voice Commands menu to the Tools menu")
@@ -754,6 +760,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def _onToolsToggleDucking(self, evt):
 		with announce.afterMenu():
 			self.script_toggleDucking(None)
+
+	def _onToolsToggleAutoStop(self, evt):
+		with announce.afterMenu():
+			self.script_toggleAutoStop(None)
 
 	def _onToolsSpeechModel(self, evt):
 		with announce.afterMenu():
@@ -1009,6 +1019,23 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			log.exception("Could not build the grammar; falling back to free recognition")
 			return None
 
+	@staticmethod
+	def _silenceSetting(settings):
+		"""Seconds of silence after speech that finish the command, kept within sensible limits."""
+		try:
+			value = float(settings.get("silence_seconds", recognizer.DEFAULT_SILENCE_SECONDS))
+		except (TypeError, ValueError):
+			value = recognizer.DEFAULT_SILENCE_SECONDS
+		return min(max(value, recognizer.MIN_SILENCE_SECONDS), recognizer.MAX_SILENCE_SECONDS)
+
+	def _onSilence(self):
+		# Runs on the listener thread: the user stopped speaking, which counts as pressing the key again.
+		wx.CallAfter(self._finishBySilence)
+
+	def _finishBySilence(self):
+		tones.beep(500, 80)
+		self.ducker.restore()
+
 	def _onResult(self, grammar_text, alternatives):
 		# Runs on the listener thread.
 		wx.CallAfter(self._handleResult, grammar_text, alternatives)
@@ -1030,7 +1057,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# ------------------------------------------------------------- scripts
 	@script(
 		# Translators: Description of a command in the Input Gestures dialog.
-		description=_("Starts listening for a voice command; press again to stop listening and run the command"))
+		description=_("Starts listening for a voice command; press again, or stay silent for a moment after speaking, to stop listening and run the command"))
 	def script_listen(self, gesture):
 		if self.listener and self.listener.is_alive():
 			tones.beep(500, 80)
@@ -1065,7 +1092,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if self.duck_audio:
 			self.ducker.duck()
 		tones.beep(1000, 80)
-		self.listener = recognizer.Listener(self.model, grammar, self._onResult, self._onError)
+		self.listener = recognizer.Listener(
+			self.model, grammar, self._onResult, self._onError,
+			silence_seconds=self.silence_seconds if self.auto_stop else 0, silence_cb=self._onSilence)
 		self.listener.start()
 
 	@script(
@@ -1119,6 +1148,24 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			# Translators: Spoken when lowering other applications' volume while listening is turned off.
 			announce.say(_("Volume lowering off"))
+
+	@script(
+		# Translators: Description of a command in the Input Gestures dialog.
+		description=_("Toggles stopping the listening automatically when you stay silent after speaking"))
+	def script_toggleAutoStop(self, gesture):
+		self.auto_stop = not self.auto_stop
+		try:
+			settings = storage.load_settings()
+			settings["auto_stop"] = self.auto_stop
+			storage.save_settings(settings)
+		except Exception:
+			log.exception("Could not save the settings")
+		if self.auto_stop:
+			# Translators: Spoken when stopping the listening after a silence is turned on.
+			announce.say(_("Stop after silence on"))
+		else:
+			# Translators: Spoken when stopping the listening after a silence is turned off.
+			announce.say(_("Stop after silence off"))
 
 	@script(
 		# Translators: Description of a command in the Input Gestures dialog.

@@ -29,7 +29,7 @@ NVDA'nın Girdi Hareketleri iletişim kutusunda her komut için bir açıklama v
 Varsayılan olarak hiçbir tuş atanmamıştır, tuşları kendin seç:
 
 1.  NVDA menüsünü, ardından Tercihler ve Girdi hareketleri'ni aç.
-2.  **Sesli Komut** kategorisini genişlet ve **Sesli komut dinlemesini başlatır; tekrar basınca dinlemeyi durdurup komutu çalıştırır** komutuna bir tuş ata. İstersen oradaki diğer komutlara da tuş atayabilirsin.
+2.  **Sesli Komut** kategorisini genişlet ve **Sesli komut dinlemesini başlatır; dinlemeyi durdurup komutu çalıştırmak için tekrar basın ya da konuştuktan sonra bir an sessiz kalın** komutuna bir tuş ata. İstersen oradaki diğer komutlara da tuş atayabilirsin.
 
 Tuş atamadan Araçlar menüsünü de kullanabilirsin (bkz. Araçlar menüsü).
 
@@ -37,7 +37,9 @@ Sonra sesli komut vermek için:
 
 1.  Tuşa bas. Yüksek bir bip dinlemenin başladığını bildirir.
 2.  Komutu söyle.
-3.  Aynı tuşa tekrar bas. Alçak bir bip dinlemenin bittiğini bildirir ve komut çalışır.
+3.  Aynı tuşa tekrar bas ya da konuştuktan sonra bir an (yaklaşık bir saniye) sessiz kal. Alçak bir bip dinlemenin bittiğini bildirir ve komut çalışır.
+
+Sessizlikte durdurma, Girdi Hareketleri'ndeki "Konuştuktan sonra sessiz kalınca dinlemeyi kendiliğinden durdurmayı açar ya da kapatır" komutuyla (ya da Araçlar menüsünden) kapatılabilir. Sessizliğin ne kadar süreceğini değiştirmek için `settings.json` içindeki `silence_seconds` değerini (0,5 ile 5 arası, varsayılan 1,2) ayarla.
 
 Hiçbir şey anlaşılmazsa NVDA "Anlaşılamadı" der. Duyduğu şey hiçbir komuta yeterince uymuyorsa "Eşleşen komut yok" der ve en yakın komutu söyler ya da bir aday listesi açar (bkz. Emin olamadığında).
 
@@ -163,7 +165,7 @@ Hepsi Girdi Hareketleri iletişim kutusunda, Sesli Komut kategorisindedir.
 
 | Komut                                                                                                                             | Ne yapar                                                                 |
 |-----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| Sesli komut dinlemesini başlatır; tekrar basınca dinlemeyi durdurup komutu çalıştırır                                             | Ana komuttur. Başlatmak için bir kez, durdurmak için tekrar bas.         |
+| Sesli komut dinlemesini başlatır; dinlemeyi durdurup komutu çalıştırmak için tekrar basın ya da konuştuktan sonra bir an sessiz kalın                                             | Ana komuttur. Başlatmak için bir kez, durdurmak için tekrar bas.         |
 | Komut cümlesi yazabileceğin bir kutu açar                                                                                         | Yazılan ifadeyi aynı eşleştirmeden geçirir.                              |
 | Komutlar için kullanılan ifadeleri (takma adları) düzenleme penceresini açar                                                      | İfade düzenleyiciyi açar.                                                |
 | Tanıyıcının son duyduğunu, seçtiğin bir komutun söylenen ifadesi olarak ekleyen bir pencere açar                                  | Tanıyıcının bilmediği bir adı öğretir.                                   |

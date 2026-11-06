@@ -2,7 +2,7 @@
 """User-defined command phrases (aliases) and add-on settings.
 
 aliases.json:  {command_id: {"aliases": [phrase, ...], "keep_original": true/false}}
-settings.json: {"duck_audio": true/false, "ask_download": true/false}
+settings.json: {"duck_audio": true/false, "ask_download": true/false, "auto_stop": true/false, "silence_seconds": 1.2}
 
 The command id is derived from the script name, so phrases stay attached to the right
 command even when the interface language or the description text changes."""

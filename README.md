@@ -37,7 +37,9 @@ Then, to give a voice command:
 
 1.  Press your key. A high beep tells you that listening has started.
 2.  Say the command.
-3.  Press the key again. A low beep tells you that listening has stopped, and the command runs.
+3.  Press the key again, or just stay silent for a moment (about a second) after speaking. A low beep tells you that listening has stopped, and the command runs.
+
+Stopping after silence can be turned off with the Input Gestures command "Toggles stopping the listening automatically when you stay silent after speaking" (or in the Tools menu). To change how long the silence must be, set `silence_seconds` (0.5 to 5, default 1.2) in `settings.json`.
 
 If nothing was understood, NVDA says "Not understood". If what it heard fits no command well enough, NVDA says "No matching command" and names the closest one, or opens a list of candidates (see When it is not sure).
 
@@ -163,7 +165,7 @@ All of these are in the Input Gestures dialog, in the Voice Commands category.
 
 | Command                                                                                                                | What it does                                                                     |
 |------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| Starts listening for a voice command; press again to stop listening and run the command                                | The main command. Press once to start and again to stop.                         |
+| Starts listening for a voice command; press again, or stay silent for a moment after speaking, to stop listening and run the command                                | The main command. Press once to start and again to stop.                         |
 | Opens a box where you can type a command phrase                                                                        | Runs a typed phrase through the same matching.                                   |
 | Opens the dialog for editing the phrases (aliases) used for commands                                                   | Opens the phrase editor.                                                         |
 | Toggles lowering the volume of other applications while listening for a voice command                                  | Turns volume lowering on or off.                                                 |

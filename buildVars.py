@@ -24,6 +24,7 @@ addon_info = AddonInfo(
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version
 	addon_changelog=_("""
+- Listening now stops by itself when you stay silent for about a second after speaking, as if you had pressed the key again. It can be turned off with a new toggle command (Input Gestures or the Tools menu); the silence length is the silence_seconds setting.
 - Added a Voice Commands submenu under NVDA's Tools menu with the add-on's commands.
 - Fixed Windows commands that use a letter, such as Windows+I, not working on keyboard layouts like Turkish Q.
 - Added "Teach the last spoken phrase" (Tools menu or an assignable gesture) to save what the recognizer heard as a phrase of a command, for names the speech model cannot recognize.
