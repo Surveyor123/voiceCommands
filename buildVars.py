@@ -34,7 +34,7 @@ addon_info = AddonInfo(
 - Added a Turkish set of short phrases that can be imported from the phrase editor.
 - Added a second speech engine, sherpa-onnx, with a Turkish model (turkish-stt) and models for English, French, German, Spanish and Russian. It is the default for a Turkish NVDA that has no Vosk model installed.
 - Added the Speech model dialog to the Tools menu, to choose, download and manage the speech model. It replaces the separate download and model folder items.
-- Text from the sherpa models is matched to commands more strictly, so a single word or an invented sentence no longer runs a wrong command; NVDA says what it heard instead.
+- Text from the sherpa models is matched to commands more strictly, so an invented sentence no longer runs a wrong command; NVDA says what it heard instead. A word or two that fit exactly one command still run it, and a list opens when they fit several.
 """),
 
 	# Author(s)

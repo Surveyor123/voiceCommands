@@ -38,7 +38,9 @@ MAX_REPEAT = 5				# most times a command can be repeated by speech
 FREE_MATCH = 0.70				# minimum score_free() to run a command without asking
 FREE_MARGIN = 0.10			# the best candidate must lead the second by this much, otherwise the user chooses
 FREE_LIST_MIN = 0.55			# lowest score_free() that may appear in the candidate list (below it: nothing resembles a command)
-FREE_PHONETIC_THRESHOLD = 0.85	# sound match, last resort: much stricter than the Vosk fallback
+FREE_PHONETIC_THRESHOLD = 0.65	# sound match, last resort: much stricter than the Vosk fallback
+FRAGMENT_MIN_LENGTH = 4		# letters: a shorter fragment is too easily noise to run a command
+FRAGMENT_WORD_MATCH = 0.8		# how closely each spoken word must match a word of the command
 
 ENGINE_VOSK = "vosk"
 ENGINE_SHERPA = "sherpa"	# a sherpa-onnx streaming model (free-form, no grammar); see download.SHERPA_MODELS
@@ -331,6 +333,13 @@ def score_free(spoken, phrase):
 	return 0.8 * words + 0.2 * difflib.SequenceMatcher(None, spoken, phrase).ratio()
 
 
+def is_fragment(spoken_words, phrase_words):
+	"""True when every spoken word is (about) a word of the command: "yukarı" is a fragment of "yukarı çık"."""
+	return all(
+		max(difflib.SequenceMatcher(None, word, other).ratio() for other in phrase_words) >= FRAGMENT_WORD_MATCH
+		for word in spoken_words)
+
+
 def rank_candidates(spoken, commands, scorer=None):
 	"""Unique command candidates ordered by similarity: [(score, description, info)]."""
 	scorer = scorer or score
@@ -496,6 +505,25 @@ def decide_free(alternatives, index):
 	if best >= FREE_MATCH and best - second >= FREE_MARGIN:
 		run_command(candidates[0][1], candidates[0][2], repeat)
 		return
+	# A fragment of exactly one command ("yukarı" for "yukarı çık", "cumhuriyet" for "cumhuriyet son haberler")
+	# is not a guess: nothing else could have been meant, so it runs. A fragment of several commands is a
+	# real choice and opens the list. Very short fragments are left out because they are too often noise.
+	if len(spoken.replace(" ", "")) >= FRAGMENT_MIN_LENGTH:
+		words = spoken.replace("ı", "i").split()
+		containing = {}
+		for key, (description, info) in commands.items():
+			if is_fragment(words, key.replace("ı", "i").split()):
+				containing.setdefault(id(info), (description, info))	# a command with several phrases counts once
+		if len(containing) == 1:
+			description, info = next(iter(containing.values()))
+			log.debug("Voice command fragment of exactly one command: %s" % description)
+			run_command(description, info, repeat)
+			return
+		if len(containing) > 1 and SHOW_CANDIDATE_LIST:
+			fits = sorted(((score_free(spoken, normalize(d)), d, i) for d, i in containing.values()),
+						  key=lambda c: -c[0])
+			show_candidates(fits[:LIST_MAX_ITEMS], repeat)
+			return
 	listed = [c for c in candidates if c[0] >= FREE_LIST_MIN]
 	if not listed and index is not None:
 		found = index.search([spoken], threshold=FREE_PHONETIC_THRESHOLD)

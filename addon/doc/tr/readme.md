@@ -67,7 +67,7 @@ NVDA'nın açıklamaları çoğu zaman tam cümledir. Hepsini söylemen gerekmez
 
 Pratikte iki şey işe yarar. İfadeyi düzenli bir hızla, sessiz bir anda söyle ve ayırt edici sözcükleri atlama. Ayrıca en çok kullandığın komutlar için kısa ifadeler tanımla: bir dakikanı alır ve her şeyi hızlandırır.
 
-**Bir sherpa modeliyle** (bkz. Ses tanıma modeli) komutu daha doğal söyleyebilirsin; çünkü yazı komutla iki yönde karşılaştırılır: söylediğin sözcükler komutta, komutun sözcükleri de söylediklerinde bulunmalıdır. "Lütfen" gibi fazladan sözcükler hoş görülür ama yarım bir söyleyiş görülmez: yalnızca "sağ" demek "Pencereyi sağa yasla" komutunu çalıştırmaz. Hiçbir komuta benzemeyen metin için tahmin yürütülmez; bunun yerine NVDA ne duyduğunu söyler, örneğin "Duyulan: teşekkürler. Eşleşen komut yok".
+**Bir sherpa modeliyle** (bkz. Ses tanıma modeli) komutu daha doğal söyleyebilirsin; çünkü yazı komutla iki yönde karşılaştırılır: söylediğin sözcükler komutta, komutun sözcükleri de söylediklerinde bulunmalıdır. "Lütfen" gibi fazladan sözcükler hoş görülür. Tam olarak tek bir komuta uyan bir parça da o komutu çalıştırır; örneğin başka hiçbir komutta bu sözcük yoksa, "Yukarı çık" komutu için yalnızca "yukarı" demek yeter. Parça birkaç komuta uyuyorsa liste açılır; dört harften kısa parçalar yok sayılır. Hiçbir komuta benzemeyen metin için tahmin yürütülmez; bunun yerine NVDA ne duyduğunu söyler, örneğin "Duyulan: teşekkürler. Eşleşen komut yok".
 
 ## Kendi ifadelerin
 

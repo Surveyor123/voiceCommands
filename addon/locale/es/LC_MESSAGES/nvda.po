@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: voiceCommands 1.0.1\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-11-06 09:47+0300\n"
+"POT-Creation-Date: 2026-11-06 10:16+0300\n"
 "PO-Revision-Date: 2026-11-05 20:15+0100\n"
 "Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
@@ -672,173 +672,173 @@ msgstr "Pestaña anterior"
 #. "read current line twice" runs the script twice in a row; NVDA counts that as a double
 #. key press (scriptHandler.getLastScriptRepeatCount).
 #. Translators: The spoken words for the numbers 2, 3, 4 and 5, used to repeat a command ("read current line two times"). Give exactly four words separated by "|", in that order. Digits always work too.
-#: addon\globalPlugins\voiceCommands\__init__.py:52
+#: addon\globalPlugins\voiceCommands\__init__.py:54
 msgid "two|three|four|five"
 msgstr "dos|tres|cuatro|cinco"
 
 #. Translators: Spoken words that mean "times" and follow the number when repeating a command ("read current line two times"). Give one or more alternatives separated by "|". The first one is added to the speech grammar.
-#: addon\globalPlugins\voiceCommands\__init__.py:54
+#: addon\globalPlugins\voiceCommands\__init__.py:56
 msgid "times|time"
 msgstr "veces|vez"
 
 #. Translators: Spoken when the program, file or folder of a command of the user's own does not exist. {target} is what the command should open.
-#: addon\globalPlugins\voiceCommands\__init__.py:260
+#: addon\globalPlugins\voiceCommands\__init__.py:262
 msgid "Not found: {target}"
 msgstr "No se encontró: {target}"
 
 #. Translators: Spoken when a command of the user's own could not be run. {command} is the name of the command.
-#: addon\globalPlugins\voiceCommands\__init__.py:264
+#: addon\globalPlugins\voiceCommands\__init__.py:266
 msgid "Could not run: {command}"
 msgstr "No se pudo ejecutar: {command}"
 
 #. Translators: Spoken when a Windows command could not be run.
 #. Translators: Spoken when running a voice command failed.
-#: addon\globalPlugins\voiceCommands\__init__.py:274
-#: addon\globalPlugins\voiceCommands\__init__.py:283
-#: addon\globalPlugins\voiceCommands\__init__.py:305
+#: addon\globalPlugins\voiceCommands\__init__.py:276
+#: addon\globalPlugins\voiceCommands\__init__.py:285
+#: addon\globalPlugins\voiceCommands\__init__.py:307
 msgid "Could not run the command"
 msgstr "No se pudo ejecutar el comando"
 
 #. Translators: Spoken when a voice command cannot run in the current context. {command} is the command description.
-#: addon\globalPlugins\voiceCommands\__init__.py:288
+#: addon\globalPlugins\voiceCommands\__init__.py:290
 msgid "This command is not available right now: {command}"
 msgstr "Este comando no está disponible en este momento: {command}"
 
 #. Translators: Spoken when the script behind a voice command cannot be found. {command} is the command description.
-#: addon\globalPlugins\voiceCommands\__init__.py:293
+#: addon\globalPlugins\voiceCommands\__init__.py:295
 msgid "Script not found: {command}"
 msgstr "No se encontró el script: {command}"
 
 #. Translators: Appended to a command in the candidate list when it will be repeated. {count} is the number of repeats.
-#: addon\globalPlugins\voiceCommands\__init__.py:355
+#: addon\globalPlugins\voiceCommands\__init__.py:364
 msgid " ({count} times)"
 msgstr " ({count} veces)"
 
-#: addon\globalPlugins\voiceCommands\__init__.py:365
+#: addon\globalPlugins\voiceCommands\__init__.py:374
 msgid "{count} possible command, choose one"
 msgid_plural "{count} possible commands, choose one"
 msgstr[0] "{count} comando posible, elige uno"
 msgstr[1] "{count} comandos posibles, elige uno"
 
 #. Translators: Title of the dialog that lists the possible commands when it is unclear which one was meant.
-#: addon\globalPlugins\voiceCommands\__init__.py:370
+#: addon\globalPlugins\voiceCommands\__init__.py:379
 msgid "Choose a command"
 msgstr "Seleccione un comando"
 
 #. Translators: Spoken when no command could be found for what was said.
-#: addon\globalPlugins\voiceCommands\__init__.py:379
-#: addon\globalPlugins\voiceCommands\__init__.py:485
+#: addon\globalPlugins\voiceCommands\__init__.py:388
+#: addon\globalPlugins\voiceCommands\__init__.py:494
 msgid "No command found"
 msgstr "No se encontró ningún comando"
 
 #. Translators: Spoken when nothing matches closely enough. {command} is the closest command description.
-#: addon\globalPlugins\voiceCommands\__init__.py:403
+#: addon\globalPlugins\voiceCommands\__init__.py:412
 msgid "No matching command. Closest: {command}"
 msgstr "No hay ningún comando coincidente. El más cercano: {command}"
 
 #. Translators: Spoken when the speech recognizer did not understand what was said.
-#: addon\globalPlugins\voiceCommands\__init__.py:460
-#: addon\globalPlugins\voiceCommands\__init__.py:481
+#: addon\globalPlugins\voiceCommands\__init__.py:469
+#: addon\globalPlugins\voiceCommands\__init__.py:490
 msgid "Not understood"
 msgstr "No se entendió"
 
 #. Translators: Spoken when the speech recognizer heard something that is not a command. {text} is what was heard.
-#: addon\globalPlugins\voiceCommands\__init__.py:510
+#: addon\globalPlugins\voiceCommands\__init__.py:538
 msgid "Heard: {text}. No matching command"
 msgstr ""
 
 #. Translators: Title of the dialog where the speech model is chosen and managed.
-#: addon\globalPlugins\voiceCommands\__init__.py:535
+#: addon\globalPlugins\voiceCommands\__init__.py:563
 #, fuzzy
 msgid "Voice Commands: speech model"
 msgstr "Comandos de Voz: no hay ningún modelo adecuado"
 
 #. Translators: Label of the list of speech models.
-#: addon\globalPlugins\voiceCommands\__init__.py:539
+#: addon\globalPlugins\voiceCommands\__init__.py:567
 msgid "Speech &model:"
 msgstr ""
 
 #. Translators: Button in the speech model dialog. It uses the selected model and downloads it first if it is not installed.
-#: addon\globalPlugins\voiceCommands\__init__.py:546
+#: addon\globalPlugins\voiceCommands\__init__.py:574
 msgid "&Use"
 msgstr ""
 
 #. Translators: Button in the speech model dialog. It opens the folder the models are kept in.
-#: addon\globalPlugins\voiceCommands\__init__.py:549
+#: addon\globalPlugins\voiceCommands\__init__.py:577
 #, fuzzy
 msgid "Open model &folder"
 msgstr "Abrir la carpeta del modelo"
 
 #. Translators: Title of the dialog where a command phrase can be typed instead of spoken.
-#: addon\globalPlugins\voiceCommands\__init__.py:567
+#: addon\globalPlugins\voiceCommands\__init__.py:595
 msgid "Voice Command"
 msgstr "Comando de Voz"
 
 #. Translators: Label of the edit field where a command phrase is typed.
-#: addon\globalPlugins\voiceCommands\__init__.py:570
+#: addon\globalPlugins\voiceCommands\__init__.py:598
 msgid "Command phrase:"
 msgstr "Frase de comando:"
 
 #. Translators: Name of the category of Voice Commands in the Input Gestures dialog.
 #. Add-on summary/title, usually the user visible name of the add-on
 #. Translators: Summary/title for this add-on
-#: addon\globalPlugins\voiceCommands\__init__.py:597
-#: addon\globalPlugins\voiceCommands\__init__.py:680 buildVars.py:15
+#: addon\globalPlugins\voiceCommands\__init__.py:625
+#: addon\globalPlugins\voiceCommands\__init__.py:708 buildVars.py:15
 msgid "Voice Commands"
 msgstr "Comandos de Voz"
 
 #. Translators: Menu item in the Voice Commands submenu of the Tools menu.
-#: addon\globalPlugins\voiceCommands\__init__.py:660
+#: addon\globalPlugins\voiceCommands\__init__.py:688
 msgid "Start or stop listening"
 msgstr "Iniciar o detener la escucha"
 
 #. Translators: Menu item in the Voice Commands submenu of the Tools menu.
-#: addon\globalPlugins\voiceCommands\__init__.py:662
+#: addon\globalPlugins\voiceCommands\__init__.py:690
 msgid "Command phrase editor..."
 msgstr "Editor de frases de comando..."
 
 #. Translators: Menu item in the Voice Commands submenu of the Tools menu.
-#: addon\globalPlugins\voiceCommands\__init__.py:664
+#: addon\globalPlugins\voiceCommands\__init__.py:692
 msgid "Teach the last spoken phrase..."
 msgstr "Enseñar la última frase hablada..."
 
 #. Translators: Menu item in the Voice Commands submenu of the Tools menu.
-#: addon\globalPlugins\voiceCommands\__init__.py:666
+#: addon\globalPlugins\voiceCommands\__init__.py:694
 msgid "My commands..."
 msgstr "Mis comandos..."
 
 #. Translators: Menu item in the Voice Commands submenu of the Tools menu.
-#: addon\globalPlugins\voiceCommands\__init__.py:668
+#: addon\globalPlugins\voiceCommands\__init__.py:696
 msgid "Toggle volume lowering"
 msgstr "Activar o desactivar la atenuación del volumen"
 
 #. Translators: Menu item in the Voice Commands submenu of the Tools menu. It opens one dialog to choose, download and manage the speech model.
-#: addon\globalPlugins\voiceCommands\__init__.py:670
+#: addon\globalPlugins\voiceCommands\__init__.py:698
 #, fuzzy
 msgid "Speech model..."
 msgstr "Descargar modelo de voz..."
 
 #. Translators: Menu item in the Voice Commands submenu of the Tools menu.
-#: addon\globalPlugins\voiceCommands\__init__.py:672
+#: addon\globalPlugins\voiceCommands\__init__.py:700
 msgid "Type a command..."
 msgstr "Introduce un comando..."
 
 #. Translators: Spoken when no speech recognition model is installed. {path} is the folder that was searched.
-#: addon\globalPlugins\voiceCommands\__init__.py:722
+#: addon\globalPlugins\voiceCommands\__init__.py:750
 msgid "Vosk model not found. Searched folder: {path}"
 msgstr "No se encontró el modelo de Vosk. Carpeta buscada: {path}"
 
 #. Translators: Spoken when the speech recognition model could not be loaded. {error} describes the problem.
-#: addon\globalPlugins\voiceCommands\__init__.py:731
+#: addon\globalPlugins\voiceCommands\__init__.py:759
 msgid "Could not load the model: {error}"
 msgstr "No se pudo cargar el modelo: {error}"
 
 #. Translators: Spoken when a speech engine is selected but its files are not installed.
-#: addon\globalPlugins\voiceCommands\__init__.py:740
+#: addon\globalPlugins\voiceCommands\__init__.py:768
 msgid "The selected speech engine is not installed"
 msgstr ""
 
-#: addon\globalPlugins\voiceCommands\__init__.py:810
+#: addon\globalPlugins\voiceCommands\__init__.py:838
 msgid ""
 "The Vosk speech recognition model is not installed.\n"
 "\n"
@@ -860,16 +860,16 @@ msgstr ""
 "utilizando NVDA."
 
 #. Translators: Title of the question about downloading the speech recognition model.
-#: addon\globalPlugins\voiceCommands\__init__.py:817
+#: addon\globalPlugins\voiceCommands\__init__.py:845
 msgid "Voice Commands: model download"
 msgstr "Comandos de Voz: descarga del modelo"
 
 #. Translators: Spoken when the user declines the model download at startup.
-#: addon\globalPlugins\voiceCommands\__init__.py:828
+#: addon\globalPlugins\voiceCommands\__init__.py:856
 msgid "OK. I will ask again when you start voice listening."
 msgstr "De acuerdo. Volveré a preguntar cuando inicie la escucha por voz."
 
-#: addon\globalPlugins\voiceCommands\__init__.py:839
+#: addon\globalPlugins\voiceCommands\__init__.py:867
 #, fuzzy
 msgid ""
 "The speech engine {name} is not installed.\n"
@@ -894,60 +894,60 @@ msgstr ""
 "utilizando NVDA."
 
 #. Translators: Title of the question about downloading a speech engine.
-#: addon\globalPlugins\voiceCommands\__init__.py:847
+#: addon\globalPlugins\voiceCommands\__init__.py:875
 #, fuzzy
 msgid "Voice Commands: speech engine download"
 msgstr "Comandos de Voz: descarga del modelo"
 
 #. Translators: Spoken when the download of a speech engine starts. {name} is the model name.
 #. Translators: Spoken when a model download starts. {name} is the model name.
-#: addon\globalPlugins\voiceCommands\__init__.py:854
-#: addon\globalPlugins\voiceCommands\__init__.py:901
+#: addon\globalPlugins\voiceCommands\__init__.py:882
+#: addon\globalPlugins\voiceCommands\__init__.py:929
 msgid "Downloading {name}"
 msgstr "Descargando {name}"
 
 #. Translators: Spoken as download progress. {percent} is the percentage.
-#: addon\globalPlugins\voiceCommands\__init__.py:856
-#: addon\globalPlugins\voiceCommands\__init__.py:903
+#: addon\globalPlugins\voiceCommands\__init__.py:884
+#: addon\globalPlugins\voiceCommands\__init__.py:931
 msgid "{percent} percent"
 msgstr "{percent} por ciento"
 
 #. Translators: Spoken when the model has been downloaded and is being loaded.
-#: addon\globalPlugins\voiceCommands\__init__.py:883
-#: addon\globalPlugins\voiceCommands\__init__.py:909
+#: addon\globalPlugins\voiceCommands\__init__.py:911
+#: addon\globalPlugins\voiceCommands\__init__.py:937
 msgid "Model installed, loading it"
 msgstr "Modelo instalado, cargándolo"
 
 #. Translators: Spoken when voice commands are ready to use.
-#: addon\globalPlugins\voiceCommands\__init__.py:887
 #: addon\globalPlugins\voiceCommands\__init__.py:915
-#: addon\globalPlugins\voiceCommands\__init__.py:1160
+#: addon\globalPlugins\voiceCommands\__init__.py:943
+#: addon\globalPlugins\voiceCommands\__init__.py:1188
 msgid "Voice commands are ready"
 msgstr "Los comandos de voz están listos"
 
 #. Translators: Spoken when the model could not be loaded.
-#: addon\globalPlugins\voiceCommands\__init__.py:887
-#: addon\globalPlugins\voiceCommands\__init__.py:918
-#: addon\globalPlugins\voiceCommands\__init__.py:1164
+#: addon\globalPlugins\voiceCommands\__init__.py:915
+#: addon\globalPlugins\voiceCommands\__init__.py:946
+#: addon\globalPlugins\voiceCommands\__init__.py:1192
 msgid "Could not load the model"
 msgstr "No se pudo cargar el modelo"
 
 #. Translators: Spoken while the add-on looks for a suitable speech model online.
-#: addon\globalPlugins\voiceCommands\__init__.py:890
+#: addon\globalPlugins\voiceCommands\__init__.py:918
 msgid "Searching for a model"
 msgstr "Buscando un modelo"
 
 #. Translators: Spoken when a model download starts. {name} is the model name, {size} its size.
-#: addon\globalPlugins\voiceCommands\__init__.py:898
+#: addon\globalPlugins\voiceCommands\__init__.py:926
 msgid "Downloading {name}, {size}"
 msgstr "Descargando {name}, {size}"
 
 #. Translators: Spoken when the model download failed. {error} describes the problem.
-#: addon\globalPlugins\voiceCommands\__init__.py:922
+#: addon\globalPlugins\voiceCommands\__init__.py:950
 msgid "Could not download the model: {error}"
 msgstr "No se pudo descargar el modelo: {error}"
 
-#: addon\globalPlugins\voiceCommands\__init__.py:929
+#: addon\globalPlugins\voiceCommands\__init__.py:957
 msgid ""
 "No ready-made Vosk model was found for the NVDA language ({language}).\n"
 "\n"
@@ -963,17 +963,17 @@ msgstr ""
 "{path}"
 
 #. Translators: Title of the question shown when no model exists for the NVDA language.
-#: addon\globalPlugins\voiceCommands\__init__.py:934
+#: addon\globalPlugins\voiceCommands\__init__.py:962
 msgid "Voice Commands: no suitable model"
 msgstr "Comandos de Voz: no hay ningún modelo adecuado"
 
 #. Translators: Spoken when speech recognition failed. {error} describes the problem.
-#: addon\globalPlugins\voiceCommands\__init__.py:969
+#: addon\globalPlugins\voiceCommands\__init__.py:997
 msgid "Speech recognition error: {error}"
 msgstr "Error de reconocimiento de voz: {error}"
 
 #. Translators: Description of a command in the Input Gestures dialog.
-#: addon\globalPlugins\voiceCommands\__init__.py:980
+#: addon\globalPlugins\voiceCommands\__init__.py:1008
 msgid ""
 "Starts listening for a voice command; press again to stop listening and run "
 "the command"
@@ -984,38 +984,38 @@ msgstr ""
 #. Translators: Spoken when the user starts listening while the model is still loading.
 #. The model may have been put in the folder later: load it again.
 #. Translators: Spoken when the model is being loaded.
-#: addon\globalPlugins\voiceCommands\__init__.py:989
-#: addon\globalPlugins\voiceCommands\__init__.py:995
+#: addon\globalPlugins\voiceCommands\__init__.py:1017
+#: addon\globalPlugins\voiceCommands\__init__.py:1023
 msgid "The model is loading, please wait"
 msgstr "El modelo se está cargando, espera por favor"
 
 #. Translators: Spoken when the user starts listening while the model is being downloaded.
-#: addon\globalPlugins\voiceCommands\__init__.py:1001
+#: addon\globalPlugins\voiceCommands\__init__.py:1029
 msgid "The model is being downloaded, please wait"
 msgstr "El modelo se está descargando, espera por favor"
 
 #. Translators: Description of a command in the Input Gestures dialog.
-#: addon\globalPlugins\voiceCommands\__init__.py:1020
+#: addon\globalPlugins\voiceCommands\__init__.py:1048
 msgid "Opens the dialog for editing the phrases (aliases) used for commands"
 msgstr ""
 "Abre el cuadro de diálogo para editar las frases (alias) utilizadas para los "
 "comandos"
 
 #. Translators: Spoken when the list of commands could not be obtained.
-#: addon\globalPlugins\voiceCommands\__init__.py:1025
-#: addon\globalPlugins\voiceCommands\__init__.py:1040
+#: addon\globalPlugins\voiceCommands\__init__.py:1053
+#: addon\globalPlugins\voiceCommands\__init__.py:1068
 msgid "Could not get the list of commands"
 msgstr "No se pudo obtener la lista de comandos"
 
 #. Translators: Spoken after the phrases have been saved in the phrase editor.
 #. Translators: Spoken after the phrases have been saved in the teach dialog.
-#: addon\globalPlugins\voiceCommands\__init__.py:1028
-#: addon\globalPlugins\voiceCommands\__init__.py:1043
+#: addon\globalPlugins\voiceCommands\__init__.py:1056
+#: addon\globalPlugins\voiceCommands\__init__.py:1071
 msgid "Phrases saved"
 msgstr "Frases guardadas"
 
 #. Translators: Description of a command in the Input Gestures dialog.
-#: addon\globalPlugins\voiceCommands\__init__.py:1032
+#: addon\globalPlugins\voiceCommands\__init__.py:1060
 msgid ""
 "Opens a dialog that adds what the recognizer heard last as a spoken phrase "
 "of a command you choose"
@@ -1024,12 +1024,12 @@ msgstr ""
 "como frase hablada de un comando que elijas"
 
 #. Translators: Spoken when the user wants to teach a phrase but nothing has been recognized yet.
-#: addon\globalPlugins\voiceCommands\__init__.py:1036
+#: addon\globalPlugins\voiceCommands\__init__.py:1064
 msgid "Nothing heard yet. Say a command first"
 msgstr "No se ha escuchado nada todavía. Di un comando primero"
 
 #. Translators: Description of a command in the Input Gestures dialog.
-#: addon\globalPlugins\voiceCommands\__init__.py:1047
+#: addon\globalPlugins\voiceCommands\__init__.py:1075
 msgid ""
 "Opens the dialog for adding your own commands: open a program, file, folder "
 "or web address, or press a key combination"
@@ -1039,12 +1039,12 @@ msgstr ""
 "teclas"
 
 #. Translators: Spoken after the user's own commands have been saved.
-#: addon\globalPlugins\voiceCommands\__init__.py:1050
+#: addon\globalPlugins\voiceCommands\__init__.py:1078
 msgid "Commands saved"
 msgstr "Comandos guardados"
 
 #. Translators: Description of a command in the Input Gestures dialog.
-#: addon\globalPlugins\voiceCommands\__init__.py:1054
+#: addon\globalPlugins\voiceCommands\__init__.py:1082
 msgid ""
 "Toggles lowering the volume of other applications while listening for a "
 "voice command"
@@ -1053,63 +1053,63 @@ msgstr ""
 "un comando de voz"
 
 #. Translators: Spoken when lowering other applications' volume while listening is turned on.
-#: addon\globalPlugins\voiceCommands\__init__.py:1065
+#: addon\globalPlugins\voiceCommands\__init__.py:1093
 msgid "Volume lowering on"
 msgstr "Atenuación del volumen activada"
 
 #. Translators: Spoken when lowering other applications' volume while listening is turned off.
-#: addon\globalPlugins\voiceCommands\__init__.py:1068
+#: addon\globalPlugins\voiceCommands\__init__.py:1096
 msgid "Volume lowering off"
 msgstr "Atenuación del volumen desactivada"
 
 #. Translators: Description of a command in the Input Gestures dialog.
-#: addon\globalPlugins\voiceCommands\__init__.py:1072
+#: addon\globalPlugins\voiceCommands\__init__.py:1100
 msgid "Opens the speech model dialog: choose, download and manage the model"
 msgstr ""
 
-#: addon\globalPlugins\voiceCommands\__init__.py:1080
+#: addon\globalPlugins\voiceCommands\__init__.py:1108
 msgid "Vosk: small model for the NVDA language, restricted to the command list"
 msgstr ""
 
 #. Translators: Speech model in the speech model dialog. {name} is the model name, {size} its download size.
-#: addon\globalPlugins\voiceCommands\__init__.py:1083
+#: addon\globalPlugins\voiceCommands\__init__.py:1111
 msgid ""
 "{name} ({size}): free speech recognition, not restricted to the command list"
 msgstr ""
 
 #. Translators: Spoken when the user opens the speech model dialog while a model is being downloaded.
-#: addon\globalPlugins\voiceCommands\__init__.py:1091
+#: addon\globalPlugins\voiceCommands\__init__.py:1119
 msgid "The model is already being downloaded"
 msgstr "El modelo ya se está descargando"
 
 #. Translators: Spoken when the user wants to change the speech model while listening.
-#: addon\globalPlugins\voiceCommands\__init__.py:1095
+#: addon\globalPlugins\voiceCommands\__init__.py:1123
 #, fuzzy
 msgid "Stop listening first"
 msgstr "Iniciar o detener la escucha"
 
 #. Translators: Status shown after a model in the speech model dialog: it is the model in use.
-#: addon\globalPlugins\voiceCommands\__init__.py:1103
+#: addon\globalPlugins\voiceCommands\__init__.py:1131
 msgid "in use"
 msgstr ""
 
 #. Translators: Status shown after a model in the speech model dialog: it is downloaded.
-#: addon\globalPlugins\voiceCommands\__init__.py:1106
+#: addon\globalPlugins\voiceCommands\__init__.py:1134
 msgid "installed"
 msgstr ""
 
 #. Translators: Status shown after a model in the speech model dialog: it must be downloaded first.
-#: addon\globalPlugins\voiceCommands\__init__.py:1109
+#: addon\globalPlugins\voiceCommands\__init__.py:1137
 msgid "not installed"
 msgstr ""
 
 #. Translators: Spoken when the model folder is opened. {path} is the folder.
-#: addon\globalPlugins\voiceCommands\__init__.py:1131
+#: addon\globalPlugins\voiceCommands\__init__.py:1159
 msgid "Opening the model folder: {path}"
 msgstr "Abriendo la carpeta del modelo: {path}"
 
 #. Translators: Description of a command in the Input Gestures dialog.
-#: addon\globalPlugins\voiceCommands\__init__.py:1168
+#: addon\globalPlugins\voiceCommands\__init__.py:1196
 msgid "Opens a box where you can type a command phrase"
 msgstr "Abre un cuadro de diálogo donde puedes escribir una frase de comando"
 
@@ -1168,9 +1168,10 @@ msgid ""
 "- Added the Speech model dialog to the Tools menu, to choose, download and "
 "manage the speech model. It replaces the separate download and model folder "
 "items.\n"
-"- Text from the sherpa models is matched to commands more strictly, so a "
-"single word or an invented sentence no longer runs a wrong command; NVDA "
-"says what it heard instead.\n"
+"- Text from the sherpa models is matched to commands more strictly, so an "
+"invented sentence no longer runs a wrong command; NVDA says what it heard "
+"instead. A word or two that fit exactly one command still run it, and a list "
+"opens when they fit several.\n"
 msgstr ""
 "\n"
 "- Se añadió un submenú de Comandos de Voz en el menú Herramientas de NVDA "
