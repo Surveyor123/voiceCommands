@@ -52,6 +52,7 @@ NVDA menüsünü, ardından Araçlar'ı ve **Sesli Komut**'u açarak eklentiyi t
 - **Son söylenen ifadeyi öğret...** tanıyıcının bilmediği adlar için pencereyi açar.
 - **Komutlarım...** kendi komutların için iletişim kutusunu açar.
 - **Tanıma sırasında ses zayıflamasını aç/kapa** diğer uygulamaların sesini kısmayı açar ya da kapatır.
+- **Sessizlikte otomatik durdurmayı aç/kapa** dinlemenin konuştuktan sonraki sessizlikte kendiliğinden durmasını açar ya da kapatır.
 - **Konuşma modeli...** konuşma modelini seçip indirebileceğin ve yönetebileceğin pencereyi açar (bkz. Ses tanıma modeli).
 - **Komut yazarak çalıştır...** komut cümlesi yazabileceğin kutuyu açar.
 
@@ -170,6 +171,7 @@ Hepsi Girdi Hareketleri iletişim kutusunda, Sesli Komut kategorisindedir.
 | Komutlar için kullanılan ifadeleri (takma adları) düzenleme penceresini açar                                                      | İfade düzenleyiciyi açar.                                                |
 | Tanıyıcının son duyduğunu, seçtiğin bir komutun söylenen ifadesi olarak ekleyen bir pencere açar                                  | Tanıyıcının bilmediği bir adı öğretir.                                   |
 | Sesli komut dinlenirken diğer uygulamaların sesini kısmayı açar ya da kapatır                                                     | Ses kısmayı açar ya da kapatır.                                          |
+| Konuştuktan sonra sessiz kalınca dinlemeyi kendiliğinden durdurmayı açar ya da kapatır                                            | Sessizlikte durdurmayı açar ya da kapatır.                               |
 | Konuşma modeli penceresini açar: modeli seç, indir ve yönet                                                                       | Konuşma modelini seçer, sorduktan sonra indirir ve model klasörünü açar. |
 | Kendi komutlarını eklemek için iletişim kutusunu açar: program, dosya, klasör ya da web adresi açma veya tuş kombinasyonuna basma | Kendi komutların için iletişim kutusunu açar.                            |
 
@@ -215,7 +217,7 @@ Araçlar menüsünden **Konuşma modeli...**'ni aç ya da **Konuşma modeli penc
 |-------------------------|--------------------------------------------------------------------------------------------------------------------|
 | `aliases.json`          | İfade düzenleyicideki ve öğretme penceresinden kaydedilen ifadelerin.                                              |
 | `userCommands.json`     | Kendi komutların.                                                                                                  |
-| `settings.json`         | Ses kısmanın açık olup olmadığı, açılışta indirme sorulup sorulmayacağı ve seçtiğin motor ile model.               |
+| `settings.json`         | Ses kısmanın açık olup olmadığı, açılışta indirme sorulup sorulmayacağı, dinlemenin sessizlikte durup durmayacağı ve sessizliğin süresi, ve seçtiğin motor ile model. |
 | `ducking-recovery.json` | Geçici: yalnızca diğer uygulamaların sesi kısıkken bulunur; bir çökmeden sonra sesi geri getirmek için kullanılır. |
 | `model\`                | Ses tanıma modelleri: Vosk modelleri ve `sherpa-...` klasörleri.                                                   |
 | `sherpa-runtime\`       | sherpa-onnx çalışma zamanı; ilk sherpa modeliyle birlikte indirilir.                                               |

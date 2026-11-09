@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: voiceCommands 1.0.1\n"
+"Project-Id-Version: voiceCommands 1.1.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2026-11-06 23:48+0300\n"
-"PO-Revision-Date: 2026-11-05 20:15+0100\n"
+"PO-Revision-Date: 2026-11-09 05:01+0300\n"
 "Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.10\n"
 "X-Poedit-Basepath: .\n"
@@ -348,7 +348,7 @@ msgstr ""
 #: addon\globalPlugins\voiceCommands\download.py:265
 #: addon\globalPlugins\voiceCommands\download.py:340
 msgid "The speech engine package is incomplete"
-msgstr ""
+msgstr "El paquete del motor de voz está incompleto"
 
 #. Translators: Error shown when the Vosk speech recognition model cannot be loaded. {path} is the model folder.
 #: addon\globalPlugins\voiceCommands\recognizer.py:114
@@ -369,13 +369,12 @@ msgstr "No se pudo abrir el micrófono"
 #. Translators: Error shown when the sherpa-onnx runtime files are missing.
 #: addon\globalPlugins\voiceCommands\sherpa.py:133
 msgid "The speech engine files are missing"
-msgstr ""
+msgstr "Faltan los archivos del motor de voz"
 
 #. Translators: Error shown when the speech recognition model cannot be loaded. {path} is the model folder.
 #: addon\globalPlugins\voiceCommands\sherpa.py:207
-#, fuzzy
 msgid "Could not load the model: {path}"
-msgstr "No se pudo cargar el modelo de Vosk: {path}"
+msgstr "No se pudo cargar el modelo: {path}"
 
 #. Translators: Category shown next to the built-in Windows commands in the command phrase editor.
 #: addon\globalPlugins\voiceCommands\windowsCommands.py:41
@@ -745,29 +744,27 @@ msgstr "No se entendió"
 #. Translators: Spoken when the speech recognizer heard something that is not a command. {text} is what was heard.
 #: addon\globalPlugins\voiceCommands\__init__.py:563
 msgid "Heard: {text}. No matching command"
-msgstr ""
+msgstr "Escuchado: {text}. Ningún comando coincide"
 
 #. Translators: Title of the dialog where the speech model is chosen and managed.
 #: addon\globalPlugins\voiceCommands\__init__.py:588
-#, fuzzy
 msgid "Voice Commands: speech model"
-msgstr "Comandos de Voz: no hay ningún modelo adecuado"
+msgstr "Comandos de Voz: modelo de voz"
 
 #. Translators: Label of the list of speech models.
 #: addon\globalPlugins\voiceCommands\__init__.py:592
 msgid "Speech &model:"
-msgstr ""
+msgstr "&Modelo de voz:"
 
 #. Translators: Button in the speech model dialog. It uses the selected model and downloads it first if it is not installed.
 #: addon\globalPlugins\voiceCommands\__init__.py:599
 msgid "&Use"
-msgstr ""
+msgstr "&Usar"
 
 #. Translators: Button in the speech model dialog. It opens the folder the models are kept in.
 #: addon\globalPlugins\voiceCommands\__init__.py:602
-#, fuzzy
 msgid "Open model &folder"
-msgstr "Abrir la carpeta del modelo"
+msgstr "Abrir la &carpeta del modelo"
 
 #. Translators: Title of the dialog where a command phrase can be typed instead of spoken.
 #: addon\globalPlugins\voiceCommands\__init__.py:620
@@ -814,13 +811,12 @@ msgstr "Activar o desactivar la atenuación del volumen"
 #. Translators: Menu item in the Voice Commands submenu of the Tools menu.
 #: addon\globalPlugins\voiceCommands\__init__.py:726
 msgid "Toggle stop after silence"
-msgstr ""
+msgstr "Activar o desactivar la detención por silencio"
 
 #. Translators: Menu item in the Voice Commands submenu of the Tools menu. It opens one dialog to choose, download and manage the speech model.
 #: addon\globalPlugins\voiceCommands\__init__.py:728
-#, fuzzy
 msgid "Speech model..."
-msgstr "Descargar modelo de voz..."
+msgstr "Modelo de voz..."
 
 #. Translators: Menu item in the Voice Commands submenu of the Tools menu.
 #: addon\globalPlugins\voiceCommands\__init__.py:730
@@ -829,9 +825,8 @@ msgstr "Introduce un comando..."
 
 #. Translators: Name of the Voice Commands submenu of the Tools menu. The & marks the letter that opens it from the keyboard.
 #: addon\globalPlugins\voiceCommands\__init__.py:739
-#, fuzzy
 msgid "&Voice Commands"
-msgstr "Comandos de Voz"
+msgstr "&Comandos de Voz"
 
 #. Translators: Spoken when no speech recognition model is installed. {path} is the folder that was searched.
 #: addon\globalPlugins\voiceCommands\__init__.py:785
@@ -846,7 +841,7 @@ msgstr "No se pudo cargar el modelo: {error}"
 #. Translators: Spoken when a speech engine is selected but its files are not installed.
 #: addon\globalPlugins\voiceCommands\__init__.py:803
 msgid "The selected speech engine is not installed"
-msgstr ""
+msgstr "El motor de voz seleccionado no está instalado"
 
 #: addon\globalPlugins\voiceCommands\__init__.py:873
 msgid ""
@@ -861,12 +856,12 @@ msgid ""
 msgstr ""
 "El modelo de reconocimiento de voz de Vosk no está instalado.\n"
 "\n"
-"¿Descargar el modelo para el idioma de NVDA ({language}) desde alphacephei."
-"com y extraerlo en la siguiente carpeta?\n"
+"¿Descargar el modelo para el idioma de NVDA ({language}) desde "
+"alphacephei.com y extraerlo en la siguiente carpeta?\n"
 "{path}\n"
 "\n"
-"Se requiere conexión a internet; los modelos pequeños suelen ocupar entre 40 "
-"y 100 MB. La descarga se realiza en segundo plano, por lo que puede seguir "
+"Se requiere conexión a Internet; los modelos pequeños suelen ocupar entre 40 "
+"y 100 MB. La descarga se realiza en segundo plano, por lo que puedes seguir "
 "utilizando NVDA."
 
 #. Translators: Title of the question about downloading the speech recognition model.
@@ -880,7 +875,6 @@ msgid "OK. I will ask again when you start voice listening."
 msgstr "De acuerdo. Volveré a preguntar cuando inicie la escucha por voz."
 
 #: addon\globalPlugins\voiceCommands\__init__.py:902
-#, fuzzy
 msgid ""
 "The speech engine {name} is not installed.\n"
 "\n"
@@ -893,21 +887,21 @@ msgid ""
 "An internet connection is required. The download runs in the background, so "
 "you can keep using NVDA."
 msgstr ""
-"El modelo de reconocimiento de voz de Vosk no está instalado.\n"
+"El motor de voz {name} no está instalado.\n"
 "\n"
-"¿Descargar el modelo para el idioma de NVDA ({language}) desde alphacephei."
-"com y extraerlo en la siguiente carpeta?\n"
+"¿Descárgalo ahora? Tamaño: {size}. Sitios: {sites}. Los archivos se "
+"verifican mediante suma de comprobación fijas.\n"
+"Licencia: {license}\n"
+"Los archivos se almacenan en:\n"
 "{path}\n"
 "\n"
-"Se requiere conexión a internet; los modelos pequeños suelen ocupar entre 40 "
-"y 100 MB. La descarga se realiza en segundo plano, por lo que puede seguir "
-"utilizando NVDA."
+"Se requiere conexión a Internet. La descarga se ejecuta en segundo plano, "
+"por lo que puedes seguir utilizando NVDA."
 
 #. Translators: Title of the question about downloading a speech engine.
 #: addon\globalPlugins\voiceCommands\__init__.py:910
-#, fuzzy
 msgid "Voice Commands: speech engine download"
-msgstr "Comandos de Voz: descarga del modelo"
+msgstr "Comandos de Voz: descarga del motor de voz"
 
 #. Translators: Spoken when the download of a speech engine starts. {name} is the model name.
 #. Translators: Spoken when a model download starts. {name} is the model name.
@@ -984,13 +978,12 @@ msgstr "Error de reconocimiento de voz: {error}"
 
 #. Translators: Description of a command in the Input Gestures dialog.
 #: addon\globalPlugins\voiceCommands\__init__.py:1060
-#, fuzzy
 msgid ""
 "Starts listening for a voice command; press again, or stay silent for a "
 "moment after speaking, to stop listening and run the command"
 msgstr ""
-"Inicia la escucha de comandos de voz; presiona de nuevo para detenerla y "
-"ejecutar el comando"
+"Inicia la escucha de comandos de voz; presiona de nuevo, o guarda silencio "
+"un momento después de hablar, para detener la escucha y ejecutar el comando"
 
 #. Translators: Spoken when the user starts listening while the model is still loading.
 #. The model may have been put in the folder later: load it again.
@@ -1079,31 +1072,38 @@ msgid ""
 "Toggles stopping the listening automatically when you stay silent after "
 "speaking"
 msgstr ""
+"Alterna la detención automática de la escucha cuando guardas silencio "
+"después de hablar"
 
 #. Translators: Spoken when stopping the listening after a silence is turned on.
 #: addon\globalPlugins\voiceCommands\__init__.py:1165
 msgid "Stop after silence on"
-msgstr ""
+msgstr "Detención por silencio activada"
 
 #. Translators: Spoken when stopping the listening after a silence is turned off.
 #: addon\globalPlugins\voiceCommands\__init__.py:1168
 msgid "Stop after silence off"
-msgstr ""
+msgstr "Detención por silencio desactivada"
 
 #. Translators: Description of a command in the Input Gestures dialog.
 #: addon\globalPlugins\voiceCommands\__init__.py:1172
 msgid "Opens the speech model dialog: choose, download and manage the model"
 msgstr ""
+"Abre el cuadro de diálogo del modelo de voz: elige, descarga y gestiona el "
+"modelo"
 
 #: addon\globalPlugins\voiceCommands\__init__.py:1180
 msgid "Vosk: small model for the NVDA language, restricted to the command list"
 msgstr ""
+"Vosk: modelo pequeño para el idioma NVDA, restringido a la lista de comandos"
 
 #. Translators: Speech model in the speech model dialog. {name} is the model name, {size} its download size.
 #: addon\globalPlugins\voiceCommands\__init__.py:1183
 msgid ""
 "{name} ({size}): free speech recognition, not restricted to the command list"
 msgstr ""
+"{name} ({size}): reconocimiento de voz libre, no restringido a la lista de "
+"comandos"
 
 #. Translators: Spoken when the user opens the speech model dialog while a model is being downloaded.
 #: addon\globalPlugins\voiceCommands\__init__.py:1191
@@ -1112,24 +1112,23 @@ msgstr "El modelo ya se está descargando"
 
 #. Translators: Spoken when the user wants to change the speech model while listening.
 #: addon\globalPlugins\voiceCommands\__init__.py:1195
-#, fuzzy
 msgid "Stop listening first"
-msgstr "Iniciar o detener la escucha"
+msgstr "Detener la escucha primero"
 
 #. Translators: Status shown after a model in the speech model dialog: it is the model in use.
 #: addon\globalPlugins\voiceCommands\__init__.py:1203
 msgid "in use"
-msgstr ""
+msgstr "en uso"
 
 #. Translators: Status shown after a model in the speech model dialog: it is downloaded.
 #: addon\globalPlugins\voiceCommands\__init__.py:1206
 msgid "installed"
-msgstr ""
+msgstr "instalado"
 
 #. Translators: Status shown after a model in the speech model dialog: it must be downloaded first.
 #: addon\globalPlugins\voiceCommands\__init__.py:1209
 msgid "not installed"
-msgstr ""
+msgstr "no instalado"
 
 #. Translators: Spoken when the model folder is opened. {path} is the folder.
 #: addon\globalPlugins\voiceCommands\__init__.py:1231
@@ -1144,7 +1143,6 @@ msgstr "Abre un cuadro de diálogo donde puedes escribir una frase de comando"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on
 #: buildVars.py:19
-#, fuzzy
 msgid ""
 "Runs NVDA commands and common Windows actions by voice, using an offline "
 "speech recognition engine (Vosk or sherpa-onnx); your voice never leaves "
@@ -1156,19 +1154,18 @@ msgid ""
 "Commands category."
 msgstr ""
 "Ejecuta comandos NVDA y acciones comunes de Windows mediante la voz, "
-"utilizando el motor de reconocimiento de voz Vosk sin conexión; tu voz nunca "
-"sale de tu ordenador. Puedes decir cualquier comando desde el cuadro de "
-"diálogo Gestos de Entrada, comandos integrados de Windows como \"mostrar el "
-"escritorio\", \"mostrar la barra de tareas \" o \"pegar\", y tus propios "
-"comandos para abrir un programa, archivo, carpeta o dirección web, o pulsar "
-"una combinación de teclas. Se descarga un modelo de voz para tu idioma NVDA "
-"la primera vez que lo uses. Asigna teclas en el cuadro de diálogo Gestos de "
-"Entrada, en la categoría Comandos de Voz."
+"utilizando el motor de reconocimiento de voz sin conexión(Vosk o sherpa-"
+"onnx); tu voz nunca sale de tu ordenador. Puedes decir cualquier comando "
+"desde el cuadro de diálogo Gestos de Entrada, comandos integrados de Windows "
+"como \"mostrar el escritorio\", \"mostrar la barra de tareas \" o \"pegar\", "
+"y tus propios comandos para abrir un programa, archivo, carpeta o dirección "
+"web, o pulsar una combinación de teclas. Se descarga un modelo de voz para "
+"tu idioma NVDA la primera vez que lo uses. Asigna teclas en el cuadro de "
+"diálogo Gestos de Entrada, en la categoría Comandos de Voz."
 
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version
 #: buildVars.py:26
-#, fuzzy
 msgid ""
 "\n"
 "- Listening now stops by itself when you stay silent for about a second "
@@ -1185,9 +1182,9 @@ msgid ""
 "- Added import and export of phrases in the phrase editor, with shortcuts "
 "Ctrl+I, Ctrl+E and Ctrl+S. Importing only adds; nothing you already have is "
 "changed or removed.\n"
-"- Phrase files can now name a command by its text (\"description - category"
-"\") instead of its id. Entries for commands that are not available yet are "
-"kept until they appear.\n"
+"- Phrase files can now name a command by its text (\"description - "
+"category\") instead of its id. Entries for commands that are not available "
+"yet are kept until they appear.\n"
 "- The heard-phrases list in the teach dialog now reports its checked state "
 "in every NVDA version.\n"
 "- Messages are no longer cut off by NVDA's focus speech after a dialog, file "
@@ -1206,6 +1203,11 @@ msgid ""
 "opens when they fit several.\n"
 msgstr ""
 "\n"
+"- Ahora la escucha se detiene sola cuando te quedas en silencio durante "
+"aproximadamente un segundo después de hablar, como si hubieras pulsado de "
+"nuevo la tecla. Se puede desactivar con un nuevo comando de alternancia "
+"(Gestos de Entrada o menú Herramientas); la duración del silencio es el "
+"ajuste silence_seconds.\n"
 "- Se añadió un submenú de Comandos de Voz en el menú Herramientas de NVDA "
 "con los comandos del complemento.\n"
 "- Se corrigió un error que impedía que los comandos de Windows que usan una "
@@ -1227,6 +1229,17 @@ msgstr ""
 "menú.\n"
 "- Se añadió un conjunto de frases cortas en turco que se pueden importar "
 "desde el editor de frases.\n"
+"- Se añadió un segundo motor de voz, sherpa-onnx, con un modelo turco "
+"(turkish-stt) y modelos para inglés, francés, alemán, español y ruso. Es el "
+"predeterminado para NVDA turco que no tiene instalado el modelo Vosk.\n"
+"- Se añadió el diálogo del modelo de voz al menú Herramientas para "
+"seleccionar, descargar y gestionar el modelo de voz. Sustituye a las "
+"entradas independientes de descarga y de carpeta del modelo.\n"
+"- El texto de los modelos sherpa se ajusta con mayor precisión a los "
+"comandos, por lo que una frase inventada ya no ejecuta un comando "
+"incorrecto; NVDA reproduce lo que ha oído. Una o dos palabras que coinciden "
+"exactamente con un comando lo ejecutan igualmente, y se abre una lista "
+"cuando coinciden con varios.\n"
 
 #~ msgid "Downloads the speech recognition model for the NVDA language"
 #~ msgstr "Descarga el modelo de reconocimiento de voz para el idioma de NVDA"

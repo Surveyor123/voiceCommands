@@ -2,44 +2,46 @@
 
 Ejecuta los comandos de NVDA hablando en lugar de presionar teclas.
 
-NVDA ya tiene una descripción para cada comando en su cuadro de diálogo Gestos de Entrada. Comandos de Voz escucha a través de tu micrófono, convierte tu voz en texto con el motor sin conexión [Vosk](https://alphacephei.com/vosk/) engine, compara ese texto con esas descripciones (y con las frases que tú mismo definas), y ejecuta el comando que mejor se adapte. Tu voz se procesa en tu ordenador y nunca sale de él.
+NVDA ya tiene una descripción para cada comando en su cuadro de diálogo Gestos de Entrada. Comandos de Voz escucha a través de tu micrófono, convierte tu voz en texto con el motor sin conexión ([Vosk](https://alphacephei.com/vosk/) por defecto, o un modelo [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) que tu elijas, ver El modelo de voz) compara ese texto con esas descripciones (y con las frases que tú mismo definas), y ejecuta el comando que mejor se adapte. Tu voz se procesa en tu ordenador y nunca sale de él.
 
 ## Cómo funciona
 
 1.  Cuando empiezas a escuchar, el complemento recopila los comandos que están disponibles en ese momento. Esto incluye los comandos de la aplicación en la que estás trabajando, por lo que un comando de otra aplicación solo se ofrecerá mientras esa aplicación tenga el foco.
-2.  Hablas y luego detienes la escucha. Vosk convierte tu voz en texto.
-3.  El texto se compara con las descripciones de los comandos y con tus propias frases. También se le indica al reconocedor qué frases esperar, lo que lo hace mucho más preciso que el dictado libre.
+2.  Hablas y luego detienes la escucha. El motor de voz convierte tu voz en texto.
+3.  El texto se compara con las descripciones de los comandos y con tus propias frases. También se le indica al reconocedor qué frases esperar, lo que lo hace mucho más preciso que el dictado libre. Los modelos sherpa no pueden restringirse de esa manera: escriben texto ordinario, por lo que el complemento lo compara de forma más estricta (ver Elegir qué decir).
 4.  Si un comando se adapta claramente, se ejecuta. Si varios se adaptan de forma similar, se abre una lista y tú eliges.
 
 ## Requisitos
 
 - NVDA 2026.1 o posterior, de 64 bits, en Windows.
 - Un micrófono configurado como dispositivo de grabación predeterminado en Windows.
-- Conexión a Internet por una única vez para descargar el modelo de voz (un modelo pequeño ocupa entre 40 y 100 MB).
+- Conexión a Internet por una única vez para descargar el modelo de voz (un modelo pequeño de Vosk ocupa entre 40 y 100 MB; los modelos Sherpa ocupan entre 24 y 124 MB, más un tiempo de ejecución de 21 MB que todos comparten).
 
 ## Instalación y primera ejecución
 
 1.  Abre el archivo `.nvda-addon` y confirma la instalación. Reinicia NVDA cuando se te solicite.
-2.  Unos segundos después de que se inicie NVDA, el complemento notará que no hay ningún modelo de voz instalado y te preguntará si puede descargar uno para tu idioma de NVDA. Elige **Sí**. La descarga se realiza en segundo plano; NVDA anunciará el progreso y te avisará cuando los comandos de voz estén listos.
+2.  Unos segundos después de que se inicie NVDA, el complemento notará que no hay ningún modelo de voz instalado y te preguntará si puede descargar uno para tu idioma de NVDA. Con un NVDA turco, este es el modelo turkish-stt; para otros idiomas es el modelo Vosk. Elige **Sí**. La descarga se realiza en segundo plano; NVDA anunciará el progreso y te avisará cuando los comandos de voz estén listos.
 
-Si eliges **No**, el complemento no volverá a preguntar al iniciar. Se te preguntará de nuevo cuando empieces a escuchar o cuando uses el comando "Descarga el modelo de reconocimiento de voz".
+Si eliges **No**, el complemento no volverá a preguntar al iniciar. Se te preguntará de nuevo cuando empieces a escuchar o cuando eliges un modelo que no está instalado en el cuadro de diálogo del modelo de voz (ver El modelo de voz).
 
 ## Inicio rápido
 
 No hay teclas asignadas por defecto, así que elige las tuyas:
 
-1.  Abre el menú de NVDA, luego Preferencias y después Gestos de entrada.
+1.  Abre el menú de NVDA, luego Preferencias y después Gestos de Entrada.
 2.  Expande la categoría **Comandos de Voz** y asigna una tecla a **Inicia la escucha de comandos de voz**. Asigna teclas a los demás comandos que desees allí también.
 
-Sin teclas también puede usar el menú Herramientas (ver El menú Herramientas).
+Sin teclas también puedes usar el menú Herramientas (ver El menú Herramientas).
 
 Luego, para dar un comando de voz:
 
 1.  Presiona tu tecla. Un pitido agudo te indicará que se ha empezado a escuchar.
 2.  Di el comando.
-3.  Presiona la tecla de nuevo. Un pitido grave te indicará que se ha detenido la escucha y el comando se ejecutará.
+3.  Presiona la tecla de nuevo, o simplemente guarda silencio un momento (alrededor de un segundo) después de hablar. Un pitido grave te indicará que se ha detenido la escucha y el comando se ejecutará.
 
-Si no se reconoce nada, NVDA dirá  "No se entendió". Si lo que escuchó no se ajusta lo suficientemente bien a ningún comando, NVDA dirá "No hay ningún comando coincidente" y nombra el más cercano, o abre una lista de candidatos (ver Cuando no está seguro).
+La detención por silencio se puede desactivar con el comando de Gestos de Entrada "Alterna la detención automática de la escucha cuando guardas silencio después de hablar" (o en el menú Herramientas). Para cambiar cuánto debe durar el silencio, establece `silence_seconds` (de 0.5 a 5, por defecto 1.2) en `settings.json`.
+
+Si no se reconoce nada, NVDA dirá "No se entendió". Si lo que escuchó no se ajusta lo suficientemente bien a ningún comando, NVDA dirá "No hay ningún comando coincidente" y nombra el más cercano, o abre una lista de candidatos (ver Cuando no está seguro).
 
 ## El menú Herramientas
 
@@ -49,9 +51,9 @@ Abre el menú de NVDA, luego Herramientas, y después **Comandos de Voz** para u
 - **Editor de frases de comando...** abre el editor de frases.
 - **Enseñar la última frase hablada...** abre el cuadro de diálogo para los nombres que el reconocedor no conoce.
 - **Mis comandos...** abre el cuadro de diálogo para tus propios comandos.
-- **Alterna la atenuación del volumen** activa o desactiva la atenuación del volumen de otras aplicaciones.
-- **Descargar modelo de voz...** inicia la descarga del modelo, tras preguntar.
-- **Abrir la carpeta del modelo** abre la carpeta del modelo en el Explorador de archivos.
+- **Activar o desactivar la atenuación del volumen** activa o desactiva la atenuación del volumen de otras aplicaciones.
+- **Activar o desactivar la detención por silencio** activa o desactiva la detención de la escucha tras una pausa.
+- **Modelo de voz...** abre el cuadro de diálogo donde elegir, descargar y gestionar el modelo de voz (ver El modelo de voz).
 - **Introduce un comando...** abre un cuadro de diálogo donde puedes escribir una frase de comando.
 
 Estos comandos hacen lo mismo que los comandos del cuadro de diálogo Gestos de Entrada (ver Referencia de comandos).
@@ -68,11 +70,13 @@ Las descripciones de NVDA suelen ser frases completas, por ejemplo "Informa de l
 
 Dos cosas ayudan en la práctica. Di la frase a un ritmo constante, en un momento de silencio, y no omitas las palabras distintivas. Además, define frases cortas para los comandos que más uses: toma un minuto y hace que todo sea más rápido.
 
+**Con un modelo sherpa** (ver El modelo de voz) puedes decir un comando de forma más natural, porque el texto se compara con el comando en ambas direcciones: las palabras que dijiste deben encontrarse en el comando, y las palabras del comando deben encontrarse en lo que dijiste. Se toleran palabras adicionales como "por favor". Un fragmento que corresponde exactamente a un comando también lo ejecuta, por ejemplo "música" para tu propio comando "Abrir carpeta de música" cuando ningún otro comando tiene esa palabra; un fragmento que corresponde a varios comandos abre una lista, y se ignoran los fragmentos de menos de cuatro letras. Una ortografía o un espaciado distinto, como "masa üstünü göster" para "Masaüstünü göster", también funciona cuando un comando es claramente el más cercano por sonido. El texto que no se parece a ningún comando no se interpreta; en su lugar, NVDA dice lo que escuchó, por ejemplo "Escuchado: gracias. Ningún comando coincide".
+
 ## Tus propias frases
 
 Usa el editor de frases para decir los comandos a tu manera. Asigna una tecla a **Abre el cuadro de diálogo para editar las frases (alias) utilizadas para los comandos** y ábrelo desde la aplicación cuyos comandos quieras editar.
 
-1.  En **Buscar comandos**, escribe unas pocas palabras para filtrar la  lista, luego selecciona el comando  en **Comandos**.
+1.  En **Buscar comandos**, escribe unas pocas palabras para filtrar la lista, luego selecciona el comando en **Comandos**.
 2.  Escribe tu frase en **Nueva frase** y elige **Añadir frase**. Puedes añadir varias frases a un mismo comando. Para cambiar o eliminar una, selecciónala en **Frases que dices para este comando** y elige **Editar frase seleccionada** o **Eliminar frase seleccionada**.
 3.  Desmarca **Usar también la descripción original** si el comando solo debe responder a tus frases.
 4.  Elige **Guardar**.
@@ -81,7 +85,7 @@ Las buenas frases son cortas, de dos a cuatro palabras, y suenan diferentes entr
 
 ## Nombres que el reconocedor no conoce
 
-El modelo de voz tiene un vocabulario fijo y no puede aprender palabras nuevas. Por lo tanto, un comando que contenga un nombre raro o extranjero, como el de un artista o el título de una canción, a menudo se escuchará como otras palabras que suenan similar. Por ejemplo, "Zülfü Livaneli" puede escribirse como "gül suyu divane izi". El complemento intenta corresponder dicho texto por sonido, lo que funciona cuando el modelo escribe algo cercano al nombre ("inti ilimani" para "Inti Illimani"), pero no cuando escribe palabras completamente diferentes.
+El modelo de voz tiene un vocabulario fijo y no puede aprender palabras nuevas. Por lo tanto, un comando que contenga un nombre raro o extranjero, como el de un artista o el título de una canción, a menudo se escuchará como otras palabras que suenan similar. Por ejemplo, "Zülfü Livaneli" puede escribirse como "gül suyu divane izi". El complemento intenta corresponder dicho texto por sonido, lo que funciona cuando el modelo escribe algo cercano al nombre ("inti ilimani" para "Inti Illimani"), pero no cuando escribe palabras completamente diferentes. Los modelos sherpa no tienen una lista de palabras fija, pero también pueden escribir un nombre desconocido de forma diferente a como esperas.
 
 Cuando no se reconozca un comando, enseña al complemento lo que escuchó el reconocedor:
 
@@ -90,7 +94,7 @@ Cuando no se reconozca un comando, enseña al complemento lo que escuchó el rec
 3.  La lista de la parte superior muestra los textos que produjo el reconocedor, todos marcados. Desmarca los que parezcan incorrectos.
 4.  En **Buscar comandos**, encuentra el comando, selecciónalo en la lista de abajo y elige **Guardar frases**.
 
-Los textos marcados se guardan como frases de ese comando, exactamente como si los hubieras escrito en el editor de frases, y podrás editarlos o eliminarlos allí más tarde. Al tratarse de palabras que el modelo ya conoce, la misma pronunciación se encontrará directamente la próxima vez. La lista siempre muestra lo que el reconocedor escuchó la última vez que dijiste un comando, se haya reconocido o no, así que abre el cuadro de diálogo justo después del comando que falló. También es una forma rápida de ver qué hizo el reconocedor con tu voz, sin necesidad de mirar el registro  de NVDA. No se incluyen los comandos que escribas en el cuadro de diálogo de comandos.
+Los textos marcados se guardan como frases de ese comando, exactamente como si los hubieras escrito en el editor de frases, y podrás editarlos o eliminarlos allí más tarde. Al tratarse de palabras que el modelo ya conoce, la misma pronunciación se encontrará directamente la próxima vez. La lista siempre muestra lo que el reconocedor escuchó la última vez que dijiste un comando, se haya reconocido o no, así que abre el cuadro de diálogo justo después del comando que falló. También es una forma rápida de ver qué hizo el reconocedor con tu voz, sin necesidad de mirar el registro de NVDA. No se incluyen los comandos que escribas en el cuadro de diálogo de comandos.
 
 ## Compartir y respaldar tus frases
 
@@ -110,10 +114,10 @@ El archivo tiene el mismo formato que `aliases.json` en la carpeta de configurac
 Hay algunos comandos que nunca querrás ejecutar por voz, por ejemplo porque son riesgosos ("cerrar ventana", "bloquear el equipo") o porque suenan demasiado parecidos a otros y se seleccionan por error. Para excluir uno:
 
 1.  Abre el editor de frases y selecciona el comando, como se describe en Tus propias frases.
-2.  Desmarca  **Usar también la descripción original** y no añadas ninguna frase propia.
+2.  Desmarca **Usar también la descripción original** y no añadas ninguna frase propia.
 3.  Elige **Guardar**.
 
-El comando dejará de formar parte de lo que el complemento escucha, por lo que nunca se ejecutará, nunca se ofrecerá en la lista de candidatos y no se buscará por sonido. Seguirá funcionando con su propia tecla desde el cuadro de diálogo Gestos de Entrada. Esto funciona para los comandos de NVDA, los comandos integrados de Windows y tus propios comandos. Para volver a activar un comando, selecciónalo de nuevo y activa  **Usar también la descripción original**, o añade una frase. Un comando propio también se puede eliminar simplemente en su cuadro de diálogo.
+El comando dejará de formar parte de lo que el complemento escucha, por lo que nunca se ejecutará, nunca se ofrecerá en la lista de candidatos y no se buscará por sonido. Seguirá funcionando con su propia tecla desde el cuadro de diálogo Gestos de Entrada. Esto funciona para los comandos de NVDA, los comandos integrados de Windows y tus propios comandos. Para volver a activar un comando, selecciónalo de nuevo y activa **Usar también la descripción original**, o añade una frase. Un comando propio también se puede eliminar simplemente en su cuadro de diálogo.
 
 Excluir un comando también hace que el reconocimiento sea más confiable: cuantos menos comandos haya para elegir, menos a menudo se confundirá uno similar con el que dijiste.
 
@@ -137,20 +141,20 @@ El cuadro de diálogo Gestos de Entrada de NVDA solo enumera los comandos propio
 - **Edición:** copiar, cortar, pegar, seleccionar todo, deshacer, rehacer, guardar, buscar, imprimir, crear nuevo, abrir archivo, cambiar nombre, propiedades, actualizar.
 - **Navegación y pestañas:** ir atrás, ir adelante, nueva pestaña, cerrar pestaña, reabrir pestaña cerrada, pestaña siguiente, pestaña anterior.
 
-Los comandos donde repetir tiene sentido aceptan  "dos veces", etc., por ejemplo "subir el volumen tres veces" o "pestaña siguiente dos veces". Estos comandos aparecen en el editor de frases de comando bajo la categoría **Comandos de Windows**, por lo que puedes añadir tus propias frases para ellos o desactivar su frase original. Un comando de NVDA con la misma descripción tiene prioridad. Las descripciones son traducibles, por lo que las frases que dices están en tu idioma.
+Los comandos donde repetir tiene sentido aceptan "dos veces", etc., por ejemplo "subir el volumen tres veces" o "pestaña siguiente dos veces". Estos comandos aparecen en el editor de frases de comando bajo la categoría **Comandos de Windows**, por lo que puedes añadir tus propias frases para ellos o desactivar su frase original. Un comando de NVDA con la misma descripción tiene prioridad. Las descripciones son traducibles, por lo que las frases que dices están en tu idioma.
 
 ## Tus propios comandos
 
-Puedes añadir comandos propios. Asigna una tecla a **Abre el cuadro de diálogo para añadir tus propios comandos** en la categoría Comandos de Voz del cuadro de diálogo Gestos de Entrada, presiónala y elige **Añadir**. Escribe lo que vas a decir y luego elige  lo que hace el comando:
+Puedes añadir comandos propios. Asigna una tecla a **Abre el cuadro de diálogo para añadir tus propios comandos** en la categoría Comandos de Voz del cuadro de diálogo Gestos de Entrada, presiónala y elige **Añadir**. Escribe lo que vas a decir y luego elige lo que hace el comando:
 
 - **Abrir un programa, archivo, carpeta o dirección web:** escríbelo o usa los botones para examinar. Se abrirá como si hubieras hecho doble clic en él, por lo que una dirección web se abre en tu navegador. Las variables de entorno como `%USERPROFILE%` funcionan, al igual que los nombres de las carpetas `music`, `documents`, `downloads`, `desktop`, `pictures` y `videos`, y las direcciones `shell:` de Windows. Un programa que esté en la ruta del sistema, como `notepad`, no necesita carpeta.
 - **Presione una combinación de teclas:** escribe las teclas con los nombres de tecla de NVDA, por ejemplo `control+shift+n`. Las abreviaturas comunes como `ctrl`, `win`, `esc` y `left` se entienden. Los comandos de teclas se pueden repetir ("dos veces").
 
-Tus comandos se enumeran en el editor de frases bajo  **Mis comandos**, donde puedes añadirles frases adicionales. Si un comando tuyo tiene el mismo nombre que un comando de NVDA, se usará el tuyo. Nada aquí ejecuta scripts o comandos de shell: un comando transmite su objetivo a Windows o presiona teclas. Tus comandos se guardan en `userCommands.json` en la carpeta de configuración de Comandos de Voz (ver Configuración y datos).
+Tus comandos se enumeran en el editor de frases bajo **Mis comandos**, donde puedes añadirles frases adicionales. Si un comando tuyo tiene el mismo nombre que un comando de NVDA, se usará el tuyo. Nada aquí ejecuta scripts o comandos de shell: un comando transmite su objetivo a Windows o presiona teclas. Tus comandos se guardan en `userCommands.json` en la carpeta de configuración de Comandos de Voz (ver Configuración y datos).
 
 ## Cuando no está seguro
 
-Cuando varios comandos se adaptan de forma similar, o ninguno se adapta lo suficientemente bien como para ejecutarse por sí solo, se abre una lista con los mejores candidatos. Usa las teclas de flecha y presiona Intro para ejecutar el que deseas, o presiona Escape para cancelar. Si elegiste una repetición, esta se aplica al comando que elijas.
+Cuando varios comandos se adaptan de forma similar, o ninguno se adapta lo suficientemente bien como para ejecutarse por sí solo, se abre una lista con los mejores candidatos. (Con un modelo Sherpa, la lista solo se abre cuando algo se parece a un comando; de lo contrario, NVDA solo dice lo que escuchó.) Usa las teclas de flecha y presiona Intro para ejecutar el que deseas, o presiona Escape para cancelar. Si elegiste una repetición, esta se aplica al comando que elijas.
 
 ## Escribir en lugar de hablar
 
@@ -160,20 +164,20 @@ Asigna una tecla a **Abre un cuadro de diálogo donde puedes escribir una frase 
 
 Todos estos comandos se encuentran en el cuadro de diálogo Gestos de Entrada, en la categoría Comandos de Voz.
 
-| Comando                                                                                                                | Qué hace                                             |
-|------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| Inicia la escucha de comandos de voz; presiona de nuevo para detenerla y ejecutar el comando                                | El comando principal. Presiona una vez para iniciar y de nuevo para detener. |
-| Abre un cuadro de diálogo donde puedes escribir una frase de comando                                                                        | Ejecuta una frase escrita a través del mismo proceso de coincidencia.           |
-| Abre el cuadro de diálogo para editar las frases (alias) utilizadas para los comandos                                                   | Abre el editor de frases.                                 |
-| Alterna la atenuación del volumen de otras aplicaciones mientras se escucha un comando de voz                                  | Atenuación del volumen activada o desactivada.                         |
-| Descarga el modelo de reconocimiento de voz para el idioma de NVDA                                                           | Inicia la descarga del modelo, tras preguntar.                 |
-| Abre un cuadro de diálogo que añade lo último que escuchó el reconocedor como frase hablada de un comando que elijas                     | Enseña al complemento un nombre que no reconoce.         |
-| Abre el cuadro de diálogo para añadir tus propios comandos: abrir un programa, archivo, carpeta o dirección web, o presionar una combinación de teclas | Abre el cuadro de diálogo para tus propios comandos.                  |
-| Abre la carpeta del modelo en el Explorador de archivos                                                                                | Para instalar un modelo manualmente.                          |
+| Comando                                                                                                                | Qué hace                                                                     |
+|------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| Inicia la escucha de comandos de voz; presiona de nuevo, o guarda silencio un momento después de hablar, para detener la escucha y ejecutar el comando | El comando principal. Presiona una vez para iniciar y de nuevo para detener.                         |
+| Abre un cuadro de diálogo donde puedes escribir una frase de comando                                                                        | Ejecuta una frase escrita a través del mismo proceso de coincidencia.                                   |
+| Abre el cuadro de diálogo para editar las frases (alias) utilizadas para los comandos                                                   | Abre el editor de frases.                                                         |
+| Alterna la atenuación del volumen de otras aplicaciones mientras se escucha un comando de voz                                  | Atenuación del volumen activada o desactivada.                                                 |
+| Alterna la detención automática de la escucha cuando guardas silencio después de hablar                                        | Detención por silencio activada o desactivada.                                                 |
+| Abre el cuadro de diálogo del modelo de voz: elige, descarga y gestiona el modelo                                                   | Elige el modelo de voz, descárgalo tras confirmar y abre la carpeta del modelo. |
+| Abre un cuadro de diálogo que añade lo último que escuchó el reconocedor como frase hablada de un comando que elijas                     | Enseña al complemento un nombre que no reconoce.                                 |
+| Abre el cuadro de diálogo para añadir tus propios comandos: abrir un programa, archivo, carpeta o dirección web, o presionar una combinación de teclas | Abre el cuadro de diálogo para tus propios comandos.                                          |
 
 ## Atenuación del volumen de otras aplicaciones
 
-La música y los videos serían captados por el micrófono y perturbarían al reconocedor. Mientras estás escuchando, el volumen de todas las sesiones de audio, excepto la de NVDA, se atenúa al 20% de su volumen, y se restablece cuando   lo detienes. Las sesiones cuyo volumen cambies tú mismo en ese intervalo no se modifican.
+La música y los videos serían captados por el micrófono y perturbarían al reconocedor. Mientras estás escuchando, el volumen de todas las sesiones de audio, excepto la de NVDA, se atenúa al 20% de su volumen, y se restablece cuando lo detienes. Las sesiones cuyo volumen cambies tú mismo en ese intervalo no se modifican.
 
 Windows recuerda los volúmenes por aplicación, por lo que el complemento también guarda un pequeño archivo de recuperación. Si NVDA se cierra mientras el volumen está atenuado, los volúmenes originales se restauran la próxima vez que se inicie NVDA.
 
@@ -181,7 +185,25 @@ Esta función utiliza una biblioteca que viene con NVDA. Si no está disponible,
 
 ## El modelo de voz
 
-- El complemento busca el modelo en la carpeta `voiceCommands\model` dentro de la carpeta de configuración de  NVDA, por ejemplo `%AppData%\nvda\voiceCommands\model`. El comando "Abre la carpeta del modelo en el Explorador de archivos" te lleva allí.
+Abre **Modelo de voz...** en el menú Herramientas, o asigna una tecla a **Abre el cuadro de diálogo del modelo de voz: elige, descarga y gestiona el modelo**. El cuadro de diálogo enumera los modelos disponibles para el idioma de tu NVDA y muestra para cada uno si está en uso, instalado o no instalado.
+
+- **Usar** cambia al modelo seleccionado (hacer doble clic en un modelo hace lo mismo). Un modelo que no está instalado se descarga primero: el complemento te indica su tamaño, de dónde proviene y su licencia, y solo lo descarga después de que aceptes. El modelo no se puede cambiar mientras estás escuchando o mientras se realiza una descarga.
+- **Abrir la carpeta del modelo** abre la carpeta donde se guardan los modelos, para instalar un modelo manualmente.
+
+| Modelo                                     | Idiomas                                        | Descarga              | Licencia                                                         |
+|-------------------------------------------|--------------------------------------------------|-----------------------|-----------------------------------------------------------------|
+| Vosk (modelo pequeño)                        | Cada idioma que tenga uno en la lista oficial | Normalmente de 40 a 100 MB  | Ver la lista de modelos                                              |
+| turkish-stt (mihu AI)                     | Turco                                          | 68 MB                 | Licencia comunitaria de mihu (gratis para uso personal)                  |
+| Kroko English, Français, Deutsch, Español | Inglés, francés, alemán, español                 | 57, 57, 58 y 124 MB | Modelo comunitario de Kroko; condiciones en huggingface.co/Banafo/Kroko-ASR |
+| Zipformer ru (Alpha Cephei)               | Ruso                                          | 24 MB                 | Ver huggingface.co/alphacep/vosk-model-small-streaming-ru       |
+
+**Vosk o un modelo sherpa.** Vosk está restringido a la lista de comandos, lo que se adapta a comandos cortos. Los modelos sherpa escriben texto libre, lo que por lo general maneja mejor el habla ordinaria y las palabras desconocidas, pero se ajusta a los comandos de manera más estricta (ver Elegir qué decir). Prueba ambos y quédate con el que funcione mejor con tu voz y micrófono. El valor predeterminado es turkish-stt para un NVDA en turco que aún no tiene ningún modelo Vosk instalado; un modelo Vosk instalado nunca se reemplaza a tus espaldas, y cualquier otro idioma permanece en Vosk hasta que elijas un modelo sherpa. Se recordará tu elección. Si NVDA cambia a un idioma que el modelo sherpa elegido no cubre, el complemento recurre a Vosk.
+
+**Instalar un modelo sherpa.** El primer modelo sherpa también necesita el runtime sherpa-onnx (tres archivos DLL, 21 MB). Se descarga desde github.com, siempre la misma versión, y se verifica mediante una suma de comprobación fija; los archivos del modelo provienen de huggingface.co o github.com y también se verifican. El runtime se guarda en `voiceCommands\sherpa-runtime` y cada modelo en su propia carpeta `sherpa-...` dentro de `voiceCommands\model`. El runtime necesita NVDA de 64 bits. Si tu nombre de usuario de Windows contiene letras como ş, ğ o ı, el complemento utiliza el nombre corto (8.3) de la carpeta, que algunos discos tienen desactivado (ver Resolución de problemas).
+
+**Modelos Vosk.**
+
+- El complemento busca el modelo en la carpeta `voiceCommands\model` dentro de la carpeta de configuración de NVDA, por ejemplo `%AppData%\nvda\voiceCommands\model`. **Abrir la carpeta del modelo** en el cuadro de diálogo te lleva allí.
 - La descarga automática utiliza la lista oficial de modelos en <https://alphacephei.com/vosk/models>. Elige un modelo pequeño para tu idioma de NVDA, verifica su suma de comprobación y lo extrae en esa carpeta.
 - Para instalar un modelo tú mismo, descarga uno de esa página y extráelo en la carpeta model. Se reconocen ambos diseños de modelo de Vosk, y los archivos pueden estar en una subcarpeta.
 - Los modelos grandes son más precisos pero necesitan mucha más memoria y tardan más en cargarse.
@@ -189,33 +211,37 @@ Esta función utiliza una biblioteca que viene con NVDA. Si no está disponible,
 
 ## Configuración y datos
 
-Se guardan en `%AppData%\nvda\voiceCommands`, o en la carpeta de configuración de un NVDA portátil:
+Almacenados en `%AppData%\nvda\voiceCommands`, o en la carpeta de configuración de un NVDA portátil:
 
-| Elemento                    | Contenido                                                                                         |
-|-------------------------|--------------------------------------------------------------------------------------------------|
-| `aliases.json`          | Tus frases del editor de frases y del cuadro de diálogo enseñar.                                        |
-| `userCommands.json`     | Tus propios comandos.                                                                               |
-| `settings.json`         | Si la atenuación de volumen está activada y si se debe preguntar sobre la descarga al iniciar.                 |
-| `ducking-recovery.json` | Temporal: existe solo mientras el volumen de otras aplicaciones está atenuado, para restaurarlo después de un cuelgue. |
-| `model\`                | El modelo de voz.                                                                                |
+| Elemento                    | Contenido                                                                                                                |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| `aliases.json`          | Tus frases del editor de frases y del cuadro de diálogo enseñar.                                                               |
+| `userCommands.json`     | Tus propios comandos.                                                                                                      |
+| `settings.json`         | Si la atenuación de volumen está activada, si se debe preguntar sobre la descarga al iniciar, si la escucha se detiene tras un silencio y cuánto dura, y el motor de voz y el modelo que has elegido. |
+| `ducking-recovery.json` | Temporal: existe solo mientras el volumen de otras aplicaciones está atenuado, para restaurarlo después de un cuelgue.                        |
+| `model\`                | Los modelos de voz: los modelos Vosk y las carpetas `sherpa-...`.                                                            |
+| `sherpa-runtime\`       | El runtime sherpa-onnx, descargado junto con el primer modelo sherpa.                                               |
 
 Los valores de la parte superior de `globalPlugins/voiceCommands/__init__.py`, como los umbrales de coincidencia y el tamaño de la lista de candidatos, se pueden editar si deseas ajustar el comportamiento.
 
-## Solución de problemas
+## Resolución de problemas
 
-| Problema                                   | Qué comprobar                                                                                                                                                             |
-|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "No se encontró el modelo de Vosk"                    | Instala un modelo como se describió anteriormente. El mensaje indica la carpeta exacta.                                                                                                   |
-| No se reconoce nada                     | Asegúrate de que el micrófono correcto sea el predeterminado de Windows y no esté silenciado.                                                                                                      |
-| Un nombre nunca se reconoce                | El modelo puede escribirlo como otras palabras. Abre **Enseñar la última frase hablada** justo después de decirlo para ver qué se escuchó y guárdalo como una frase (ver Nombres que el reconocedor no conoce). |
-| Se ejecuta el comando incorrecto                    | Define una frase corta propia para ese comando en el editor de frases.                                                                                                  |
-| "Este comando no está disponible en este momento" | El comando pertenece a otra aplicación. Dilo mientras esa aplicación tenga el foco.                                                                                      |
-| La música o el video siguen interfiriendo       | Algunas aplicaciones no exponen una sesión de audio que se pueda atenuar. Paúsalas antes de escuchar.                                                                        |
-| Quieres ver qué se escuchó            | Abre **Enseñar la última frase hablada** justo después de hablar: su lista muestra los textos que produjo el reconocedor. Para más detalles, establece el nivel de registro de NVDA en Depuración (Menú NVDA, Preferencias, Opciones, Privacidad y Seguridad, Nivel de registro), habla y abre el registro (NVDA+F1): las líneas "Voice command recognition" muestran lo que escuchó cada reconocedor, y las líneas "Voice command candidate" muestran qué tan cerca estuvieron las mejores coincidencias. Estas líneas solo se escriben que en el nivel de Depuración. |
+| Problema                                        | Qué comprobar                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| "No se encontró el modelo de Vosk"                         | Instala un modelo como se describió anteriormente. El mensaje indica la carpeta exacta.                                                                                                                                                                                                                                                                                                                                                                                                    |
+| "El motor de voz seleccionado no está instalado"  | Abre **Modelo de voz...** y elige **Usar**: el complemento ofrecerá descargarlo de nuevo. Si sigue fallando, elimina la carpeta del modelo en `model\` y la carpeta `sherpa-runtime`, luego descarga de nuevo.                                                                                                                                                                                                                                                                 |
+| "No se pudo cargar el modelo" con un modelo sherpa | Asegúrate de que NVDA sea de 64 bits. Si tu nombre de usuario de Windows tiene letras como ş, ğ o ı, es posible que el modelo no se cargue si los nombres cortos de carpeta están desactivados en la unidad; revisa el registro (ver abajo) y usa Vosk si sigue fallando.                                                                                                                                                                                                                                               |
+| "Escuchado: ... No hay ningún comando coincidente"               | Un modelo sherpa escribió un texto que no coincide con ningún comando por sus palabras. Si el texto es lo que dijiste, el comando se llama de otra manera: añade tu propia frase corta (ver Tus propias frases). Si no, dilo de nuevo o prueba con otro modelo.                                                                                                                                                                                                                                          |
+| No se reconoce nada                          | Asegúrate de que el micrófono correcto sea el predeterminado de Windows y no esté silenciado.                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Un nombre nunca se reconoce                     | El modelo puede escribirlo como otras palabras. Abre **Enseñar la última frase hablada** justo después de decirlo para ver qué se escuchó y guárdalo como una frase (ver Nombres que el reconocedor no conoce).                                                                                                                                                                                                                                                                                |
+| Se ejecuta el comando incorrecto                         | Define una frase corta propia para ese comando en el editor de frases.                                                                                                                                                                                                                                                                                                                                                                                                   |
+| "Este comando no está disponible en este momento"      | El comando pertenece a otra aplicación. Dilo mientras esa aplicación tenga el foco.                                                                                                                                                                                                                                                                                                                                                                                       |
+| La música o el video siguen interfiriendo           | Algunas aplicaciones no exponen una sesión de audio que se pueda atenuar. Paúsalas antes de escuchar.                                                                                                                                                                                                                                                                                                                                                                         |
+| Quieres ver qué se escuchó                 | Abre **Enseñar la última frase hablada** justo después de hablar: su lista muestra los textos que produjo el reconocedor. Para más detalles, establece el nivel de registro de NVDA en Depuración (Menú NVDA, Preferencias, Opciones, Privacidad y Seguridad, Nivel de registro), habla y abre el registro (NVDA+F1): las líneas "Voice command recognition" muestran lo que escuchó cada reconocedor, y las líneas "Voice command candidate" muestran qué tan cerca estuvieron las mejores coincidencias. Estas líneas solo se escriben que en el nivel de Depuración. |
 
 ## Privacidad
 
-El audio del micrófono es procesado en tu ordenador por Vosk y nunca se envía a ningún sitio. La red solo se utiliza cuando permites la descarga del modelo, y únicamente para conectarse a alphacephei.com.
+El audio del micrófono es procesado en tu ordenador por (Vosk o sherpa-onnx) y nunca se envía a ningún sitio. La red solo se utiliza cuando permites la descarga del modelo, y únicamente para conectarse a alphacephei.com (modelos Vosk), huggingface.co (el modelo turkish-stt) y github.com (el runtime sherpa-onnx y los demás modelos sherpa).
 
 ## Traducción
 
@@ -223,4 +249,6 @@ El complemento está escrito en inglés y viene con una traducción al turco. Pa
 
 ## Licencia
 
-Comandos de Voz está publicado bajo la Licencia Pública General GNU, versión 2.
+Comandos de Voz está bajo la licencia Pública General GNU, versión 2.
+
+El runtime sherpa-onnx que descarga el complemento está bajo la licencia Apache 2.0, y la biblioteca ONNX Runtime en su interior está bajo la licencia MIT. Cada modelo de voz tiene su propia licencia (ver El modelo de voz).

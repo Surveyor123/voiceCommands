@@ -52,6 +52,7 @@ Open the NVDA menu, then Tools, then **Voice Commands** to use the add-on withou
 - **Teach the last spoken phrase...** opens the dialog for names the recognizer does not know.
 - **My commands...** opens the dialog for your own commands.
 - **Toggle volume lowering** turns the lowering of other applications' volume on or off.
+- **Toggle stop after silence** turns stopping the listening by itself after a pause on or off.
 - **Speech model...** opens the dialog where you choose, download and manage the speech model (see The speech model).
 - **Type a command...** opens the box where you can type a command phrase.
 
@@ -169,6 +170,7 @@ All of these are in the Input Gestures dialog, in the Voice Commands category.
 | Opens a box where you can type a command phrase                                                                        | Runs a typed phrase through the same matching.                                   |
 | Opens the dialog for editing the phrases (aliases) used for commands                                                   | Opens the phrase editor.                                                         |
 | Toggles lowering the volume of other applications while listening for a voice command                                  | Turns volume lowering on or off.                                                 |
+| Toggles stopping the listening automatically when you stay silent after speaking                                       | Turns stopping after a silence on or off.                                        |
 | Opens the speech model dialog: choose, download and manage the model                                                   | Chooses the speech model, downloads it after asking, and opens the model folder. |
 | Opens a dialog that adds what the recognizer heard last as a spoken phrase of a command you choose                     | Teaches the add-on a name it does not recognize.                                 |
 | Opens the dialog for adding your own commands: open a program, file, folder or web address, or press a key combination | Opens the dialog for your own commands.                                          |
@@ -215,7 +217,7 @@ Stored in `%AppData%\nvda\voiceCommands`, or in the configuration folder of a po
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | `aliases.json`          | Your phrases from the phrase editor and the teach dialog.                                                               |
 | `userCommands.json`     | Your own commands.                                                                                                      |
-| `settings.json`         | Whether volume lowering is on, whether to ask about the download at startup, and the speech engine and model you chose. |
+| `settings.json`         | Whether volume lowering is on, whether to ask about the download at startup, whether listening stops after silence and for how long, and the speech engine and model you chose. |
 | `ducking-recovery.json` | Temporary: exists only while other applications' volume is lowered, to restore it after a crash.                        |
 | `model\`                | The speech models: Vosk models and the `sherpa-...` folders.                                                            |
 | `sherpa-runtime\`       | The sherpa-onnx runtime, downloaded together with the first sherpa model.                                               |
