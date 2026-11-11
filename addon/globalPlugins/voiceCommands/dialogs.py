@@ -8,7 +8,7 @@ import ui
 import wx
 from logHandler import log
 
-from . import announce, storage, userCommands
+from . import announce, presses, storage, userCommands
 from .text import lower, normalize
 
 
@@ -132,6 +132,11 @@ class PhraseEditorDialog(_BaseDialog):
 		main.Add(wx.StaticText(self, label=_("New phrase:")), 0, wx.ALL, 6)
 		self.newPhrase = wx.TextCtrl(self, style=wx.TE_PROCESS_ENTER)
 		main.Add(self.newPhrase, 0, wx.ALL | wx.EXPAND, 6)
+		# Translators: Label of the list where the user chooses how many times the command is pressed when the phrase is said (1 to 5). With 2, the command that says the time says the date instead, as pressing its key twice does.
+		main.Add(wx.StaticText(self, label=_("Times the command is pressed:")), 0, wx.ALL, 6)
+		self.pressCount = wx.Choice(self, choices=[str(n) for n in range(1, presses.MAX + 1)])
+		self.pressCount.SetSelection(0)
+		main.Add(self.pressCount, 0, wx.ALL, 6)
 		# Translators: Label of the button that adds the typed phrase to the selected command.
 		self.addButton = wx.Button(self, label=_("Add phrase"))
 		main.Add(self.addButton, 0, wx.ALL, 6)
@@ -199,13 +204,26 @@ class PhraseEditorDialog(_BaseDialog):
 			self.commandList.SetSelection(0)
 		self._commandSelected()
 
+	@staticmethod
+	def _shown(phrases):
+		"""How the phrases are listed: one that presses the command several times says so in words."""
+		shown = []
+		for phrase in phrases:
+			text, count = presses.split(phrase)
+			if count > 1:
+				# Translators: A phrase in the phrase editor's list that presses its command several times. {phrase} is what is said, {count} how many times the command is pressed.
+				shown.append(_("{phrase} (pressed {count} times)").format(phrase=text, count=count))
+			else:
+				shown.append(phrase)
+		return shown
+
 	def _commandSelected(self):
 		command_id = self._currentId()
 		entry = self.data.get(command_id, {}) if command_id else {}
-		self.phraseList.Set(list(entry.get("aliases", [])))
+		self.phraseList.Set(self._shown(entry.get("aliases", [])))
 		self.keepOriginal.SetValue(entry.get("keep_original", True) if command_id else True)
 		for control in (self.keepOriginal, self.addButton, self.deleteButton, self.editButton,
-						self.newPhrase, self.phraseList):
+						self.newPhrase, self.pressCount, self.phraseList):
 			control.Enable(command_id is not None)
 
 	def _updateLabel(self):
@@ -222,7 +240,8 @@ class PhraseEditorDialog(_BaseDialog):
 
 	def _onAdd(self, evt):
 		command_id = self._currentId()
-		text = self.newPhrase.GetValue().strip()
+		text, typed_count = presses.split(self.newPhrase.GetValue())
+		count = max(typed_count, self.pressCount.GetSelection() + 1)
 		if not command_id:
 			return
 		if not text:
@@ -230,10 +249,18 @@ class PhraseEditorDialog(_BaseDialog):
 			announce.say(_("The phrase is empty"))
 			return
 		phrases = self._entry(command_id)["aliases"]
-		if text not in phrases:
-			phrases.append(text)
+		stored = presses.join(text, count)
+		# The same words with another count would be the same phrase to the recognizer: the new one replaces it.
+		same = [i for i, p in enumerate(phrases) if normalize(presses.split(p)[0]) == normalize(text)]
+		if same:
+			phrases[same[0]] = stored
+			for i in reversed(same[1:]):
+				del phrases[i]
+		else:
+			phrases.append(stored)
 		self.newPhrase.SetValue("")
-		self.phraseList.Set(list(phrases))
+		self.pressCount.SetSelection(0)
+		self.phraseList.Set(self._shown(phrases))
 		self._updateLabel()
 		# Translators: Spoken after a phrase has been added to a command.
 		announce.say(_("Added"))
@@ -244,7 +271,7 @@ class PhraseEditorDialog(_BaseDialog):
 			return None
 		phrases = self._entry(command_id)["aliases"]
 		text = phrases.pop(index)
-		self.phraseList.Set(list(phrases))
+		self.phraseList.Set(self._shown(phrases))
 		if phrases:
 			self.phraseList.SetSelection(min(index, len(phrases) - 1))
 		self._updateLabel()
@@ -258,7 +285,9 @@ class PhraseEditorDialog(_BaseDialog):
 	def _onEdit(self, evt):
 		text = self._removeSelected()
 		if text is not None:
+			text, count = presses.split(text)
 			self.newPhrase.SetValue(text)
+			self.pressCount.SetSelection(count - 1)
 			self.newPhrase.SetFocus()
 			self.newPhrase.SetInsertionPointEnd()
 

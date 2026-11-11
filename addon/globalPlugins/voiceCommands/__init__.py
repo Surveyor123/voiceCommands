@@ -1,11 +1,14 @@
 # -*- coding: UTF-8 -*-
 """Voice Commands: run NVDA commands by speaking their descriptions from the Input Gestures dialog."""
+import copy
 import difflib
 import inspect
 import json
 import os
 import re
 import threading
+import time
+import weakref
 
 import addonHandler
 import api
@@ -15,13 +18,14 @@ import globalPluginHandler
 import gui
 import inputCore
 import scriptHandler
+import speech
 import tones
 import ui
 import wx
 from logHandler import log
 from scriptHandler import script
 
-from . import announce, dialogs, download, ducking, phonetic, recognizer, sherpa, storage, userCommands, windowsCommands
+from . import announce, dialogs, download, ducking, phonetic, presses, recognizer, sherpa, storage, userCommands, windowsCommands
 from .text import normalize
 
 addonHandler.initTranslation()
@@ -89,6 +93,39 @@ def split_repeat(text):
 	if not match:
 		return text, 1
 	return text[:match.start()].strip(), _REPEAT_VALUES[match.group(1)]
+
+
+# A phrase of the user can carry a press count (see presses.py): saying it presses the command that many
+# times, so "say the date" stored with a count of 2 on the "say the time" command reports the date.
+split_alias_repeat = presses.split
+
+
+class _RepeatedInfo:
+	"""Stands in for a command info that cannot take another attribute (NVDA's AllGesturesScriptInfo has
+	__slots__). Everything is passed on to the real info; voice_repeat is the added count."""
+
+	def __init__(self, info, repeat):
+		self.__dict__["_info"] = info
+		self.__dict__["voice_repeat"] = repeat
+
+	def __getattr__(self, name):
+		return getattr(self.__dict__["_info"], name)
+
+	@property
+	def __class__(self):  # so that isinstance() checks on the real info keep working
+		return self.__dict__["_info"].__class__
+
+
+def _with_fixed_repeat(info, repeat):
+	"""A command info that always runs *repeat* times (see split_alias_repeat)."""
+	if repeat <= 1:
+		return info
+	try:
+		clone = copy.copy(info)
+		clone.voice_repeat = repeat
+		return clone
+	except Exception:
+		return _RepeatedInfo(info, repeat)
 
 
 def _code_mentions(code, name, depth=0):
@@ -197,7 +234,8 @@ def collect_commands():
 			else:
 				commands.setdefault(normalize(description), (description, info))
 		for phrase in settings.get("aliases", []):
-			extras.append((normalize(phrase), (phrase, info)))
+			phrase, count = split_alias_repeat(phrase)
+			extras.append((normalize(phrase), (phrase, _with_fixed_repeat(info, count))))
 	for key, value in extras:  # the user's phrases take precedence over original descriptions
 		if key:
 			commands[key] = value
@@ -250,8 +288,31 @@ def score(spoken, phrase):
 	return 0.6 * coverage + 0.25 * whole + 0.15 * length
 
 
+def _prepare_press(func, press):
+	"""Makes the next scriptHandler.executeScript(func) count as press number *press* (2 = pressed twice).
+
+	NVDA counts a script as repeated when it runs again within the multi-press timeout; this sets that
+	state directly. It relies on NVDA's internals, so it reports False (and nothing is changed) when
+	they are not there."""
+	names = ("_lastScriptRef", "_lastScriptTime", "_lastScriptCount")
+	if not all(hasattr(scriptHandler, name) for name in names):
+		return False
+	try:
+		scriptHandler._lastScriptRef = weakref.ref(getattr(func, "__func__", func))
+		scriptHandler._lastScriptTime = time.time()
+		scriptHandler._lastScriptCount = press - 2
+		return True
+	except Exception:
+		log.debugWarning("Could not set the script repeat count", exc_info=True)
+		return False
+
+
 def run_command(description, info, repeat=1):
-	"""Runs a command; with repeat > 1 the script runs several times in a row (like multiple key presses)."""
+	"""Runs a command as if its key had been pressed *repeat* times.
+
+	A phrase of the user can carry its own count (info.voice_repeat); a count that was spoken wins."""
+	if repeat <= 1:
+		repeat = getattr(info, "voice_repeat", 1)
 	if userCommands.is_user_command(info):
 		log.debug("Running user command by voice: %r x%d" % (description, repeat))
 		try:
@@ -300,8 +361,19 @@ def run_command(description, info, repeat=1):
 		clear_last = getattr(scriptHandler, "clearLastScript", None)
 		if clear_last:
 			clear_last()  # the repeat counter starts from 0
-		for _repeat in range(max(1, min(repeat, MAX_REPEAT))):
+		count = max(1, min(repeat, MAX_REPEAT))
+		if count > 1:
+			log.debug("Voice command repeat: %d, script counts presses: %s" % (count, is_repeat_aware(info)))
+		if count > 1 and is_repeat_aware(info) and _prepare_press(func, count):
+			# The script tells the presses apart: pressing it three times does only what the third press
+			# does, so it runs once, as the third press. Running it three times in a row would do the
+			# work of the first and second press too.
 			scriptHandler.executeScript(func, SyntheticGesture())
+		else:
+			for number in range(count):
+				if number and is_repeat_aware(info):
+					speech.cancelSpeech()  # a key press interrupts what the previous press said
+				scriptHandler.executeScript(func, SyntheticGesture())
 	except Exception:
 		log.exception("Could not run the script: %s" % description)
 		# Translators: Spoken when running a voice command failed.
@@ -382,8 +454,10 @@ def show_candidates(candidates, repeat):
 
 def run_phrase(text):
 	commands = collect_commands()
+	text, typed_repeat = split_alias_repeat(text)  # a typed "... x2" works like "... two times"
 	spoken = normalize(text)
 	spoken, repeat = split_repeat(spoken)
+	repeat = max(repeat, typed_repeat)
 	if not spoken or not commands:
 		# Translators: Spoken when no command could be found for what was said.
 		announce.say(_("No command found"))

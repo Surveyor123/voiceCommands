@@ -20,13 +20,15 @@
  "Mevcut haberin başlığını okur. İki kez basılırsa başlık ve adres  panoya kopyalanır. - Akışları Oku": {
   "aliases": [
    "haber başlığı",
-   "haberi oku"
+   "haberi oku",
+   "başlık ve adresi kopyala x2"
   ],
   "keep_original": false
  },
  "Mevcut haberin web adresini okur. İki kez basılırsa haberin girildiği web sayfası açılır. - Akışları Oku": {
   "aliases": [
-   "haber linki"
+   "haber linki",
+   "haberi tarayıcıda aç x2"
   ],
   "keep_original": false
  },
@@ -74,7 +76,8 @@
  },
  "Copy the Version Collector report to the clipboard. Press twice to view it instead. - Araçlar": {
   "aliases": [
-   "sürüm raporu"
+   "sürüm raporu",
+   "sürüm raporunu göster x2"
   ],
   "keep_original": false
  },
@@ -86,7 +89,8 @@
  },
  "Düzenleme imlecinin veya odağın üzerinde bulunduğu linkin yönlendirdiği web adresini okur. İki kez basıldığında daha kolay incelenebilmesi için web adresini bir pencerede gösterir. - Araçlar": {
   "aliases": [
-   "bağlantı adresi"
+   "bağlantı adresi",
+   "bağlantı adresi penceresi x2"
   ],
   "keep_original": false
  },
@@ -110,7 +114,9 @@
  },
  "Odaklandığınız uygulamanın adını, sürümünü ve mimarisini seslendirir. Bilgileri panoya kopyalamak için iki kez basın. Yalnızca sürüm numarasını kopyalamak için üç kez basın. Windows sürümünü almak için Masaüstünde kullanın. - Araçlar": {
   "aliases": [
-   "uygulama sürümü"
+   "uygulama sürümü",
+   "uygulama sürümünü kopyala x2",
+   "uygulama sürüm numarasını kopyala x3"
   ],
   "keep_original": false
  },
@@ -1468,25 +1474,29 @@
  },
  "Bu bilgisayardaki sabit (yerleşik), çıkarılabilir ve eşlenmiş ağ sürücülerinin kullanılan ve toplam alanlarını gösterir. İki kez basıldığında, bilgileri panoya kopyalar. - Kaynak İzleme": {
   "aliases": [
-   "disk alanı"
+   "disk alanı",
+   "disk alanını kopyala x2"
   ],
   "keep_original": false
  },
  "GPU bellek kullanımını seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
   "aliases": [
-   "grafik belleği"
+   "grafik belleği",
+   "grafik belleğini kopyala x2"
   ],
   "keep_original": false
  },
  "GPU kullanımını ve sıcaklığını seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
   "aliases": [
-   "ekran kartı sıcaklığı"
+   "ekran kartı sıcaklığı",
+   "ekran kartı bilgisini kopyala x2"
   ],
   "keep_original": false
  },
  "Hem fiziksel hem de sanal ram için kullanılmakta olan ve toplam alanı seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
   "aliases": [
-   "bellek durumu"
+   "bellek durumu",
+   "bellek durumunu kopyala x2"
   ],
   "keep_original": false
  },
@@ -1498,31 +1508,36 @@
  },
  "Kullanılan RAM miktarını ve ortalama işlemci yükünü gösterir. İki kez basıldığında bilgileri panoya kopyalar. - Kaynak İzleme": {
   "aliases": [
-   "ram ve işlemci"
+   "ram ve işlemci",
+   "ram ve işlemciyi kopyala x2"
   ],
   "keep_original": false
  },
  "Kullanılmakta olan Windows sürümünü seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
   "aliases": [
-   "windows sürümü"
+   "windows sürümü",
+   "windows sürümünü kopyala x2"
   ],
   "keep_original": false
  },
  "Ortalama işlemci yükünü ve her çekirdeğin yükünü seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
   "aliases": [
-   "işlemci çekirdekleri"
+   "işlemci çekirdekleri",
+   "işlemci çekirdeklerini kopyala x2"
   ],
   "keep_original": false
  },
  "Sistemin kablosuz ağ adını (SSID), bağlantı gücünü ve güvenlik protokolünü seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
   "aliases": [
-   "wifi bilgisi"
+   "wifi bilgisi",
+   "wifi bilgisini kopyala x2"
   ],
   "keep_original": false
  },
  "Sistemin çalışma süresini seslendirir. İki kez basıldığında bilgiler panoya kopyalanır. - Kaynak İzleme": {
   "aliases": [
-   "çalışma süresi"
+   "çalışma süresi",
+   "çalışma süresini kopyala x2"
   ],
   "keep_original": false
  },
@@ -1912,7 +1927,8 @@
  },
  "Son seslendirilen bilgiyi tekrar eder. İki kez basıldığında göz atılabilir mesajda gösterir. - Konuşma": {
   "aliases": [
-   "son konuşmayı tekrarla"
+   "son konuşmayı tekrarla",
+   "son konuşmayı pencerede göster x2"
   ],
   "keep_original": false
  },
@@ -1996,7 +2012,8 @@
  },
  "Bir kez basıldığında, daha önce başlangıç işareti konan yerle, inceleme imlecinin mevcut pozisyonu arasındaki metni seçer. İki kez basılırsa metin panoya kopyalanır - Metin incelemesi": {
   "aliases": [
-   "başlangıçtan seç"
+   "başlangıçtan seç",
+   "başlangıçtan kopyala x2"
   ],
   "keep_original": false
  },
@@ -2008,7 +2025,8 @@
  },
  "Geçerli inceleme imleci konumu için biçimlendirme bilgilerini bildirir. İki kez basılırsa, bilgileri tarama kipinde gösterir - Metin incelemesi": {
   "aliases": [
-   "inceleme biçimi ayrıntılı"
+   "inceleme biçimi ayrıntılı",
+   "inceleme biçimini pencerede göster x2"
   ],
   "keep_original": false
  },
@@ -2128,7 +2146,8 @@
  },
  "İnceleme imlecinin bulunduğu yerdeki sembolü seslendirir. İki kez basılırsa, sembol ve seslendirme metni tarama kipinde gösterilir - Metin incelemesi": {
   "aliases": [
-   "sembolü söyle"
+   "sembolü söyle",
+   "sembolü pencerede göster x2"
   ],
   "keep_original": false
  },
@@ -2140,13 +2159,17 @@
  },
  "İnceleme imlecinin konumlandığı satırı okur. Bu tuşa iki kez basılırsa, mevcut satır harf harf okunur. Üç kez basıldığında ise, satır karakter tanımları kullanılarak kodlanır (Adana, Bolu, Ceyhan gibi). - Metin incelemesi": {
   "aliases": [
-   "inceleme satırı"
+   "inceleme satırı",
+   "inceleme satırını harf harf oku x2",
+   "inceleme satırını karakter tanımlarıyla oku x3"
   ],
   "keep_original": false
  },
  "İnceleme imlecinin konumlandığı sözcüğü okur. Bu tuşa iki kez basılırsa, sözcük harf harf okunur. Üç kez basıldığında ise, karakter tanımları kullanılarak kodlanır (Adana, Bolu, Ceyhan gibi) - Metin incelemesi": {
   "aliases": [
-   "inceleme kelimesi"
+   "inceleme kelimesi",
+   "inceleme kelimesini harf harf oku x2",
+   "inceleme kelimesini karakter tanımlarıyla oku x3"
   ],
   "keep_original": false
  },
@@ -2158,7 +2181,9 @@
  },
  "İnceleme imlecinin üzerinde bulunduğu karakteri okur. İki kez basılırsa karakterin tanımı (adana, bolu, ceyhan gibi) okunur. Üç kez basıldığında ise, karakterin decimal ve hexadecimal değerleri söylenir - Metin incelemesi": {
   "aliases": [
-   "inceleme karakteri"
+   "inceleme karakteri",
+   "inceleme karakterinin tanımı x2",
+   "inceleme karakterinin değeri x3"
   ],
   "keep_original": false
  },
@@ -2212,7 +2237,8 @@
  },
  "Bir kez basıldığında odağı nesne sunucusunun konumuna; iki kez basıldığında düzenleme imlecini inceleme imlecinin konumuna taşır - Nesne dolaşımı": {
   "aliases": [
-   "odağı taşı"
+   "odağı taşı",
+   "düzenleme imlecini taşı x2"
   ],
   "keep_original": false
  },
@@ -2278,7 +2304,9 @@
  },
  "Nesne sunucusunun üzerinde bulunduğu nesneyi seslendirir. İki kez basılırsa bilgi kodlanır. Üç kez basılırsa nesnenin adı ve değeri panoya kopyalanır - Nesne dolaşımı": {
   "aliases": [
-   "nesneyi söyle"
+   "nesneyi söyle",
+   "nesneyi harf harf söyle x2",
+   "nesnenin adını ve değerini kopyala x3"
   ],
   "keep_original": false
  },
@@ -2290,7 +2318,8 @@
  },
  "İnceleme imlecinin pozisyonundaki metnin ya da nesnenin konum ve boyut bilgisini seslendirir. İki kez basılırsa daha ayrıntılı bilgi verilir. - Nesne dolaşımı": {
   "aliases": [
-   "nesne konumu"
+   "nesne konumu",
+   "nesne konumu ayrıntılı x2"
   ],
   "keep_original": false
  },
@@ -2746,7 +2775,8 @@
  },
  "Tüm ses uygulamalarının oynatma ve kayıt cihazlarını sıfırlamak için tıkla; Tüm ses uygulamalarının sesini sıfırlamak ve sesini açmak için çift tıkla - Ses Yöneticisi": {
   "aliases": [
-   "ses ayarlarını sıfırla"
+   "ses ayarlarını sıfırla",
+   "sesleri sıfırla ve aç x2"
   ],
   "keep_original": false
  },
@@ -2831,7 +2861,9 @@
  "Birkez basıldığında saati, iki kez basıldığında da tarihi söyler - Sistem durumu": {
   "aliases": [
    "saat kaç",
-   "saati söyle"
+   "saati söyle",
+   "tarihi söyle x2",
+   "bugünün tarihi x2"
   ],
   "keep_original": false
  },
@@ -2843,13 +2875,18 @@
  },
  "Windows panosundaki metni okur. İki kez basıldığında bilgi harf harf okunur. Üç kez basıldığında bilgi kodlanarak okunur. - Sistem durumu": {
   "aliases": [
-   "panoyu oku"
+   "panoyu oku",
+   "panoyu harf harf oku x2",
+   "panoyu karakter tanımlarıyla oku x3"
   ],
   "keep_original": false
  },
  "Düzenleme denetimlerinde ve belgelerde mevcut seçimi seslendirir. İki kez basıldığında bilgi harf harf okunur. Üç kez basıldığında bilgi kodlanarak okunur. Dört kez basıldığında bilgi pencerede görüntülenir. - Sistem düzenleme imleci": {
   "aliases": [
-   "seçileni oku"
+   "seçileni oku",
+   "seçileni harf harf oku x2",
+   "seçileni karakter tanımlarıyla oku x3",
+   "seçileni pencerede göster x4"
   ],
   "keep_original": false
  },
@@ -2867,7 +2904,8 @@
  },
  "Sistem imleci konumundaki metin veya nesnenin konumuyla ilgili bilgileri raporlar. İki kez basmak daha fazla ayrıntı sağlayabilir. - Sistem düzenleme imleci": {
   "aliases": [
-   "imleç konumu"
+   "imleç konumu",
+   "imleç konumu ayrıntılı x2"
   ],
   "keep_original": false
  },
@@ -2885,13 +2923,16 @@
  },
  "Uygulama imlecinin bulunduğu satırı okur. İki kez basılırsa, satır kodlanarak okunur. Üç kez basılırsa, satırı oluşturan harfler karakter tanımlarıyla seslendirilir. - Sistem düzenleme imleci": {
   "aliases": [
-   "satırı oku"
+   "satırı oku",
+   "satırı harf harf oku x2",
+   "satırı karakter tanımlarıyla oku x3"
   ],
   "keep_original": false
  },
  "İmlecin bulunduğu konumdaki metnin dilini söyler. İki kere basıldığında bilgi pencerede görüntülenir - Sistem düzenleme imleci": {
   "aliases": [
-   "metnin dili"
+   "metnin dili",
+   "metnin dilini pencerede göster x2"
   ],
   "keep_original": false
  },
@@ -2903,7 +2944,8 @@
  },
  "İmleç altındaki metnin biçimlendirme bilgilerini bildirir. İki kez basılırsa, bilgileri tarama kipinde gösterir - Sistem düzenleme imleci": {
   "aliases": [
-   "imleç biçimi ayrıntılı"
+   "imleç biçimi ayrıntılı",
+   "imleç biçimini pencerede göster x2"
   ],
   "keep_original": false
  },
@@ -2915,7 +2957,8 @@
  },
  "Aktif pencerenin durum çubuğunu okur. İki kez basıldığında bilgi kodlanarak seslendirilir. Üç kez basılırsa bilgi panoya kopyalanır - Sistem odağı": {
   "aliases": [
-   "durum çubuğunu oku"
+   "durum çubuğunu oku",
+   "durum çubuğunu harf harf oku x2"
   ],
   "keep_original": false
  },
@@ -2945,7 +2988,9 @@
  },
  "Mevcut uygulama ya da aktif pencerenin başlığını okur. İki kez basılırsa, başlığı adana, bolu, ceyhan şeklinde kodlar. Üç kez basılırsa, başlığı panoya kopyalar - Sistem odağı": {
   "aliases": [
-   "pencere başlığı"
+   "pencere başlığı",
+   "pencere başlığını harf harf oku x2",
+   "pencere başlığını kopyala x3"
   ],
   "keep_original": false
  },
@@ -2963,7 +3008,9 @@
  },
  "Odaklanılan nesneyi okur. İki kez basıldığında bilgi harf harf okunur. Üç kez basıldığında bilgi kodlanarak okunur. - Sistem odağı": {
   "aliases": [
-   "odaktakini oku"
+   "odaktakini oku",
+   "odaktakini harf harf oku x2",
+   "odaktakini karakter tanımlarıyla oku x3"
   ],
   "keep_original": false
  },
@@ -2975,7 +3022,8 @@
  },
  "Sistem tepsisi düğmelerini gösterir. İki kez basıldığında ise, görev çubuğu simgeleri görüntülenir. - Sistem tepsisi": {
   "aliases": [
-   "tepsi düğmeleri"
+   "tepsi düğmeleri",
+   "görev çubuğu simgeleri x2"
   ],
   "keep_original": false
  },
@@ -4052,25 +4100,29 @@
  },
  "Describes the current element. Press twice for a detailed description in a window. - VisionMate": {
   "aliases": [
-   "öğeyi tarif et"
+   "öğeyi tarif et",
+   "öğeyi ayrıntılı tarif et x2"
   ],
   "keep_original": false
  },
  "Describes the current window. Press twice for a detailed description in a window. - VisionMate": {
   "aliases": [
-   "pencereyi tarif et"
+   "pencereyi tarif et",
+   "pencereyi ayrıntılı tarif et x2"
   ],
   "keep_original": false
  },
  "Describes the image or image file on the clipboard. Press twice for a detailed description in a window. - VisionMate": {
   "aliases": [
-   "panoyu tarif et"
+   "panoyu tarif et",
+   "panoyu ayrıntılı tarif et x2"
   ],
   "keep_original": false
  },
  "Describes the whole screen. Press twice for a detailed description in a window. - VisionMate": {
   "aliases": [
-   "ekranı tarif et"
+   "ekranı tarif et",
+   "ekranı ayrıntılı tarif et x2"
   ],
   "keep_original": false
  },
@@ -4112,7 +4164,8 @@
  },
  "Bir kez basılırsa, 24 saat ve sonraki 2 gün için hava durumu tahminini ve sıcaklık bilgisini verir. İki kez basılırsa, sıcaklık ve hava koşullarını saatlik tahmin olarak verir. - Weather_Plus": {
   "aliases": [
-   "hava tahmini"
+   "hava tahmini",
+   "saatlik hava tahmini x2"
   ],
   "keep_original": false
  },
@@ -4503,7 +4556,9 @@
  },
  "Anlık kaydı başlat veya durdur. Mevcut şarkının kaydı için iki kez, her şarkının kaydı için üç kez basın. - freeAudio": {
   "aliases": [
-   "radyo kaydı"
+   "radyo kaydı",
+   "şarkıyı kaydet x2",
+   "tüm şarkıları kaydet x3"
   ],
   "keep_original": false
  },
@@ -4695,7 +4750,8 @@
  },
  "Çalan istasyonu seslendir. Ayrıntılar için iki kez, çalan parça bilgisini panoya kopyalamak, bilgi yoksa müzik tanıma servisini başlatmak için üç kez; müzik tanımaya zorlamak için dört kez basın. - freeAudio": {
   "aliases": [
-   "çalan istasyon"
+   "çalan istasyon",
+   "müzik tanımayı başlat x4"
   ],
   "keep_original": false
  },
@@ -4743,7 +4799,8 @@
  },
  "Son izlenen nesneyi silmek için bir kez basın; izlenen tüm nesneleri silmek için iki kez basın - nesne izleyici": {
   "aliases": [
-   "izlenenleri sil"
+   "izlenenleri sil",
+   "tüm izlenenleri sil x2"
   ],
   "keep_original": false
  },
@@ -4761,7 +4818,10 @@
  },
  "Activate the officeAccessBridge2 shortcut layer; press twice for 9-minute persistent mode, three times for 22 minutes, or four or more times for no timeout - officeAccessBridge": {
   "aliases": [
-   "ofis katmanını aç"
+   "ofis katmanını aç",
+   "ofis katmanını 9 dakika aç x2",
+   "ofis katmanını 22 dakika aç x3",
+   "ofis katmanını süresiz aç x4"
   ],
   "keep_original": false
  },
@@ -4791,7 +4851,8 @@
  },
  "Read the current Excel cell formula. Press the shortcut twice quickly to show the formula in a browsable window - officeAccessBridge": {
   "aliases": [
-   "hücre formülü"
+   "hücre formülü",
+   "hücre formülünü pencerede göster x2"
   ],
   "keep_original": false
  },
@@ -4851,7 +4912,9 @@
  },
  "Download MP3 (single tap), MP4 (double tap), or WAV (triple tap) - uTubeDownload": {
   "aliases": [
-   "müziği indir"
+   "müziği indir",
+   "videoyu indir x2",
+   "wav olarak indir x3"
   ],
   "keep_original": false
  },
@@ -4925,7 +4988,8 @@
  "Ekranı karartarak ya da ekranda olanları göstererek ekran Perdesi statüsünü değiştirir. Ekran perdesi devre dışıyken, bir kez basılırsa ekran perdesi NVDA'yı yeniden başlatana kadar etkinleştirilir. Ekran perdesi etkinse, bu tuş kombinasyonu perdeyi devre dışı bırakır. İki kez basılırsa, devre dışı bırakılana kadar ekran karartılacaktır - Çeşitli": {
   "aliases": [
    "ekran perdesi etkin",
-   "perdeyi etkinleştir"
+   "perdeyi etkinleştir",
+   "ekran perdesini kalıcı aç x2"
   ],
   "keep_original": false
  },
