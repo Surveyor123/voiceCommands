@@ -81,7 +81,7 @@ Komutları kendi cümlenle söylemek için ifade düzenleyiciyi kullan. **Komutl
 3.  Komut yalnızca senin ifadelerine yanıt versin istiyorsan **Özgün açıklamayı da kullan** kutusunu temizle.
 4.  **Kaydet**'i seç.
 
-**Komuta birden çok kez basan ifadeler.** Bazı komutlar tuşlarına iki ya da üç kez basılınca başka bir şey yapar: saati bildiren komut ikinci basışta tarihi söyler. Bu ikinci işleme kendi ifadesini vermek için ifadeyi yaz, **Komuta kaç kez basılsın** listesinden bir sayı seç, sonra **İfadeyi ekle**'yi seç. Saati bildiren komut için "tarihi söyle" ifadesi 2 ile eklenirse komut tuşuna iki kez basılmış gibi çalışır; yalnızca tarih söylenir. İfade listesinde böyle bir ifade "tarihi söyle (2 kez basılır)" olarak görünür ve **Seçili ifadeyi düzenle** sayıyı listeye geri koyar. Aynı sözcükleri başka bir sayıyla yeniden eklersen öncekinin yerini alır. Sayı 2 ile 5 arasında olabilir; her komut türüne ne yaptığı için bkz. Komutu tekrarlamak.
+**Komuta birden çok kez basan ifadeler.** Bazı komutlar tuşlarına iki ya da üç kez basılınca başka bir şey yapar: saati bildiren komut ikinci basışta tarihi söyler. Bu ikinci işleme kendi ifadesini vermek için ifadeyi yaz, **Komutun kaç kez basıldığı** listesinden bir sayı seç, sonra **İfadeyi ekle**'yi seç. Saati bildiren komut için "tarihi söyle" ifadesi 2 ile eklenirse komut tuşuna iki kez basılmış gibi çalışır; yalnızca tarih söylenir. İfade listesinde böyle bir ifade "tarihi söyle (2 kez basıldı)" olarak görünür ve **Seçili ifadeyi düzenle** sayıyı listeye geri koyar. Aynı sözcükleri başka bir sayıyla yeniden eklersen öncekinin yerini alır. Sayı 2 ile 5 arasında olabilir; her komut türüne ne yaptığı için bkz. Komutu tekrarlamak.
 
 Sayı ifadenin sonunda " x2" ile " x5" arası olarak saklanır. Onu **Yeni ifade** alanına ya da içe aktardığın bir dosyaya kendin de yazabilirsin. x harfinin yanı sıra çarpı işareti (×), yıldız, x'e benzeyen Kiril ve Yunan harfleri ya da başka yazı sistemlerinin rakamlarıyla da yazılabilir; bu yüzden her klavyede yazılabilir.
 
@@ -175,10 +175,10 @@ Hepsi Girdi Hareketleri iletişim kutusunda, Sesli Komut kategorisindedir.
 | Sesli komut dinlemesini başlatır; dinlemeyi durdurup komutu çalıştırmak için tekrar basın ya da konuştuktan sonra bir an sessiz kalın                                             | Ana komuttur. Başlatmak için bir kez, durdurmak için tekrar bas.         |
 | Komut cümlesi yazabileceğin bir kutu açar                                                                                         | Yazılan ifadeyi aynı eşleştirmeden geçirir.                              |
 | Komutlar için kullanılan ifadeleri (takma adları) düzenleme penceresini açar                                                      | İfade düzenleyiciyi açar.                                                |
-| Tanıyıcının son duyduğunu, seçtiğin bir komutun söylenen ifadesi olarak ekleyen bir pencere açar                                  | Tanıyıcının bilmediği bir adı öğretir.                                   |
 | Sesli komut dinlenirken diğer uygulamaların sesini kısmayı açar ya da kapatır                                                     | Ses kısmayı açar ya da kapatır.                                          |
 | Konuştuktan sonra sessiz kalınca dinlemeyi kendiliğinden durdurmayı açar ya da kapatır                                            | Sessizlikte durdurmayı açar ya da kapatır.                               |
 | Konuşma modeli penceresini açar: modeli seç, indir ve yönet                                                                       | Konuşma modelini seçer, sorduktan sonra indirir ve model klasörünü açar. |
+| Tanıyıcının son duyduğunu, seçtiğin bir komutun söylenen ifadesi olarak ekleyen bir pencere açar                                  | Tanıyıcının bilmediği bir adı öğretir.                                   |
 | Kendi komutlarını eklemek için iletişim kutusunu açar: program, dosya, klasör ya da web adresi açma veya tuş kombinasyonuna basma | Kendi komutların için iletişim kutusunu açar.                            |
 
 ## Diğer uygulamaların sesini kısmak
@@ -259,6 +259,6 @@ Eklenti İngilizce yazılmıştır ve Türkçe çeviriyle gelir. Çevirmek için
 
 ## Lisans
 
-Sesli Komut, GNU Genel Kamu Lisansı sürüm 2 (GPL-2.0) altında lisanslanmıştır. Pakete dahil üçüncü taraf bileşenler ve lisansları [THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md) dosyasında listelenir.
+Sesli Komut, GNU Genel Kamu Lisansı sürüm 2 altında lisanslanmıştır.
 
 Eklentinin indirdiği sherpa-onnx çalışma zamanı Apache Lisansı 2.0 ile, içindeki ONNX Runtime kütüphanesi MIT lisansıyla lisanslanmıştır. Her ses tanıma modelinin kendi lisansı vardır (bkz. Ses tanıma modeli).

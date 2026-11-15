@@ -19,23 +19,27 @@ addon_info = AddonInfo(
 	addon_description=_("""Runs NVDA commands and common Windows actions by voice, using an offline speech recognition engine (Vosk or sherpa-onnx); your voice never leaves your computer. You can say any command from the Input Gestures dialog, built-in Windows commands such as "show desktop", "show taskbar" or "paste", and your own commands that open a program, file, folder or web address, or press a key combination. A speech model for your NVDA language is downloaded on first use. Assign keys in the Input Gestures dialog, under the Voice Commands category."""),
 
 	# version
-	addon_version="1.1.0",
+	addon_version="1.1.1",
 
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version
 	addon_changelog=_("""
-- Listening now stops by itself when you stay silent for about a second after speaking, as if you had pressed the key again. It can be turned off with a new toggle command (Input Gestures or the Tools menu); the silence length is the silence_seconds setting.
-- Added a Voice Commands submenu under NVDA's Tools menu with the add-on's commands.
-- Fixed Windows commands that use a letter, such as Windows+I, not working on keyboard layouts like Turkish Q.
-- Added "Teach the last spoken phrase" (Tools menu or an assignable gesture) to save what the recognizer heard as a phrase of a command, for names the speech model cannot recognize.
-- Added import and export of phrases in the phrase editor, with shortcuts Ctrl+I, Ctrl+E and Ctrl+S. Importing only adds; nothing you already have is changed or removed.
-- Phrase files can now name a command by its text ("description - category") instead of its id. Entries for commands that are not available yet are kept until they appear.
-- The heard-phrases list in the teach dialog now reports its checked state in every NVDA version.
-- Messages are no longer cut off by NVDA's focus speech after a dialog, file chooser or menu closes.
-- Added a Turkish set of short phrases that can be imported from the phrase editor.
-- Added a second speech engine, sherpa-onnx, with a Turkish model (turkish-stt) and models for English, French, German, Spanish and Russian. It is the default for a Turkish NVDA that has no Vosk model installed.
-- Added the Speech model dialog to the Tools menu, to choose, download and manage the speech model. It replaces the separate download and model folder items.
-- Text from the sherpa models is matched to commands more strictly, so an invented sentence no longer runs a wrong command; NVDA says what it heard instead. A word or two that fit exactly one command still run it, and a list opens when they fit several.
+## New
+- Phrases can now carry a press count. A phrase such as "say the date" can be stored on the "say the time" command with a count of 2, so saying it presses that command twice. A count you speak or type takes precedence.
+- The phrase editor has a new "Times the command is pressed" list (1 to 5), so nothing has to be typed. Phrases with a count are shown as "<phrase> (pressed N times)". Edit restores the count, and adding the same words with a different count replaces the earlier phrase.
+- The command box accepts the same suffix (for example "... x2").
+- Added 64 Turkish phrases for the extra presses of NVDA and add-on commands (date, spell, character descriptions, copy, open in browser, and so on). Existing phrases are unchanged. There is no phrase for the factory reset, so a misrecognition cannot trigger it.
+
+## Changes
+- Repeating a command by voice now behaves like real key presses. Saying "read title three times" previously ran the script three times in a row, so the work of the first and second press (speak, spell) was done as well. For scripts that react to multiple presses, only the Nth press is now performed. Other commands, key emulation included, still run N times.
+- If NVDA's internals are not available, the add-on falls back to running the command N times and cancels speech between runs, as a key press does.
+
+## Bug fixes
+- Fixed the volume of other applications sometimes staying lowered after a voice command. Players that close and reopen their audio session (on pause, next track or stream restart, such as media played through python.exe) left the new session at the ducked volume, because Windows remembers per-application volumes. The lowered volume could also be recorded as the "original" volume the next time listening started.
+- Volumes are now restored by also searching the current audio sessions for the same process still at the ducked volume, not only the sessions saved when ducking started.
+- Sessions that could not be restored stay pending (and in the recovery file) and are restored before the next ducking.
+- The volumes are checked again 1.5 and 4 seconds after a restore, to catch sessions opened by the spoken command itself (for example "next track").
+- Pending entries are dropped after 24 hours and their number is capped.
 """),
 
 	# Author(s)

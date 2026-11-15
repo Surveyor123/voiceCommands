@@ -13,7 +13,7 @@ NVDA possède déjà une description pour chaque commande dans sa boîte de dial
 
 ## Configuration requise
 
-- NVDA 2026.1 o ultérieur, version 64 bits, sous Windows.
+- NVDA 2026.1 ou ultérieur, version 64 bits, sous Windows.
 - Un microphone configuré comme périphérique d'enregistrement par défaut sous Windows.
 - Une connexion Internet pour une seule fois pour télécharger le modèle vocal (un petit modèle Vosk pèse environ 40 à 100 Mo ; les modèles Sherpa pèsent de 24 à 124 Mo, plus une mémoire d'exécution de 21 Mo qu'ils partagent tous).
 
@@ -65,7 +65,7 @@ Les descriptions de NVDA sont souvent des phrases complètes, par exemple "Annon
 | Ce que vous dites                                                                                           | Ce à quoi vous attendre                                                                     |
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | La première phrase de la description, comme "Annoncer la ligne courante sous le curseur d'application" | Fonctionne généralement bien. Pour beaucoup de commandes, la première phrase constitue toute la description. |
-| Une courte phrase que vous avez définie dans [l'éditeur de phrases](#your-own-phrases), comme "lire ligne"              | Exacte et très fiable. **Recommandée pour les commandes que vous utilisez quotidiennement.**   |
+| Une courte phrase que vous avez définie dans [l'éditeur de phrases](#vos-propres-phrases), comme "lire ligne"              | Exacte et très fiable. **Recommandée pour les commandes que vous utilisez quotidiennement.**   |
 | Une courte paraphrase personnalisée non définie nulle part, comme "lire la ligne actuelle"           | Moins fiable. Cela peut ouvrir la liste ou correspondre à une commande similaire.           |
 
 Deux choses aident dans la pratique. Prononcez la phrase à un rythme régulier, dans un moment de calme, et n'omettez pas les mots distinctifs. Et définissez également des phrases courtes pour les commandes que vous utilisez le plus souvent: cela ne prend qu'une minute et rend tout plus rapide.
@@ -80,6 +80,10 @@ Utilisez l'éditeur de phrases pour prononcer les commandes à votre façon. Ass
 2.  Saisissez votre phrase dans **Nouvelle phrase** et choisissez **Ajouter une phrase**. Vous pouvez ajouter plusieurs phrases à une même commande. Pour en modifier ou en supprimer une, sélectionnez-la dans **Phrases que vous dites pour cette commande** et choisissez **Modifier la phrase sélectionnée** ou **Supprimer la phrase sélectionnée**.
 3.  Décochez **Utiliser également la description d'origine** si la commande ne doit répondre qu'à vos phrases.
 4.  Choisissez **Enregistrer**.
+
+**Phrases qui appuient plusieurs fois sur la commande.** Certaines commandes font autre chose lorsqu'on appuie deux ou trois fois sur leur touche: la commande qui annonce l'heure annonce la date au deuxième appui. Pour donner une phrase propre à cette deuxième action, saisissez la phrase, choisissez un nombre dans **Nombre d'appuis sur la commande**, puis choisissez **Ajouter une phrase**. Pour la commande qui annonce l'heure, la phrase "dire la date" avec 2 l'exécute comme si sa touche avait été pressée deux fois, et seule la date est annoncée. La liste affiche une telle phrase sous la forme "dire la date (appuyé 2 fois)", et **Modifier la phrase sélectionnée** remet le nombre dans la liste. Ajouter à nouveau les mêmes mots avec un autre nombre remplace la phrase précédente. Le nombre peut aller de 2 à 5; voir Répéter une commande pour savoir ce qu'il fait avec chaque type de commande.
+
+Le nombre est enregistré à la fin de la phrase, sous la forme " x2" à " x5". Vous pouvez aussi le saisir vous-même dans **Nouvelle phrase**, ou l'écrire dans un fichier que vous importez. Outre la lettre x, il peut s'écrire avec le signe de multiplication (×), un astérisque, les lettres cyrilliques et grecques qui ressemblent à un x, ou des chiffres d'autres écritures, de sorte qu'il peut être saisi sur n'importe quel clavier.
 
 Les bonnes phrases sont courtes, deux à quatre mots, et sonnent différemment les unes des autres. Vos phrases sont prioritaires sur les descriptions d'origine, et fonctionnent avec la fonction de répétition ainsi que la liste de candidats, comme n'importe quelle autre commande. L'éditeur affiche les commandes disponibles dans l'application où vous l'avez ouvert, ouvrez-le donc dans une application pour modifier les commandes de cette application.
 
@@ -107,7 +111,7 @@ Dans l'éditeur de phrases, ces raccourcis fonctionnent peu importe où se trouv
 
 Le fichier a le même format que `aliases.json` dans le dossier des paramètres des Commandes Vocales (voir Paramètres et données), une copie de ce fichier peut donc aussi être importée. Les phrases sont associées aux commandes par un identifiant indépendant de la langue de l'interface, un fichier créé par l'éditeur fonctionne donc avec n'importe quelle langue NVDA. Un fichier peut également nommer une commande par son texte plutôt que par son identifiant, tel qu'il apparaît dans la liste de l'éditeur: `description - category`, par exemple `Show desktop - Windows commands`. Une telle entrée ne correspond que si NVDA utilise la langue de ce texte. Une phrase pour une commande inexistante sur votre ordinateur, par exemple, une commande d'une application que vous n'avez pas installée est conservée mais ne fait rien tant que cette commande n'existe pas. L'éditeur n'affiche que les commandes disponibles à l'endroit où vous l'avez ouvert, ouvrez-le donc dans une application pour voir les phrases importées des commandes de cette application. Vos propres commandes (voir Vos propres commandes) reçoivent un identifiant différent sur chaque ordinateur, leurs phrases ne sont donc pas conservées; ajoutez plutôt les mêmes phrases aux commandes sur l'autre ordinateur.
 
-**Un ensemble turc tout prêt.** L'extension est fournie avec le `tr-phrases.json` dans son dossier `locale\tr\LC_MESSAGES`: il s'agit de phrases courtes en turc (deux ou trois mots) pour les commandes propres à NVDA et de nombreuses extensions populaires. Importez-le comme n'importe quel autre fichier. Il nomme les commandes d'après leur texte (voir ci-dessus), de sorte qu'il fonctionne avec une version turque de NVDA. Pour une commande pour laquelle vous n'avez aucun paramètre, il désactive également la description longue d'origine, afin que cette commande ne réponde qu'à la phrase courte; réactivez **Utiliser également la description d'origine** dans l'éditeur si vous souhaitez les deux.
+**Un ensemble turc tout prêt.** L'extension est fournie avec le `tr-phrases.json` dans son dossier `locale\tr\LC_MESSAGES`: il s'agit de phrases courtes en turc (deux ou trois mots) pour les commandes propres à NVDA et de nombreuses extensions populaires. Importez-le comme n'importe quel autre fichier. Il nomme les commandes d'après leur texte (voir ci-dessus), de sorte qu'il fonctionne avec une version turque de NVDA. Pour une commande pour laquelle vous n'avez aucun paramètre, il désactive également la description longue d'origine, afin que cette commande ne réponde qu'à la phrase courte; réactivez **Utiliser également la description d'origine** dans l'éditeur si vous souhaitez les deux. L'ensemble comprend aussi des phrases pour les appuis supplémentaires des commandes, écrites avec un nombre d'appuis à la fin, par exemple "tarihi söyle x2" pour la commande qui annonce l'heure (voir Vos propres phrases).
 
 ## Exclure des commandes du contrôle vocal
 
@@ -123,9 +127,11 @@ Exclure une commande améliore la fiabilité de la reconnaissance: moins il y a 
 
 ## Répéter une commande
 
-Terminez la phrase par un nombre et le mot "fois": "lire la ligne deux fois", "ligne suivante trois fois". Le nombre peut être compris entre deux et cinq, et les chiffres sont également acceptés ("3 fois"). La commande s'exécute autant de fois de suite.
+Terminez la phrase par un nombre et le mot "fois": "lire la ligne deux fois", "ligne suivante trois fois". Le nombre peut être compris entre deux et cinq, et les chiffres sont également acceptés ("3 fois"). Vous pouvez aussi intégrer la répétition à l'une de vos propres phrases (voir Vos propres phrases); si vous dites aussi une répétition, c'est celle que vous avez dite qui est utilisée.
 
-Pour les commandes qui réagissent à des pressions répétées, NVDA comptabilise cela comme des appuis de touches répétés. Par exemple, la commande qui annonce la ligne courante la lit une fois, l'épelle deux fois et donne le code international trois fois. Pour d'autres commandes, comme le déplacement à la ligne suivante, l'effet est simplement que cela se produit plusieurs fois.
+Ce qui se passe dépend de la commande. Une commande qui réagit à des appuis répétés, parce qu'elle fait autre chose au deuxième ou au troisième appui, n'est exécutée qu'une seule fois, et NVDA est informé que sa touche a été pressée autant de fois. La commande qui annonce la ligne courante la lit en un appui, l'épelle en deux et donne la description des caractères en trois; "lire la ligne trois fois" donne donc uniquement la description des caractères, comme le fait un triple appui sur la touche; elle ne lit ni n'épelle d'abord la ligne. Toute autre commande, comme le déplacement à la ligne suivante, est simplement exécutée autant de fois de suite.
+
+Si l'extension ne peut pas savoir qu'une commande réagit à des appuis répétés, elle la traite comme n'importe quelle autre et l'exécute autant de fois de suite. Au niveau de journalisation Débogage, la ligne "Voice command repeat" indique ce qu'elle a constaté (voir Dépannage).
 
 ## Appuyer sur des touches par la voix
 
@@ -158,7 +164,7 @@ Lorsque plusieurs commandes semblent convenir, ou qu'aucune ne convient suffisam
 
 ## Saisir au clavier plutôt que parler
 
-Assignez une touche à **Ouvre une boîte de dialogue dans laquelle vous pouvez saisir une phrase de commande**. Le texte saisi est analysé de la même manière que la commande vocale, ce qui est pratique pour tester des phrases et dans les situations où vous ne pouvez pas parler.
+Assignez une touche à **Ouvre une boîte de dialogue dans laquelle vous pouvez saisir une phrase de commande**. Le texte saisi est analysé de la même manière que la commande vocale, ce qui est pratique pour tester des phrases et dans les situations où vous ne pouvez pas parler. La répétition fonctionne aussi ici: terminez la phrase par "deux fois" comme décrit dans Répéter une commande, ou par un nombre d'appuis tel que "x2" (voir Vos propres phrases).
 
 ## Référence des commandes
 
@@ -178,6 +184,8 @@ Toutes ces commandes se trouvent dans la boîte de dialogue de Gestes de command
 ## Atténuation du volume des autres applications
 
 La musique et les vidéos seraient captées par le microphone et perturberaient le système de reconnaissance. Pendant l'écoute, le volume de toutes les sessions audio, à l'exception de celle de NVDA, est atténué à 20% de son volume, et il est rétabli lorsque vous l'arrêtez. Une session dont vous modifiez vous-même le volume entre-temps reste inchangée.
+
+Certains lecteurs, comme les navigateurs et les médias lus via python.exe, ferment leur session audio et en ouvrent une nouvelle, par exemple lorsque vous mettez en pause, lorsque la piste change ou lorsque la commande que vous avez prononcée la modifie. Windows ouvre la nouvelle session au volume atténué dont il se souvenait. L'extension recherche donc aussi ces sessions par le nom de l'application et les remonte également: juste après l'arrêt de l'écoute, puis de nouveau 1.5 et 4 secondes plus tard, car une commande comme "piste suivante" n'ouvre sa session qu'après l'arrêt de l'écoute. Une session qui n'a pas pu être restaurée du tout est mémorisée et corrigée avant la prochaine atténuation, de sorte que le volume atténué n'est jamais pris pour le volume d'origine. Ces enregistrements sont conservés 24 heures au maximum.
 
 Windows mémorise les volumes de chaque application, l'extension enregistre donc également un petit fichier de récupération. Si NVDA se ferme pendant que le volume est atténué, les volumes d'origine sont rétablis au prochain démarrage de NVDA.
 
@@ -218,7 +226,7 @@ Stockés dans `%AppData%\nvda\voiceCommands`, ou dans le dossier de configuratio
 | `aliases.json`          | Vos phrases issues de l'éditeur de phrases et la boîte de dialogue enseigner.                                                               |
 | `userCommands.json`     | Vos propres commandes.                                                                                                      |
 | `settings.json`         | Si l'atténuation du volume est activée, s'il faut demander confirmation du téléchargement au démarrage, si l'écoute s'arrête après un silence et au bout de combien de temps, et le moteur vocal et le modèle que vous avez choisis. |
-| `ducking-recovery.json` | Temporaire: existe uniquement pendant que le volume des autres applications est atténué, pour le restaurer après un plantage.                        |
+| `ducking-recovery.json` | Temporaire: existe uniquement pendant que le volume des autres applications est atténué, et tant qu'un volume n'a pas pu être restauré (24 heures au maximum), pour le restaurer après un plantage.                        |
 | `model\`                | Les modèles vocaux: les modèles Vosk et les dossiers `sherpa-...`.                                                            |
 | `sherpa-runtime\`       | Le runtime sherpa-onnx, téléchargé en même temps que le premier modèle sherpa.                                               |
 
@@ -237,6 +245,8 @@ Les valeurs en haut de `globalPlugins/voiceCommands/__init__.py`, tels que les s
 | La mauvaise commande s'exécute                         | Définissez une courte phrase personnalisée pour cette commande dans l'éditeur de phrases.                                                                                                                                                                                                                                                                                                                                                                                                   |
 | "Cette commande n'est pas disponible pour le moment"      | La commande appartient à une autre application. Dites-le pendant que cette application a le focus.                                                                                                                                                                                                                                                                                                                                                                                       |
 | La musique ou la vidéo continue d'interférer           | Certaines applications n'exposent pas de session audio qui puisse être atténué. Mettez-les en pause avant d'écouter.                                                                                                                                                                                                                                                                                                                                                                         |
+| Une commande répétée fait aussi le travail des appuis précédents | L'extension n'a pas pu savoir que la commande réagit à des appuis répétés; elle l'a donc exécutée autant de fois de suite (par exemple, "titre de la fenêtre trois fois" a lu le titre, l'a épelé et l'a copié). Au niveau de journalisation Débogage, la ligne "Voice command repeat: 3, script counts presses: False" le confirme. Une telle commande ne peut être répétée qu'en l'exécutant plusieurs fois: appuyez sur sa touche au lieu de la prononcer, ou indiquez à l'auteur de l'extension de quelle commande il s'agit. |
+| Un lecteur reste silencieux après une commande | Le lecteur a rouvert sa session audio alors que le volume était atténué. L'extension remonte ces sessions juste après l'arrêt de l'écoute, puis de nouveau 1.5 et 4 secondes plus tard. Si l'une d'elles reste silencieuse, remontez son volume une fois dans le mélangeur de volume de Windows. Au niveau de journalisation Débogage, la ligne "Voice command: could not restore ... keeping it pending" indique le nom de l'application. |
 | Vous voulez voir ce qui a été entendu                 | Ouvrez **Enseigner la dernière phrase prononcée** juste après avoir parlé: sa liste affiche les textes produits par le système de reconnaissance. Pour plus de détails, définissez le niveau de journalisation de NVDA sur Débogage(Menu NVDA, Préférences, Paramètres, Confidentialité et sécurité, Niveau de journalisation), parlez et ouvrez le journal (NVDA+F1): les lignes "Voice command recognition" montrent ce que chaque système de reconnaissance a entendu, et les lignes "Voice command candidate" montrent à quel point les meilleures coïncidences étaient proches. Ces lignes ne sont écrites qu'au niveau Débogage. |
 
 ## Confidentialité
