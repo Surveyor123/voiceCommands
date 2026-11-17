@@ -1,0 +1,2790 @@
+{
+ "Réactualiser le contenu du document - Mode navigation": {
+  "aliases": [
+   "actualiser document"
+  ],
+  "keep_original": true
+ },
+ "Activer l'objet courant dans le document - Mode navigation": {
+  "aliases": [
+   "activer cet élément"
+  ],
+  "keep_original": false
+ },
+ "Dresser la liste de différents types d'éléments dans le document courant - Mode navigation": {
+  "aliases": [
+   "liste des éléments"
+  ],
+  "keep_original": false
+ },
+ "Sélectionne le type d'élément suivant pour la navigation tactile par élément - Mode navigation": {
+  "aliases": [
+   "type tactile suivant"
+  ],
+  "keep_original": false
+ },
+ "Sélectionne le type d'élément précédent pour la navigation tactile par élément - Mode navigation": {
+  "aliases": [
+   "type tactile précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller à l'élément suivant du type sélectionné pour la navigation tactile par élément - Mode navigation": {
+  "aliases": [
+   "élément tactile suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller à l'élément précédent du type sélectionné pour la navigation tactile par élément - Mode navigation": {
+  "aliases": [
+   "élément tactile précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller à la fin de l'élément de conteneur tel qu'une liste ou un tableau - Mode navigation": {
+  "aliases": [
+   "sortir du bloc"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver le mode d'affichage tel qu'à l'écran du contenu du document - Mode navigation": {
+  "aliases": [
+   "disposition écran"
+  ],
+  "keep_original": false
+ },
+ "Aller au début de l'élément de conteneur tel qu'une liste ou un tableau - Mode navigation": {
+  "aliases": [
+   "début du bloc"
+  ],
+  "keep_original": false
+ },
+ "Basculer entre le mode navigation et le mode formulaire. En mode formulaire, les touches sont passées directement à l'application, vous permettant d'interagir avec elle. En mode navigation, vous pouvez naviguer dans le document avec le curseur, les touches de navigation rapide, etc. - Mode navigation": {
+  "aliases": [
+   "changer de mode"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver la navigation par une seule lettre. Quand cette fonction est activée en mode navigation, les touches mènent aux différents types d'éléments sur la page. Quand elle est désactivée, les touches sont passées à l'application - Mode navigation": {
+  "aliases": [
+   "navigation par lettre"
+  ],
+  "keep_original": false
+ },
+ "Afficher la description longue à cette position s'il y en a une - Mode navigation": {
+  "aliases": [
+   "description longue"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver le mode de sélection natif - Mode navigation": {
+  "aliases": [
+   "sélection native"
+  ],
+  "keep_original": false
+ },
+ "Sauter après la fin d'un bloc de liens - Mode navigation": {
+  "aliases": [
+   "sauter les liens"
+  ],
+  "keep_original": false
+ },
+ "Remonter avant un bloc de liens - Mode navigation": {
+  "aliases": [
+   "sauter liens arrière"
+  ],
+  "keep_original": false
+ },
+ "Rechercher un texte à partir de la position courante du curseur - Mode navigation": {
+  "aliases": [
+   "chercher depuis ici"
+  ],
+  "keep_original": false
+ },
+ "Aller à la citation suivante - Mode navigation": {
+  "aliases": [
+   "citation suivante"
+  ],
+  "keep_original": true
+ },
+ "Aller au texte de même style suivant - Mode navigation": {
+  "aliases": [
+   "même style suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au séparateur suivant - Mode navigation": {
+  "aliases": [
+   "séparateur suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller à la barre de progression suivante - Mode navigation": {
+  "aliases": [
+   "barre de progression suivante"
+  ],
+  "keep_original": true
+ },
+ "Aller au titre suivant - Mode navigation": {
+  "aliases": [
+   "titre suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'annotation suivante - Mode navigation": {
+  "aliases": [
+   "annotation suivante"
+  ],
+  "keep_original": true
+ },
+ "Aller au paragraphe suivant aligné verticalement - Mode navigation": {
+  "aliases": [
+   "paragraphe vertical suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au bouton suivant - Mode navigation": {
+  "aliases": [
+   "bouton suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller au texte de style différent suivant - Mode navigation": {
+  "aliases": [
+   "style différent suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller à la figure suivante - Mode navigation": {
+  "aliases": [
+   "figure suivante"
+  ],
+  "keep_original": true
+ },
+ "Aller au champ de formulaire suivant - Mode navigation": {
+  "aliases": [
+   "champ de formulaire suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller au bouton bascule suivant - Mode navigation": {
+  "aliases": [
+   "bouton bascule suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller au graphique suivant - Mode navigation": {
+  "aliases": [
+   "graphique suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller au groupe suivant - Mode navigation": {
+  "aliases": [
+   "groupe suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'objet embarqué suivant - Mode navigation": {
+  "aliases": [
+   "objet incorporé suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'erreur suivante - Mode navigation": {
+  "aliases": [
+   "erreur suivante"
+  ],
+  "keep_original": true
+ },
+ "Aller au lien suivant - Mode navigation": {
+  "aliases": [
+   "lien suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'élément de liste suivant - Mode navigation": {
+  "aliases": [
+   "élément de liste suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller à la liste suivante - Mode navigation": {
+  "aliases": [
+   "liste suivante"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'article suivant - Mode navigation": {
+  "aliases": [
+   "article suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller à la formule mathématique suivante - Mode navigation": {
+  "aliases": [
+   "formule suivante"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'élément de menu suivant - Mode navigation": {
+  "aliases": [
+   "élément de menu suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller au paragraphe de texte suivant - Mode navigation": {
+  "aliases": [
+   "paragraphe suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller à la case à cocher suivante - Mode navigation": {
+  "aliases": [
+   "case à cocher suivante"
+  ],
+  "keep_original": true
+ },
+ "aller à la référence suivante - Mode navigation": {
+  "aliases": [
+   "référence suivante"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'onglet suivant - Mode navigation": {
+  "aliases": [
+   "élément onglet suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller au bouton radio suivant - Mode navigation": {
+  "aliases": [
+   "bouton radio suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller à la liste déroulante suivante - Mode navigation": {
+  "aliases": [
+   "liste déroulante suivante"
+  ],
+  "keep_original": true
+ },
+ "Aller au potentiomètre suivant - Mode navigation": {
+  "aliases": [
+   "curseur suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller à la région suivante - Mode navigation": {
+  "aliases": [
+   "repère suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller au tableau suivant - Mode navigation": {
+  "aliases": [
+   "tableau suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'élément cliquable suivant - Mode navigation": {
+  "aliases": [
+   "cliquable suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller à la zone d'édition suivante - Mode navigation": {
+  "aliases": [
+   "champ de saisie suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller au lien non visité suivant - Mode navigation": {
+  "aliases": [
+   "lien non visité suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au lien visité suivant - Mode navigation": {
+  "aliases": [
+   "lien visité suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au cadre suivant - Mode navigation": {
+  "aliases": [
+   "cadre suivant"
+  ],
+  "keep_original": true
+ },
+ "Trouver l'occurrence suivante du texte recherché à partir de la position courante du curseur - Mode navigation": {
+  "aliases": [
+   "résultat suivant"
+  ],
+  "keep_original": true
+ },
+ "Aller au séparateur précédent - Mode navigation": {
+  "aliases": [
+   "séparateur précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller à la citation précédente - Mode navigation": {
+  "aliases": [
+   "citation précédente"
+  ],
+  "keep_original": true
+ },
+ "Aller au texte de même style précédent - Mode navigation": {
+  "aliases": [
+   "même style précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller à la barre de progression précédente - Mode navigation": {
+  "aliases": [
+   "barre de progression précédente"
+  ],
+  "keep_original": true
+ },
+ "Aller au titre précédent - Mode navigation": {
+  "aliases": [
+   "titre précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'annotation précédente - Mode navigation": {
+  "aliases": [
+   "annotation précédente"
+  ],
+  "keep_original": true
+ },
+ "Aller au paragraphe précédent aligné verticalement - Mode navigation": {
+  "aliases": [
+   "paragraphe vertical précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller au bouton précédent - Mode navigation": {
+  "aliases": [
+   "bouton précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller au texte de style différent précédent - Mode navigation": {
+  "aliases": [
+   "style différent précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller à la figure précédente - Mode navigation": {
+  "aliases": [
+   "figure précédente"
+  ],
+  "keep_original": true
+ },
+ "Aller au champ de formulaire précédent - Mode navigation": {
+  "aliases": [
+   "champ de formulaire précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller au bouton bascule précédent - Mode navigation": {
+  "aliases": [
+   "bouton bascule précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller au graphique précédent - Mode navigation": {
+  "aliases": [
+   "graphique précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller au groupe précédent - Mode navigation": {
+  "aliases": [
+   "groupe précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'objet embarqué précédent - Mode navigation": {
+  "aliases": [
+   "objet incorporé précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'erreur précédente - Mode navigation": {
+  "aliases": [
+   "erreur précédente"
+  ],
+  "keep_original": true
+ },
+ "Aller au lien précédent - Mode navigation": {
+  "aliases": [
+   "lien précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'élément de liste précédent - Mode navigation": {
+  "aliases": [
+   "élément de liste précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller à la liste précédente - Mode navigation": {
+  "aliases": [
+   "liste précédente"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'article précédent - Mode navigation": {
+  "aliases": [
+   "article précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller à la formule mathématique précédente - Mode navigation": {
+  "aliases": [
+   "formule précédente"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'élément de menu précédent - Mode navigation": {
+  "aliases": [
+   "élément de menu précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller au paragraphe de texte précédent - Mode navigation": {
+  "aliases": [
+   "paragraphe précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller à la case à cocher précédente - Mode navigation": {
+  "aliases": [
+   "case à cocher précédente"
+  ],
+  "keep_original": true
+ },
+ "aller à la référence précédente - Mode navigation": {
+  "aliases": [
+   "référence précédente"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'onglet précédent - Mode navigation": {
+  "aliases": [
+   "élément onglet précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller au bouton radio précédent - Mode navigation": {
+  "aliases": [
+   "bouton radio précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller à la liste déroulante précédente - Mode navigation": {
+  "aliases": [
+   "liste déroulante précédente"
+  ],
+  "keep_original": true
+ },
+ "Aller au potentiomètre précédent - Mode navigation": {
+  "aliases": [
+   "curseur précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller à la région précédente - Mode navigation": {
+  "aliases": [
+   "repère précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller au tableau précédent - Mode navigation": {
+  "aliases": [
+   "tableau précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller à l'élément cliquable précédent - Mode navigation": {
+  "aliases": [
+   "cliquable précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller à la zone d'édition précédente - Mode navigation": {
+  "aliases": [
+   "champ de saisie précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller au lien non visité précédent - Mode navigation": {
+  "aliases": [
+   "lien non visité précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller au lien visité précédent - Mode navigation": {
+  "aliases": [
+   "lien visité précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller au cadre précédent - Mode navigation": {
+  "aliases": [
+   "cadre précédent"
+  ],
+  "keep_original": true
+ },
+ "Trouver l'occurrence précédente du texte recherché à partir de la position courante du curseur - Mode navigation": {
+  "aliases": [
+   "résultat précédent"
+  ],
+  "keep_original": true
+ },
+ "Aller au titre suivant de niveau 1 - Mode navigation": {
+  "aliases": [
+   "titre niveau un suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre précédent de niveau 1 - Mode navigation": {
+  "aliases": [
+   "titre niveau un précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre suivant de niveau 2 - Mode navigation": {
+  "aliases": [
+   "titre niveau deux suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre précédent de niveau 2 - Mode navigation": {
+  "aliases": [
+   "titre niveau deux précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre suivant de niveau 3 - Mode navigation": {
+  "aliases": [
+   "titre niveau trois suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre précédent de niveau 3 - Mode navigation": {
+  "aliases": [
+   "titre niveau trois précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre suivant de niveau 4 - Mode navigation": {
+  "aliases": [
+   "titre niveau quatre suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre précédent de niveau 4 - Mode navigation": {
+  "aliases": [
+   "titre niveau quatre précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre suivant de niveau 5 - Mode navigation": {
+  "aliases": [
+   "titre niveau cinq suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre précédent de niveau 5 - Mode navigation": {
+  "aliases": [
+   "titre niveau cinq précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre suivant de niveau 6 - Mode navigation": {
+  "aliases": [
+   "titre niveau six suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre précédent de niveau 6 - Mode navigation": {
+  "aliases": [
+   "titre niveau six précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre suivant de niveau 7 - Mode navigation": {
+  "aliases": [
+   "titre niveau sept suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre précédent de niveau 7 - Mode navigation": {
+  "aliases": [
+   "titre niveau sept précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre suivant de niveau 8 - Mode navigation": {
+  "aliases": [
+   "titre niveau huit suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre précédent de niveau 8 - Mode navigation": {
+  "aliases": [
+   "titre niveau huit précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre suivant de niveau 9 - Mode navigation": {
+  "aliases": [
+   "titre niveau neuf suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au titre précédent de niveau 9 - Mode navigation": {
+  "aliases": [
+   "titre niveau neuf précédent"
+  ],
+  "keep_original": false
+ },
+ "Ouvrir le menu Démarrer - Commandes Windows": {
+  "aliases": [
+   "menu démarrer"
+  ],
+  "keep_original": true
+ },
+ "Ouvrir le centre de notifications - Commandes Windows": {
+  "aliases": [
+   "centre de notifications"
+  ],
+  "keep_original": true
+ },
+ "Verrouiller l'ordinateur - Commandes Windows": {
+  "aliases": [
+   "verrouiller écran"
+  ],
+  "keep_original": true
+ },
+ "Rechercher - Commandes Windows": {
+  "aliases": [
+   "rechercher du texte"
+  ],
+  "keep_original": true
+ },
+ "Ouvrir l'Explorateur de fichiers - Commandes Windows": {
+  "aliases": [
+   "ouvrir explorateur"
+  ],
+  "keep_original": true
+ },
+ "Ouvrir un fichier - Commandes Windows": {
+  "aliases": [
+   "ouvrir un document"
+  ],
+  "keep_original": true
+ },
+ "Faire une capture d'écran - Commandes Windows": {
+  "aliases": [
+   "capture écran"
+  ],
+  "keep_original": true
+ },
+ "Ouvrir le panneau des émojis - Commandes Windows": {
+  "aliases": [
+   "panneau émojis"
+  ],
+  "keep_original": true
+ },
+ "Annuler - Commandes Windows": {
+  "aliases": [
+   "annuler action"
+  ],
+  "keep_original": true
+ },
+ "Page précédente - Commandes Windows": {
+  "aliases": [
+   "retour arrière page"
+  ],
+  "keep_original": true
+ },
+ "Ouvrir le Gestionnaire des tâches - Commandes Windows": {
+  "aliases": [
+   "gestionnaire des tâches"
+  ],
+  "keep_original": true
+ },
+ "Afficher la vue des tâches - Commandes Windows": {
+  "aliases": [
+   "afficher fenêtres ouvertes"
+  ],
+  "keep_original": true
+ },
+ "Afficher la barre des tâches - Commandes Windows": {
+  "aliases": [
+   "barre des tâches"
+  ],
+  "keep_original": true
+ },
+ "Ouvrir les paramètres rapides - Commandes Windows": {
+  "aliases": [
+   "paramètres rapides"
+  ],
+  "keep_original": true
+ },
+ "Rouvrir l'onglet fermé - Commandes Windows": {
+  "aliases": [
+   "restaurer onglet"
+  ],
+  "keep_original": true
+ },
+ "Enregistrer - Commandes Windows": {
+  "aliases": [
+   "enregistrer fichier"
+  ],
+  "keep_original": true
+ },
+ "Couper - Commandes Windows": {
+  "aliases": [
+   "couper sélection"
+  ],
+  "keep_original": true
+ },
+ "Copier - Commandes Windows": {
+  "aliases": [
+   "copier dans presse-papiers"
+  ],
+  "keep_original": true
+ },
+ "Restaurer les fenêtres réduites - Commandes Windows": {
+  "aliases": [
+   "restaurer fenêtres"
+  ],
+  "keep_original": true
+ },
+ "Afficher le bureau - Commandes Windows": {
+  "aliases": [
+   "aller au bureau"
+  ],
+  "keep_original": true
+ },
+ "Lire ou mettre en pause le média - Commandes Windows": {
+  "aliases": [
+   "lecture pause"
+  ],
+  "keep_original": true
+ },
+ "Ouvrir l'historique du presse-papiers - Commandes Windows": {
+  "aliases": [
+   "historique presse-papiers"
+  ],
+  "keep_original": true
+ },
+ "Agrandir la fenêtre - Commandes Windows": {
+  "aliases": [
+   "maximiser fenêtre"
+  ],
+  "keep_original": true
+ },
+ "Fermer la fenêtre - Commandes Windows": {
+  "aliases": [
+   "fermer cette fenêtre"
+  ],
+  "keep_original": true
+ },
+ "Réduire la fenêtre - Commandes Windows": {
+  "aliases": [
+   "réduire cette fenêtre"
+  ],
+  "keep_original": true
+ },
+ "Ancrer la fenêtre à droite - Commandes Windows": {
+  "aliases": [
+   "ancrer à droite"
+  ],
+  "keep_original": true
+ },
+ "Ancrer la fenêtre à gauche - Commandes Windows": {
+  "aliases": [
+   "ancrer à gauche"
+  ],
+  "keep_original": true
+ },
+ "Fermer le bureau virtuel - Commandes Windows": {
+  "aliases": [
+   "fermer ce bureau"
+  ],
+  "keep_original": true
+ },
+ "Fermer l'onglet - Commandes Windows": {
+  "aliases": [
+   "fermer cet onglet"
+  ],
+  "keep_original": true
+ },
+ "Augmenter le volume - Commandes Windows": {
+  "aliases": [
+   "plus fort"
+  ],
+  "keep_original": true
+ },
+ "Baisser le volume - Commandes Windows": {
+  "aliases": [
+   "moins fort"
+  ],
+  "keep_original": true
+ },
+ "Couper ou rétablir le son - Commandes Windows": {
+  "aliases": [
+   "muet",
+   "couper le son"
+  ],
+  "keep_original": true
+ },
+ "Afficher la zone de notification - Commandes Windows": {
+  "aliases": [
+   "zone de notification"
+  ],
+  "keep_original": true
+ },
+ "Piste suivante - Commandes Windows": {
+  "aliases": [
+   "chanson suivante"
+  ],
+  "keep_original": true
+ },
+ "Bureau virtuel suivant - Commandes Windows": {
+  "aliases": [
+   "bureau suivant"
+  ],
+  "keep_original": true
+ },
+ "Onglet suivant - Commandes Windows": {
+  "aliases": [
+   "passer onglet suivant"
+  ],
+  "keep_original": true
+ },
+ "Réduire toutes les fenêtres - Commandes Windows": {
+  "aliases": [
+   "tout réduire"
+  ],
+  "keep_original": true
+ },
+ "Tout sélectionner - Commandes Windows": {
+  "aliases": [
+   "sélectionner tout"
+  ],
+  "keep_original": true
+ },
+ "Ouvrir la recherche Windows - Commandes Windows": {
+  "aliases": [
+   "recherche windows"
+  ],
+  "keep_original": true
+ },
+ "Ouvrir les paramètres Windows - Commandes Windows": {
+  "aliases": [
+   "paramètres windows"
+  ],
+  "keep_original": true
+ },
+ "Démarrer la dictée vocale de Windows - Commandes Windows": {
+  "aliases": [
+   "dictée vocale"
+  ],
+  "keep_original": true
+ },
+ "Ouvrir le menu de projection de l'affichage - Commandes Windows": {
+  "aliases": [
+   "projeter écran"
+  ],
+  "keep_original": true
+ },
+ "Coller - Commandes Windows": {
+  "aliases": [
+   "coller du presse-papiers"
+  ],
+  "keep_original": true
+ },
+ "Imprimer - Commandes Windows": {
+  "aliases": [
+   "envoyer imprimante"
+  ],
+  "keep_original": true
+ },
+ "Créer un nouveau document - Commandes Windows": {
+  "aliases": [
+   "nouvel élément"
+  ],
+  "keep_original": true
+ },
+ "Nouveau bureau virtuel - Commandes Windows": {
+  "aliases": [
+   "ajouter bureau"
+  ],
+  "keep_original": true
+ },
+ "Nouvel onglet - Commandes Windows": {
+  "aliases": [
+   "ouvrir onglet"
+  ],
+  "keep_original": true
+ },
+ "Renommer - Commandes Windows": {
+  "aliases": [
+   "changer nom"
+  ],
+  "keep_original": true
+ },
+ "Actualiser - Commandes Windows": {
+  "aliases": [
+   "recharger page"
+  ],
+  "keep_original": true
+ },
+ "Rétablir - Commandes Windows": {
+  "aliases": [
+   "refaire action"
+  ],
+  "keep_original": true
+ },
+ "Ouvrir la boîte de dialogue Exécuter - Commandes Windows": {
+  "aliases": [
+   "boîte exécuter"
+  ],
+  "keep_original": true
+ },
+ "Piste précédente - Commandes Windows": {
+  "aliases": [
+   "chanson précédente"
+  ],
+  "keep_original": true
+ },
+ "Passer à la fenêtre précédente - Commandes Windows": {
+  "aliases": [
+   "changer fenêtre"
+  ],
+  "keep_original": true
+ },
+ "Bureau virtuel précédent - Commandes Windows": {
+  "aliases": [
+   "bureau précédent"
+  ],
+  "keep_original": true
+ },
+ "Onglet précédent - Commandes Windows": {
+  "aliases": [
+   "passer onglet précédent"
+  ],
+  "keep_original": true
+ },
+ "Propriétés - Commandes Windows": {
+  "aliases": [
+   "afficher propriétés"
+  ],
+  "keep_original": true
+ },
+ "Page suivante - Commandes Windows": {
+  "aliases": [
+   "avancer page"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver l'annonce des citations - Mise en forme des documents": {
+  "aliases": [
+   "annonce des citations"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des commentaires - Mise en forme des documents": {
+  "aliases": [
+   "annonce des commentaires"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver l'annonce des titres - Mise en forme des documents": {
+  "aliases": [
+   "annonce des titres"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver l'annonce des modifications - Mise en forme des documents": {
+  "aliases": [
+   "annonce des révisions"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des figures et des légendes - Mise en forme des documents": {
+  "aliases": [
+   "annonce des figures"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des graphiques - Mise en forme des documents": {
+  "aliases": [
+   "annonce des graphiques"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver l'annonce des groupes - Mise en forme des documents": {
+  "aliases": [
+   "annonce des groupes"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver l'annonce de l'alignement du texte - Mise en forme des documents": {
+  "aliases": [
+   "annonce de l'alignement"
+  ],
+  "keep_original": true
+ },
+ "Faire défiler les paramètres d'annonce des bordures de cellules - Mise en forme des documents": {
+  "aliases": [
+   "bordures de cellule"
+  ],
+  "keep_original": false
+ },
+ "Active ou désactive l'annonce du type de lien - Mise en forme des documents": {
+  "aliases": [
+   "annonce du type de lien"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des liens - Mise en forme des documents": {
+  "aliases": [
+   "annonce des liens"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver l'annonce des listes - Mise en forme des documents": {
+  "aliases": [
+   "annonce des listes"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver l'annonce des articles - Mise en forme des documents": {
+  "aliases": [
+   "annonce des articles"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver l'annonce du retrait des paragraphes - Mise en forme des documents": {
+  "aliases": [
+   "retrait de paragraphe"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des couleurs - Mise en forme des documents": {
+  "aliases": [
+   "annonce des couleurs"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver l'annonce de l'interligne - Mise en forme des documents": {
+  "aliases": [
+   "interligne"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les paramètres de retrait des lignes - Mise en forme des documents": {
+  "aliases": [
+   "retrait de ligne"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver ignorer les lignes vides pour l'annonce du retrait de ligne - Mise en forme des documents": {
+  "aliases": [
+   "ignorer lignes vides"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des numéros de lignes - Mise en forme des documents": {
+  "aliases": [
+   "numéros de ligne"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des pages - Mise en forme des documents": {
+  "aliases": [
+   "annonce des pages"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des changements de style - Mise en forme des documents": {
+  "aliases": [
+   "annonce des styles"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des régions - Mise en forme des documents": {
+  "aliases": [
+   "annonce des repères"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des coordonnées des cellules - Mise en forme des documents": {
+  "aliases": [
+   "coordonnées de cellule"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les modes possibles pour annoncer les en-têtes de ligne et de colonne des tableaux - Mise en forme des documents": {
+  "aliases": [
+   "en-têtes de tableau"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des tableaux - Mise en forme des documents": {
+  "aliases": [
+   "annonce des tableaux"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver l'annonce d'élément cliquable - Mise en forme des documents": {
+  "aliases": [
+   "annonce des cliquables"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce de l'emphase - Mise en forme des documents": {
+  "aliases": [
+   "annonce des emphases"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver l'annonce du texte surligné - Mise en forme des documents": {
+  "aliases": [
+   "annonce du surlignage"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des changements de taille de la police - Mise en forme des documents": {
+  "aliases": [
+   "taille de police"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler la signalisation des attributs de police entre parole, braille, parole et braille, et désactivé. - Mise en forme des documents": {
+  "aliases": [
+   "annonce des attributs"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des changements de police - Mise en forme des documents": {
+  "aliases": [
+   "nom de police"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les choix possibles pour signaler les erreurs d'orthographe ou de grammaire - Mise en forme des documents": {
+  "aliases": [
+   "annonce des fautes"
+  ],
+  "keep_original": false
+ },
+ "Active ou désactive le signalement des erreurs d'orthographe ou de grammaire en braille - Mise en forme des documents": {
+  "aliases": [
+   "fautes en braille"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des cadres - Mise en forme des documents": {
+  "aliases": [
+   "annonce des cadres"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver l'annonce des exposants et indices - Mise en forme des documents": {
+  "aliases": [
+   "annonce des exposants"
+  ],
+  "keep_original": false
+ },
+ "Un appui : Rétablir la configuration au dernier état sauvegardé. Trois appuis: rétablir les paramètres par défaut. - Configuration": {
+  "aliases": [
+   "rétablir paramètres"
+  ],
+  "keep_original": false
+ },
+ "Annoncer le nom du profil de configuration courant - Configuration": {
+  "aliases": [
+   "nom du profil"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver tous les profils de configuration. La désactivation demeure effective jusqu'au redémarrage de NVDA - Configuration": {
+  "aliases": [
+   "déclencheurs de profil"
+  ],
+  "keep_original": false
+ },
+ "Sauvegarder la configuration courante de NVDA - Configuration": {
+  "aliases": [
+   "enregistrer paramètres"
+  ],
+  "keep_original": true
+ },
+ "Afficher le dialogue sélection du synthétiseur de NVDA - Configuration": {
+  "aliases": [
+   "choisir synthétiseur"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètres audio de NVDA - Configuration": {
+  "aliases": [
+   "paramètres audio"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètres de mise en forme des documents de NVDA - Configuration": {
+  "aliases": [
+   "paramètres de formatage"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètres Braille de NVDA - Configuration": {
+  "aliases": [
+   "paramètres braille"
+  ],
+  "keep_original": false
+ },
+ "Afficher le dialogue de sélection de l'afficheur braille de NVDA - Configuration": {
+  "aliases": [
+   "choisir afficheur braille"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètres de souris de NVDA - Configuration": {
+  "aliases": [
+   "paramètres souris"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètres généraux de NVDA - Configuration": {
+  "aliases": [
+   "paramètres généraux"
+  ],
+  "keep_original": false
+ },
+ "Afficher le dialogue Dictionnaire temporaire de NVDA - Configuration": {
+  "aliases": [
+   "dictionnaire temporaire"
+  ],
+  "keep_original": false
+ },
+ "Afficher le dialogue Gestes de commandes de NVDA - Configuration": {
+  "aliases": [
+   "gestes de commandes"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètres de Composition de Saisie de NVDA - Configuration": {
+  "aliases": [
+   "composition de saisie"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètres de confidentialité et de sécurité de NVDA - Configuration": {
+  "aliases": [
+   "paramètres de confidentialité"
+  ],
+  "keep_original": false
+ },
+ "Afficher le dialogue Prononciation des ponctuations et symboles de NVDA - Configuration": {
+  "aliases": [
+   "prononciation des symboles"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètres du curseur de revue de NVDA - Configuration": {
+  "aliases": [
+   "paramètres curseur de revue"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètres Clavier de NVDA - Configuration": {
+  "aliases": [
+   "paramètres clavier"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètres de parole de NVDA - Configuration": {
+  "aliases": [
+   "paramètres de parole"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètres de présentation des objets de NVDA - Configuration": {
+  "aliases": [
+   "présentation des objets"
+  ],
+  "keep_original": false
+ },
+ "Afficher le dialogue Dictionnaire de la voix de NVDA - Configuration": {
+  "aliases": [
+   "dictionnaire de voix"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètre du mode navigation de NVDA - Configuration": {
+  "aliases": [
+   "paramètres mode navigation"
+  ],
+  "keep_original": false
+ },
+ "Afficher le dialogue Dictionnaire par défaut de NVDA - Configuration": {
+  "aliases": [
+   "dictionnaire par défaut"
+  ],
+  "keep_original": false
+ },
+ "Affiche les paramètres de l'OCR Windows de NVDA - Configuration": {
+  "aliases": [
+   "paramètres ocr"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètres de la loupe de NVDA - Configuration": {
+  "aliases": [
+   "paramètres loupe"
+  ],
+  "keep_original": true
+ },
+ "Afficher les paramètres de l'Addon Store de NVDA - Configuration": {
+  "aliases": [
+   "paramètres boutique"
+  ],
+  "keep_original": false
+ },
+ "Afficher les paramètres avancés de NVDA - Configuration": {
+  "aliases": [
+   "paramètres avancés"
+  ],
+  "keep_original": true
+ },
+ "Afficher les paramètres de vision de NVDA - Configuration": {
+  "aliases": [
+   "paramètres de vision"
+  ],
+  "keep_original": true
+ },
+ "Afficher les paramètres d’accès à distance - Configuration": {
+  "aliases": [
+   "paramètres accès à distance"
+  ],
+  "keep_original": true
+ },
+ "Sélectionner depuis le marqueur de début précédemment défini jusqu'à la position actuelle incluse. Deux appuis : copier le texte dans le presse-papiers - Revue de texte": {
+  "aliases": [
+   "sélectionner depuis marque",
+   "copier depuis marque x2"
+  ],
+  "keep_original": false
+ },
+ "Annoncer les informations de mise en forme pour la position courante du curseur de revue - Revue de texte": {
+  "aliases": [
+   "formatage de revue"
+  ],
+  "keep_original": false
+ },
+ "Annoncer les informations de mise en forme à la position actuelle du curseur de revue. Deux appuis: présenter l'information en mode navigation - Revue de texte": {
+  "aliases": [
+   "formatage de revue détaillé",
+   "fenêtre formatage de revue x2"
+  ],
+  "keep_original": false
+ },
+ "Passer au mode de revue suivant (ex. objet, document ou écran) et placer la position de revue au point de l'objet de navigation - Revue de texte": {
+  "aliases": [
+   "mode de revue suivant"
+  ],
+  "keep_original": false
+ },
+ "Affiche, en mode navigation, les informations de mise en forme pour la position courante du curseur de revue - Revue de texte": {
+  "aliases": [
+   "afficher formatage de revue"
+  ],
+  "keep_original": false
+ },
+ "Passer au mode de revue précédent (ex. objet, document ou écran) et placer la position de revue au point de l'objet de navigation - Revue de texte": {
+  "aliases": [
+   "mode de revue précédent"
+  ],
+  "keep_original": false
+ },
+ "Lire à partir du curseur de revue jusqu'à la fin du texte en faisant suivre le curseur de revue - Revue de texte": {
+  "aliases": [
+   "lire la revue"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur de revue à la dernière ligne de l'objet navigateur courant et la lire - Revue de texte": {
+  "aliases": [
+   "ligne du bas"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur de revue en haut de l'objet navigateur courant et le lire - Revue de texte": {
+  "aliases": [
+   "ligne du haut"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur de revue à la page suivante de l'objet navigateur courant et la lire - Revue de texte": {
+  "aliases": [
+   "revue page suivante"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur de revue à la page précédente de l'objet navigateur courant et la lire - Revue de texte": {
+  "aliases": [
+   "revue page précédente"
+  ],
+  "keep_original": false
+ },
+ "Déplace le curseur de revue vers le premier caractère de la sélection et le lit à voix haute - Revue de texte": {
+  "aliases": [
+   "premier caractère sélectionné"
+  ],
+  "keep_original": false
+ },
+ "Déplace le curseur de revue vers le dernier caractère de la sélection et le lit à voix haute - Revue de texte": {
+  "aliases": [
+   "dernier caractère sélectionné"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur de revue au caractère suivant de l'objet navigateur courant et le lire - Revue de texte": {
+  "aliases": [
+   "caractère suivant"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur de revue à la ligne suivante de l'objet navigateur courant et la lire - Revue de texte": {
+  "aliases": [
+   "revue ligne suivante"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur de revue au mot suivant de l'objet navigateur courant et le lire - Revue de texte": {
+  "aliases": [
+   "mot suivant"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur de revue au caractère précédent de l'objet navigateur courant et le lire - Revue de texte": {
+  "aliases": [
+   "caractère précédent"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur de revue à la ligne précédente de l'objet navigateur courant et la lire - Revue de texte": {
+  "aliases": [
+   "revue ligne précédente"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur de revue au mot précédent de l'objet navigateur courant et le lire - Revue de texte": {
+  "aliases": [
+   "mot précédent"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur de revue au premier caractère de la ligne sur laquelle il se trouve dans l'objet navigateur courant et le lire - Revue de texte": {
+  "aliases": [
+   "début de ligne"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur de revue au dernier caractère de la ligne sur laquelle il se trouve dans l'objet navigateur courant et le lire - Revue de texte": {
+  "aliases": [
+   "fin de ligne"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur de revue à la position marquée comme début du texte à sélectionner ou copier - Revue de texte": {
+  "aliases": [
+   "aller à la marque"
+  ],
+  "keep_original": false
+ },
+ "Annonce le symbol sur lequel le curseur de revue est positionné. Deux appuis: afficher le symbol et sa prononciation pendant la navigation - Revue de texte": {
+  "aliases": [
+   "dire symbole",
+   "fenêtre symbole x2"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver le suivi du curseur applicatif par le curseur de revue - Revue de texte": {
+  "aliases": [
+   "revue suit curseur"
+  ],
+  "keep_original": false
+ },
+ "Annoncer la ligne de l'objet navigateur courant sur laquelle se trouve le curseur de revue. Deux appuis: épeler la ligne. Trois appuis: l'épeler en code international. - Revue de texte": {
+  "aliases": [
+   "ligne de revue",
+   "épeler ligne de revue x2",
+   "décrire ligne de revue x3"
+  ],
+  "keep_original": false
+ },
+ "Annoncer le mot de l'objet navigateur courant sur lequel se trouve le curseur de revue. Deux appuis: épeler le mot. Trois appuis: l'épeler en code international - Revue de texte": {
+  "aliases": [
+   "mot de revue",
+   "épeler mot de revue x2",
+   "décrire mot de revue x3"
+  ],
+  "keep_original": false
+ },
+ "Marquer la position actuelle du curseur de revue comme début du texte à sélectionner ou copier - Revue de texte": {
+  "aliases": [
+   "placer marque"
+  ],
+  "keep_original": false
+ },
+ "Annoncer le caractère de l'objet navigateur courant à la position du curseur de revue. Deux appuis: obtenir une description ou un exemple de ce caractère. Trois appuis: En donner la valeur numérique en décimal et hexadécimal - Revue de texte": {
+  "aliases": [
+   "caractère de revue",
+   "description caractère de revue x2",
+   "valeur caractère de revue x3"
+  ],
+  "keep_original": false
+ },
+ "Basculer le suivi braille entre focus et curseur de revue - Braille": {
+  "aliases": [
+   "liaison braille"
+  ],
+  "keep_original": false
+ },
+ "Amener l'afficheur braille à la ligne suivante - Braille": {
+  "aliases": [
+   "braille ligne suivante"
+  ],
+  "keep_original": false
+ },
+ "Amener l'afficheur braille à la ligne précédente - Braille": {
+  "aliases": [
+   "braille ligne précédente"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler l'afficheur braille en arrière - Braille": {
+  "aliases": [
+   "braille reculer"
+  ],
+  "keep_original": true
+ },
+ "Faire défiler l'afficheur braille en avant - Braille": {
+  "aliases": [
+   "braille avancer"
+  ],
+  "keep_original": true
+ },
+ "Convertir toute saisie braille - Braille": {
+  "aliases": [
+   "traduire saisie braille"
+  ],
+  "keep_original": true
+ },
+ "Active ou désactive le retour vocal lors de la navigation par lignes ou paragraphes en braille - Braille": {
+  "aliases": [
+   "braille parole des lignes"
+  ],
+  "keep_original": false
+ },
+ "Activer et désactiver le curseur braille - Braille": {
+  "aliases": [
+   "curseur braille"
+  ],
+  "keep_original": true
+ },
+ "Faire défiler les formes de curseur braille - Braille": {
+  "aliases": [
+   "forme du curseur braille"
+  ],
+  "keep_original": false
+ },
+ "Basculer entre les modes braille - Braille": {
+  "aliases": [
+   "mode braille"
+  ],
+  "keep_original": true
+ },
+ "Faire défiler les modes d'affichage des messages braille - Braille": {
+  "aliases": [
+   "braille mode messages"
+  ],
+  "keep_original": false
+ },
+ "Augmente la vitesse de défilement automatique du braille - Braille": {
+  "aliases": [
+   "braille plus rapide"
+  ],
+  "keep_original": false
+ },
+ "Diminue la vitesse de défilement automatique du braille - Braille": {
+  "aliases": [
+   "braille plus lent"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les modes d'affichage de la sélection en braille - Braille": {
+  "aliases": [
+   "braille forme de sélection"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les états de normalisation Unicode braille - Braille": {
+  "aliases": [
+   "braille mode unicode"
+  ],
+  "keep_original": false
+ },
+ "Annoncer les informations de mise en forme pour le texte sous cette cellule braille - Braille": {
+  "aliases": [
+   "braille formatage cellule"
+  ],
+  "keep_original": false
+ },
+ "Effacer la dernière cellule ou le dernier caractère braille entré - Braille": {
+  "aliases": [
+   "effacer cellule braille"
+  ],
+  "keep_original": false
+ },
+ "Amener l'afficheur braille au focus courant - Braille": {
+  "aliases": [
+   "braille vers focus"
+  ],
+  "keep_original": false
+ },
+ "Convertir toute saisie braille et appuyer sur entrée - Braille": {
+  "aliases": [
+   "envoyer saisie braille"
+  ],
+  "keep_original": false
+ },
+ "Saisir les points braille au moyen du clavier braille - Braille": {
+  "aliases": [
+   "saisie clavier braille"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver le défilement automatique du braille - Braille": {
+  "aliases": [
+   "braille défilement auto"
+  ],
+  "keep_original": true
+ },
+ "Sélectionne le texte de la première à la dernière cellule braille - Braille": {
+  "aliases": [
+   "braille sélectionner ligne"
+  ],
+  "keep_original": false
+ },
+ "Amener le curseur à cette cellule braille ou activer l'objet sous cette cellule braille - Braille": {
+  "aliases": [
+   "braille activer cellule"
+  ],
+  "keep_original": false
+ },
+ "Bascule l'annonce du caractère lors du routage du curseur dans le texte - Braille": {
+  "aliases": [
+   "braille caractère prononcé"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les choix pour Déplacer le curseur système lors du routage du curseur de revue - Braille": {
+  "aliases": [
+   "braille déplacer curseur"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les modes de présentation des informations contextuelles en braille - Braille": {
+  "aliases": [
+   "braille informations contexte"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver le mode veille pour l'application en cours - Divers": {
+  "aliases": [
+   "mode veille"
+  ],
+  "keep_original": false
+ },
+ "Basculer l'actualisation périodique d'un résultat de la Reconnaissance Optique de Caractères de Windows - Divers": {
+  "aliases": [
+   "actualisation ocr"
+  ],
+  "keep_original": false
+ },
+ "Annonce l’état du rideau d’écran. - Divers": {
+  "aliases": [
+   "état du rideau",
+   "état rideau d'écran"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver le rideau d'écran, soit en rendant l'écran noir soit en affichant son contenu. Un appui active le rideau d'écran jusqu'au prochain redémarrage de NVDA. Deux appuis activent le rideau jusqu'à ce que vous le désactiviez - Divers": {
+  "aliases": [
+   "rideau d'écran",
+   "activer rideau",
+   "rideau permanent x2"
+  ],
+  "keep_original": false
+ },
+ "Lit la ligne horizontalement de la cellule actuelle vers la droite jusqu'à la dernière cellule de la ligne. - Divers": {
+  "aliases": [
+   "lire ligne depuis cellule"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les langues disponibles pour la Reconnaissance optique de caractères de Windows - Divers": {
+  "aliases": [
+   "langue ocr"
+  ],
+  "keep_original": false
+ },
+ "Afficher le menu NVDA - Divers": {
+  "aliases": [
+   "menu nvda"
+  ],
+  "keep_original": true
+ },
+ "Quitter NVDA ! - Divers": {
+  "aliases": [
+   "quitter nvda"
+  ],
+  "keep_original": true
+ },
+ "Redémarrer NVDA ! - Divers": {
+  "aliases": [
+   "redémarrer nvda"
+  ],
+  "keep_original": true
+ },
+ "Lit la ligne actuelle horizontalement de gauche à droite sans déplacer le curseur système. - Divers": {
+  "aliases": [
+   "lire la ligne du tableau"
+  ],
+  "keep_original": false
+ },
+ "Lit la colonne actuelle verticalement de haut en bas sans déplacer le curseur système. - Divers": {
+  "aliases": [
+   "lire la colonne"
+  ],
+  "keep_original": false
+ },
+ "Lit la colonne verticalement de la cellule actuelle vers le bas jusqu'à la dernière cellule de la colonne. - Divers": {
+  "aliases": [
+   "lire colonne depuis cellule"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'inclusion des tables de disposition - Divers": {
+  "aliases": [
+   "tableaux de mise en page"
+  ],
+  "keep_original": false
+ },
+ "Reconnaître le contenu de l'objet navigateur courant par la reconnaissance optique de caractères de Windows - Divers": {
+  "aliases": [
+   "lire avec ocr"
+  ],
+  "keep_original": false
+ },
+ "Aller à la ligne suivante du tableau - Divers": {
+  "aliases": [
+   "ligne de tableau suivante"
+  ],
+  "keep_original": false
+ },
+ "Aller à la colonne suivante du tableau - Divers": {
+  "aliases": [
+   "colonne de tableau suivante"
+  ],
+  "keep_original": false
+ },
+ "Aller à la ligne précédente du tableau - Divers": {
+  "aliases": [
+   "ligne de tableau précédente"
+  ],
+  "keep_original": false
+ },
+ "Aller à la colonne précédente du tableau - Divers": {
+  "aliases": [
+   "colonne de tableau précédente"
+  ],
+  "keep_original": false
+ },
+ "Aller à la première ligne du tableau - Divers": {
+  "aliases": [
+   "première ligne de tableau"
+  ],
+  "keep_original": true
+ },
+ "Aller à la première colonne du tableau - Divers": {
+  "aliases": [
+   "première colonne de tableau"
+  ],
+  "keep_original": true
+ },
+ "Aller à la dernière ligne du tableau - Divers": {
+  "aliases": [
+   "dernière ligne de tableau"
+  ],
+  "keep_original": true
+ },
+ "Aller à la dernière colonne du tableau - Divers": {
+  "aliases": [
+   "dernière colonne de tableau"
+  ],
+  "keep_original": true
+ },
+ "Boucler entre bips, parole, bips et parole, silence pour l'annonce des mises à jour des barres de progression - Parole": {
+  "aliases": [
+   "sortie barre de progression"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des changements dynamiques de contenu, tel qu'un nouveau texte dans une fenêtre DOS - Parole": {
+  "aliases": [
+   "mises à jour console"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des caractères CLDR, tels que les emojis - Parole": {
+  "aliases": [
+   "annonce des émojis"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver la description différée des caractères lors du mouvement du curseur - Parole": {
+  "aliases": [
+   "descriptions différées"
+  ],
+  "keep_original": false
+ },
+ "Active ou désactive l'annonce des touches de commande - Parole": {
+  "aliases": [
+   "prononcer touches de commande"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les modes de parole. - Parole": {
+  "aliases": [
+   "mode de parole"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les états de normalisation Unicode de la parole - Parole": {
+  "aliases": [
+   "parole mode unicode"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les choix possibles pour le changement automatique de langue : désactivé, langue uniquement et langue et dialecte. - Parole": {
+  "aliases": [
+   "changement de langue"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les niveaux d'annonce des symboles pour déterminer quels symboles seront annoncés - Parole": {
+  "aliases": [
+   "niveau des symboles"
+  ],
+  "keep_original": false
+ },
+ "Augmenter la valeur du paramètre courant dans la boucle des paramètres synthétiseur - Parole": {
+  "aliases": [
+   "augmenter réglage"
+  ],
+  "keep_original": false
+ },
+ "Diminuer la valeur du paramètre courant dans la boucle des paramètres synthétiseur - Parole": {
+  "aliases": [
+   "diminuer réglage"
+  ],
+  "keep_original": false
+ },
+ "Aller au paramètre suivant dans la boucle des paramètres synthétiseur - Parole": {
+  "aliases": [
+   "réglage suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller au paramètre précédent dans la boucle des paramètres synthétiseur - Parole": {
+  "aliases": [
+   "réglage précédent"
+  ],
+  "keep_original": false
+ },
+ "Aller à la première valeur du paramètre courant dans la boucle des paramètres du synthétiseur - Parole": {
+  "aliases": [
+   "valeur minimale"
+  ],
+  "keep_original": false
+ },
+ "Aller à la dernière valeur du paramètre courant dans la boucle des paramètres du synthétiseur - Parole": {
+  "aliases": [
+   "valeur maximale"
+  ],
+  "keep_original": false
+ },
+ "Augmenter la valeur du paramètre courant dans la boucle des paramètres du synthétiseur d'un interval plus important - Parole": {
+  "aliases": [
+   "grande augmentation"
+  ],
+  "keep_original": false
+ },
+ "Diminuer la valeur du paramètre courant dans la boucle des paramètres du synthétiseur d'un interval plus important - Parole": {
+  "aliases": [
+   "grande diminution"
+  ],
+  "keep_original": false
+ },
+ "Copie la derniere information annoncée dans le presse-papiers. - Parole": {
+  "aliases": [
+   "copier dernière parole"
+  ],
+  "keep_original": false
+ },
+ "Répète la dernière information annoncée. Un double appui l'affiche dans une fenêtre - Parole": {
+  "aliases": [
+   "répéter dernière parole",
+   "fenêtre dernière parole x2"
+  ],
+  "keep_original": false
+ },
+ "Fait défiler les différentes options pour déterminer quand lire à voix haute les caractères saisis. - Parole": {
+  "aliases": [
+   "écho des caractères"
+  ],
+  "keep_original": false
+ },
+ "Fait défiler les différentes options pour déterminer quand lire à voix haute les mots saisis. - Parole": {
+  "aliases": [
+   "écho des mots"
+  ],
+  "keep_original": false
+ },
+ "Activer et désactiver la loupe - Loupe": {
+  "aliases": [
+   "activer loupe",
+   "désactiver loupe"
+  ],
+  "keep_original": true
+ },
+ "Activer/désactiver le suivi de la souris par la loupe - Loupe": {
+  "aliases": [
+   "loupe suivi souris"
+  ],
+  "keep_original": true
+ },
+ "Activer/désactiver le suivi du curseur de revue par la loupe - Loupe": {
+  "aliases": [
+   "loupe suivi revue"
+  ],
+  "keep_original": false
+ },
+ "Activer/désactiver le suivi de l'objet navigateur par la loupe - Loupe": {
+  "aliases": [
+   "loupe suivi objet"
+  ],
+  "keep_original": false
+ },
+ "Activer/désactiver le suivi du focus système par la loupe - Loupe": {
+  "aliases": [
+   "loupe suivi focus"
+  ],
+  "keep_original": false
+ },
+ "Augmenter le niveau de grossissement - Loupe": {
+  "aliases": [
+   "zoom avant"
+  ],
+  "keep_original": true
+ },
+ "Diminuer le niveau de grossissement - Loupe": {
+  "aliases": [
+   "zoom arrière"
+  ],
+  "keep_original": true
+ },
+ "Déplacez la vue agrandie au bord inférieur - Loupe": {
+  "aliases": [
+   "loupe bord inférieur"
+  ],
+  "keep_original": false
+ },
+ "Déplacez la vue agrandie vers le bas - Loupe": {
+  "aliases": [
+   "loupe défiler vers le bas"
+  ],
+  "keep_original": true
+ },
+ "Déplacez la vue agrandie au bord droit - Loupe": {
+  "aliases": [
+   "loupe bord droit"
+  ],
+  "keep_original": false
+ },
+ "Déplacez la vue agrandie vers la droite - Loupe": {
+  "aliases": [
+   "loupe défiler à droite"
+  ],
+  "keep_original": true
+ },
+ "Déplacez la vue agrandie au bord gauche - Loupe": {
+  "aliases": [
+   "loupe bord gauche"
+  ],
+  "keep_original": false
+ },
+ "Déplacez la vue agrandie vers la gauche - Loupe": {
+  "aliases": [
+   "loupe défiler à gauche"
+  ],
+  "keep_original": true
+ },
+ "Déplacez la vue agrandie vers le haut - Loupe": {
+  "aliases": [
+   "loupe défiler vers le haut"
+  ],
+  "keep_original": true
+ },
+ "Déplacez la vue agrandie au bord supérieur - Loupe": {
+  "aliases": [
+   "loupe bord supérieur"
+  ],
+  "keep_original": false
+ },
+ "Déplace le curseur de la souris au centre de la vue agrandie - Loupe": {
+  "aliases": [
+   "centrer la souris"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les filtres de couleur - Loupe": {
+  "aliases": [
+   "loupe filtre de couleur"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les modes de suivi - Loupe": {
+  "aliases": [
+   "loupe mode de suivi"
+  ],
+  "keep_original": false
+ },
+ "Activer/désactiver tous les paramètres de suivi de la loupe - Loupe": {
+  "aliases": [
+   "loupe tous les suivis"
+  ],
+  "keep_original": false
+ },
+ "Afficher temporairement un aperçu de tout l'écran - Loupe": {
+  "aliases": [
+   "afficher aperçu"
+  ],
+  "keep_original": false
+ },
+ "Basculer virtuellement la touche NVDA pour émuler un raccourci clavier par la saisie braille - Touches émulées du clavier du système": {
+  "aliases": [
+   "touche nvda"
+  ],
+  "keep_original": false
+ },
+ "Basculer virtuellement la touche alt pour émuler un raccourci clavier par la saisie braille - Touches émulées du clavier du système": {
+  "aliases": [
+   "touche alt"
+  ],
+  "keep_original": false
+ },
+ "Basculer virtuellement la touche contrôle pour émuler un raccourci clavier par la saisie braille - Touches émulées du clavier du système": {
+  "aliases": [
+   "touche contrôle"
+  ],
+  "keep_original": false
+ },
+ "Basculer virtuellement la touche majuscule pour émuler un raccourci clavier par la saisie braille - Touches émulées du clavier du système": {
+  "aliases": [
+   "touche majuscule"
+  ],
+  "keep_original": false
+ },
+ "Basculer virtuellement la touche Windows gauche pour émuler un raccourci clavier par la saisie braille - Touches émulées du clavier du système": {
+  "aliases": [
+   "touche windows"
+  ],
+  "keep_original": false
+ },
+ "Basculer virtuellement les touches NVDA et majuscule pour émuler un raccourci clavier par la saisie braille - Touches émulées du clavier du système": {
+  "aliases": [
+   "nvda majuscule"
+  ],
+  "keep_original": false
+ },
+ "Basculer virtuellement les touches alt et majuscule pour émuler un raccourci clavier par la saisie braille - Touches émulées du clavier du système": {
+  "aliases": [
+   "alt majuscule"
+  ],
+  "keep_original": false
+ },
+ "Basculer virtuellement les touches contrôle et majuscule pour émuler un raccourci clavier par la saisie braille - Touches émulées du clavier du système": {
+  "aliases": [
+   "contrôle majuscule"
+  ],
+  "keep_original": false
+ },
+ "Basculer virtuellement les touches contrôle, alt et majuscule pour émuler un raccourci clavier par la saisie braille - Touches émulées du clavier du système": {
+  "aliases": [
+   "contrôle alt majuscule"
+  ],
+  "keep_original": false
+ },
+ "Basculer virtuellement les touches Windows gauche et majuscule pour émuler un raccourci clavier par la saisie braille - Touches émulées du clavier du système": {
+  "aliases": [
+   "windows majuscule"
+  ],
+  "keep_original": false
+ },
+ "flèche bas - Touches émulées du clavier du système": {
+  "aliases": [
+   "touche flèche bas"
+  ],
+  "keep_original": true
+ },
+ "fin - Touches émulées du clavier du système": {
+  "aliases": [
+   "touche fin"
+  ],
+  "keep_original": true
+ },
+ "début - Touches émulées du clavier du système": {
+  "aliases": [
+   "touche début"
+  ],
+  "keep_original": true
+ },
+ "flèche droite - Touches émulées du clavier du système": {
+  "aliases": [
+   "touche flèche droite"
+  ],
+  "keep_original": true
+ },
+ "flèche gauche - Touches émulées du clavier du système": {
+  "aliases": [
+   "touche flèche gauche"
+  ],
+  "keep_original": true
+ },
+ "flèche haut - Touches émulées du clavier du système": {
+  "aliases": [
+   "touche flèche haut"
+  ],
+  "keep_original": true
+ },
+ "contrôle+fin - Touches émulées du clavier du système": {
+  "aliases": [
+   "fin du document"
+  ],
+  "keep_original": true
+ },
+ "contrôle+début - Touches émulées du clavier du système": {
+  "aliases": [
+   "début du document"
+  ],
+  "keep_original": true
+ },
+ "contrôle+flèche droite - Touches émulées du clavier du système": {
+  "aliases": [
+   "mot suivant clavier"
+  ],
+  "keep_original": true
+ },
+ "contrôle+flèche gauche - Touches émulées du clavier du système": {
+  "aliases": [
+   "mot précédent clavier"
+  ],
+  "keep_original": true
+ },
+ "Activer et désactiver le mode de revue simple - Navigation par objet": {
+  "aliases": [
+   "revue simple"
+  ],
+  "keep_original": false
+ },
+ "Amener le focus clavier à l'objet navigateur courant, deux appuis: amener le curseur système au curseur de revue - Navigation par objet": {
+  "aliases": [
+   "déplacer focus",
+   "déplacer curseur x2"
+  ],
+  "keep_original": false
+ },
+ "Annoncer des informations sur l'emplacement de l'objet navigateur actuel. - Navigation par objet": {
+  "aliases": [
+   "position du navigateur"
+  ],
+  "keep_original": false
+ },
+ "Lit la barre d'état de l'application en cours et y amène l'objet navigateur. - Navigation par objet": {
+  "aliases": [
+   "aller à la barre d'état"
+  ],
+  "keep_original": false
+ },
+ "Aller à l'objet suivant dans une représentation à plat de la hiérarchie de l'objet de navigation - Navigation par objet": {
+  "aliases": [
+   "objet suivant"
+  ],
+  "keep_original": false
+ },
+ "Aller à l'objet précédent dans une représentation à plat de la hiérarchie de l'objet de navigation - Navigation par objet": {
+  "aliases": [
+   "objet précédent"
+  ],
+  "keep_original": false
+ },
+ "Amener l'objet navigateur au focus courant et le curseur de revue à la position du curseur si possible - Navigation par objet": {
+  "aliases": [
+   "objet vers focus"
+  ],
+  "keep_original": false
+ },
+ "Amener l'objet navigateur à l'objet suivant - Navigation par objet": {
+  "aliases": [
+   "objet frère suivant"
+  ],
+  "keep_original": false
+ },
+ "Amener l'objet navigateur à l'objet précédent - Navigation par objet": {
+  "aliases": [
+   "objet frère précédent"
+  ],
+  "keep_original": false
+ },
+ "Amener l'objet navigateur à l'objet le contenant - Navigation par objet": {
+  "aliases": [
+   "objet parent"
+  ],
+  "keep_original": false
+ },
+ "Amener l'objet navigateur au premier objet qu'il contient - Navigation par objet": {
+  "aliases": [
+   "objet enfant"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver le mouvement de l'objet navigateur lié au changement de focus - Navigation par objet": {
+  "aliases": [
+   "objet suit focus"
+  ],
+  "keep_original": false
+ },
+ "Annnoncer l'objet navigateur courant. Deux appuis: épeler l'information. trois appuis: copier le nom et le contenu de l'objet dans le presse-papiers - Navigation par objet": {
+  "aliases": [
+   "dire objet",
+   "épeler objet x2",
+   "copier objet x3"
+  ],
+  "keep_original": false
+ },
+ "Exécuter l'action par défaut sur l'objet navigateur courant. (Par exemple: appuyer s'il s'agit d'un bouton) - Navigation par objet": {
+  "aliases": [
+   "action par défaut"
+  ],
+  "keep_original": false
+ },
+ "Annoncer des informations concernant la position du texte ou de l'objet sous le curseur de revue. Deux appuis: obtenir d'éventuels détails supplémentaires. - Navigation par objet": {
+  "aliases": [
+   "position objet",
+   "position objet détaillée x2"
+  ],
+  "keep_original": false
+ },
+ "Définir la quantité de texte prononcée quand la souris se déplace - Souris": {
+  "aliases": [
+   "souris unité de texte"
+  ],
+  "keep_original": false
+ },
+ "Active ou désactive la sonorisation des coordonnées de la souris lors de son déplacement - Souris": {
+  "aliases": [
+   "bips coordonnées souris"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'annonce des informations quand la souris se déplace - Souris": {
+  "aliases": [
+   "annonce de la souris"
+  ],
+  "keep_original": false
+ },
+ "Déplacer le pointeur de la souris vers l'objet navigateur courant - Souris": {
+  "aliases": [
+   "souris vers objet"
+  ],
+  "keep_original": false
+ },
+ "Simple clic droit de la souris à sa position courante - Souris": {
+  "aliases": [
+   "clic droit"
+  ],
+  "keep_original": false
+ },
+ "Simple clic gauche de la souris à sa position courante - Souris": {
+  "aliases": [
+   "clic gauche",
+   "clic souris"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler vers le bas à la position de la souris - Souris": {
+  "aliases": [
+   "souris défiler bas"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler vers la droite à la position de la souris - Souris": {
+  "aliases": [
+   "souris défiler droite"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler vers la gauche à la position de la souris - Souris": {
+  "aliases": [
+   "souris défiler gauche"
+  ],
+  "keep_original": false
+ },
+ "Faires défiler vers le haut à la position de la souris - Souris": {
+  "aliases": [
+   "souris défiler haut"
+  ],
+  "keep_original": false
+ },
+ "Amener l'objet navigateur à l'objet actuellement sous le pointeur de la souris et le lire - Souris": {
+  "aliases": [
+   "objet vers souris"
+  ],
+  "keep_original": false
+ },
+ "Verrouiller ou déverrouiller le bouton droit de la souris - Souris": {
+  "aliases": [
+   "verrouiller souris droite"
+  ],
+  "keep_original": true
+ },
+ "Verrouiller ou déverrouiller le bouton gauche de la souris - Souris": {
+  "aliases": [
+   "verrouiller souris gauche"
+  ],
+  "keep_original": true
+ },
+ "Annoncer le nom de fichier de l'application en cours ainsi que le nom du module applicatif chargé - Outils": {
+  "aliases": [
+   "fichier de l'application"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver la visioneuse braille, une fenêtre flottante qui vous permet de visualiser la sortie braille et le texte équivalent pour chaque caractère braille - Outils": {
+  "aliases": [
+   "visionneuse braille"
+  ],
+  "keep_original": false
+ },
+ "Indique l'URL de destination du lien à la position du curseur ou du focus dans une fenêtre, au lieu de simplement l'énoncer. Peut être préféré par les utilisateurs de braille. - Outils": {
+  "aliases": [
+   "lien dans une fenêtre"
+  ],
+  "keep_original": false
+ },
+ "Indique l'URL de destination du lien à la position du curseur ou du focus. Un double appui affiche l'URL dans une fenêtre pour un examen plus facile. - Outils": {
+  "aliases": [
+   "adresse du lien",
+   "fenêtre adresse du lien x2"
+  ],
+  "keep_original": false
+ },
+ "Active l'Add-on Store pour rechercher et gérer les paquets d'extensions pour NVDA - Outils": {
+  "aliases": [
+   "boutique d'extensions"
+  ],
+  "keep_original": false
+ },
+ "Ouvrir le répertoire de configuration de l'utilisateur courant - Outils": {
+  "aliases": [
+   "dossier de configuration"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver la visionneuse de parole, une fenêtre flottante qui vous permet de voir le texte que NVDA est en train d'énoncer - Outils": {
+  "aliases": [
+   "visionneuse de parole"
+  ],
+  "keep_original": false
+ },
+ "Activer la console Python de NVDA, essentiellement utile pour le développement - Outils": {
+  "aliases": [
+   "console python"
+  ],
+  "keep_original": false
+ },
+ "Marquer la fin actuelle du journal comme début du fragment de journal à copier par un second appui. - Outils": {
+  "aliases": [
+   "début du journal"
+  ],
+  "keep_original": false
+ },
+ "Recharger les modules globaux et applicatifs sans redémarrer NVDA, ce qui peut être utile pour les développeurs - Outils": {
+  "aliases": [
+   "recharger extensions"
+  ],
+  "keep_original": false
+ },
+ "Ouvrir l'outil d'inspection du GUI. Utilisé pour obtenir plus d'informations sur l'état des composants du GUI. - Outils": {
+  "aliases": [
+   "inspecteur d'interface"
+  ],
+  "keep_original": false
+ },
+ "Récupérer, pour les développeurs, des informations utiles concernant l'objet navigateur courant puis activer la visionneuse de journal pour que l'information puisse être examinée - Outils": {
+  "aliases": [
+   "journaliser objet"
+  ],
+  "keep_original": false
+ },
+ "Annoncer la sélection en cours dans une zone d'édition ou un document. Deux appuis : épeler cette information. Trois appuis : l'épeler en code international. Quatre appuis : l'afficher dans un message navigable.  - Curseur système": {
+  "aliases": [
+   "lire sélection",
+   "épeler sélection x2",
+   "décrire sélection x3",
+   "fenêtre sélection x4"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les styles de navigation par paragraphe - Curseur système": {
+  "aliases": [
+   "mode paragraphe"
+  ],
+  "keep_original": false
+ },
+ "Annoncer le résumé de tous les détails d'annotation au niveau du curseur système. - Curseur système": {
+  "aliases": [
+   "résumé annotation"
+  ],
+  "keep_original": false
+ },
+ "Annoncer des informations concernant la position du texte ou de l'objet sous le curseur système. Deux appuis: obtenir d'éventuels détails supplémentaires. - Curseur système": {
+  "aliases": [
+   "position du curseur",
+   "position du curseur détaillée x2"
+  ],
+  "keep_original": false
+ },
+ "Lire en partant du curseur système jusqu'à la fin du texte en faisant suivre le curseur système - Curseur système": {
+  "aliases": [
+   "lire jusqu'à la fin"
+  ],
+  "keep_original": false
+ },
+ "Afficher, en mode navigation, les informations de mise en forme pour le texte sous le curseur applicatif. - Curseur système": {
+  "aliases": [
+   "afficher formatage du curseur"
+  ],
+  "keep_original": false
+ },
+ "Annoncer la ligne courante sous le curseur d'application. Deux appuis: épeler la ligne. Trois appuis: épeler la ligne en code international. - Curseur système": {
+  "aliases": [
+   "lire la ligne",
+   "épeler la ligne x2",
+   "décrire la ligne x3"
+  ],
+  "keep_original": false
+ },
+ "Annonce la langue du texte sous le curseur. Un double appui présente l'information en mode navigation - Curseur système": {
+  "aliases": [
+   "langue du texte",
+   "fenêtre langue du texte x2"
+  ],
+  "keep_original": false
+ },
+ "Annoncer les informations de mise en forme pour le texte sous le curseur applicatif. - Curseur système": {
+  "aliases": [
+   "formatage du curseur"
+  ],
+  "keep_original": false
+ },
+ "Annoncer les informations de mise en forme à la position actuelle du curseur applicatif. Deux appuis: présenter l'information en mode navigation - Curseur système": {
+  "aliases": [
+   "formatage du curseur détaillé",
+   "fenêtre formatage du curseur x2"
+  ],
+  "keep_original": false
+ },
+ "Annoncer des informations sur la position du texte sous le signe d'insertion, ou la position de l'objet actuellement en focus s'il n'y a pas de signe d'insertion. - Curseur système": {
+  "aliases": [
+   "informations de position"
+  ],
+  "keep_original": false
+ },
+ "Lire la barre d'état de l'application courante. Deux appuis: épeler l'information. Trois appuis: copier la barre d'état dans le presse-papiers - Focus système": {
+  "aliases": [
+   "lire barre d'état",
+   "épellation barre d'état x2"
+  ],
+  "keep_original": false
+ },
+ "Annoncer tous les contrôles dans la fenêtre active - Focus système": {
+  "aliases": [
+   "contrôles de la fenêtre"
+  ],
+  "keep_original": false
+ },
+ "Épelle la barre d'état de lapplication en cours - Focus système": {
+  "aliases": [
+   "épeler barre d'état"
+  ],
+  "keep_original": false
+ },
+ "Lit la barre d'état de lapplication en cours - Focus système": {
+  "aliases": [
+   "état de l'application"
+  ],
+  "keep_original": false
+ },
+ "Copie le contenu de la barre d'état de l'application en cours dans le presse-papiers. - Focus système": {
+  "aliases": [
+   "copier barre d'état"
+  ],
+  "keep_original": false
+ },
+ "Annoncer le titre de l'application en cours ou de la fenêtre en avant-plan. Deux appuis: épeler le titre. Trois appuis: copier le titre dans le presse-papiers - Focus système": {
+  "aliases": [
+   "titre de la fenêtre",
+   "épeler titre de la fenêtre x2",
+   "copier titre de la fenêtre x3"
+  ],
+  "keep_original": false
+ },
+ "Annoncer des informations sur la position de l'objet actuellement en focus. - Focus système": {
+  "aliases": [
+   "position du focus"
+  ],
+  "keep_original": false
+ },
+ "Annoncer le raccourci clavier de l'objet actuellement en focus - Focus système": {
+  "aliases": [
+   "touche de raccourci"
+  ],
+  "keep_original": false
+ },
+ "Annoncer l'objet ayant le focus. Deux appuis : épeler l'information. Trois appuis : l'épeler en code international. - Focus système": {
+  "aliases": [
+   "lire le focus",
+   "épeler le focus x2",
+   "décrire le focus x3"
+  ],
+  "keep_original": false
+ },
+ "Déplacer le focus de l'objet embarqué actuel vers le document qui le contient - Focus système": {
+  "aliases": [
+   "sortir de l'objet incorporé"
+  ],
+  "keep_original": false
+ },
+ "Bascule entre le contrôle de l’ordinateur local ou distant - Accès à distance": {
+  "aliases": [
+   "contrôle du clavier"
+  ],
+  "keep_original": false
+ },
+ "Envoie contrôle+alt+suppr à l'ordinateur contrôlé. - Accès à distance": {
+  "aliases": [
+   "envoyer contrôle alt suppr"
+  ],
+  "keep_original": false
+ },
+ "Se déconnecte de la session d’accès à distance actuelle - Accès à distance": {
+  "aliases": [
+   "déconnecter accès distant"
+  ],
+  "keep_original": false
+ },
+ "Copie un lien vers la session d’accès à distance actuelle dans le presse-papiers - Accès à distance": {
+  "aliases": [
+   "copier lien de session"
+  ],
+  "keep_original": false
+ },
+ "Envoie le contenu du presse-papiers à l’ordinateur distant - Accès à distance": {
+  "aliases": [
+   "envoyer presse-papiers"
+  ],
+  "keep_original": false
+ },
+ "Se connecte à un ordinateur distant - Accès à distance": {
+  "aliases": [
+   "connecter accès distant"
+  ],
+  "keep_original": true
+ },
+ "Coupe ou réactive le son de la parole provenant de l’ordinateur distant - Accès à distance": {
+  "aliases": [
+   "couper parole distante"
+  ],
+  "keep_original": false
+ },
+ "Active ou désactive la connexion d’accès à distance - Accès à distance": {
+  "aliases": [
+   "activer accès à distance",
+   "désactiver accès à distance"
+  ],
+  "keep_original": true
+ },
+ "Activer ou désactiver l'interaction tactile - Écran tactile": {
+  "aliases": [
+   "support tactile"
+  ],
+  "keep_original": false
+ },
+ "Simple clic droit de la souris à sa position courante. Ceci est généralement utilisé pour activer un menu contextuel. - Écran tactile": {
+  "aliases": [
+   "clic droit tactile"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les différents modes de toucher - Écran tactile": {
+  "aliases": [
+   "mode tactile"
+  ],
+  "keep_original": false
+ },
+ "Annoncer l'objet et le contenu directement sous votre doigt - Écran tactile": {
+  "aliases": [
+   "lire sous le doigt"
+  ],
+  "keep_original": false
+ },
+ "Annoncer le nouvel objet ou contenu Sous votre doigt si la position de celui-ci a changé - Écran tactile": {
+  "aliases": [
+   "suivi du doigt"
+  ],
+  "keep_original": false
+ },
+ "Ne pas traiter la touche suivante comme geste de commande mais l'envoyer directement à Windows - Entrée": {
+  "aliases": [
+   "passer la touche suivante"
+  ],
+  "keep_original": false
+ },
+ "Activer ou désactiver l'aide des commandes. Quand l'aide est activée, l'appui sur une touche annonce le script associé s'il existe. - Entrée": {
+  "aliases": [
+   "aide à la saisie"
+  ],
+  "keep_original": false
+ },
+ "Bascule entre les dispositions de clavier ordinateur de bureau et ordinateur portable - Entrée": {
+  "aliases": [
+   "disposition du clavier"
+  ],
+  "keep_original": false
+ },
+ "Annoncer l'heure. Deux appuis: annoncer la date - État du système": {
+  "aliases": [
+   "heure actuelle",
+   "dire l'heure",
+   "date actuelle x2",
+   "dire la date x2"
+  ],
+  "keep_original": false
+ },
+ "Annoncer l'état de la batterie et le temps restant si l'adaptateur secteur n'est pas branché - État du système": {
+  "aliases": [
+   "état de la batterie"
+  ],
+  "keep_original": false
+ },
+ "Annoncer le texte dans le presse-papiers de Windows. Deux appuis : épeler cette information. Trois appuis : l'épeler en code international. - État du système": {
+  "aliases": [
+   "lire presse-papiers",
+   "épeler presse-papiers x2",
+   "décrire presse-papiers x3"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les modes d'atténuation audio pour déterminer comment NVDA atténue le volume des autres sons - Audio": {
+  "aliases": [
+   "mode atténuation audio"
+  ],
+  "keep_original": false
+ },
+ "Faire défiler les modes de séparation du son - Audio": {
+  "aliases": [
+   "mode séparation du son"
+  ],
+  "keep_original": false
+ },
+ "Afficher le dialogue de configuration des profils de NVDA - Profils de configuration": {
+  "aliases": [
+   "gestionnaire de profils"
+  ],
+  "keep_original": false
+ },
+ "Commencer l'interaction avec le contenu mathématique - Navigation dans le contenu mathématique": {
+  "aliases": [
+   "navigation mathématique"
+  ],
+  "keep_original": true
+ },
+ "Ouvre une boîte de dialogue dans laquelle vous pouvez saisir une phrase de commande - Commandes Vocales": {
+  "aliases": [
+   "saisir une commande"
+  ],
+  "keep_original": false
+ },
+ "Ouvre la boîte de dialogue permettant de modifier les phrases (alias) utilisées pour les commandes - Commandes Vocales": {
+  "aliases": [
+   "modifier phrases"
+  ],
+  "keep_original": false
+ },
+ "Active ou désactive l'atténuation du volume des autres applications lors de l'écoute d'une commande vocale - Commandes Vocales": {
+  "aliases": [
+   "atténuation du volume"
+  ],
+  "keep_original": false
+ },
+ "Active ou désactive l'arrêt automatique de l'écoute lorsque vous restez silencieux après avoir parlé - Commandes Vocales": {
+  "aliases": [
+   "arrêt après silence"
+  ],
+  "keep_original": false
+ },
+ "Ouvre la boîte de dialogue du modèle vocal: choisissez, téléchargez et gérez le modèle - Commandes Vocales": {
+  "aliases": [
+   "modèle vocal"
+  ],
+  "keep_original": false
+ },
+ "Ouvre une boîte de dialogue qui ajoute la dernière phrase entendue par le système de reconnaissance vocale d'une commande de votre choix - Commandes Vocales": {
+  "aliases": [
+   "ajouter dernière phrase"
+  ],
+  "keep_original": false
+ },
+ "Ouvre la boîte de dialogue permettant d'ajouter vos propres commandes: ouvrir un programme, un fichier, un dossier ou une adresse Web, ou appuyer sur une combinaison de touches - Commandes Vocales": {
+  "aliases": [
+   "ajouter commande"
+  ],
+  "keep_original": false
+ }
+}

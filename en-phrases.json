@@ -1,0 +1,2790 @@
+{
+ "Refreshes the document content - Browse mode": {
+  "aliases": [
+   "refresh document"
+  ],
+  "keep_original": true
+ },
+ "Activates the current object in the document - Browse mode": {
+  "aliases": [
+   "activate item"
+  ],
+  "keep_original": false
+ },
+ "Lists various types of elements in this document - Browse mode": {
+  "aliases": [
+   "elements list"
+  ],
+  "keep_original": false
+ },
+ "Selects the next element type for browse mode touch navigation - Browse mode": {
+  "aliases": [
+   "touch next type"
+  ],
+  "keep_original": false
+ },
+ "Selects the previous element type for browse mode touch navigation - Browse mode": {
+  "aliases": [
+   "touch previous type"
+  ],
+  "keep_original": false
+ },
+ "Moves to the next element of the selected type in browse mode touch navigation - Browse mode": {
+  "aliases": [
+   "touch next element"
+  ],
+  "keep_original": false
+ },
+ "Moves to the previous element of the selected type in browse mode touch navigation - Browse mode": {
+  "aliases": [
+   "touch previous element"
+  ],
+  "keep_original": false
+ },
+ "Moves past the end of the container element, such as a list or table - Browse mode": {
+  "aliases": [
+   "exit container"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off if the screen layout is preserved while rendering the document content - Browse mode": {
+  "aliases": [
+   "screen layout"
+  ],
+  "keep_original": false
+ },
+ "Moves to the start of the container element, such as a list or table - Browse mode": {
+  "aliases": [
+   "container start"
+  ],
+  "keep_original": false
+ },
+ "Toggles between browse mode and focus mode. When in focus mode, keys will pass straight through to the application, allowing you to interact directly with a control. When in browse mode, you can navigate the document with the cursor, quick navigation keys, etc. - Browse mode": {
+  "aliases": [
+   "switch mode"
+  ],
+  "keep_original": false
+ },
+ "Toggles single letter navigation on and off. When on, single letter keys in browse mode jump to various kinds of elements on the page. When off, these keys are passed to the application - Browse mode": {
+  "aliases": [
+   "single letter navigation"
+  ],
+  "keep_original": false
+ },
+ "Shows the long description at this position if one is found. - Browse mode": {
+  "aliases": [
+   "long description"
+  ],
+  "keep_original": false
+ },
+ "Toggles native selection mode on and off - Browse mode": {
+  "aliases": [
+   "native selection"
+  ],
+  "keep_original": false
+ },
+ "skips forward past a block of links - Browse mode": {
+  "aliases": [
+   "skip links"
+  ],
+  "keep_original": false
+ },
+ "skips backward past a block of links - Browse mode": {
+  "aliases": [
+   "skip links back"
+  ],
+  "keep_original": false
+ },
+ "find a text string from the current cursor position - Browse mode": {
+  "aliases": [
+   "find from here"
+  ],
+  "keep_original": false
+ },
+ "moves to the next block quote - Browse mode": {
+  "aliases": [
+   "next quote"
+  ],
+  "keep_original": true
+ },
+ "moves to the next same style text - Browse mode": {
+  "aliases": [
+   "next same style"
+  ],
+  "keep_original": false
+ },
+ "moves to the next separator - Browse mode": {
+  "aliases": [
+   "next separator"
+  ],
+  "keep_original": true
+ },
+ "moves to the next progress bar - Browse mode": {
+  "aliases": [
+   "next progress bar"
+  ],
+  "keep_original": true
+ },
+ "moves to the next heading - Browse mode": {
+  "aliases": [
+   "next heading"
+  ],
+  "keep_original": true
+ },
+ "moves to the next annotation - Browse mode": {
+  "aliases": [
+   "next annotation"
+  ],
+  "keep_original": true
+ },
+ "moves to the next vertically aligned paragraph - Browse mode": {
+  "aliases": [
+   "next vertical paragraph"
+  ],
+  "keep_original": false
+ },
+ "moves to the next button - Browse mode": {
+  "aliases": [
+   "next button"
+  ],
+  "keep_original": true
+ },
+ "moves to the next different style text - Browse mode": {
+  "aliases": [
+   "next different style"
+  ],
+  "keep_original": false
+ },
+ "moves to the next figure - Browse mode": {
+  "aliases": [
+   "next figure"
+  ],
+  "keep_original": true
+ },
+ "moves to the next form field - Browse mode": {
+  "aliases": [
+   "next form field"
+  ],
+  "keep_original": true
+ },
+ "moves to the next toggle button - Browse mode": {
+  "aliases": [
+   "next toggle button"
+  ],
+  "keep_original": true
+ },
+ "moves to the next graphic - Browse mode": {
+  "aliases": [
+   "next graphic"
+  ],
+  "keep_original": true
+ },
+ "moves to the next grouping - Browse mode": {
+  "aliases": [
+   "next group"
+  ],
+  "keep_original": true
+ },
+ "moves to the next embedded object - Browse mode": {
+  "aliases": [
+   "next embedded object"
+  ],
+  "keep_original": true
+ },
+ "moves to the next error - Browse mode": {
+  "aliases": [
+   "next error"
+  ],
+  "keep_original": true
+ },
+ "moves to the next link - Browse mode": {
+  "aliases": [
+   "next link"
+  ],
+  "keep_original": true
+ },
+ "moves to the next list item - Browse mode": {
+  "aliases": [
+   "next list item"
+  ],
+  "keep_original": true
+ },
+ "moves to the next list - Browse mode": {
+  "aliases": [
+   "next list"
+  ],
+  "keep_original": true
+ },
+ "moves to the next article - Browse mode": {
+  "aliases": [
+   "next article"
+  ],
+  "keep_original": true
+ },
+ "moves to the next math formula - Browse mode": {
+  "aliases": [
+   "next formula"
+  ],
+  "keep_original": true
+ },
+ "moves to the next menu item - Browse mode": {
+  "aliases": [
+   "next menu item"
+  ],
+  "keep_original": true
+ },
+ "moves to the next text paragraph - Browse mode": {
+  "aliases": [
+   "next paragraph"
+  ],
+  "keep_original": true
+ },
+ "moves to the next check box - Browse mode": {
+  "aliases": [
+   "next check box"
+  ],
+  "keep_original": true
+ },
+ "moves to the next reference - Browse mode": {
+  "aliases": [
+   "next reference"
+  ],
+  "keep_original": true
+ },
+ "moves to the next tab - Browse mode": {
+  "aliases": [
+   "next tab item"
+  ],
+  "keep_original": true
+ },
+ "moves to the next radio button - Browse mode": {
+  "aliases": [
+   "next radio button"
+  ],
+  "keep_original": true
+ },
+ "moves to the next combo box - Browse mode": {
+  "aliases": [
+   "next combo box"
+  ],
+  "keep_original": true
+ },
+ "moves to the next slider - Browse mode": {
+  "aliases": [
+   "next slider"
+  ],
+  "keep_original": true
+ },
+ "moves to the next landmark - Browse mode": {
+  "aliases": [
+   "next landmark"
+  ],
+  "keep_original": true
+ },
+ "moves to the next table - Browse mode": {
+  "aliases": [
+   "next table"
+  ],
+  "keep_original": true
+ },
+ "moves to the next clickable element - Browse mode": {
+  "aliases": [
+   "next clickable"
+  ],
+  "keep_original": true
+ },
+ "moves to the next edit field - Browse mode": {
+  "aliases": [
+   "next edit field"
+  ],
+  "keep_original": true
+ },
+ "moves to the next unvisited link - Browse mode": {
+  "aliases": [
+   "next unvisited link"
+  ],
+  "keep_original": false
+ },
+ "moves to the next visited link - Browse mode": {
+  "aliases": [
+   "next visited link"
+  ],
+  "keep_original": false
+ },
+ "moves to the next frame - Browse mode": {
+  "aliases": [
+   "next frame"
+  ],
+  "keep_original": true
+ },
+ "find the next occurrence of the previously entered text string from the current cursor's position - Browse mode": {
+  "aliases": [
+   "find next"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous separator - Browse mode": {
+  "aliases": [
+   "previous separator"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous block quote - Browse mode": {
+  "aliases": [
+   "previous quote"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous same style text - Browse mode": {
+  "aliases": [
+   "previous same style"
+  ],
+  "keep_original": false
+ },
+ "moves to the previous progress bar - Browse mode": {
+  "aliases": [
+   "previous progress bar"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous heading - Browse mode": {
+  "aliases": [
+   "previous heading"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous annotation - Browse mode": {
+  "aliases": [
+   "previous annotation"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous vertically aligned paragraph - Browse mode": {
+  "aliases": [
+   "previous vertical paragraph"
+  ],
+  "keep_original": false
+ },
+ "moves to the previous button - Browse mode": {
+  "aliases": [
+   "previous button"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous different style text - Browse mode": {
+  "aliases": [
+   "previous different style"
+  ],
+  "keep_original": false
+ },
+ "moves to the previous figure - Browse mode": {
+  "aliases": [
+   "previous figure"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous form field - Browse mode": {
+  "aliases": [
+   "previous form field"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous toggle button - Browse mode": {
+  "aliases": [
+   "previous toggle button"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous graphic - Browse mode": {
+  "aliases": [
+   "previous graphic"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous grouping - Browse mode": {
+  "aliases": [
+   "previous group"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous embedded object - Browse mode": {
+  "aliases": [
+   "previous embedded object"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous error - Browse mode": {
+  "aliases": [
+   "previous error"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous link - Browse mode": {
+  "aliases": [
+   "previous link"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous list item - Browse mode": {
+  "aliases": [
+   "previous list item"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous list - Browse mode": {
+  "aliases": [
+   "previous list"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous article - Browse mode": {
+  "aliases": [
+   "previous article"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous math formula - Browse mode": {
+  "aliases": [
+   "previous formula"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous menu item - Browse mode": {
+  "aliases": [
+   "previous menu item"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous text paragraph - Browse mode": {
+  "aliases": [
+   "previous paragraph"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous check box - Browse mode": {
+  "aliases": [
+   "previous check box"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous reference - Browse mode": {
+  "aliases": [
+   "previous reference"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous tab - Browse mode": {
+  "aliases": [
+   "previous tab item"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous radio button - Browse mode": {
+  "aliases": [
+   "previous radio button"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous combo box - Browse mode": {
+  "aliases": [
+   "previous combo box"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous slider - Browse mode": {
+  "aliases": [
+   "previous slider"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous landmark - Browse mode": {
+  "aliases": [
+   "previous landmark"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous table - Browse mode": {
+  "aliases": [
+   "previous table"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous clickable element - Browse mode": {
+  "aliases": [
+   "previous clickable"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous edit field - Browse mode": {
+  "aliases": [
+   "previous edit field"
+  ],
+  "keep_original": true
+ },
+ "moves to the previous unvisited link - Browse mode": {
+  "aliases": [
+   "previous unvisited link"
+  ],
+  "keep_original": false
+ },
+ "moves to the previous visited link - Browse mode": {
+  "aliases": [
+   "previous visited link"
+  ],
+  "keep_original": false
+ },
+ "moves to the previous frame - Browse mode": {
+  "aliases": [
+   "previous frame"
+  ],
+  "keep_original": true
+ },
+ "find the previous occurrence of the previously entered text string from the current cursor's position - Browse mode": {
+  "aliases": [
+   "find previous"
+  ],
+  "keep_original": true
+ },
+ "Moves to the next heading at level 1 - Browse mode": {
+  "aliases": [
+   "next heading level one"
+  ],
+  "keep_original": false
+ },
+ "Moves to the previous heading at level 1 - Browse mode": {
+  "aliases": [
+   "previous heading level one"
+  ],
+  "keep_original": false
+ },
+ "Moves to the next heading at level 2 - Browse mode": {
+  "aliases": [
+   "next heading level two"
+  ],
+  "keep_original": false
+ },
+ "Moves to the previous heading at level 2 - Browse mode": {
+  "aliases": [
+   "previous heading level two"
+  ],
+  "keep_original": false
+ },
+ "Moves to the next heading at level 3 - Browse mode": {
+  "aliases": [
+   "next heading level three"
+  ],
+  "keep_original": false
+ },
+ "Moves to the previous heading at level 3 - Browse mode": {
+  "aliases": [
+   "previous heading level three"
+  ],
+  "keep_original": false
+ },
+ "Moves to the next heading at level 4 - Browse mode": {
+  "aliases": [
+   "next heading level four"
+  ],
+  "keep_original": false
+ },
+ "Moves to the previous heading at level 4 - Browse mode": {
+  "aliases": [
+   "previous heading level four"
+  ],
+  "keep_original": false
+ },
+ "Moves to the next heading at level 5 - Browse mode": {
+  "aliases": [
+   "next heading level five"
+  ],
+  "keep_original": false
+ },
+ "Moves to the previous heading at level 5 - Browse mode": {
+  "aliases": [
+   "previous heading level five"
+  ],
+  "keep_original": false
+ },
+ "Moves to the next heading at level 6 - Browse mode": {
+  "aliases": [
+   "next heading level six"
+  ],
+  "keep_original": false
+ },
+ "Moves to the previous heading at level 6 - Browse mode": {
+  "aliases": [
+   "previous heading level six"
+  ],
+  "keep_original": false
+ },
+ "Moves to the next heading at level 7 - Browse mode": {
+  "aliases": [
+   "next heading level seven"
+  ],
+  "keep_original": false
+ },
+ "Moves to the previous heading at level 7 - Browse mode": {
+  "aliases": [
+   "previous heading level seven"
+  ],
+  "keep_original": false
+ },
+ "Moves to the next heading at level 8 - Browse mode": {
+  "aliases": [
+   "next heading level eight"
+  ],
+  "keep_original": false
+ },
+ "Moves to the previous heading at level 8 - Browse mode": {
+  "aliases": [
+   "previous heading level eight"
+  ],
+  "keep_original": false
+ },
+ "Moves to the next heading at level 9 - Browse mode": {
+  "aliases": [
+   "next heading level nine"
+  ],
+  "keep_original": false
+ },
+ "Moves to the previous heading at level 9 - Browse mode": {
+  "aliases": [
+   "previous heading level nine"
+  ],
+  "keep_original": false
+ },
+ "Open Start menu - Windows commands": {
+  "aliases": [
+   "start menu"
+  ],
+  "keep_original": true
+ },
+ "Open notification center - Windows commands": {
+  "aliases": [
+   "notification center"
+  ],
+  "keep_original": true
+ },
+ "Lock computer - Windows commands": {
+  "aliases": [
+   "lock screen"
+  ],
+  "keep_original": true
+ },
+ "Find - Windows commands": {
+  "aliases": [
+   "find text"
+  ],
+  "keep_original": true
+ },
+ "Open File Explorer - Windows commands": {
+  "aliases": [
+   "open explorer"
+  ],
+  "keep_original": true
+ },
+ "Open file - Windows commands": {
+  "aliases": [
+   "open a file"
+  ],
+  "keep_original": true
+ },
+ "Take a screenshot - Windows commands": {
+  "aliases": [
+   "screenshot"
+  ],
+  "keep_original": true
+ },
+ "Open emoji panel - Windows commands": {
+  "aliases": [
+   "emoji panel"
+  ],
+  "keep_original": true
+ },
+ "Undo - Windows commands": {
+  "aliases": [
+   "undo action"
+  ],
+  "keep_original": true
+ },
+ "Go back - Windows commands": {
+  "aliases": [
+   "page back"
+  ],
+  "keep_original": true
+ },
+ "Open Task Manager - Windows commands": {
+  "aliases": [
+   "task manager"
+  ],
+  "keep_original": true
+ },
+ "Show task view - Windows commands": {
+  "aliases": [
+   "show open windows"
+  ],
+  "keep_original": true
+ },
+ "Show taskbar - Windows commands": {
+  "aliases": [
+   "focus taskbar"
+  ],
+  "keep_original": true
+ },
+ "Open quick settings - Windows commands": {
+  "aliases": [
+   "quick settings"
+  ],
+  "keep_original": true
+ },
+ "Reopen closed tab - Windows commands": {
+  "aliases": [
+   "restore tab"
+  ],
+  "keep_original": true
+ },
+ "Save - Windows commands": {
+  "aliases": [
+   "save file"
+  ],
+  "keep_original": true
+ },
+ "Cut - Windows commands": {
+  "aliases": [
+   "cut selection"
+  ],
+  "keep_original": true
+ },
+ "Copy - Windows commands": {
+  "aliases": [
+   "copy to clipboard"
+  ],
+  "keep_original": true
+ },
+ "Restore minimized windows - Windows commands": {
+  "aliases": [
+   "restore windows"
+  ],
+  "keep_original": true
+ },
+ "Show desktop - Windows commands": {
+  "aliases": [
+   "go to desktop"
+  ],
+  "keep_original": true
+ },
+ "Play or pause media - Windows commands": {
+  "aliases": [
+   "play pause"
+  ],
+  "keep_original": true
+ },
+ "Open clipboard history - Windows commands": {
+  "aliases": [
+   "clipboard history"
+  ],
+  "keep_original": true
+ },
+ "Maximize window - Windows commands": {
+  "aliases": [
+   "expand window"
+  ],
+  "keep_original": true
+ },
+ "Close window - Windows commands": {
+  "aliases": [
+   "close this window"
+  ],
+  "keep_original": true
+ },
+ "Minimize window - Windows commands": {
+  "aliases": [
+   "shrink window"
+  ],
+  "keep_original": true
+ },
+ "Snap window to the right - Windows commands": {
+  "aliases": [
+   "dock right"
+  ],
+  "keep_original": true
+ },
+ "Snap window to the left - Windows commands": {
+  "aliases": [
+   "dock left"
+  ],
+  "keep_original": true
+ },
+ "Close virtual desktop - Windows commands": {
+  "aliases": [
+   "close this desktop"
+  ],
+  "keep_original": true
+ },
+ "Close tab - Windows commands": {
+  "aliases": [
+   "close this tab"
+  ],
+  "keep_original": true
+ },
+ "Volume up - Windows commands": {
+  "aliases": [
+   "louder"
+  ],
+  "keep_original": true
+ },
+ "Volume down - Windows commands": {
+  "aliases": [
+   "quieter"
+  ],
+  "keep_original": true
+ },
+ "Mute or unmute volume - Windows commands": {
+  "aliases": [
+   "mute",
+   "mute sound"
+  ],
+  "keep_original": true
+ },
+ "Show system tray - Windows commands": {
+  "aliases": [
+   "open tray"
+  ],
+  "keep_original": true
+ },
+ "Next track - Windows commands": {
+  "aliases": [
+   "next song"
+  ],
+  "keep_original": true
+ },
+ "Next virtual desktop - Windows commands": {
+  "aliases": [
+   "next desktop"
+  ],
+  "keep_original": true
+ },
+ "Next tab - Windows commands": {
+  "aliases": [
+   "tab forward"
+  ],
+  "keep_original": true
+ },
+ "Minimize all windows - Windows commands": {
+  "aliases": [
+   "minimize everything"
+  ],
+  "keep_original": true
+ },
+ "Select all - Windows commands": {
+  "aliases": [
+   "select everything"
+  ],
+  "keep_original": true
+ },
+ "Open Windows search - Windows commands": {
+  "aliases": [
+   "windows search"
+  ],
+  "keep_original": true
+ },
+ "Open Windows settings - Windows commands": {
+  "aliases": [
+   "windows settings"
+  ],
+  "keep_original": true
+ },
+ "Start Windows voice typing - Windows commands": {
+  "aliases": [
+   "voice typing"
+  ],
+  "keep_original": true
+ },
+ "Open display projection menu - Windows commands": {
+  "aliases": [
+   "project screen"
+  ],
+  "keep_original": true
+ },
+ "Paste - Windows commands": {
+  "aliases": [
+   "paste from clipboard"
+  ],
+  "keep_original": true
+ },
+ "Print - Windows commands": {
+  "aliases": [
+   "send to printer"
+  ],
+  "keep_original": true
+ },
+ "Create new - Windows commands": {
+  "aliases": [
+   "new item"
+  ],
+  "keep_original": true
+ },
+ "New virtual desktop - Windows commands": {
+  "aliases": [
+   "add desktop"
+  ],
+  "keep_original": true
+ },
+ "New tab - Windows commands": {
+  "aliases": [
+   "open tab"
+  ],
+  "keep_original": true
+ },
+ "Rename - Windows commands": {
+  "aliases": [
+   "change name"
+  ],
+  "keep_original": true
+ },
+ "Refresh - Windows commands": {
+  "aliases": [
+   "reload page"
+  ],
+  "keep_original": true
+ },
+ "Redo - Windows commands": {
+  "aliases": [
+   "redo action"
+  ],
+  "keep_original": true
+ },
+ "Open Run dialog - Windows commands": {
+  "aliases": [
+   "run box"
+  ],
+  "keep_original": true
+ },
+ "Previous track - Windows commands": {
+  "aliases": [
+   "previous song"
+  ],
+  "keep_original": true
+ },
+ "Switch to the previous window - Windows commands": {
+  "aliases": [
+   "switch window"
+  ],
+  "keep_original": true
+ },
+ "Previous virtual desktop - Windows commands": {
+  "aliases": [
+   "previous desktop"
+  ],
+  "keep_original": true
+ },
+ "Previous tab - Windows commands": {
+  "aliases": [
+   "tab back"
+  ],
+  "keep_original": true
+ },
+ "Properties - Windows commands": {
+  "aliases": [
+   "show properties"
+  ],
+  "keep_original": true
+ },
+ "Go forward - Windows commands": {
+  "aliases": [
+   "page forward"
+  ],
+  "keep_original": true
+ },
+ "Toggles on and off the reporting of block quotes - Document formatting": {
+  "aliases": [
+   "block quote reporting"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of comments - Document formatting": {
+  "aliases": [
+   "comment reporting"
+  ],
+  "keep_original": true
+ },
+ "Toggles on and off the reporting of headings - Document formatting": {
+  "aliases": [
+   "heading reporting"
+  ],
+  "keep_original": true
+ },
+ "Toggles on and off the reporting of revisions - Document formatting": {
+  "aliases": [
+   "revision reporting"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of figures and captions - Document formatting": {
+  "aliases": [
+   "figure reporting"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of graphics - Document formatting": {
+  "aliases": [
+   "graphic reporting"
+  ],
+  "keep_original": true
+ },
+ "Toggles on and off the reporting of groupings - Document formatting": {
+  "aliases": [
+   "group reporting"
+  ],
+  "keep_original": true
+ },
+ "Toggles on and off the reporting of text alignment - Document formatting": {
+  "aliases": [
+   "alignment reporting"
+  ],
+  "keep_original": true
+ },
+ "Cycles through the cell border reporting settings - Document formatting": {
+  "aliases": [
+   "cell borders"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of link type - Document formatting": {
+  "aliases": [
+   "link type reporting"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of links - Document formatting": {
+  "aliases": [
+   "link reporting"
+  ],
+  "keep_original": true
+ },
+ "Toggles on and off the reporting of lists - Document formatting": {
+  "aliases": [
+   "list reporting"
+  ],
+  "keep_original": true
+ },
+ "Toggles on and off the reporting of articles - Document formatting": {
+  "aliases": [
+   "article reporting"
+  ],
+  "keep_original": true
+ },
+ "Toggles on and off the reporting of paragraph indentation - Document formatting": {
+  "aliases": [
+   "paragraph indentation"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of colors - Document formatting": {
+  "aliases": [
+   "color reporting"
+  ],
+  "keep_original": true
+ },
+ "Toggles on and off the reporting of line spacing - Document formatting": {
+  "aliases": [
+   "line spacing"
+  ],
+  "keep_original": false
+ },
+ "Cycles through line indentation settings - Document formatting": {
+  "aliases": [
+   "line indentation"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the ignoring of blank lines for line indentation reporting - Document formatting": {
+  "aliases": [
+   "skip blank lines"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of line numbers - Document formatting": {
+  "aliases": [
+   "line numbers"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of pages - Document formatting": {
+  "aliases": [
+   "page reporting"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of style changes - Document formatting": {
+  "aliases": [
+   "style reporting"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of landmarks - Document formatting": {
+  "aliases": [
+   "landmark reporting"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of table cell coordinates - Document formatting": {
+  "aliases": [
+   "cell coordinates"
+  ],
+  "keep_original": false
+ },
+ "Cycle through the possible modes to report table row and column headers - Document formatting": {
+  "aliases": [
+   "table headers"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of tables - Document formatting": {
+  "aliases": [
+   "table reporting"
+  ],
+  "keep_original": true
+ },
+ "Toggles on and off reporting if clickable - Document formatting": {
+  "aliases": [
+   "clickable reporting"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of emphasis - Document formatting": {
+  "aliases": [
+   "emphasis reporting"
+  ],
+  "keep_original": true
+ },
+ "Toggles on and off the reporting of highlighted text - Document formatting": {
+  "aliases": [
+   "highlight reporting"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of font size changes - Document formatting": {
+  "aliases": [
+   "font size"
+  ],
+  "keep_original": false
+ },
+ "Cycles font attribute reporting between speech, braille, speech and braille, and off. - Document formatting": {
+  "aliases": [
+   "attribute reporting"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of font changes - Document formatting": {
+  "aliases": [
+   "font name"
+  ],
+  "keep_original": false
+ },
+ "Cycles through options for how to report spelling or grammar errors - Document formatting": {
+  "aliases": [
+   "spelling error reporting"
+  ],
+  "keep_original": false
+ },
+ "Toggles reporting spelling or grammar errors in braille - Document formatting": {
+  "aliases": [
+   "braille spelling errors"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of frames - Document formatting": {
+  "aliases": [
+   "frame reporting"
+  ],
+  "keep_original": true
+ },
+ "Toggles on and off the reporting of superscripts and subscripts - Document formatting": {
+  "aliases": [
+   "superscript reporting"
+  ],
+  "keep_original": false
+ },
+ "Pressing once reverts the current configuration to the most recently saved state. Pressing three times resets to factory defaults. - Configuration": {
+  "aliases": [
+   "revert settings"
+  ],
+  "keep_original": false
+ },
+ "Reports the name of the current NVDA configuration profile - Configuration": {
+  "aliases": [
+   "profile name"
+  ],
+  "keep_original": false
+ },
+ "Toggles disabling of all configuration profile triggers. Disabling remains in effect until NVDA is restarted - Configuration": {
+  "aliases": [
+   "profile triggers"
+  ],
+  "keep_original": false
+ },
+ "Saves the current NVDA configuration - Configuration": {
+  "aliases": [
+   "save settings"
+  ],
+  "keep_original": true
+ },
+ "Shows the NVDA synthesizer selection dialog - Configuration": {
+  "aliases": [
+   "choose synthesizer"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's audio settings - Configuration": {
+  "aliases": [
+   "audio settings"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's document formatting settings - Configuration": {
+  "aliases": [
+   "formatting settings"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's braille settings - Configuration": {
+  "aliases": [
+   "braille settings"
+  ],
+  "keep_original": false
+ },
+ "Shows the NVDA braille display selection dialog - Configuration": {
+  "aliases": [
+   "choose braille display"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's mouse settings - Configuration": {
+  "aliases": [
+   "mouse settings"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's general settings - Configuration": {
+  "aliases": [
+   "general settings"
+  ],
+  "keep_original": false
+ },
+ "Shows the NVDA temporary dictionary dialog - Configuration": {
+  "aliases": [
+   "temporary dictionary"
+  ],
+  "keep_original": false
+ },
+ "Shows the NVDA input gestures dialog - Configuration": {
+  "aliases": [
+   "input gestures"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's input composition settings - Configuration": {
+  "aliases": [
+   "input composition"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's privacy and security settings - Configuration": {
+  "aliases": [
+   "privacy settings"
+  ],
+  "keep_original": false
+ },
+ "Shows the NVDA symbol pronunciation dialog - Configuration": {
+  "aliases": [
+   "symbol pronunciation"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's review cursor settings - Configuration": {
+  "aliases": [
+   "review cursor settings"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's keyboard settings - Configuration": {
+  "aliases": [
+   "keyboard settings"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's speech settings - Configuration": {
+  "aliases": [
+   "speech settings"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's object presentation settings - Configuration": {
+  "aliases": [
+   "object presentation"
+  ],
+  "keep_original": false
+ },
+ "Shows the NVDA voice-specific dictionary dialog - Configuration": {
+  "aliases": [
+   "voice dictionary"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's browse mode settings - Configuration": {
+  "aliases": [
+   "browse mode settings"
+  ],
+  "keep_original": false
+ },
+ "Shows the NVDA default dictionary dialog - Configuration": {
+  "aliases": [
+   "default dictionary"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's Windows OCR settings - Configuration": {
+  "aliases": [
+   "ocr settings"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's magnifier settings - Configuration": {
+  "aliases": [
+   "magnifier settings"
+  ],
+  "keep_original": true
+ },
+ "Shows NVDA's Add-on Store settings - Configuration": {
+  "aliases": [
+   "store settings"
+  ],
+  "keep_original": false
+ },
+ "Shows NVDA's Advanced settings - Configuration": {
+  "aliases": [
+   "advanced settings"
+  ],
+  "keep_original": true
+ },
+ "Shows NVDA's vision settings - Configuration": {
+  "aliases": [
+   "vision settings"
+  ],
+  "keep_original": true
+ },
+ "Shows the Remote Access settings - Configuration": {
+  "aliases": [
+   "remote access settings"
+  ],
+  "keep_original": true
+ },
+ "If pressed once, the text from the previously set start marker up to and including the current position of the review cursor is selected. If pressed twice, the text is copied to the clipboard - Text review": {
+  "aliases": [
+   "select from marker",
+   "copy from marker x2"
+  ],
+  "keep_original": false
+ },
+ "Reports formatting info for the current review cursor position. - Text review": {
+  "aliases": [
+   "review formatting"
+  ],
+  "keep_original": false
+ },
+ "Reports formatting info for the current review cursor position. If pressed twice, presents the information in browse mode - Text review": {
+  "aliases": [
+   "review formatting details",
+   "review formatting window x2"
+  ],
+  "keep_original": false
+ },
+ "Switches to the next review mode (e.g. object, document or screen) and positions the review position at the point of the navigator object - Text review": {
+  "aliases": [
+   "next review mode"
+  ],
+  "keep_original": false
+ },
+ "Presents, in browse mode, formatting info for the current review cursor position. - Text review": {
+  "aliases": [
+   "show review formatting"
+  ],
+  "keep_original": false
+ },
+ "Switches to the previous review mode (e.g. object, document or screen) and positions the review position at the point of the navigator object - Text review": {
+  "aliases": [
+   "previous review mode"
+  ],
+  "keep_original": false
+ },
+ "Reads from the review cursor up to the end of the current text, moving the review cursor as it goes - Text review": {
+  "aliases": [
+   "read review"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the bottom line of the current navigator object and speaks it - Text review": {
+  "aliases": [
+   "bottom line"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the top line of the current navigator object and speaks it - Text review": {
+  "aliases": [
+   "top line"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the next page of the current navigator object and speaks it - Text review": {
+  "aliases": [
+   "review next page"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the previous page of the current navigator object and speaks it - Text review": {
+  "aliases": [
+   "review previous page"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the first character of the selection, and speaks it - Text review": {
+  "aliases": [
+   "first selected character"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the last character of the selection, and speaks it - Text review": {
+  "aliases": [
+   "last selected character"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the next character of the current navigator object and speaks it - Text review": {
+  "aliases": [
+   "next character"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the next line of the current navigator object and speaks it - Text review": {
+  "aliases": [
+   "review next line"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the next word of the current navigator object and speaks it - Text review": {
+  "aliases": [
+   "next word"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the previous character of the current navigator object and speaks it - Text review": {
+  "aliases": [
+   "previous character"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the previous line of the current navigator object and speaks it - Text review": {
+  "aliases": [
+   "review previous line"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the previous word of the current navigator object and speaks it - Text review": {
+  "aliases": [
+   "previous word"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the first character of the line where it is situated in the current navigator object and speaks it - Text review": {
+  "aliases": [
+   "line start"
+  ],
+  "keep_original": false
+ },
+ "Moves the review cursor to the last character of the line where it is situated in the current navigator object and speaks it - Text review": {
+  "aliases": [
+   "line end"
+  ],
+  "keep_original": false
+ },
+ "Move the review cursor to the position marked as the start of text to be selected or copied - Text review": {
+  "aliases": [
+   "go to marker"
+  ],
+  "keep_original": false
+ },
+ "Reports the symbol where the review cursor is positioned. Pressed twice, shows the symbol and the text used to speak it in browse mode - Text review": {
+  "aliases": [
+   "say symbol",
+   "show symbol window x2"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the movement of the review cursor due to the caret moving. - Text review": {
+  "aliases": [
+   "review follows caret"
+  ],
+  "keep_original": false
+ },
+ "Reports the line of the current navigator object where the review cursor is situated. If this key is pressed twice, the current line will be spelled. Pressing three times will spell the line using character descriptions. - Text review": {
+  "aliases": [
+   "review line",
+   "spell review line x2",
+   "describe review line x3"
+  ],
+  "keep_original": false
+ },
+ "Speaks the word of the current navigator object where the review cursor is situated. Pressing twice spells the word. Pressing three times spells the word using character descriptions - Text review": {
+  "aliases": [
+   "review word",
+   "spell review word x2",
+   "describe review word x3"
+  ],
+  "keep_original": false
+ },
+ "Marks the current position of the review cursor as the start of text to be selected or copied - Text review": {
+  "aliases": [
+   "set marker"
+  ],
+  "keep_original": false
+ },
+ "Reports the character of the current navigator object where the review cursor is situated. Pressing twice reports a description or example of that character. Pressing three times reports the numeric value of the character in decimal and hexadecimal - Text review": {
+  "aliases": [
+   "review character",
+   "review character description x2",
+   "review character value x3"
+  ],
+  "keep_original": false
+ },
+ "Toggle tethering of braille between the focus and the review position - Braille": {
+  "aliases": [
+   "braille tethering"
+  ],
+  "keep_original": false
+ },
+ "Moves the braille display to the next line - Braille": {
+  "aliases": [
+   "braille next line"
+  ],
+  "keep_original": false
+ },
+ "Moves the braille display to the previous line - Braille": {
+  "aliases": [
+   "braille previous line"
+  ],
+  "keep_original": false
+ },
+ "Scrolls the braille display back - Braille": {
+  "aliases": [
+   "braille scroll back"
+  ],
+  "keep_original": true
+ },
+ "Scrolls the braille display forward - Braille": {
+  "aliases": [
+   "braille scroll forward"
+  ],
+  "keep_original": true
+ },
+ "Translates any braille input - Braille": {
+  "aliases": [
+   "translate braille input"
+  ],
+  "keep_original": true
+ },
+ "Toggles on and off speaking when navigating by lines or paragraph with braille - Braille": {
+  "aliases": [
+   "braille line speaking"
+  ],
+  "keep_original": false
+ },
+ "Toggle the braille cursor on and off - Braille": {
+  "aliases": [
+   "braille cursor"
+  ],
+  "keep_original": true
+ },
+ "Cycle through the braille cursor shapes - Braille": {
+  "aliases": [
+   "braille cursor shape"
+  ],
+  "keep_original": false
+ },
+ "Toggles braille mode - Braille": {
+  "aliases": [
+   "braille mode"
+  ],
+  "keep_original": true
+ },
+ "Cycle through the braille show messages modes - Braille": {
+  "aliases": [
+   "braille message mode"
+  ],
+  "keep_original": false
+ },
+ "Increases the rate for braille automatic scroll - Braille": {
+  "aliases": [
+   "increase braille rate"
+  ],
+  "keep_original": false
+ },
+ "Decreases the rate for braille automatic scroll - Braille": {
+  "aliases": [
+   "decrease braille rate"
+  ],
+  "keep_original": false
+ },
+ "Cycle through the braille show selection states - Braille": {
+  "aliases": [
+   "braille selection shape"
+  ],
+  "keep_original": false
+ },
+ "Cycle through the braille Unicode normalization states - Braille": {
+  "aliases": [
+   "braille unicode mode"
+  ],
+  "keep_original": false
+ },
+ "Reports formatting info for the text under this braille cell - Braille": {
+  "aliases": [
+   "braille cell formatting"
+  ],
+  "keep_original": false
+ },
+ "Erases the last entered braille cell or character - Braille": {
+  "aliases": [
+   "delete braille cell"
+  ],
+  "keep_original": false
+ },
+ "Moves the braille display to the current focus - Braille": {
+  "aliases": [
+   "braille to focus"
+  ],
+  "keep_original": false
+ },
+ "Translates any braille input and presses the enter key - Braille": {
+  "aliases": [
+   "send braille input"
+  ],
+  "keep_original": false
+ },
+ "Inputs braille dots via the braille keyboard - Braille": {
+  "aliases": [
+   "braille keyboard input"
+  ],
+  "keep_original": false
+ },
+ "Toggles braille automatic scroll - Braille": {
+  "aliases": [
+   "braille auto scroll"
+  ],
+  "keep_original": true
+ },
+ "Selects the text from the first up to the last braille cell - Braille": {
+  "aliases": [
+   "select braille line"
+  ],
+  "keep_original": false
+ },
+ "Routes the cursor to or activates the object under this braille cell - Braille": {
+  "aliases": [
+   "activate braille cell"
+  ],
+  "keep_original": false
+ },
+ "Toggles speaking the character under the cursor when routing cursor in text - Braille": {
+  "aliases": [
+   "braille character speech"
+  ],
+  "keep_original": false
+ },
+ "Cycle through the braille move system caret when routing review cursor states - Braille": {
+  "aliases": [
+   "braille move caret"
+  ],
+  "keep_original": false
+ },
+ "Toggle the way context information is presented in braille - Braille": {
+  "aliases": [
+   "braille context info"
+  ],
+  "keep_original": false
+ },
+ "Toggles sleep mode on and off for the active application. - Miscellaneous": {
+  "aliases": [
+   "sleep mode"
+  ],
+  "keep_original": false
+ },
+ "Toggle periodical refresh of a Windows OCR result - Miscellaneous": {
+  "aliases": [
+   "ocr refresh"
+  ],
+  "keep_original": false
+ },
+ "Reports the state of the screen curtain. - Miscellaneous": {
+  "aliases": [
+   "curtain status",
+   "screen curtain status"
+  ],
+  "keep_original": true
+ },
+ "Toggles the state of the screen curtain, enable to make the screen black or disable to show the contents of the screen. Pressed once, screen curtain is enabled until you restart NVDA. Pressed twice, screen curtain is enabled until you disable it - Miscellaneous": {
+  "aliases": [
+   "screen curtain",
+   "enable curtain",
+   "permanent curtain x2"
+  ],
+  "keep_original": false
+ },
+ "Reads the row horizontally from the current cell rightwards to the last cell in the row. - Miscellaneous": {
+  "aliases": [
+   "read row from cell"
+  ],
+  "keep_original": false
+ },
+ "Cycles through the available languages for Windows OCR - Miscellaneous": {
+  "aliases": [
+   "ocr language"
+  ],
+  "keep_original": false
+ },
+ "Shows the NVDA menu - Miscellaneous": {
+  "aliases": [
+   "nvda menu"
+  ],
+  "keep_original": true
+ },
+ "Quits NVDA! - Miscellaneous": {
+  "aliases": [
+   "quit nvda"
+  ],
+  "keep_original": true
+ },
+ "Restarts NVDA! - Miscellaneous": {
+  "aliases": [
+   "restart nvda"
+  ],
+  "keep_original": true
+ },
+ "Reads the current row horizontally from left to right without moving the system caret. - Miscellaneous": {
+  "aliases": [
+   "read row"
+  ],
+  "keep_original": false
+ },
+ "Reads the current column vertically from top to bottom without moving the system caret. - Miscellaneous": {
+  "aliases": [
+   "read column"
+  ],
+  "keep_original": false
+ },
+ "Reads the column vertically from the current cell downwards to the last cell in the column. - Miscellaneous": {
+  "aliases": [
+   "read column from cell"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the inclusion of layout tables in browse mode - Miscellaneous": {
+  "aliases": [
+   "layout tables"
+  ],
+  "keep_original": false
+ },
+ "Recognizes the content of the current navigator object with Windows OCR - Miscellaneous": {
+  "aliases": [
+   "read with ocr"
+  ],
+  "keep_original": false
+ },
+ "moves to the next table row - Miscellaneous": {
+  "aliases": [
+   "next table row"
+  ],
+  "keep_original": false
+ },
+ "moves to the next table column - Miscellaneous": {
+  "aliases": [
+   "next table column"
+  ],
+  "keep_original": false
+ },
+ "moves to the previous table row - Miscellaneous": {
+  "aliases": [
+   "previous table row"
+  ],
+  "keep_original": false
+ },
+ "moves to the previous table column - Miscellaneous": {
+  "aliases": [
+   "previous table column"
+  ],
+  "keep_original": false
+ },
+ "moves to the first table row - Miscellaneous": {
+  "aliases": [
+   "first table row"
+  ],
+  "keep_original": true
+ },
+ "moves to the first table column - Miscellaneous": {
+  "aliases": [
+   "first table column"
+  ],
+  "keep_original": true
+ },
+ "moves to the last table row - Miscellaneous": {
+  "aliases": [
+   "last table row"
+  ],
+  "keep_original": true
+ },
+ "moves to the last table column - Miscellaneous": {
+  "aliases": [
+   "last table column"
+  ],
+  "keep_original": true
+ },
+ "Toggles between beeps, speech, beeps and speech, and off, for reporting progress bar updates - Speech": {
+  "aliases": [
+   "progress bar output"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of dynamic content changes, such as new text in dos console windows - Speech": {
+  "aliases": [
+   "console updates"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the reporting of CLDR characters, such as emojis - Speech": {
+  "aliases": [
+   "emoji reporting"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off delayed descriptions for characters on cursor movement - Speech": {
+  "aliases": [
+   "delayed descriptions"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the speaking of command keys - Speech": {
+  "aliases": [
+   "speak command keys"
+  ],
+  "keep_original": false
+ },
+ "Cycles between speech modes. - Speech": {
+  "aliases": [
+   "speech mode"
+  ],
+  "keep_original": false
+ },
+ "Cycle through the speech Unicode normalization states - Speech": {
+  "aliases": [
+   "speech unicode mode"
+  ],
+  "keep_original": false
+ },
+ "Cycles through the possible choices for automatic language switching: off, language only and language and dialect. - Speech": {
+  "aliases": [
+   "language switching"
+  ],
+  "keep_original": false
+ },
+ "Cycles through speech symbol levels which determine what symbols are spoken - Speech": {
+  "aliases": [
+   "symbol level"
+  ],
+  "keep_original": false
+ },
+ "Increases the currently active setting in the synth settings ring - Speech": {
+  "aliases": [
+   "increase setting"
+  ],
+  "keep_original": false
+ },
+ "Decreases the currently active setting in the synth settings ring - Speech": {
+  "aliases": [
+   "decrease setting"
+  ],
+  "keep_original": false
+ },
+ "Moves to the next available setting in the synth settings ring - Speech": {
+  "aliases": [
+   "next setting"
+  ],
+  "keep_original": false
+ },
+ "Moves to the previous available setting in the synth settings ring - Speech": {
+  "aliases": [
+   "previous setting"
+  ],
+  "keep_original": false
+ },
+ "Set the first value of the current setting in the synth settings ring - Speech": {
+  "aliases": [
+   "lowest value"
+  ],
+  "keep_original": false
+ },
+ "Set the last value of the current setting in the synth settings ring - Speech": {
+  "aliases": [
+   "highest value"
+  ],
+  "keep_original": false
+ },
+ "Increases the currently active setting in the synth settings ring in a larger step - Speech": {
+  "aliases": [
+   "big increase"
+  ],
+  "keep_original": false
+ },
+ "Decreases the currently active setting in the synth settings ring in a larger step - Speech": {
+  "aliases": [
+   "big decrease"
+  ],
+  "keep_original": false
+ },
+ "Copies the last spoken information to the clipboard. - Speech": {
+  "aliases": [
+   "copy last speech"
+  ],
+  "keep_original": false
+ },
+ "Repeat the last spoken information. Pressing twice shows it in a browsable message. - Speech": {
+  "aliases": [
+   "repeat last speech",
+   "show last speech x2"
+  ],
+  "keep_original": false
+ },
+ "Cycles through options for when to speak typed characters. - Speech": {
+  "aliases": [
+   "typed character echo"
+  ],
+  "keep_original": false
+ },
+ "Cycles through options for when to speak typed words. - Speech": {
+  "aliases": [
+   "typed word echo"
+  ],
+  "keep_original": false
+ },
+ "Toggle the magnifier on and off - Magnifier": {
+  "aliases": [
+   "start magnifier",
+   "stop magnifier"
+  ],
+  "keep_original": true
+ },
+ "Toggle magnifier mouse tracking - Magnifier": {
+  "aliases": [
+   "magnifier mouse tracking"
+  ],
+  "keep_original": true
+ },
+ "Toggle magnifier review cursor tracking - Magnifier": {
+  "aliases": [
+   "magnifier review tracking"
+  ],
+  "keep_original": false
+ },
+ "Toggle magnifier navigator object tracking - Magnifier": {
+  "aliases": [
+   "magnifier object tracking"
+  ],
+  "keep_original": false
+ },
+ "Toggle magnifier system focus tracking - Magnifier": {
+  "aliases": [
+   "magnifier focus tracking"
+  ],
+  "keep_original": false
+ },
+ "Increase the magnification level - Magnifier": {
+  "aliases": [
+   "zoom in"
+  ],
+  "keep_original": true
+ },
+ "Decrease the magnification level - Magnifier": {
+  "aliases": [
+   "zoom out"
+  ],
+  "keep_original": true
+ },
+ "Pan the magnified view to bottom edge - Magnifier": {
+  "aliases": [
+   "magnifier bottom edge"
+  ],
+  "keep_original": false
+ },
+ "Pan the magnified view down - Magnifier": {
+  "aliases": [
+   "magnifier scroll down"
+  ],
+  "keep_original": true
+ },
+ "Pan the magnified view to right edge - Magnifier": {
+  "aliases": [
+   "magnifier right edge"
+  ],
+  "keep_original": false
+ },
+ "Pan the magnified view right - Magnifier": {
+  "aliases": [
+   "magnifier scroll right"
+  ],
+  "keep_original": true
+ },
+ "Pan the magnified view to left edge - Magnifier": {
+  "aliases": [
+   "magnifier left edge"
+  ],
+  "keep_original": false
+ },
+ "Pan the magnified view left - Magnifier": {
+  "aliases": [
+   "magnifier scroll left"
+  ],
+  "keep_original": true
+ },
+ "Pan the magnified view up - Magnifier": {
+  "aliases": [
+   "magnifier scroll up"
+  ],
+  "keep_original": true
+ },
+ "Pan the magnified view to top edge - Magnifier": {
+  "aliases": [
+   "magnifier top edge"
+  ],
+  "keep_original": false
+ },
+ "Moves the mouse cursor to the center of the magnified view - Magnifier": {
+  "aliases": [
+   "center mouse"
+  ],
+  "keep_original": false
+ },
+ "Cycle through the color filters - Magnifier": {
+  "aliases": [
+   "magnifier color filter"
+  ],
+  "keep_original": false
+ },
+ "Cycle through tracking modes - Magnifier": {
+  "aliases": [
+   "magnifier tracking mode"
+  ],
+  "keep_original": false
+ },
+ "Toggle all magnifier tracking settings - Magnifier": {
+  "aliases": [
+   "magnifier all tracking"
+  ],
+  "keep_original": false
+ },
+ "Temporarily show an overview of the entire screen - Magnifier": {
+  "aliases": [
+   "show overview"
+  ],
+  "keep_original": false
+ },
+ "Virtually toggles the NVDA key to emulate a keyboard shortcut with braille input - Emulated system keyboard keys": {
+  "aliases": [
+   "nvda key"
+  ],
+  "keep_original": false
+ },
+ "Virtually toggles the alt key to emulate a keyboard shortcut with braille input - Emulated system keyboard keys": {
+  "aliases": [
+   "alt key"
+  ],
+  "keep_original": false
+ },
+ "Virtually toggles the control key to emulate a keyboard shortcut with braille input - Emulated system keyboard keys": {
+  "aliases": [
+   "control key"
+  ],
+  "keep_original": false
+ },
+ "Virtually toggles the shift key to emulate a keyboard shortcut with braille input - Emulated system keyboard keys": {
+  "aliases": [
+   "shift key"
+  ],
+  "keep_original": false
+ },
+ "Virtually toggles the left windows key to emulate a keyboard shortcut with braille input - Emulated system keyboard keys": {
+  "aliases": [
+   "windows key"
+  ],
+  "keep_original": false
+ },
+ "Virtually toggles the NVDA and shift keys to emulate a keyboard shortcut with braille input - Emulated system keyboard keys": {
+  "aliases": [
+   "nvda shift"
+  ],
+  "keep_original": false
+ },
+ "Virtually toggles the alt and shift keys to emulate a keyboard shortcut with braille input - Emulated system keyboard keys": {
+  "aliases": [
+   "alt shift"
+  ],
+  "keep_original": false
+ },
+ "Virtually toggles the control and shift keys to emulate a keyboard shortcut with braille input - Emulated system keyboard keys": {
+  "aliases": [
+   "control shift"
+  ],
+  "keep_original": false
+ },
+ "Virtually toggles the control, alt, and shift keys to emulate a keyboard shortcut with braille input - Emulated system keyboard keys": {
+  "aliases": [
+   "control alt shift"
+  ],
+  "keep_original": false
+ },
+ "Virtually toggles the left windows and shift keys to emulate a keyboard shortcut with braille input - Emulated system keyboard keys": {
+  "aliases": [
+   "windows shift"
+  ],
+  "keep_original": false
+ },
+ "down arrow - Emulated system keyboard keys": {
+  "aliases": [
+   "down arrow key"
+  ],
+  "keep_original": true
+ },
+ "end - Emulated system keyboard keys": {
+  "aliases": [
+   "end key"
+  ],
+  "keep_original": true
+ },
+ "home - Emulated system keyboard keys": {
+  "aliases": [
+   "home key"
+  ],
+  "keep_original": true
+ },
+ "right arrow - Emulated system keyboard keys": {
+  "aliases": [
+   "right arrow key"
+  ],
+  "keep_original": true
+ },
+ "left arrow - Emulated system keyboard keys": {
+  "aliases": [
+   "left arrow key"
+  ],
+  "keep_original": true
+ },
+ "up arrow - Emulated system keyboard keys": {
+  "aliases": [
+   "up arrow key"
+  ],
+  "keep_original": true
+ },
+ "ctrl+end - Emulated system keyboard keys": {
+  "aliases": [
+   "document end"
+  ],
+  "keep_original": true
+ },
+ "ctrl+home - Emulated system keyboard keys": {
+  "aliases": [
+   "document start"
+  ],
+  "keep_original": true
+ },
+ "ctrl+right arrow - Emulated system keyboard keys": {
+  "aliases": [
+   "word forward"
+  ],
+  "keep_original": true
+ },
+ "ctrl+left arrow - Emulated system keyboard keys": {
+  "aliases": [
+   "word back"
+  ],
+  "keep_original": true
+ },
+ "Toggles simple review mode on and off - Object navigation": {
+  "aliases": [
+   "simple review"
+  ],
+  "keep_original": false
+ },
+ "Pressed once sets the keyboard focus to the navigator object, pressed twice sets the system caret to the position of the review cursor - Object navigation": {
+  "aliases": [
+   "move focus",
+   "move caret x2"
+  ],
+  "keep_original": false
+ },
+ "Reports information about the location of the current navigator object. - Object navigation": {
+  "aliases": [
+   "navigator location"
+  ],
+  "keep_original": false
+ },
+ "Reads the current application status bar and moves navigator object into it. - Object navigation": {
+  "aliases": [
+   "go to status bar"
+  ],
+  "keep_original": false
+ },
+ "Moves to the next object in a flattened view of the object navigation hierarchy - Object navigation": {
+  "aliases": [
+   "next object"
+  ],
+  "keep_original": false
+ },
+ "Moves to the previous object in a flattened view of the object navigation hierarchy - Object navigation": {
+  "aliases": [
+   "previous object"
+  ],
+  "keep_original": false
+ },
+ "Sets the navigator object to the current focus, and the review cursor to the position of the caret inside it, if possible. - Object navigation": {
+  "aliases": [
+   "object to focus"
+  ],
+  "keep_original": false
+ },
+ "Moves the navigator object to the next object - Object navigation": {
+  "aliases": [
+   "next sibling"
+  ],
+  "keep_original": false
+ },
+ "Moves the navigator object to the previous object - Object navigation": {
+  "aliases": [
+   "previous sibling"
+  ],
+  "keep_original": false
+ },
+ "Moves the navigator object to the object containing it - Object navigation": {
+  "aliases": [
+   "parent object"
+  ],
+  "keep_original": false
+ },
+ "Moves the navigator object to the first object inside it - Object navigation": {
+  "aliases": [
+   "child object"
+  ],
+  "keep_original": false
+ },
+ "Toggles on and off the movement of the navigator object due to focus changes - Object navigation": {
+  "aliases": [
+   "object follows focus"
+  ],
+  "keep_original": false
+ },
+ "Reports the current navigator object. Pressing twice spells this information, and pressing three times Copies name and value of this object to the clipboard - Object navigation": {
+  "aliases": [
+   "say object",
+   "spell object x2",
+   "copy object x3"
+  ],
+  "keep_original": false
+ },
+ "Performs the default action on the current navigator object (example: presses it if it is a button). - Object navigation": {
+  "aliases": [
+   "default action"
+  ],
+  "keep_original": false
+ },
+ "Reports information about the location of the text or object at the review cursor. Pressing twice may provide further detail. - Object navigation": {
+  "aliases": [
+   "object location",
+   "object location details x2"
+  ],
+  "keep_original": false
+ },
+ "Toggles how much text will be spoken when the mouse moves - Mouse": {
+  "aliases": [
+   "mouse text unit"
+  ],
+  "keep_original": false
+ },
+ "Toggles beeps that report mouse coordinates as the mouse moves - Mouse": {
+  "aliases": [
+   "mouse coordinate beeps"
+  ],
+  "keep_original": false
+ },
+ "Toggles the reporting of information as the mouse moves - Mouse": {
+  "aliases": [
+   "mouse reporting"
+  ],
+  "keep_original": false
+ },
+ "Moves the mouse pointer to the current navigator object - Mouse": {
+  "aliases": [
+   "move mouse to object"
+  ],
+  "keep_original": false
+ },
+ "Clicks the right mouse button once at the current mouse position - Mouse": {
+  "aliases": [
+   "right click"
+  ],
+  "keep_original": false
+ },
+ "Clicks the left mouse button once at the current mouse position - Mouse": {
+  "aliases": [
+   "left click",
+   "mouse click"
+  ],
+  "keep_original": false
+ },
+ "Scroll down at the mouse position - Mouse": {
+  "aliases": [
+   "mouse scroll down"
+  ],
+  "keep_original": false
+ },
+ "Scroll right at the mouse position - Mouse": {
+  "aliases": [
+   "mouse scroll right"
+  ],
+  "keep_original": false
+ },
+ "Scroll left at the mouse position - Mouse": {
+  "aliases": [
+   "mouse scroll left"
+  ],
+  "keep_original": false
+ },
+ "Scroll up at the mouse position - Mouse": {
+  "aliases": [
+   "mouse scroll up"
+  ],
+  "keep_original": false
+ },
+ "Sets the navigator object to the current object under the mouse pointer and speaks it - Mouse": {
+  "aliases": [
+   "object to mouse"
+  ],
+  "keep_original": false
+ },
+ "Locks or unlocks the right mouse button - Mouse": {
+  "aliases": [
+   "lock right mouse"
+  ],
+  "keep_original": true
+ },
+ "Locks or unlocks the left mouse button - Mouse": {
+  "aliases": [
+   "lock left mouse"
+  ],
+  "keep_original": true
+ },
+ "Speaks the filename of the active application along with the name of the currently loaded appModule - Tools": {
+  "aliases": [
+   "app file name"
+  ],
+  "keep_original": false
+ },
+ "Toggles the NVDA Braille viewer, a floating window that allows you to view braille output, and the text equivalent for each braille character - Tools": {
+  "aliases": [
+   "braille viewer"
+  ],
+  "keep_original": false
+ },
+ "Displays the destination URL of the link at the position of caret or focus in a window, instead of just speaking it. May be preferred by braille users. - Tools": {
+  "aliases": [
+   "show link in window"
+  ],
+  "keep_original": false
+ },
+ "Report the destination URL of the link at the position of caret or focus. If pressed twice, shows the URL in a window for easier review. - Tools": {
+  "aliases": [
+   "link address",
+   "link address window x2"
+  ],
+  "keep_original": false
+ },
+ "Activates the Add-on Store to browse and manage add-on packages for NVDA - Tools": {
+  "aliases": [
+   "add on store"
+  ],
+  "keep_original": false
+ },
+ "Opens NVDA configuration directory for the current user. - Tools": {
+  "aliases": [
+   "config folder"
+  ],
+  "keep_original": false
+ },
+ "Toggles the NVDA Speech viewer, a floating window that allows you to view all the text that NVDA is currently speaking - Tools": {
+  "aliases": [
+   "speech viewer"
+  ],
+  "keep_original": false
+ },
+ "Activates the NVDA Python Console, primarily useful for development - Tools": {
+  "aliases": [
+   "python console"
+  ],
+  "keep_original": false
+ },
+ "Mark the current end of the log as the start of the fragment to be copied to clipboard by pressing again. - Tools": {
+  "aliases": [
+   "log start"
+  ],
+  "keep_original": false
+ },
+ "Reloads app modules and global plugins without restarting NVDA, which can be Useful for developers - Tools": {
+  "aliases": [
+   "reload plugins"
+  ],
+  "keep_original": false
+ },
+ "Opens the WX GUI inspection tool. Used to get more information about the state of GUI components. - Tools": {
+  "aliases": [
+   "gui inspector"
+  ],
+  "keep_original": false
+ },
+ "Logs information about the current navigator object which is useful to developers and activates the log viewer so the information can be examined. - Tools": {
+  "aliases": [
+   "log object"
+  ],
+  "keep_original": false
+ },
+ "Announces the current selection in edit controls and documents. Pressing twice spells this information. Pressing three times spells it using character descriptions. Pressing four times shows it in a browsable message.  - System caret": {
+  "aliases": [
+   "read selection",
+   "spell selection x2",
+   "describe selection x3",
+   "show selection window x4"
+  ],
+  "keep_original": false
+ },
+ "Cycles through paragraph navigation styles - System caret": {
+  "aliases": [
+   "paragraph mode"
+  ],
+  "keep_original": false
+ },
+ "Report summary of any annotation details at the system caret. - System caret": {
+  "aliases": [
+   "annotation summary"
+  ],
+  "keep_original": false
+ },
+ "Reports information about the location of the text or object at the position of system caret. Pressing twice may provide further detail. - System caret": {
+  "aliases": [
+   "caret location",
+   "caret location details x2"
+  ],
+  "keep_original": false
+ },
+ "Reads from the system caret up to the end of the text, moving the caret as it goes - System caret": {
+  "aliases": [
+   "read to end"
+  ],
+  "keep_original": false
+ },
+ "Presents, in browse mode, formatting info for the text under the caret. - System caret": {
+  "aliases": [
+   "show caret formatting"
+  ],
+  "keep_original": false
+ },
+ "Reports the current line under the application cursor. Pressing this key twice will spell the current line. Pressing three times will spell the line using character descriptions. - System caret": {
+  "aliases": [
+   "read line",
+   "spell line x2",
+   "describe line x3"
+  ],
+  "keep_original": false
+ },
+ "Reports the language for the text under the caret. If pressed twice, presents the information in browse mode - System caret": {
+  "aliases": [
+   "text language",
+   "text language window x2"
+  ],
+  "keep_original": false
+ },
+ "Reports formatting info for the text under the caret. - System caret": {
+  "aliases": [
+   "caret formatting"
+  ],
+  "keep_original": false
+ },
+ "Reports formatting info for the text under the caret. If pressed twice, presents the information in browse mode - System caret": {
+  "aliases": [
+   "caret formatting details",
+   "caret formatting window x2"
+  ],
+  "keep_original": false
+ },
+ "Reports information about the location of the text at the caret, or location of the currently focused object if there is no caret. - System caret": {
+  "aliases": [
+   "location info"
+  ],
+  "keep_original": false
+ },
+ "Reads the current application status bar. If pressed twice, spells the information. If pressed three times, copies the status bar to the clipboard - System focus": {
+  "aliases": [
+   "read status bar",
+   "status bar spelling x2"
+  ],
+  "keep_original": false
+ },
+ "Reads all controls in the active window - System focus": {
+  "aliases": [
+   "window controls"
+  ],
+  "keep_original": false
+ },
+ "Spells the current application status bar. - System focus": {
+  "aliases": [
+   "spell status bar"
+  ],
+  "keep_original": false
+ },
+ "Reads the current application status bar. - System focus": {
+  "aliases": [
+   "app status"
+  ],
+  "keep_original": false
+ },
+ "Copies content of the status bar  of current application to the clipboard. - System focus": {
+  "aliases": [
+   "copy status bar"
+  ],
+  "keep_original": false
+ },
+ "Reports the title of the current application or foreground window. If pressed twice, spells the title. If pressed three times, copies the title to the clipboard - System focus": {
+  "aliases": [
+   "window title",
+   "spell window title x2",
+   "copy window title x3"
+  ],
+  "keep_original": false
+ },
+ "Reports information about the location of the currently focused object. - System focus": {
+  "aliases": [
+   "focus location"
+  ],
+  "keep_original": false
+ },
+ "Reports the shortcut key of the currently focused object - System focus": {
+  "aliases": [
+   "shortcut key"
+  ],
+  "keep_original": false
+ },
+ "Reports the object with focus. If pressed twice, spells the information. Pressing three times spells it using character descriptions. - System focus": {
+  "aliases": [
+   "read focus",
+   "spell focus x2",
+   "describe focus x3"
+  ],
+  "keep_original": false
+ },
+ "Moves the focus out of the current embedded object and into the document that contains it - System focus": {
+  "aliases": [
+   "exit embedded object"
+  ],
+  "keep_original": false
+ },
+ "Switches whether the keyboard controls the local or remote computer - Remote Access": {
+  "aliases": [
+   "keyboard control"
+  ],
+  "keep_original": false
+ },
+ "Sends control+alt+delete to the controlled computer. - Remote Access": {
+  "aliases": [
+   "send control alt delete"
+  ],
+  "keep_original": false
+ },
+ "Disconnects from the current Remote Access session - Remote Access": {
+  "aliases": [
+   "disconnect remote"
+  ],
+  "keep_original": false
+ },
+ "Copies a link to the current Remote Access session to the clipboard - Remote Access": {
+  "aliases": [
+   "copy session link"
+  ],
+  "keep_original": false
+ },
+ "Sends the contents of the clipboard to the remote computer - Remote Access": {
+  "aliases": [
+   "send clipboard"
+  ],
+  "keep_original": false
+ },
+ "Connects to a remote computer - Remote Access": {
+  "aliases": [
+   "connect remote"
+  ],
+  "keep_original": true
+ },
+ "Mutes or unmutes the speech coming from the remote computer - Remote Access": {
+  "aliases": [
+   "mute remote speech"
+  ],
+  "keep_original": false
+ },
+ "Toggles whether Remote Access is connected - Remote Access": {
+  "aliases": [
+   "enable remote access",
+   "disable remote access"
+  ],
+  "keep_original": true
+ },
+ "Toggles the support of touch interaction - Touch screen": {
+  "aliases": [
+   "touch support"
+  ],
+  "keep_original": false
+ },
+ "Clicks the right mouse button at the current touch position. This is generally used to activate a context menu. - Touch screen": {
+  "aliases": [
+   "touch right click"
+  ],
+  "keep_original": false
+ },
+ "Cycles between available touch modes - Touch screen": {
+  "aliases": [
+   "touch mode"
+  ],
+  "keep_original": false
+ },
+ "Reports the object and content directly under your finger - Touch screen": {
+  "aliases": [
+   "read under finger"
+  ],
+  "keep_original": false
+ },
+ "Reports the new object or content under your finger if different to where your finger was last - Touch screen": {
+  "aliases": [
+   "finger tracking"
+  ],
+  "keep_original": false
+ },
+ "The next key that is pressed will not be handled at all by NVDA, it will be passed directly through to Windows. - Input": {
+  "aliases": [
+   "pass next key"
+  ],
+  "keep_original": false
+ },
+ "Turns input help on or off. When on, any input such as pressing a key on the keyboard will tell you what script is associated with that input, if any. - Input": {
+  "aliases": [
+   "input help"
+  ],
+  "keep_original": false
+ },
+ "Toggles between desktop and laptop keyboard layout - Input": {
+  "aliases": [
+   "keyboard layout"
+  ],
+  "keep_original": false
+ },
+ "If pressed once, reports the current time. If pressed twice, reports the current date - System status": {
+  "aliases": [
+   "current time",
+   "say time",
+   "current date x2",
+   "say date x2"
+  ],
+  "keep_original": false
+ },
+ "Reports battery status and time remaining if AC is not plugged in - System status": {
+  "aliases": [
+   "battery status"
+  ],
+  "keep_original": false
+ },
+ "Reports the text on the Windows clipboard. Pressing twice spells this information. Pressing three times spells it using character descriptions. - System status": {
+  "aliases": [
+   "read clipboard",
+   "spell clipboard x2",
+   "describe clipboard x3"
+  ],
+  "keep_original": false
+ },
+ "Cycles through audio ducking modes which determine when NVDA lowers the volume of other sounds - Audio": {
+  "aliases": [
+   "audio ducking mode"
+  ],
+  "keep_original": false
+ },
+ "Cycles through sound split modes - Audio": {
+  "aliases": [
+   "sound split mode"
+  ],
+  "keep_original": false
+ },
+ "Shows the NVDA Configuration Profiles dialog - Configuration profiles": {
+  "aliases": [
+   "profile manager"
+  ],
+  "keep_original": false
+ },
+ "Begins interaction with math content - Math navigation": {
+  "aliases": [
+   "math navigation"
+  ],
+  "keep_original": true
+ },
+ "Opens a box where you can type a command phrase - Voice Commands": {
+  "aliases": [
+   "type command"
+  ],
+  "keep_original": false
+ },
+ "Opens the dialog for editing the phrases (aliases) used for commands - Voice Commands": {
+  "aliases": [
+   "edit phrases"
+  ],
+  "keep_original": false
+ },
+ "Toggles lowering the volume of other applications while listening for a voice command - Voice Commands": {
+  "aliases": [
+   "volume lowering"
+  ],
+  "keep_original": false
+ },
+ "Toggles stopping the listening automatically when you stay silent after speaking - Voice Commands": {
+  "aliases": [
+   "stop after silence"
+  ],
+  "keep_original": false
+ },
+ "Opens the speech model dialog: choose, download and manage the model - Voice Commands": {
+  "aliases": [
+   "speech model"
+  ],
+  "keep_original": false
+ },
+ "Opens a dialog that adds what the recognizer heard last as a spoken phrase of a command you choose - Voice Commands": {
+  "aliases": [
+   "add last phrase"
+  ],
+  "keep_original": false
+ },
+ "Opens the dialog for adding your own commands: open a program, file, folder or web address, or press a key combination - Voice Commands": {
+  "aliases": [
+   "add command"
+  ],
+  "keep_original": false
+ }
+}
